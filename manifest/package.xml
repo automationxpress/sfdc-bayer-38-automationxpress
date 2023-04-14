@@ -444,7 +444,6 @@
 		<members>Create_or_Update_UMA_User</members>
 		<members>Delete_User_Entry_Record_History</members>
 		<members>Email_Notification_when_Staff_Status_is_Left</members>
-		<members>GoalSetterCheckUserEditingRights</members>
 		<members>GoalSetterLockGoalPeriod</members>
 		<members>GoalSetterMarkAsFinal</members>
 		<members>GoalSetterUndoWithdraw</members>
@@ -475,43 +474,6 @@
 		<members>User_Time_Tracking_History_on_Create_Update</members>
 		<members>User_Time_Tracking_History_on_Delete</members>
 		<name>Flow</name>
-	</types>
-	<types>
-		<members>Create_Year_Goal_Period</members>
-		<members>Create_or_Update_UMA_User</members>
-		<members>Delete_User_Entry_Record_History</members>
-		<members>Email_Notification_when_Staff_Status_is_Left</members>
-		<members>GoalSetterCheckUserEditingRights</members>
-		<members>GoalSetterLockGoalPeriod</members>
-		<members>GoalSetterMarkAsFinal</members>
-		<members>GoalSetterUndoWithdraw</members>
-		<members>GoalSetterWithdrawGoal</members>
-		<members>GoalSetter_Delete_Goal</members>
-		<members>GoalSetter_New_Goal_Admin</members>
-		<members>GoalSetter_Revise_Goal</members>
-		<members>GoalsetterEditGoal</members>
-		<members>GsGoalSetterInitRecordTypeGoals</members>
-		<members>GsSendFeedback</members>
-		<members>Populate_Role_Matrix_Unique_Combination</members>
-		<members>Populate_User_Entry_Fields</members>
-		<members>Update_Company_Unique_Name</members>
-		<members>Update_Job_Role_Unique_Name</members>
-		<members>Update_MAPV_Department_Unique_Name</members>
-		<members>Update_MAPV_Group_Unique_Name</members>
-		<members>Update_MyLearning_Program_Unique_Name</members>
-		<members>Update_Prima_Role_Unique_Name</members>
-		<members>Update_Prima_Security_Group_Unique_Name</members>
-		<members>User_Entry_on_Create</members>
-		<members>User_Entry_on_Update</members>
-		<members>User_MyLearning_Program_History_on_Create_Update</members>
-		<members>User_MyLearning_Program_History_on_Delete</members>
-		<members>User_Prima_Role_History_on_Create_Update</members>
-		<members>User_Prima_Role_History_on_Delete</members>
-		<members>User_Prima_Security_Group_History_on_Create_Update</members>
-		<members>User_Prima_Security_Group_History_on_Delete</members>
-		<members>User_Time_Tracking_History_on_Create_Update</members>
-		<members>User_Time_Tracking_History_on_Delete</members>
-		<name>FlowDefinition</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -550,7 +512,6 @@
 		<members>Global-Global Layout</members>
 		<members>GsFeedback__c-GoalSetter Feedback Layout</members>
 		<members>GsGoalPeriod__c-Goal Period Layout</members>
-		<members>GsGoal__c-Goal Layout</members>
 		<members>Idea-Idea Layout</members>
 		<members>Integration_Config__mdt-Integration Config Layout</members>
 		<members>Job_Role__c-Job Role Layout</members>
@@ -636,7 +597,6 @@
 		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
 		<members>GsGoal__c.GsEditGoal</members>
 		<members>GsGoal__c.GsMarkAsFinal</members>
-		<members>GsGoal__c.GsNewGoal</members>
 		<members>GsGoal__c.GsReviseGoal</members>
 		<members>GsGoal__c.GsUndoWithdraw</members>
 		<members>GsGoal__c.GsWithdrawGoal</members>
