@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsType__c</fullName>
+    <description>The type of the issue/feedback (user request, issue, data maintenance, ...)</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Issue/Bug</fullName>
+                <default>false</default>
+                <label>Issue/Bug</label>
+            </value>
+            <value>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+                <label>Feature Request</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Access Request</fullName>
+                <default>false</default>
+                <label>Access Request</label>
+            </value>
+            <value>
+                <fullName>Data maintenance</fullName>
+                <default>false</default>
+                <label>Data maintenance</label>
+            </value>
+            <value>
+                <fullName>Praise</fullName>
+                <default>false</default>
+                <label>Praise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

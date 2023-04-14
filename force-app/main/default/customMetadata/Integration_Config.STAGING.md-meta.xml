@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>STAGING</label>
+    <protected>false</protected>
+    <values>
+        <field>One_Trust_Api_Key__c</field>
+        <value xsi:type="xsd:string">GmR5GnC2Ky4dv5Whrn73229xeZSyhVDy5vBIsQ9u</value>
+    </values>
+    <values>
+        <field>Prima_Authtoken__c</field>
+        <value xsi:type="xsd:string">4m4F2l5c2H1s3s1T9h5g</value>
+    </values>
+</CustomMetadata>

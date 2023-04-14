@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Center_Required_On_Bayer_Company</fullName>
+    <active>true</active>
+    <description>Cost Center field is required when Company is selected as Bayer.</description>
+    <errorConditionFormula>AND(
+   CASESAFEID( Company__c ) =  $Label.BayerId,
+   ISPICKVAL(Cost_Center__c, &apos;&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Cost_Center__c</errorDisplayField>
+    <errorMessage>Complete this field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>The goals for this period are locked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The goals for this period cannot be edited anymore if it is locked.</inlineHelpText>
+    <label>Locked</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

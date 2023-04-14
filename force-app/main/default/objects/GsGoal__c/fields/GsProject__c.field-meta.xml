@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsProject__c</fullName>
+    <description>The project is being written automatically by the “New Goal” flow unless the user creates a clinical team goal record type and selects “General” for study. In this case, the project needs to be selected manually by the user. All study and project information is retrieved from IMPACT.</description>
+    <externalId>false</externalId>
+    <label>Project</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

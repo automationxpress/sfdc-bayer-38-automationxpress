@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsGoalTitle__c</fullName>
+    <description>The goal title is either written automatically by the “New Goal”, “Edit Goal” or “Revise Goal” flow in case a certain standard goal was selected. In this case, the value from the selected standard goal is copied. If the standard goal contains a placeholder, the replacement value will also be inserted. If the standard goal is set to “-- enter goal manually --&quot;, the goal title is entered manually.</description>
+    <externalId>false</externalId>
+    <label>Goal Title</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

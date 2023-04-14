@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Owner_Not_Allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(OwnerId) &amp;&amp; CWID__c &lt;&gt; Owner:User.FederationIdentifier  &amp;&amp; $Permission.TransferUserEntries = false</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Owner cannot be changed.</errorMessage>
+</ValidationRule>

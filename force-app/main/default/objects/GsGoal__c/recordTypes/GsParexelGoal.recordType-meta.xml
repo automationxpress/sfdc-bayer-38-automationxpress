@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsParexelGoal</fullName>
+    <active>true</active>
+    <label>Parexel Goal</label>
+    <picklistValues>
+        <picklist>GsAchievedMonth__c</picklist>
+        <values>
+            <fullName>April</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>August</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>December</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>February</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>June</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>March</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>November</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>October</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>September</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GsApprovedBy__c</picklist>
+        <values>
+            <fullName>CPRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPT%2FIPT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GsCorrect__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GsStandardGoal__c</picklist>
+        <values>
+            <fullName>-- enter goal manually --</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25 enrollment complete %28LPFT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 enrollment complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75%25 sites ready to enroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve %5Bvalue%5D%25 RTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve %5Bvalue%5D%25 subject cleaned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve 1st site RTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve Clean Database 4 weeks after LPLV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve LPFV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Achieve final Protocol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All systems ready for RTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSR final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTA submissions completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Country selection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implement Protocol Amendment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Protocol Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Randomize %5Bvalue%5D%25 subjects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TFL within 3 weeks after Clean Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMF archived</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GsStatus__c</picklist>
+        <values>
+            <fullName>Achieved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>At Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Achieved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Track</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GsTargetMonth__c</picklist>
+        <values>
+            <fullName>April</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>August</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>December</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>February</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>June</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>March</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>November</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>October</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>September</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

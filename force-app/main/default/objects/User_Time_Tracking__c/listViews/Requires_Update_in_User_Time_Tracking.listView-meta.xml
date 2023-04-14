@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requires_Update_in_User_Time_Tracking</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>User_Entry__c</columns>
+    <columns>Staff_Status__c</columns>
+    <columns>Time_Tracking_Required__c</columns>
+    <columns>Cost_Center__c</columns>
+    <columns>Status_Icon__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Assign,Remove</value>
+    </filters>
+    <filters>
+        <field>Is_Locked__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Requires Update in User Time Tracking</label>
+</ListView>

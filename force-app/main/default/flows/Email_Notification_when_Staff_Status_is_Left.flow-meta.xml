@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send email notification to Resource Manager and Deputy Manager when Staff Status=&apos;Left&apos;</description>
+        <name>Send_Email_Alert</name>
+        <label>Send Email Alert</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>User_Entry__c.Email_alert_to_notify_when_Staff_Status_of_User_Entry_change_to_Left</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <description>Send email notification to Resource Manager and Deputy Manager when Staff Status=&apos;Left&apos;</description>
+    <interviewLabel>Email Notification when Staff Status is Left {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Email Notification when Staff Status is Left</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Email_Alert</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Staff_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Left</stringValue>
+            </value>
+        </filters>
+        <object>User_Entry__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

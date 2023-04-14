@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Role Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Role Matrices</value>
+    </caseValues>
+    <layouts>
+        <layout>Role Matrix Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Role_Type_and_Global_Job_Role_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

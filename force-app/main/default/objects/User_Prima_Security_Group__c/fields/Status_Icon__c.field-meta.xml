@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Status__c),
+  &apos;Assign&apos;, IMAGE( &quot;/resource/uma_icons/Assign.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; $Label.ToBeAssigned,
+  &apos;Assign Requested&apos;, IMAGE( &quot;/resource/uma_icons/AssignRequested.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; TEXT(Status__c),
+  &apos;Assigned&apos;, IMAGE( &quot;/resource/uma_icons/Assigned.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; TEXT(Status__c),
+  &apos;Remove&apos;, IMAGE( &quot;/resource/uma_icons/Remove.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; $Label.ToBeRemoved,
+  &apos;Remove Requested&apos;, IMAGE( &quot;/resource/uma_icons/Remove.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; TEXT(Status__c),
+  &apos;Error&apos;, IMAGE( &quot;/resource/uma_icons/Error.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; TEXT(Status__c) &amp; BR() &amp; Error_Message__c,
+  &apos;&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

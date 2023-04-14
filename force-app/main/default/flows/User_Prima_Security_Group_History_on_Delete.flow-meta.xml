@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <interviewLabel>User Prima Security Group History on Delete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User Prima Security Group History on Delete</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Record_History_Record</name>
+        <label>Create Record History Record</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>Action__c</field>
+            <value>
+                <stringValue>Related Record Deleted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Related_Object__c</field>
+            <value>
+                <stringValue>Prima Security Group</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Related_Record_Name__c</field>
+            <value>
+                <elementReference>$Record.Prima_Security_Group__r.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Entry__c</field>
+            <value>
+                <elementReference>$Record.User_Entry__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Record_History__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Record_History_Record</targetReference>
+        </connector>
+        <object>User_Prima_Security_Group__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

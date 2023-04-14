@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsGoalValue__c</fullName>
+    <description>Store the actual percent value of study&apos;s standard goal that contains a placeholder ([value])</description>
+    <externalId>false</externalId>
+    <label>Goal Value</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

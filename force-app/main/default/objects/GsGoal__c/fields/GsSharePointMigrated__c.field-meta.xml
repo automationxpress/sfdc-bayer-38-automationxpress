@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsSharePointMigrated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag if goal was migrated from SharePoint</description>
+    <externalId>false</externalId>
+    <label>SharePoint Migrated</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

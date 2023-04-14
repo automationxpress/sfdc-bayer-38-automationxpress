@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AESKey_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AESKey_ConsentForm</shortDescription>
+        <value>48q2e2t3u4i5o6p7</value>
+    </labels>
+    <labels>
+        <fullName>APICallFailMsg_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APICallFailMsg_ConsentForm</shortDescription>
+        <value>The consent collection has failed. Please try again or contact your Sales Representative.</value>
+    </labels>
+    <labels>
+        <fullName>Add</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>AreYouSureYouWantToDeleteThis</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AreYouSureYouWantToDeleteThis</shortDescription>
+        <value>Are you sure you want to delete this</value>
+    </labels>
+    <labels>
+        <fullName>BayerId</fullName>
+        <categories>UMA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BayerId</shortDescription>
+        <value>0010900001Eap8wAAB</value>
+    </labels>
+    <labels>
+        <fullName>BayerRestrictedData</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bayer Restricted Data</shortDescription>
+        <value>Bayer Restricted data.</value>
+    </labels>
+    <labels>
+        <fullName>BayerRestrictedDataOnRight</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bayer Restricted Text To Be Shown On Right Side</shortDescription>
+        <value>For questions, contact mapv_uma_admin@bayer.com</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Checkbox1_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checkbox1_ConsentForm</shortDescription>
+        <value>&lt;b&gt;Pazarlama iletişimleri için;&lt;/b&gt; iletişim izin tercihleriniz doğrultusunda, kampanya, tanıtım ve çözümlerimiz hakkında ileti gönderilmesi.</value>
+    </labels>
+    <labels>
+        <fullName>Checkbox2SubText_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checkbox2SubText_ConsentForm</shortDescription>
+        <value>kapsamında yurtdışına aktarılması.</value>
+    </labels>
+    <labels>
+        <fullName>Checkbox2_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checkbox2_ConsentForm</shortDescription>
+        <value>&lt;b&gt;Kişisel verilerinizin</value>
+    </labels>
+    <labels>
+        <fullName>Checkbox3_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checkbox3_ConsentForm</shortDescription>
+        <value>&lt;b&gt;Dernek üyeliği bilgisi için;&lt;/b&gt; indirimli kongre katılım bedelinden faydalanılması için dernek üyeliği bilginizin işlenmesi.</value>
+    </labels>
+    <labels>
+        <fullName>ConsentGivenSuccessMsg_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConsentGivenSuccessMsg_ConsentForm</shortDescription>
+        <value>&lt;br&gt;&lt;strong&gt;Vermiş olduğunuz bilgiler için teşekkür ederiz.&lt;br&gt;Saygılarımızla,&lt;br&gt;Bayer Türk Kimya Sanayi Limited Sirketi&lt;/strong&gt;&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ConsentNotGivenSuccessMsg_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConsentNotGivenSuccessMsg_ConsentForm</shortDescription>
+        <value>&lt;br&gt;&lt;strong&gt;Yapmış olduğunuz seçimle Bayer Türk ile elektronik iletişime izin vermemiş olduğunuzu hatırlatırız. Bu nedenle sizinle elektronik olarak (sms , e-posta, bülten vb.) iletişime geçemeyeceğiz. Bayer Türk ile ilgili onamlar hakkında fikrinizi değiştirirseniz Bayer Türk temsilciniz ile her zaman iletişime geçebilirsiniz &lt;br&gt; Saygılarımızla, &lt;br&gt; Bayer Türk Kimya Sanayi Limited Sirketi &lt;/strong&gt;&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ConsentOnlyForMultichannelMarketing_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConsentOnlyForMultichannelMarketing_ConsentForm</shortDescription>
+        <value>&lt;br&gt;&lt;strong&gt;Tercihinizi gözden geçirmek ister misiniz? Yapmış olduğunuz seçimle sadece tanıtım ve çözümlerimizden haberdar olmak için izin verdiniz. Ayrıca yurtdışına veri paylaşımı için de iznini soruyoruz. Yurtdışına veri paylaşımı teknik sebepler ile, kullanılan sistemlerin yurtdışından sağlanmasından ve global uygulamalarımızdan kaynaklanmaktadır. Kişisel verileriniz aktarılırken yasal düzenlemelere uygun hareket edilmekte ve verilerinizin güvenliği için gerekli tüm tedbirler alınmaktadır. Dilerseniz bir önceki sayfadan izin tercihlerinizi düzenleyebilirsiniz.&lt;/strong&gt;&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ConsentOnlyForPrivacySuccessMsg_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConsentOnlyForPrivacySuccessMsg_ConsentForm</shortDescription>
+        <value>&lt;br&gt;&lt;strong&gt;Tercihinizi gözden geçirmek ister misiniz? Yapmış olduğunuz seçimle ticari elektronik iletiler için izin vermediniz. Bu nedenle sizi tanıtımlarımızdan ve ilginizi çekebilecek çözümlerimizden haberdar edemeyeceğiz. İzin verdiğinizde, dilediğiniz zaman Bayer Türk temsilciniz ile iletişime geçip, bu tarz iletişimleri sonlandırabilirsiniz. Dilerseniz bir önceki sayfadan izin tercihlerinizi düzenleyebilirsiniz. &lt;/strong&gt;&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Create_New_Role_Matrix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>+Create New Role Matrix</shortDescription>
+        <value>+Create New Role Matrix</value>
+    </labels>
+    <labels>
+        <fullName>DecryptionAlgorithm_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DecryptionAlgorithm_ConsentForm</shortDescription>
+        <value>AES128</value>
+    </labels>
+    <labels>
+        <fullName>Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>EmailBody_ConsentForm</fullName>
+        <categories>ConsentForm</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailBody_ConsentForm</shortDescription>
+        <value>İletişim izin tercihleriniz kayıt altına alınmıştır. Elektronik ticaret ileti izninizi iptal için, Bayer Türk iletişim sisteminde kayıtlı olan e-posta adersinizden &lt;b&gt;&lt;u&gt;etk-red@bayer.com&lt;/u&gt;&lt;/b&gt; adresine e-posta gönderebilirsiniz.
+&lt;br&gt;&lt;br&gt;Saygılarımızla,&lt;br&gt;Bayer Türk Kimya Sanayi Limited Sirketi&lt;br&gt;&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>EmailRrequired_ConsentForm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailRrequired_ConsentForm</shortDescription>
+        <value>Email address is required.</value>
+    </labels>
+    <labels>
+        <fullName>EmailSubject_ConsentForm</fullName>
+        <categories>ConsentForm</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailSubject_ConsentForm</shortDescription>
+        <value>Onay e-Postası</value>
+    </labels>
+    <labels>
+        <fullName>Heading_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Heading_ConsentForm</shortDescription>
+        <value>SAĞLIK MESLEK MENSUBU TİCARİ ELEKTRONİK İLETİ GÖNDERİMİ ONAYI İLE KİŞİSEL VERİLERİN KORUNMASI VE İŞLENMESİ</value>
+    </labels>
+    <labels>
+        <fullName>InitializationVector_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InitializationVector_ConsentForm</shortDescription>
+        <value>6b5d89gh0j21nm83</value>
+    </labels>
+    <labels>
+        <fullName>Link1Text_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Link1Text_ConsentForm</shortDescription>
+        <value>Aydınlatma Metni</value>
+    </labels>
+    <labels>
+        <fullName>Link1_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Link1_ConsentForm</shortDescription>
+        <value>https://dps.bayer.com/ph/tr/tr/data_privacy_statement</value>
+    </labels>
+    <labels>
+        <fullName>Link2Text_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Link2Text_ConsentForm</shortDescription>
+        <value>Rıza Metni</value>
+    </labels>
+    <labels>
+        <fullName>Link2_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Link2_ConsentForm</shortDescription>
+        <value>https://dps.bayer.com/ph/tr/tr/consent_for_electronic_communication</value>
+    </labels>
+    <labels>
+        <fullName>ManagerIsMissingAccessToUMAApp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerIsMissingAccessToUMAApp</shortDescription>
+        <value>Manager is missing access to UMA application. Name:</value>
+    </labels>
+    <labels>
+        <fullName>MsgWhenNoCheckboxSelected_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MsgWhenNoCheckboxSelected_ConsentForm</shortDescription>
+        <value>Herhangi bir tercih yapmadınız.</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>NoResults</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoResults</shortDescription>
+        <value>No results</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Save_and_Submit_for_Approval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save and Submit for Approval</shortDescription>
+        <value>Save and Submit for Approval</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Send_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Send_ConsentForm</shortDescription>
+        <value>Gönder</value>
+    </labels>
+    <labels>
+        <fullName>Text1_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text1_ConsentForm</shortDescription>
+        <value>Bayer Türk kişisel verilerinizi</value>
+    </labels>
+    <labels>
+        <fullName>Text2_ConsentForm</fullName>
+        <categories>Consent_Form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text2_ConsentForm</shortDescription>
+        <value>kapsamında işlemektedir. Aşağıda tanıtım ve çözümlerimizden haberdar olabilmenize ve kişisel verilerinizin işlenmesine ilişkin rıza metinleri yer almaktadır​ &lt;br&gt;&lt;br&gt; Kişisel verilerinizin aşağıdaki amaçlarla işlenmesini onaylıyor musunuz? &lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ToBeAssigned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ToBeAssigned</shortDescription>
+        <value>To be Assigned</value>
+    </labels>
+    <labels>
+        <fullName>ToBeRemoved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ToBeRemoved</shortDescription>
+        <value>To be Removed</value>
+    </labels>
+    <labels>
+        <fullName>UserEntryCannotBeDeleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserEntryCannotBeDeleted</shortDescription>
+        <value>User Entry cannot be deleted. Staff Status is not &quot;Left&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>UserEntryIsLockedForEditing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserEntryIsLockedForEditing</shortDescription>
+        <value>User Entry is currently locked for editing. Please wait until MyLearning and PRIMA assignments are completed.</value>
+    </labels>
+    <labels>
+        <fullName>UserEntryNeedsToBeSubmitted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserEntryNeedsToBeSubmitted</shortDescription>
+        <value>There are records that are ready to be sent to MyLearning or PRIMA. Please submit User Entry for Approval.</value>
+    </labels>
+    <labels>
+        <fullName>UserMyLearningProgramCannotBeDeleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserMyLearningProgramCannotBeDeleted</shortDescription>
+        <value>User MyLearning Program cannot be deleted. Status is not &quot;To be Removed&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>UserPrimaRoleCannotBeDeleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserPrimaRoleCannotBeDeleted</shortDescription>
+        <value>You can delete only User Prima Roles that are in status &quot;Error&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>UserPrimaSecurityGroupCannotBeDeleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserPrimaSecurityGroupCannotBeDeleted</shortDescription>
+        <value>You can delete only User Prima Security Groups that are in status &quot;Error&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>WarningMsg_Time_Tracking_Required</fullName>
+        <categories>UMA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WarningMsg_Time Tracking Required</shortDescription>
+        <value>UMA field(s) relevant for Time Tracking has/have been updated. Please check if &quot;Time Tracking Required&quot; field should be updated!</value>
+    </labels>
+</CustomLabels>

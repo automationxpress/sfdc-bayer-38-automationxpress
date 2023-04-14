@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CWID_Deactivated_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+  NOT(ISNEW()),
+  TEXT(Staff_Status__c) = &quot;Left&quot;, 
+  ISPICKVAL(CWID_Deactivated__c , &apos;&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>CWID_Deactivated__c</errorDisplayField>
+    <errorMessage>Please select CWID Deactivated field when Staff Status=Left</errorMessage>
+</ValidationRule>

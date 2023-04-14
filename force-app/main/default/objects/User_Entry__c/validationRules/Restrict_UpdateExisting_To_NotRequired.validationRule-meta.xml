@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_UpdateExisting_To_NotRequired</fullName>
+    <active>true</active>
+    <description>Update Existing to Not Required is not allowed in Time Tracking Required field.</description>
+    <errorConditionFormula>ISCHANGED(Time_Tracking_Required__c) &amp;&amp;
+TEXT(PRIORVALUE(Time_Tracking_Required__c)) = &apos;Update Existing&apos; &amp;&amp;
+TEXT(Time_Tracking_Required__c) = &apos;Not Required&apos;</errorConditionFormula>
+    <errorDisplayField>Time_Tracking_Required__c</errorDisplayField>
+    <errorMessage>Time Tracking from Update Existing to Not Required is not allowed.</errorMessage>
+</ValidationRule>

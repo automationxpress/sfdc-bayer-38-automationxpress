@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsTargetDate__c</fullName>
+    <description>The “Target Date” will be entered by the user in the “New Goal”, “Edit Goal” and “Revise Goal” flows in case the goal record type is “LabCorp Goal” or “Parexel Goal”. Otherwise, the target date is entered by these flows while setting the day to the last day of the selected “Target Month”.</description>
+    <externalId>false</externalId>
+    <label>Target Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

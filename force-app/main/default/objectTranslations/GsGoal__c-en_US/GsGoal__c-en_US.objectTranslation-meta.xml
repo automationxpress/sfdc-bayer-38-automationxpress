@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Goals</value>
+    </caseValues>
+    <layouts>
+        <layout>Goal Layout</layout>
+        <sections>
+            <label></label>
+            <section>Admin Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>GsCountryRecruitmentGoal</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>GsCovanceGoal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>GsCroGoal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>GsParexelGoal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>LabCorp_Goal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>clinical_team_goal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>study_team_goal</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>GsDeleteGoal</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GsNewGoal</name>
+    </webLinks>
+</CustomObjectTranslation>

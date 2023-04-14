@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Status__c), 
+  &apos;Assign&apos;, IMAGE( &quot;/resource/uma_icons/Assign.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; $Label.ToBeAssigned, 
+  &apos;Assigned&apos;, IMAGE( &quot;/resource/uma_icons/Assigned.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; TEXT(Status__c),
+  &apos;Remove&apos;, IMAGE( &quot;/resource/uma_icons/Remove.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; $Label.ToBeRemoved,
+  &apos;Error&apos;, IMAGE( &quot;/resource/uma_icons/Error.svg&quot;, TEXT(Status__c), 23, 23) &amp; &apos; &apos; &amp; TEXT(Status__c),
+  &apos;&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prima_Role_Name_Not_Supported_Characters</fullName>
+    <active>true</active>
+    <errorConditionFormula>CONTAINS(Name, &apos;–&apos;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Prima role names with these characters (&quot;–&quot;) are not supported by Prima APIs. Please make a request to change the role name accordingly.</errorMessage>
+</ValidationRule>

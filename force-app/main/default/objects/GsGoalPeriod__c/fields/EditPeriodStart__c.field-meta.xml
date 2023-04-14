@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EditPeriodStart__c</fullName>
+    <defaultValue>DATE(YEAR(TODAY()), 8, 31)</defaultValue>
+    <description>The date after which the Editing period for this years goals starts.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This has to be before the editing end date.</inlineHelpText>
+    <label>Edit Period Start</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

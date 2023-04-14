@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Job Role</label>
+    <referenceTo>Job_Role__c</referenceTo>
+    <relationshipLabel>User Additional Roles</relationshipLabel>
+    <relationshipName>User_Additional_Roles</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

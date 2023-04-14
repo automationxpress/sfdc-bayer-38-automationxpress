@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Period_End__c</fullName>
+    <defaultValue>DATE(YEAR(TODAY())+1, 12, 31)</defaultValue>
+    <description>The end date of the goal tracking period.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Goals should be reached before this date.</inlineHelpText>
+    <label>Period End</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

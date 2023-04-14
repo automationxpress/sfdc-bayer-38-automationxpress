@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsAchievedMonth__c</fullName>
+    <description>Month selector for the achieved date (deprecated)</description>
+    <externalId>false</externalId>
+    <label>Achieved Month</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>GsMonths</valueSetName>
+    </valueSet>
+</CustomField>

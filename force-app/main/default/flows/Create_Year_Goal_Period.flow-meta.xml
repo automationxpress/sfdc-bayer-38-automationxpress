@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <description>Buidl a correct goal period record</description>
+        <name>Build_Record_Type</name>
+        <label>Build_Goal_period</label>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>GoalPeriod.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PeriodName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GoalPeriod.Period_Start__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>StartDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GoalPeriod.Period_End__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EndDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GoalPeriod.EditPeriodStart__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EditStartDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GoalPeriod.EditPeriodEnd__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EditEndDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Period</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Admin user has the &quot;GoalSetterAdmin&quot; custom permission assigned in the &quot;GoalSetter Admin&quot; Permisssion Set. Only Admin users are allowed to create new Goal Periods.</description>
+        <name>CanCreateNewGoalPeriods</name>
+        <label>Can Create New Goal Periods?</label>
+        <locationX>380</locationX>
+        <locationY>158</locationY>
+        <defaultConnector>
+            <targetReference>YouAreNotAllowed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>IsUser</defaultConnectorLabel>
+        <rules>
+            <name>IsAdmin</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.GsGoalSetterAdmin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_new_yearly_Goal_Setter_Period</targetReference>
+            </connector>
+            <label>IsAdmin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckIfperiodExists</name>
+        <label>Check If Period Exists</label>
+        <locationX>182</locationX>
+        <locationY>518</locationY>
+        <defaultConnector>
+            <targetReference>PeriodAlreadyExistsScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does exist</defaultConnectorLabel>
+        <rules>
+            <name>PeriodDoesntExists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CheckForExistentPeriod</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Build_Record_Type</targetReference>
+            </connector>
+            <label>Doesn&apos;t exist</label>
+        </rules>
+    </decisions>
+    <description>System checks if a goal period for the entered year already exist</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>The end date of the editing period</description>
+        <name>EditEndDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE({!YearInput}-1, 12, 31)</expression>
+    </formulas>
+    <formulas>
+        <description>The start date of the editing period.</description>
+        <name>EditStartDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE({!YearInput}-1, 8, 31)</expression>
+    </formulas>
+    <formulas>
+        <description>The periods end date</description>
+        <name>EndDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE({!YearInput}, 12, 31)</expression>
+    </formulas>
+    <formulas>
+        <description>Transfers the input number into a string</description>
+        <name>PeriodName</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!YearInput})</expression>
+    </formulas>
+    <formulas>
+        <description>The periods start date</description>
+        <name>StartDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE({!YearInput}, 1, 1)</expression>
+    </formulas>
+    <interviewLabel>Create Year Goal period {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Year Goal Period</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>Creates a record with default values as specified here: https://dev.azure.com/floriantillschiele/GoalSetter/_sprints/taskboard/GoalSetter%20Team/GoalSetter/Sprint%201?workitem=16</description>
+        <name>Create_Period</name>
+        <label>Create Period</label>
+        <locationX>50</locationX>
+        <locationY>758</locationY>
+        <inputReference>GoalPeriod</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>CheckForExistentPeriod</name>
+        <label>Check For Existent Period</label>
+        <locationX>182</locationX>
+        <locationY>398</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CheckIfperiodExists</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>PeriodName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>GsGoalPeriod__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithSharing</runInMode>
+    <screens>
+        <description>Create a new goal setter period by providing a year.</description>
+        <name>Create_new_yearly_Goal_Setter_Period</name>
+        <label>Create new yearly Goal Setter Period</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>CheckForExistentPeriod</targetReference>
+        </connector>
+        <fields>
+            <name>YearInput</name>
+            <dataType>Number</dataType>
+            <fieldText>Year</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;For this year a  new period will be created. It will assume default values going from the &lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; font-family: &amp;quot;Segoe UI VSS (Regular)&amp;quot;, &amp;quot;Segoe UI&amp;quot;, -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; color: rgba(0, 0, 0, 0.9);&quot;&gt;1st of January till the 31st of December. The Editing period starts at the 31st of August and ends on the 31st December of the previous year.&lt;/span&gt;&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+            <validationRule>
+                <errorMessage>&lt;p&gt;Please enter a valid date with 4 numbers.&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!YearInput} &gt; 999 &amp;&amp; {!YearInput} &lt; 10000</formulaExpression>
+            </validationRule>
+        </fields>
+        <nextOrFinishButtonLabel>Create Period</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>PeriodAlreadyExistsScreen</name>
+        <label>Period Already Exists Screen</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_new_yearly_Goal_Setter_Period</targetReference>
+        </connector>
+        <fields>
+            <name>AlreadyExistMessage</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;A period for year &lt;/span&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!PeriodName}&lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt; already exists. &lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>YouAreNotAllowed</name>
+        <label>You Are Not Allowed</label>
+        <locationX>578</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>NotAllowedMessage</name>
+            <fieldText>&lt;p&gt;You are not allowed to create Goal Periods.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CanCreateNewGoalPeriods</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>The record to create</description>
+        <name>GoalPeriod</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>GsGoalPeriod__c</objectType>
+    </variables>
+</Flow>

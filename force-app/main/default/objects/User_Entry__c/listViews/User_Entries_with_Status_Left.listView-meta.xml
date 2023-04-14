@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Entries_with_Status_Left</fullName>
+    <columns>NAME</columns>
+    <columns>CWID__c</columns>
+    <columns>Company__c</columns>
+    <columns>Primary_Job_Role__c</columns>
+    <columns>Locations__c</columns>
+    <columns>MAPV_Department__c</columns>
+    <columns>MAPV_Group__c</columns>
+    <columns>Staff_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Staff_Status__c</field>
+        <operation>equals</operation>
+        <value>Left</value>
+    </filters>
+    <label>User Entries with Status Left</label>
+</ListView>

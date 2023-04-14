@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsProgress__c</fullName>
+    <description>Visual progress indicator for the goal based on the status</description>
+    <externalId>false</externalId>
+    <formula>CASE(GsStatus__c,
+&quot;On Track&quot;,IMAGE(&quot;/resource/GoalSetter/img/status_ontrack.png&quot;, &quot;On Track&quot;,24,24),
+&quot;At Risk&quot;,IMAGE(&quot;/resource/GoalSetter/img/status_atrisk.png&quot;, &quot;At Risk&quot;,24,24),
+&quot;Achieved&quot;,IMAGE(&quot;/resource/GoalSetter/img/status_achieved.png&quot;, &quot;Achieved&quot;,24,24),
+&quot;Not Achieved&quot;,IMAGE(&quot;/resource/GoalSetter/img/status_notachieved.png&quot;, &quot;Not Achieved&quot;,24,24),
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Progress</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

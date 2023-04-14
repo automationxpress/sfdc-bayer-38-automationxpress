@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsApprovedBy__c</fullName>
+    <description>This field is required if the goal is created or edited after period freeze or when the goal is revised.</description>
+    <externalId>false</externalId>
+    <label>Approved by</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GPT/IPT</fullName>
+                <default>false</default>
+                <label>GPT/IPT</label>
+            </value>
+            <value>
+                <fullName>CPRM</fullName>
+                <default>false</default>
+                <label>CPRM</label>
+            </value>
+            <value>
+                <fullName>GPDC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GPDC</label>
+            </value>
+            <value>
+                <fullName>TADC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TADC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

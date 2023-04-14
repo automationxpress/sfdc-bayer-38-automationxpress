@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsWithdrawnComment__c</fullName>
+    <description>The user is prompted to enter a comment for withdrawn goals during the “Withdraw Goal” flow. It will be cleared automatically in the “Undo Withdrawal” flow.</description>
+    <externalId>false</externalId>
+    <label>Withdrawn Comment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prima Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Manage Prima Roles</value>
+    </caseValues>
+    <layouts>
+        <layout>Prima Role Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prima_Role_Name_Not_Supported_Characters</name>
+    </validationRules>
+</CustomObjectTranslation>

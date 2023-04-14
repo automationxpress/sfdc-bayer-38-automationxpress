@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EditPeriodEnd__c</fullName>
+    <defaultValue>DATE(YEAR(TODAY()), 12, 31)</defaultValue>
+    <description>The date after which the goals cannot be edited anymore.</description>
+    <externalId>false</externalId>
+    <label>Edit Period End</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

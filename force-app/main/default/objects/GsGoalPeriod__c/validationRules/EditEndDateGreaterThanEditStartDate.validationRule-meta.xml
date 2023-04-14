@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EditEndDateGreaterThanEditStartDate</fullName>
+    <active>true</active>
+    <description>The edit end date must be later than the edit start date.</description>
+    <errorConditionFormula>OR(EditPeriodEnd__c &lt;  EditPeriodStart__c )</errorConditionFormula>
+    <errorDisplayField>EditPeriodEnd__c</errorDisplayField>
+    <errorMessage>The edit end date must be greater than the edit start date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsGoalSetterCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>GsGoalPeriod__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>GsGoalTitle__c</fields>
+    <fields>GsProgress__c</fields>
+    <fields>GsStatus__c</fields>
+    <label>GoalSetter Compact Layout</label>
+</CompactLayout>

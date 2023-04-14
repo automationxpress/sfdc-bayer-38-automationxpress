@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PeriodEndDateGreaterThanPeriodStartDate</fullName>
+    <active>true</active>
+    <description>The period end date must be later than the period start date.</description>
+    <errorConditionFormula>OR( Period_End__c &lt;   Period_Start__c )</errorConditionFormula>
+    <errorDisplayField>Period_End__c</errorDisplayField>
+    <errorMessage>The period end date must be greater than the period start date.</errorMessage>
+</ValidationRule>

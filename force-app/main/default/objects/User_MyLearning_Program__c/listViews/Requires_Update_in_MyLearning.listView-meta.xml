@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requires_Update_in_MyLearning</fullName>
+    <columns>NAME</columns>
+    <columns>User_Entry__c</columns>
+    <columns>Staff_Status__c</columns>
+    <columns>Alternate_ML_Supervisor__c</columns>
+    <columns>MyLearning_Program__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Assign,Remove</value>
+    </filters>
+    <filters>
+        <field>Is_Locked__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Requires Update in MyLearning</label>
+</ListView>

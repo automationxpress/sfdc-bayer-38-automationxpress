@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Sending_Failed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked when initial sending to Prima (triggered after changes are approved) results with error.</description>
+    <externalId>false</externalId>
+    <label>Initial Sending Failed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

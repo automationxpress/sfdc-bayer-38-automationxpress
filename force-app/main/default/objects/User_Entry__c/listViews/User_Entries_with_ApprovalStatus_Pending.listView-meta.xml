@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Entries_with_ApprovalStatus_Pending</fullName>
+    <columns>NAME</columns>
+    <columns>CWID__c</columns>
+    <columns>Company__c</columns>
+    <columns>Primary_Job_Role__c</columns>
+    <columns>Locations__c</columns>
+    <columns>MAPV_Department__c</columns>
+    <columns>MAPV_Group__c</columns>
+    <columns>Staff_Status__c</columns>
+    <columns>Resource_Manager__c</columns>
+    <columns>Deputy_Manager__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Approval_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending for Approval</value>
+    </filters>
+    <label>User Entries with ApprovalStatus Pending</label>
+</ListView>

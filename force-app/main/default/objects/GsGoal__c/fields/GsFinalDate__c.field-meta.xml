@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GsFinalDate__c</fullName>
+    <description>The Final Date is written automatically by &quot;Mark As final&quot; or &quot;Lock Goal Period&quot; flows indicating when the goal was set to final.</description>
+    <externalId>false</externalId>
+    <label>Final Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
