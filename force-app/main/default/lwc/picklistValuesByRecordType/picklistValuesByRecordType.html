@@ -1,0 +1,15 @@
+<template>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Getting Record Type Picklist values"></lightning-spinner>
+  </template>
+  <template if:true={hasSucceeded}>
+    <lightning-combobox name="CbxPicklistValuesByRecordType" label={fieldLabel} value={selectedValue}
+      placeholder={placeholder} options={options} required={isRequired} onchange={handleChange}></lightning-combobox>
+  </template>
+  <template if:true={hasFailed}>
+    <p>We failed to get the Record Type Picklist values.</p>
+    <template iterator:error={errors}>
+      <p key={error.value}>{error.value}</p>
+    </template>
+  </template>
+</template>

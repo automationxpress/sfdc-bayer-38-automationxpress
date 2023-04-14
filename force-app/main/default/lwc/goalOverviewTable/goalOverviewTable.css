@@ -1,0 +1,22 @@
+/* we enable our color scheme from the old goal setter */
+:host {
+  --slds-c-badge-font-size: 0.75em;
+  --lwc-tableColorBackgroundHeader: #10384F;
+  --lwc-tableColorTextHeader: #FFF;
+}
+/* if there is a nested gaol we do not ant to have a border */
+td.empty {
+  border-top: none;
+}
+
+/* colors for decoration */
+.on-track-color {
+  --sds-c-badge-color-background: #10384F;
+}
+
+/* attempting to remove link styles fails :( */
+.no-link,.no-link:hover {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+}

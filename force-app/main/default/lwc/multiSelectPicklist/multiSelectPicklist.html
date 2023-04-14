@@ -1,0 +1,58 @@
+<template>
+    <div class="slds-form-element_horizontal">
+        <label class="slds-form-element__label" for="multi-picklist">
+            <abbr class="slds-required" title="required">*</abbr>
+            {labelName}
+        </label>
+        <div id="multi-picklist">
+            <lightning-input 
+                value={searchInput} 
+                onclick={onChangeSearchInput}
+                onchange={onChangeSearchInput} 
+                variant="label-hidden" 
+                autocomplete="off" 
+                placeholder="Search..." 
+                type="search">
+            </lightning-input>
+            <div class="slds-form-element__control">
+                <div class="slds-combobox">
+                    <div class="slds-combobox__form-element">
+                        <template for:each={globalSelectedItems} for:item="selectedItem">
+                            <span key={selectedItem.value}>
+                                <lightning-pill label={selectedItem.label} name={selectedItem.value}
+                                    data-item={selectedItem.value} onremove={handleRemoveRecord}>
+                                    <lightning-icon icon-name={iconName} variant="circle"
+                                        alternative-text={selectedItem.label}></lightning-icon>
+                                </lightning-pill>
+                            </span>
+                        </template>
+                    </div>
+                    <template if:true={isDisplayMessage}>
+                        <lightning-card>No records found.</lightning-card>
+                    </template>
+                    <template if:false={isDisplayMessage}>
+                        <template if:true={isDialogDisplay}>
+                            <section class="slds-popover slds-popover_full-width">
+                                <div class="slds-popover__body slds-popover__body_small">
+                                    <lightning-checkbox-group 
+                                        name="Checkbox Group" 
+                                        options={items} 
+                                        value={value}
+                                        variant="label-hidden" 
+                                        onchange={handleCheckboxChange}>
+                                    </lightning-checkbox-group>
+                                </div>
+                                <footer class="slds-popover__footer slds-popover__footer_form">
+                                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelClick}
+                                        class="slds-m-left_x-small"></lightning-button>
+                                    <lightning-button variant="success" label="Done" title="Done"
+                                        onclick={handleDoneClick} class="slds-m-left_x-small"></lightning-button>
+                                </footer>
+                            </section>
+                        </template>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

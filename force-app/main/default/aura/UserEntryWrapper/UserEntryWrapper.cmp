@@ -1,0 +1,7 @@
+<aura:component implements="force:hasRecordId,lightning:actionOverride,lightning:isUrlAddressable" access="global" >
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+        <c:userEntryEdit userEntryId="{!v.recordId}" oncancel="{!c.hideUserEditPopUp}" 
+            onsavesuccess="{!c.handleSaveSuccess}"></c:userEntryEdit>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+</aura:component>

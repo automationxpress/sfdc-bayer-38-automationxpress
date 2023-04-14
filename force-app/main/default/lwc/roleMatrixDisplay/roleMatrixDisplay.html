@@ -1,0 +1,66 @@
+<template>
+    
+    <lightning-card>
+        
+        <template if:true={isCreateable}> 
+            <lightning-button variant="brand" label={label.Create_New_Role_Matrix} title="New Role Matrix" onclick={handelCreateNewRoleMatrix} class="slds-var-m-right_medium  slds-float_right"></lightning-button>
+        </template>
+
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-input variant="label-hidden" 
+                    label="Search Record" type="search" placeholder="Search Role Matrix" value ={searchValue} onchange={searchKeyword}>
+               </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <button class="slds-button slds-button_brand"  onclick={handleSearchClick}>{label.Search}</button>
+            </lightning-layout-item>
+                  
+        </lightning-layout>
+
+        <div class="slds-m-top_x-small" style="height:auto; overflow:inherit">
+            <template if:true = {roleMatrixData}> 
+                <div style="height: 100%">
+                    <lightning-datatable class="slds-text-body_small slds-wrap" 
+                        key-field="Id"
+                        data={roleMatrixData}
+                        columns={columns}
+                        hide-checkbox-column="true"
+                        onrowaction={handleRowActions}/>
+                    </lightning-datatable> 
+                </div>
+            </template>
+        </br>
+            <lightning-layout horizontal-align="space">
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button label={label.Previous} icon-name="utility:chevronleft" onclick={previousHandler}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    Page {page} of {totalPage}
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button label={label.Next} icon-name="utility:chevronright" icon-position="right"
+                        onclick={nextHandler}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+           </div>
+    </lightning-card>
+    
+    <template if:true={isRoleMatrixEditPopUp}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <c-role-matrix-edit role-matrix-id={selectedRoleMatrixId} oncancel={hideRoleMatrixEditPopUp} 
+                                onsavesuccess={handleRoleMatrixSave}></c-role-matrix-edit>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <template if:true={isRoleMatrixDeletePopUp}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <c-confirmation-dialog title={roleMatrixDeleteTitle} message={roleMatrixDeleteMessage} confirmation-action={label.Delete}
+                                   oncancel={hideRoleMatrixDeletePopUp} onconfirmation={handleRoleMatrixDelete}></c-confirmation-dialog>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+   
+</template>

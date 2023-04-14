@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>GoalSetter: Get Picklist by Record Type</masterLabel>
+    <description
+  >This component will display the values for the picklist of a specified record type.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="objApiName" label="Object API Name" type="String" required="true" role="inputOnly" default="Unknown" />
+            <property name="fieldApiName" label="Field API Name" type="String" required="true" role="inputOnly" default="Unknown" />
+            <property name="fieldLabel" label="Field Display Label" type="String" required="false" role="inputOnly" />
+            <property name="recTypeId" label="Record Type Id" type="String" role="inputOnly" required="true" default="Unknown" />
+            <property name="isRequired" label="Require Field" type="Boolean" required="true" role="inputOnly" default="false" description="True or False" />
+            <property name="placeholder" label="Default Placeholder Text" type="String" required="false" role="inputOnly" description="If left blank, the default is --None--" />
+            <property name="selectedValue" label="Selected Picklist Value" type="String" description="You can add a initial default selected field and in the Advanced section manually assign a variable to store the final selected field" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

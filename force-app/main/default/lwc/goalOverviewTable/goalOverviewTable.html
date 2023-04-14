@@ -1,0 +1,84 @@
+<template>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Getting goals data"></lightning-spinner>
+  </template>
+  <template if:true={hasSucceeded}>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+      <!-- OUr table header for every column -->
+      <thead>
+        <tr class="slds-line-height_reset">
+          <template iterator:column={columns}>
+            <th class="" scope="col" key={column.value}>
+              <div class="slds-truncate" title={column.value.name}>{column.value}</div>
+            </th>
+          </template>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows for every single goal -->
+        <template iterator:goal={data}>
+          <tr key={goal.value.Id}>
+            <td class={goal.value.sameProgram}>
+              <div class="slds-truncate" title={goal.value.GsProgram__c}>
+                <lightning-formatted-text value={goal.value.GsProgram__c}></lightning-formatted-text>
+              </div>
+            </td>
+            <td class={goal.value.sameProject}>
+              <div class="slds-truncate" title={goal.value.GsProject__c}>
+                <lightning-formatted-text value={goal.value.GsProject__c}></lightning-formatted-text>
+              </div>
+            </td>
+            <td class={goal.value.sameStudy}>
+              <div class="slds-truncate" title={goal.value.GsStudyNumber__c}>
+                <lightning-formatted-text value={goal.value.GsStudyNumber__c}></lightning-formatted-text>
+              </div>
+            </td>
+            <th data-label="Goal Title" scope="row" class="slds-cell-wrap">
+              <c-goal-title-link record-id={goal.value.Id}>
+                <div title={goal.value.GsGoalTitle__c}>
+                  <p>
+                    <!-- If this goal is locked render a lock icon -->
+                    <template if:true={goal.value.GsFinal__c}>
+                      <lightning-icon icon-name="utility:lock" size="xx-small" class="slds-p-right_x-small"></lightning-icon>
+                    </template>
+                    <span class="slds-text-body_regular slds-text-color_default">{goal.value.RecordType.Name}: {goal.value.GsGoalTitle__c}</span>
+                  </p>
+                  <!-- Render badges of a certain kind like flags etc -->
+                  <template iterator:flag={goal.value.flags}>
+                    <template if:true={flag.value.visible}>
+                      <span key={flag.value.label}>
+                        <lightning-badge label={flag.value.label} class="slds-m-around_xx-small no-link"></lightning-badge>
+                        <template if:true={flag.value.additionalInfo}>
+                          <span class="slds-text-body_regular slds-text-color_default no-link">{flag.value.additionalInfo}</span>
+                        </template>
+                      </span>
+                    </template>
+                  </template>
+                </div>
+              </c-goal-title-link>
+            </th>
+            <td>
+              <div class="slds-truncate" title={goal.value.GsTargetFormula__c}>
+                <p><lightning-formatted-text value={goal.value.GsTargetFormula__c}></lightning-formatted-text></p>
+                <!-- Render a single status badge if applicable -->
+                <template if:true={goal.value.statusFlag}>
+                  <span>
+                    <lightning-badge label={goal.value.statusFlag.label} class={goal.value.statusFlag.color}></lightning-badge>
+                    <template if:true={goal.value.statusFlag.additionalInfo}><span class="slds-text-body_regular slds-text-color_default">{goal.value.statusFlag.additionalInfo}</span>
+                    </template>
+                  </span>
+                </template>
+              </div>
+            </td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+  </template>
+  <template if:true={hasFailed}>
+    <p>We failed to get goals data.</p>
+    <template iterator:error={errors}>
+      <p key={error.value}>{error.value}</p>
+    </template>
+  </template>
+</template>

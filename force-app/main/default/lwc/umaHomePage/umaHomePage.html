@@ -1,0 +1,58 @@
+<template>
+    <lightning-card  variant="Narrow"  title="PV Staff Overview" icon-name="custom:custom15">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-input variant="label-hidden" 
+                    label="Search Record" type="search" placeholder="Search User Entry" value ={searchValue} onchange={searchKeyword}>
+               </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <button class="slds-button slds-button_brand"  onclick={handleSearchClick}>{label.Search}</button>
+            </lightning-layout-item>
+                  
+        </lightning-layout>
+        
+        <div class="slds-m-top_x-small" style="height:auto; overflow:inherit">
+            <template if:true = {userEntryData}> 
+                <div style="height: 100%">
+                    <lightning-datatable class="slds-text-body_small slds-wrap" 
+                        key-field="Id"
+                        sorted-by={sortBy}
+                        sorted-direction={sortDirection}
+                        data={userEntryData}
+                        columns={columns}
+                        hide-checkbox-column="true"
+                        onsort={doSorting}/>
+                    </lightning-datatable> 
+                </div>
+            </template>
+
+            </br>
+
+            <lightning-layout horizontal-align="space">
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button 
+                        label="Previous" 
+                        icon-name="utility:chevronleft" 
+                        disabled= {disabledPrevious}
+                        onclick={previousHandler}>
+                    </lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    Page {page} of {totalPage}
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto">
+                    <lightning-button 
+                        label="Next" 
+                        icon-name="utility:chevronright" 
+                        icon-position="right"
+                        disabled= {disabledNext}
+                        onclick={nextHandler}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+
+        
+    </lightning-card>
+</template>

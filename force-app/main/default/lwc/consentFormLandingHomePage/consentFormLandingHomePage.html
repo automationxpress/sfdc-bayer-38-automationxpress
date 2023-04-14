@@ -1,0 +1,106 @@
+<template>
+    <template if:true={isDisplayHomePage}>
+        
+            <div class= "slds-text-heading_medium slds-text-align_left slds-p-left_x-large slds-p-top_small"
+                style="background-color: #10384F;font-weight: 500;color: #89D329;font-style: oblique; font-family: Helvetica;">
+                <lightning-formatted-rich-text
+                    value={label.heading_ConsentForm}
+                ></lightning-formatted-rich-text><br><br>
+            </div>
+            <div class= "slds-text-align_left slds-p-left_x-large slds-p-bottom_x-small slds-p-right_medium"
+                style="background-color: #10384F;font-weight: 100; font-size: 14px; font-family: Helvetica;color: #fff;">
+
+                <lightning-formatted-rich-text
+                    value={label.text1_ConsentForm}
+                ></lightning-formatted-rich-text> <a style="color:White" href = {label.link1_ConsentForm} target="_blank"><u> {label.link1Text_ConsentForm} </u></a>
+                <!--<p><a style="color:White" href= {label.link2_ConsentForm} target="_blank"><u>{label.link2Text_ConsentForm}</u></a></p>-->
+                <lightning-formatted-rich-text
+                    value={label.text2_ConsentForm}
+                ></lightning-formatted-rich-text>
+                
+                <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                        <div class="slds-checkbox">
+                        <input type="checkbox" name="options" id="checkbox-unique-id-81" value="checkbox-unique-id-81" onchange={handleFirstCheckboxChange}/>
+                            <label class="slds-checkbox__label" for="checkbox-unique-id-81">
+                                <span class="slds-checkbox_faux"></span>
+                                <span style="color: #fff; font-weight: 100; font-size: 14px; font-family: Helvetica;" class="slds-form-element__label">
+                                    <lightning-formatted-rich-text
+                                        value={label.checkbox1_ConsentForm}
+                                    ></lightning-formatted-rich-text>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-checkbox">
+                            <input type="checkbox" name="options" id="checkbox-unique-id-82" value="checkbox-unique-id-81"  onchange={handleSecondCheckboxChange}/>
+                            <label class="slds-checkbox__label" for="checkbox-unique-id-82">
+                                <span class="slds-checkbox_faux"></span>
+                                <span style="color: #fff; font-weight: 100; font-size: 14px; font-family: Helvetica;" class="slds-form-element__label">
+                                    <lightning-formatted-rich-text
+                                        value={label.checkbox2_ConsentForm}
+                                    ></lightning-formatted-rich-text> <a style="color:White" href = {label.link2_ConsentForm} target="_blank"><u> {label.link2Text_ConsentForm} </u></a>
+                                    <lightning-formatted-rich-text
+                                    value={label.checkbox2SubText_ConsentForm}
+                                    ></lightning-formatted-rich-text>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-checkbox">
+                            <input type="checkbox" name="options" id="checkbox-unique-id-83" value="checkbox-unique-id-81" onchange={handleThirdCheckboxChange}/>
+                            <label class="slds-checkbox__label" for="checkbox-unique-id-83">
+                                <span class="slds-checkbox_faux"></span>
+                                <span style="color: #fff; font-weight: 100; font-size: 14px; font-family: Helvetica;" class="slds-form-element__label">
+                                    <lightning-formatted-rich-text
+                                       value={label.checkbox3_ConsentForm}
+                                    ></lightning-formatted-rich-text>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-p-around_medium lgc-bg">
+    <input type="checkbox" id="terms" name="authorize" onchange={handleCheckBoxChange} required="required"></input>
+    <label for="terms" style="display: inline;" class="slds-form-element__label"> Yes, by creating an account I agree to the <a href="https://www.google.co.in/" target="_blank">Terms and Service.</a></label>
+</div>-->
+                
+            </div> 
+
+            <div class="slds-text-align_center slds-p-top_x-small">
+                <lightning-button variant="brand" label= {label.send_ConsentForm} title="Submit" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            </div> 
+        
+    </template>
+
+    <template if:false={isDisplayHomePage}>
+
+        <div class= "slds-text-align_left slds-p-left_x-large slds-p-bottom_x-small slds-p-right_medium"
+             style="background-color: #10384F;font-weight: 100; font-size: 14px; font-family: Helvetica;color: #fff;">
+            <template if:true={consentGivenSucess}> 
+                <lightning-formatted-rich-text value={label.consentGivenSuccessMsg_ConsentForm}></lightning-formatted-rich-text>
+            </template>
+            <template if:true={consentOnlyMultichannelMarketingSucess}>
+                <lightning-formatted-rich-text value={label.consentOnlyForMultichannelMarketing_ConsentForm}></lightning-formatted-rich-text>
+            </template>
+            <template if:true={consentOnlyForPrivacySucess}>
+                <lightning-formatted-rich-text value={label.consentOnlyForPrivacySuccessMsg_ConsentForm}></lightning-formatted-rich-text>
+            </template>
+            <template if:true={consentAPICallFailure}>
+                <lightning-formatted-rich-text value= {label.apiCallFailMsg_ConsentForm}></lightning-formatted-rich-text>
+            </template>
+            <template if:true={consentAPICallFailureDueToSubmission}>
+                <lightning-formatted-rich-text value= {label.msgWhenNoCheckboxSelected_ConsentForm}></lightning-formatted-rich-text>
+            </template>
+
+        </div>
+
+    </template>
+    
+</template>

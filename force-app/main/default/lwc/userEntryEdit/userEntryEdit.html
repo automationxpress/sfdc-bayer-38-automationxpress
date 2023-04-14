@@ -1,0 +1,186 @@
+<template>
+    <template if:true={showSavingStatus}>
+        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+            <span class="slds-assistive-text">Saving...</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </template>
+    <template if:true={isLocked}>
+        <div class="slds-modal__container">
+            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={handleCancel}>
+                <lightning-icon icon-name="utility:close" variant="inverse" size="small"></lightning-icon>
+                <span class="slds-assistive-text">Cancel and close</span>
+            </button>
+            <header class="slds-modal__header slds-theme_error slds-theme_alert-texture">
+                    <h2 class="slds-text-heading_medium slds-hyphenate">{userEntryObjectInfo.labelPlural}</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium slds-scrollable_y" style="height:400px">
+                {label.UserEntryIsLockedForEditing}
+            </div>
+            <footer class="slds-modal__footer">
+                <lightning-button class="slds-m-left_x-small" label={label.Cancel} onclick={handleCancel}>
+                </lightning-button>
+            </footer>
+        </div>
+    </template>
+    <template if:false={isLocked}>
+    <div class="slds-modal__container">
+        <lightning-record-edit-form record-id={userEntryId} object-api-name="User_Entry__c" onsubmit={handleSubmit}
+            onsuccess={handleSuccess} onerror={handleErrors}>
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={handleCancel}>
+                    <lightning-icon icon-name="utility:close" variant="inverse" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Cancel and close</span>
+                </button>
+                <template if:true={userEntryObjectInfo}>
+                    <h2 class="slds-text-heading_medium slds-hyphenate">{userEntryObjectInfo.labelPlural}</h2>
+                </template>
+            </header>
+            <div style="background-color: rgb(234, 0, 30)">
+                <lightning-messages></lightning-messages>
+            </div>
+            <div class="slds-modal__content slds-p-around_medium slds-scrollable_y" style="height:400px">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_xx-small">
+                        <template if:false={userEntryId}>
+                            <div class="slds-m-bottom_x-small">
+                                <c-user-entry-search onvalueselected={handleUserSelected}></c-user-entry-search>
+                           </div>
+                        </template>
+                        <lightning-input-field field-name="First_Name__c" value={firstName} variant="label-inline"></lightning-input-field>
+                        <lightning-input-field field-name="Last_Name__c" value={lastName} variant="label-inline"></lightning-input-field>
+                        <lightning-input-field field-name="Email__c" value={email} variant="label-inline"></lightning-input-field>
+
+                        <div class="slds-m-bottom_x-small">
+                            <c-user-entry-searchable-picklist
+                                user-entry-id={userEntryId}
+                                object-label="MAPV Department"
+                                object-api-name="MAPV_Department__c"
+                                search-placeholder="Search MAPV Departments..."
+                                icon-name="custom:custom15"
+                                onrecordselected={handleRecordSelected}
+                                onrecordremoved={handleRecordRemoved}
+                            ></c-user-entry-searchable-picklist>
+                        </div>
+
+                        <lightning-input-field field-name="SecondaryCWID__c" variant="label-inline"></lightning-input-field>
+                        <template if:true={userEntryId}>
+                            <lightning-input-field field-name="CWID_Deactivated__c" variant="label-inline"
+                                required={isStaffStatusLeft}></lightning-input-field>
+                        </template>
+                        <div class="slds-m-bottom_x-small">
+                            <c-multi-select-picklist label-name="Locations"
+                                user-entry-id={userEntryId} icon-name="custom:custom15"
+                                onretrieve={handleMultiSelectPicklistRetrieve} onremove={handleMultiSelectPicklistRemove}>
+                            </c-multi-select-picklist>
+                        </div>
+                        <div>
+                            <c-multi-select-lookup label-name="Additional Roles/Accesses"
+                                object-api-name="User_Entry__c" filter-condition=""
+                                user-entry-id={userEntryId} icon-name="custom:custom15"
+                                onretrieve={handleMultiSelectLookupRetrieve} onremove={handleMultiSelectLookupRemove}>
+                            </c-multi-select-lookup>
+                        </div>
+                        <lightning-input-field field-name="Grant_access_to_UMA__c" value={grantAccessToUma} disabled={isGrantAccessToUmaDisabled}></lightning-input-field>
+                        <lightning-input-field field-name="Time_Tracking_Required__c" value={time_Tracking_Required}></lightning-input-field>
+                        <lightning-input-field field-name="Cost_Center__c" onchange={handleCostCenterChange}></lightning-input-field>
+
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_xx-small">
+                        <lightning-input-field field-name="Resource_Manager__c" value={resourceManagerId} required="true"  onchange={handleResourceManagerChange}></lightning-input-field>
+                        <lightning-input-field field-name="Deputy_Manager__c"></lightning-input-field>
+
+                        <div class="slds-m-bottom_x-small">
+                            <c-single-select-lookup filter-condition="Main"
+                                lookup-label="Primary Job Role" selected-value={primaryJobRoleValue} selected-record-id={primaryJobRole} user-entry-id={userEntryId}
+                                icon-name="custom:custom15" onrecordselection={singleSelectEventHandler}>
+                            </c-single-select-lookup>
+                        </div>
+
+                        <lightning-input-field field-name="CWID__c" value={cwid} onchange={handleCWIDChange}></lightning-input-field>
+
+                        <div class="slds-m-bottom_x-small">
+                            <c-user-entry-searchable-picklist
+                                user-entry-id={userEntryId}
+                                object-label="MAPV Group"
+                                object-api-name="MAPV_Group__c"
+                                search-placeholder="Search MAPV Groups..."
+                                icon-name="custom:custom15"
+                                onrecordselected={handleRecordSelected}
+                                onrecordremoved={handleRecordRemoved}
+                            ></c-user-entry-searchable-picklist>
+                        </div>
+                        <div class="slds-m-bottom_x-small">
+                            <c-user-entry-searchable-picklist
+                                user-entry-id={userEntryId}
+                                object-label="Company"
+                                object-api-name="Account"
+                                search-placeholder="Search Companies..."
+                                icon-name="standard:account"
+                                onrecordselected={handleRecordSelected}
+                                onrecordremoved={handleRecordRemoved}
+                            ></c-user-entry-searchable-picklist>
+                        </div>
+                        
+                        <lightning-input-field field-name="Alternate_ML_Supervisor__c"></lightning-input-field>
+                        <lightning-input-field field-name="Staff_Status__c" onchange={handleStaffStatusChanged}></lightning-input-field>
+                        <lightning-input-field field-name="Working_Hours__c" value={workingHours} onchange={handleWorkingHoursChange}></lightning-input-field>
+                        <lightning-input-field field-name="Comments__c"></lightning-input-field>
+                        
+
+                    </div>
+                </div>
+                <br>
+
+                <lightning-card title="MyLearning Programs" icon-name="custom:custom73">
+                    <template if:true={myLearningProgramData}>
+                        <c-custom-datatable key-field="id" columns={myLearningProgramColumns}
+                            data={myLearningProgramData} hide-checkbox-column>
+                        </c-custom-datatable>
+                    </template>
+                </lightning-card>
+                <br>
+
+                <lightning-card title="Prima Roles" icon-name="custom:custom40">
+                    <template if:true={primaRoleData}>
+                        <c-custom-datatable key-field="id" columns={primaRoleColumns} data={primaRoleData}
+                            hide-checkbox-column>
+                        </c-custom-datatable>
+                    </template>
+                </lightning-card>
+                <br>
+                <lightning-card title="Prima Security Groups" icon-name="custom:custom33">
+                    <template if:true={primaSecurityGroupData}>
+                        <c-custom-datatable key-field="id" columns={primaSecurityGroupColumns}
+                            data={primaSecurityGroupData} hide-checkbox-column>
+                        </c-custom-datatable>
+                    </template>
+                </lightning-card>
+
+            </div>
+            <footer class="slds-modal__footer">
+                <template if:false={isNew}>
+                    <template if:true={showWarningMsg}>
+                        <div class="slds-notify slds-notify_alert slds-alert_warning slds-m-bottom_xx-small" role="alert">
+                            <h2>{label.WarningMsg_Time_Tracking_Required}</h2>
+                        </div>
+                    </template>
+                </template>
+                
+                <lightning-button class="slds-m-left_x-small" label={label.Cancel} onclick={handleCancel}></lightning-button>
+                <template if:true={showSavingStatus}>
+                    <lightning-formatted-text class="slds-m-left_x-small" value={savingStatus}></lightning-formatted-text>
+                </template>
+                <lightning-button class="slds-m-left_x-small" label={label.Save} type="submit" variant="brand" onclick={handleSave}></lightning-button>
+                <template if:false={submittedForApproval}>
+                    <lightning-button class="slds-m-left_x-small" label='Save and Submit for Approval' type="submit" onclick={handleSaveAndSubmitForApproval}
+                     variant="brand"></lightning-button>
+                </template>
+                
+            </footer>
+        </lightning-record-edit-form>
+
+    </div>
+    </template>
+</template>

@@ -1,0 +1,21 @@
+<template>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Getting Goal Periods"></lightning-spinner>
+  </template>
+  <template if:true={hasSucceeded}>
+    <lightning-combobox
+      name="goal-period"
+      label="Goal Period"
+      placeholder="Select Period"
+      options={data}
+      value={value}
+      onchange={onChange}
+    ></lightning-combobox>
+  </template>
+  <template if:true={hasFailed}>
+    <p>We failed to get the Goal Periods.</p>
+    <template iterator:error={errors}>
+      <p key={error.value}>{error.value}</p>
+    </template>
+  </template>
+</template>

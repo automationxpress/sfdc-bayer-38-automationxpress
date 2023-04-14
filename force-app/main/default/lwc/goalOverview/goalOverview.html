@@ -1,0 +1,59 @@
+<template>
+    <div class="slds-page-header slds-m-bottom_medium">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="custom:custom26" title="Goals"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body" style="align-self: center;">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate"
+                                        title="Goals (Classic)">Goals (Classic)</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-page-header__col-actions">
+                <div class="slds-page-header__controls">
+                    <div class="slds-page-header__control">
+                        <ul class="slds-button-group-list">
+                            <li>
+                                <a class="slds-button slds-button_neutral" aria-label="New Goal" href={url} onclick={handleNewGoal}>New Goal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slds-theme_shade">
+        <div class="slds-grid slds-gutters slds-p-around_medium">
+            <div class="slds-col">
+                <c-goalperiod-select onchange={onYearChange}></c-goalperiod-select>
+                <lightning-input type="search" label="Search goals" onchange={onInputChange} value={searchInput} autocomplete></lightning-input>
+                <template if:true={filterSelected}>
+                    <lightning-button variant="base" label="Reset all filters" title="Reset all filters" onclick={handleReset}
+                        class="slds-m-left_x-small"></lightning-button>
+                </template>
+            </div>
+            <c-goal-filter-list
+                onrecordtypechange={onRecordTypesChange}
+                onstatuschange={onStatusChange}
+                onflagchange={onFlagsChange}
+                class="slds-col"
+            ></c-goal-filter-list>
+        </div>
+        <c-goal-overview-table
+            year={selectedYear}
+            search={searchInput}
+            recordtypes={selectedRecordTypes}
+            status={selectedStatus}
+            flags={selectedFlags}
+        ></c-goal-overview-table>
+    </div>
+</template>

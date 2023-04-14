@@ -1,0 +1,39 @@
+<template>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Getting filter attributes data"></lightning-spinner>
+  </template>
+  <template if:true={hasSucceeded}>
+    <div class="slds-grid slds-gutters">
+      <lightning-checkbox-group
+        name="Goal Type"
+        label="Goal Type"
+        options={recordTypeOptions}
+        value={recordTypeSelection}
+        onchange={handleRecordTypeSelection}
+        class="slds-col checkbox-group"
+      ></lightning-checkbox-group>
+      <lightning-checkbox-group
+        name="Goal Status"
+        label="Goal Status"
+        options={statusOptions}
+        value={statusSelection}
+        onchange={handleStatusSelection}
+        class="slds-col checkbox-group"
+      ></lightning-checkbox-group>
+      <lightning-checkbox-group
+        name="Goal Flag"
+        label="Goal Flag"
+        options={flagOptions}
+        value={flagSelection}
+        onchange={handleFlagSelection}
+        class="slds-col checkbox-group"
+      ></lightning-checkbox-group>
+    </div>
+  </template>
+  <template if:true={hasFailed}>
+    <p>We failed to get filter attributes data.</p>
+    <template iterator:error={errors}>
+      <p key={error.value}>{error.value}</p>
+    </template>
+  </template>
+</template>

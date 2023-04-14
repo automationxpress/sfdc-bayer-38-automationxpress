@@ -1,0 +1,30 @@
+<template>
+    <lightning-input value={displayNameSearch} label={label.Name} type="search" variant="label-inline"
+                     onchange={handleChange}>
+    </lightning-input>
+    <template if:true={isNoResultsVisible}>
+        <div>{label.NoResults}</div>
+    </template>
+    <template if:true={isSearchResultVisible} class="slds-dropdown">
+        <div class="slds-combobox_container">
+            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                <ul class="slds-listbox slds-listbox_vertical slds-scrollable_y" style="height:200px;">
+                    <template for:each={userSearchResult} for:item="userDetails">
+                        <li class="slds-listbox__item" key={userDetails.mail} 
+                            data-display-name={userDetails.displayName} 
+                            data-given-name={userDetails.givenName} 
+                            data-surname={userDetails.surname} 
+                            data-mail={userDetails.mail} 
+                            data-on-premises-sam-account-name={userDetails.onPremisesSamAccountName} 
+                            data-user-principal-name={userDetails.userPrincipalName} 
+                            onclick={handleSelect}>
+                            <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small">
+                                {userDetails.displayName} ({userDetails.mail})
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </template>
+</template>

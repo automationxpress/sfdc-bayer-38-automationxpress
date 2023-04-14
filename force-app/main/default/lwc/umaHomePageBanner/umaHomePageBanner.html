@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-scoped-notification slds-media slds-media_center banner">
+        <div class="slds-media__figure">
+            <lightning-icon icon-name="utility:lock" variant="inverse" size="small"></lightning-icon>
+        </div>
+        <div class="slds-media__body">
+            <p class="slds-text-heading_small"><b>{label.BayerRestrictedData}</b> 
+                <span class="slds-text-heading_small slds-float_right">
+                    <b><lightning-formatted-text value={label.BayerRestrictedDataOnRight} linkify></lightning-formatted-text></b>
+                </span>
+            </p>
+        </div>
+      </div>
+</template>
