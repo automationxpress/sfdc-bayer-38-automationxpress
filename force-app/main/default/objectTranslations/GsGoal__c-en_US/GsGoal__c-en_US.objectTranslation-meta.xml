@@ -19,6 +19,30 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <quickActions>
+        <label></label>
+        <name>GsEditGoal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GsMarkAsFinal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GsNewGoal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GsReviseGoal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GsUndoWithdraw</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GsWithdrawGoal</name>
+    </quickActions>
     <recordTypes>
         <description></description>
         <label></label>

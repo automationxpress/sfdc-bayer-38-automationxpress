@@ -15,6 +15,14 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <quickActions>
+        <label></label>
+        <name>GsLockYear</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GsNewGoalAdmin</name>
+    </quickActions>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage></errorMessage>

@@ -8,6 +8,10 @@
         <plural>true</plural>
         <value>Manage Company</value>
     </caseValues>
+    <quickActions>
+        <label></label>
+        <name>Child_Account</name>
+    </quickActions>
     <startsWith>Vowel</startsWith>
     <webLinks>
         <label></label>

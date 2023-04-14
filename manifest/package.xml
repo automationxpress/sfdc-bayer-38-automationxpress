@@ -30,6 +30,10 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>ContentAsset</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>CustomApplication</name>
 	</types>
 	<types>
@@ -406,6 +410,18 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>CustomPermission</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>Flow</name>
 	</types>
 	<types>
@@ -437,6 +453,14 @@
 		<name>PermissionSet</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Queue</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>QuickAction</name>
+	</types>
+	<types>
 		<members>GsGoal__c.GsCountryRecruitmentGoal</members>
 		<members>GsGoal__c.GsCovanceGoal</members>
 		<members>GsGoal__c.GsCroGoal</members>
@@ -449,6 +473,19 @@
 	<types>
 		<members>*</members>
 		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>GsGoalPeriod__c.EditEndDateGreaterThanEditStartDate</members>
+		<members>GsGoalPeriod__c.PeriodEndDateGreaterThanPeriodStartDate</members>
+		<members>GsGoalPeriod__c.YearMustbeNumerical</members>
+		<members>Prima_Role__c.Prima_Role_Name_Not_Supported_Characters</members>
+		<members>Role_Matrix__c.Role_Type_and_Global_Job_Role_Check</members>
+		<members>User_Entry__c.CWID_Deactivated_Required</members>
+		<members>User_Entry__c.Change_Owner_Not_Allowed</members>
+		<members>User_Entry__c.Cost_Center_Required_On_Bayer_Company</members>
+		<members>User_Entry__c.Restrict_NotRequired_To_UpdateExisting</members>
+		<members>User_Entry__c.Restrict_UpdateExisting_To_NotRequired</members>
+		<name>ValidationRule</name>
 	</types>
 	<version>55.0</version>
 </Package>
