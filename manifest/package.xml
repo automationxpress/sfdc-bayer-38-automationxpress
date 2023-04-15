@@ -433,7 +433,28 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>ExternalServiceRegistration</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>GetImpactStudiesOccupationcode</members>
+		<members>GoalSetterCheckUserEditingRights</members>
+		<members>GoalSetterLockGoalPeriod</members>
+		<members>GoalSetterMarkAsFinal</members>
+		<members>GoalSetterNewGoal</members>
+		<members>GoalSetterUndoWithdraw</members>
+		<members>GoalSetterWithdrawGoal</members>
+		<members>GoalSetter_Delete_Goal</members>
+		<members>GoalSetter_Get_Impact_Studies</members>
+		<members>GoalSetter_New_Goal_Admin</members>
+		<members>GoalSetter_Revise_Goal</members>
+		<members>GoalsetterEditGoal</members>
+		<members>GsGoalSetterInitRecordTypeGoals</members>
+		<members>GsSendFeedback</members>
+		<name>Flow</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -449,11 +470,22 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>PermissionSet</name>
+		<name>NamedCredential</name>
 	</types>
 	<types>
 		<members>*</members>
-		<name>Queue</name>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>GsGoalPeriod__c.GsLockYear</members>
+		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
+		<members>GsGoal__c.GsEditGoal</members>
+		<members>GsGoal__c.GsMarkAsFinal</members>
+		<members>GsGoal__c.GsNewGoal</members>
+		<members>GsGoal__c.GsReviseGoal</members>
+		<members>GsGoal__c.GsUndoWithdraw</members>
+		<members>GsGoal__c.GsWithdrawGoal</members>
+		<name>QuickAction</name>
 	</types>
 	<types>
 		<members>GsGoal__c.GsCountryRecruitmentGoal</members>

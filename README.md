@@ -8,9 +8,22 @@ In this org there are these main different applications created for different te
 - UMA(User Access Management)
 - GS(Goal Setter)
 
-# Components
+# Sandbox Refresh Process
+
+## Manual Steps
+
+* Set up the Auth Providers manually in the respective orgs.
+  * Tracking them in the repository makes deployments problematic because they have to be `Executed As` a specific user, and the username
+  across different orgs is inevitably going to be different.
+
+# Excluded Components
 
 In order to mitigate some deployment issues, some components have been excluded by the automated deployment:
+
+## Auth. Providers
+
+* This type of metadata is to be added manually to each Sandbox, because deploying it via the metadata API, will result in an error, due to the wrong reference
+  of the user configured in `Execute As`.
 
 ## Custom Object
 
