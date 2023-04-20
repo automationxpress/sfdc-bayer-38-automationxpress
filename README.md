@@ -10,11 +10,27 @@ In this org there are these main different applications created for different te
 
 # Sandbox Refresh Process
 
+The 'homework' below covers the necessary steps to follow when refreshing a higher sandbox as new.
+
 ## Manual Steps
 
+* Remove `.invalid` on all key stakeholders for the respective sandbox: could be developers, release managers, or product owners.
+
 * Set up the Auth Providers manually in the respective orgs.
+
   * Tracking them in the repository makes deployments problematic because they have to be `Executed As` a specific user, and the username
   across different orgs is inevitably going to be different.
+
+* Enable Deliverability of All Emails in Setup:
+
+  * Setup > Email > Deliverability > `All Email`
+
+* Update the SFDX_<ORG-NAME>_URL secret variable in the Github Repo Secrets:
+
+  * Step 1: generate locally on your VSCode the SFDX Url containing the secrets, according to the [docs](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_auth_sfdxurl.htm):
+    `sf org display --target-org <ORG_ALIAS> --verbose --json > authFile.json`
+  * Step 2: Copy the generated SFDX Url, from the automatically created file `authFile.json`, under the parameter `sfdxAuthUrl`.
+  * Step 3: Replace in Github the value of the repo secret named `SFDX_<ORG_NAME>_URL`, under Settings > Secrets and Variables > Actions.
 
 # Excluded Components
 
