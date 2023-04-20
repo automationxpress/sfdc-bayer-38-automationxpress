@@ -28,7 +28,7 @@ jobs:
             # Now we install nodejs in the VM, and specify version 14
             - uses: actions/setup-node@v2
               with:
-                node-version: '14'
+                node-version: '16'
 
             # The idea is that the VM can access your remote repository
             # because your repository is an sfdx project.
