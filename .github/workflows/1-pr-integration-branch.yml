@@ -7,7 +7,7 @@ on:
     pull_request:
       # The events are that a PR is opened, or when a commit is pushed
       # to a branch that has an existing pull request
-      types: [opened, synchronize]
+      types: [opened, reopened, synchronize]
       # The branches filter allows to specify that this workflow should only
       # run if the branch name is "integration". This way we prevent this workflow
       # from running when PRs are opened on other branches
@@ -25,7 +25,7 @@ jobs:
         runs-on: ubuntu-latest
         if: ${{ github.actor != 'dependabot[bot]' }}
         steps:
-            # Now we install nodejs in the VM, and specify version 14
+            # Now we install nodejs in the VM and specify version
             - uses: actions/setup-node@v2
               with:
                 node-version: '16'
@@ -73,6 +73,16 @@ jobs:
             # Install SFDX scanner
             - name: 'Installing SFDX scanner'
               run: sfdx plugins:install @salesforce/sfdx-scanner
+
+            # Install PR scanner to scan changes for coding standard violations
+            - name: SFDX Scan Pull Request
+              uses: mitchspano/sfdx-scan-pull-request@v0.1.9
+              with:
+                pmdconfig: ruleset.xml
+                severity-threshold: 4
+                strictly-enforced-rules: '[{ "engine": "pmd", "category": "Performance", "rule": "AvoidDebugStatements" }]'
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the integration org.
