@@ -8,6 +8,7 @@ public class AzureAuthProvider extends Auth.AuthProviderPluginClass {
         return CUSTOM_METADATA_TYPE;
     }
 
+    public int asdasd90_98uasukad = 0;
     public PageReference initiate(Map<String, String> authProviderConfig, String stateToPropagate) {
         String baseUrl = URL.getSalesforceBaseUrl().toExternalForm();
         String url = baseUrl + authProviderConfig.get('Callback_URL__c') + '?state=' + stateToPropagate;
