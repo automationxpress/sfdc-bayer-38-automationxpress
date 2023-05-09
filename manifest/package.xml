@@ -135,6 +135,51 @@
 		<members>GsGoal__c.GsTargetMonth__c</members>
 		<members>GsGoal__c.GsWithdrawnComment__c</members>
 		<members>GsGoal__c.GsWithdrawn__c</members>
+		<members>Hirep__c.Appointee_Bayer_E_mail__c</members>
+		<members>Hirep__c.Appointee_First_Name__c</members>
+		<members>Hirep__c.Appointee_Last_Name__c</members>
+		<members>Hirep__c.Approval_Date__c</members>
+		<members>Hirep__c.CH_Position__c</members>
+		<members>Hirep__c.CWID__c</members>
+		<members>Hirep__c.Commences__c</members>
+		<members>Hirep__c.Company__c</members>
+		<members>Hirep__c.Consumer_Health_Related_Position__c</members>
+		<members>Hirep__c.Contract_Period_From__c</members>
+		<members>Hirep__c.Contract_Period_To__c</members>
+		<members>Hirep__c.Contract_Type__c</members>
+		<members>Hirep__c.Cost_Center_Owner__c</members>
+		<members>Hirep__c.Cost_Centre__c</members>
+		<members>Hirep__c.Deputy_Manager_Admin__c</members>
+		<members>Hirep__c.FTE_Requirement__c</members>
+		<members>Hirep__c.FTE__c</members>
+		<members>Hirep__c.Final_Approval_Comments__c</members>
+		<members>Hirep__c.Final_Approval_Date__c</members>
+		<members>Hirep__c.Final_Approval_Status__c</members>
+		<members>Hirep__c.Final_Approval_by__c</members>
+		<members>Hirep__c.Grant_access_to_UMA__c</members>
+		<members>Hirep__c.Hirep_Process_Status__c</members>
+		<members>Hirep__c.Local_Job_Role_Title__c</members>
+		<members>Hirep__c.Location__c</members>
+		<members>Hirep__c.MAPV_Department__c</members>
+		<members>Hirep__c.MAPV_Group__c</members>
+		<members>Hirep__c.MGMT_Approval__c</members>
+		<members>Hirep__c.Name__c</members>
+		<members>Hirep__c.Need_for_Position__c</members>
+		<members>Hirep__c.Person_replaced_contract_extended__c</members>
+		<members>Hirep__c.Position_Type__c</members>
+		<members>Hirep__c.Pre_approval_Comments__c</members>
+		<members>Hirep__c.Pre_approval_Date__c</members>
+		<members>Hirep__c.Pre_approval_Status__c</members>
+		<members>Hirep__c.Pre_approval_by__c</members>
+		<members>Hirep__c.Primary_Job_Role__c</members>
+		<members>Hirep__c.Recruitment_Comment__c</members>
+		<members>Hirep__c.Recruitment_Status__c</members>
+		<members>Hirep__c.Replaces__c</members>
+		<members>Hirep__c.Resource_Manager_R_Line__c</members>
+		<members>Hirep__c.Staff_Status__c</members>
+		<members>Hirep__c.Time_Tracking_Required__c</members>
+		<members>Hirep__c.Working_Hours__c</members>
+		<members>Hirep__c.Year_Required__c</members>
 		<members>In_App_Checklist_Settings__c.ProfileKey__c</members>
 		<members>In_App_Checklist_Settings__c.Sales_Cloud_In_App_Page__c</members>
 		<members>Integration_Config__mdt.One_Trust_Api_Key__c</members>
@@ -335,15 +380,13 @@
 		<members>GsFeedback__c</members>
 		<members>GsGoalPeriod__c</members>
 		<members>GsGoal__c</members>
+		<members>Hirep__c</members>
 		<members>Idea</members>
 		<members>Image</members>
 		<members>In_App_Checklist_Settings__c</members>
 		<members>Integration_Config__mdt</members>
 		<members>Job_Role__c</members>
 		<members>Lead</members>
-		<members>LearningAssignment</members>
-		<members>LearningAssignmentProgress</members>
-		<members>LearningLinkProgress</members>
 		<members>Location</members>
 		<members>LocationTrustMeasure</members>
 		<members>MAPV_Department__c</members>
@@ -421,98 +464,13 @@
 		<members>WorkOrder</members>
 		<members>WorkOrderLineItem</members>
 		<members>WorkThanks</members>
+		<members>Hirep__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
 		<members>*</members>
-		<name>CustomPermission</name>
+		<name>CustomField</name>
 	</types>
-	<types>
-		<members>*</members>
-		<name>CustomTab</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ExternalServiceRegistration</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlexiPage</name>
-	</types>
-	<types>
-		<members>GetImpactStudiesOccupationcode</members>
-		<members>GoalSetterCheckUserEditingRights</members>
-		<members>GoalSetterLockGoalPeriod</members>
-		<members>GoalSetterMarkAsFinal</members>
-		<members>GoalSetterNewGoal</members>
-		<members>GoalSetterUndoWithdraw</members>
-		<members>GoalSetterWithdrawGoal</members>
-		<members>GoalSetter_Delete_Goal</members>
-		<members>GoalSetter_Get_Impact_Studies</members>
-		<members>GoalSetter_New_Goal_Admin</members>
-		<members>GoalSetter_Revise_Goal</members>
-		<members>GoalsetterEditGoal</members>
-		<members>GsGoalSetterInitRecordTypeGoals</members>
-		<members>GsSendFeedback</members>
-		<name>Flow</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>GlobalValueSet</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>GlobalValueSetTranslation</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningComponentBundle</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>NamedCredential</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PermissionSet</name>
-	</types>
-	<types>
-		<members>GsGoalPeriod__c.GsLockYear</members>
-		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
-		<members>GsGoal__c.GsEditGoal</members>
-		<members>GsGoal__c.GsMarkAsFinal</members>
-		<members>GsGoal__c.GsNewGoal</members>
-		<members>GsGoal__c.GsReviseGoal</members>
-		<members>GsGoal__c.GsUndoWithdraw</members>
-		<members>GsGoal__c.GsWithdrawGoal</members>
-		<name>QuickAction</name>
-	</types>
-	<types>
-		<members>GsGoal__c.GsCountryRecruitmentGoal</members>
-		<members>GsGoal__c.GsCovanceGoal</members>
-		<members>GsGoal__c.GsCroGoal</members>
-		<members>GsGoal__c.GsParexelGoal</members>
-		<members>GsGoal__c.LabCorp_Goal</members>
-		<members>GsGoal__c.clinical_team_goal</members>
-		<members>GsGoal__c.study_team_goal</members>
-		<name>RecordType</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>StaticResource</name>
-	</types>
-	<types>
-		<members>GsGoalPeriod__c.EditEndDateGreaterThanEditStartDate</members>
-		<members>GsGoalPeriod__c.PeriodEndDateGreaterThanPeriodStartDate</members>
-		<members>GsGoalPeriod__c.YearMustbeNumerical</members>
-		<members>Prima_Role__c.Prima_Role_Name_Not_Supported_Characters</members>
-		<members>Role_Matrix__c.Role_Type_and_Global_Job_Role_Check</members>
-		<members>User_Entry__c.CWID_Deactivated_Required</members>
-		<members>User_Entry__c.Change_Owner_Not_Allowed</members>
-		<members>User_Entry__c.Cost_Center_Required_On_Bayer_Company</members>
-		<members>User_Entry__c.Restrict_NotRequired_To_UpdateExisting</members>
-		<members>User_Entry__c.Restrict_UpdateExisting_To_NotRequired</members>
-		<name>ValidationRule</name>
-	</types>
+	
 	<version>55.0</version>
 </Package>
