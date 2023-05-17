@@ -8,6 +8,7 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>Pre_approval_Status__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -32,5 +33,21 @@
                 <label>Approved</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pre-approval Approved</controllingFieldValue>
+            <valueName>Pending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-approval Approved</controllingFieldValue>
+            <valueName>On-hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-approval Approved</controllingFieldValue>
+            <valueName>Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-approval Approved</controllingFieldValue>
+            <valueName>Approved</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>

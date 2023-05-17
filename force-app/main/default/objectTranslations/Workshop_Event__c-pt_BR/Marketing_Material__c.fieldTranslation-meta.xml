@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Materiais de marketing</label>
+    <name>Marketing_Material__c</name>
+    <picklistValues>
+        <masterLabel>Artwork for feed publishing</masterLabel>
+        <translation>Arte para publicação em feed</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Artwork for story publishing</masterLabel>
+        <translation>Arte para publicação em story</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDF invitation to email (with link)</masterLabel>
+        <translation>Convite PDF para e-mail (com link)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>invitation to whatsapp</masterLabel>
+        <translation>Convite para whatsapp</translation>
+    </picklistValues>
+</CustomFieldTranslation>

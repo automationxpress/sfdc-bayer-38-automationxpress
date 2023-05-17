@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector__c</fullName>
+    <externalId>false</externalId>
+    <label>Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture and Livestock</fullName>
+                <default>false</default>
+                <label>Agriculture and Livestock</label>
+            </value>
+            <value>
+                <fullName>Foods</fullName>
+                <default>false</default>
+                <label>Foods</label>
+            </value>
+            <value>
+                <fullName>Health care</fullName>
+                <default>false</default>
+                <label>Health care</label>
+            </value>
+            <value>
+                <fullName>Associations</fullName>
+                <default>false</default>
+                <label>Associations</label>
+            </value>
+            <value>
+                <fullName>audit</fullName>
+                <default>false</default>
+                <label>audit</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>auto parts</fullName>
+                <default>false</default>
+                <label>auto parts</label>
+            </value>
+            <value>
+                <fullName>Aviation</fullName>
+                <default>false</default>
+                <label>Aviation</label>
+            </value>
+            <value>
+                <fullName>Banks</fullName>
+                <default>false</default>
+                <label>Banks</label>
+            </value>
+            <value>
+                <fullName>Drinks</fullName>
+                <default>false</default>
+                <label>Drinks</label>
+            </value>
+            <value>
+                <fullName>Gifts</fullName>
+                <default>false</default>
+                <label>Gifts</label>
+            </value>
+            <value>
+                <fullName>Toys</fullName>
+                <default>false</default>
+                <label>Toys</label>
+            </value>
+            <value>
+                <fullName>Footwear and Leather</fullName>
+                <default>false</default>
+                <label>Footwear and Leather</label>
+            </value>
+            <value>
+                <fullName>Bed, table and bath</fullName>
+                <default>false</default>
+                <label>Bed, table and bath</label>
+            </value>
+            <value>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+                <label>Wholesale</label>
+            </value>
+            <value>
+                <fullName>Foreign trade</fullName>
+                <default>false</default>
+                <label>Foreign trade</label>
+            </value>
+            <value>
+                <fullName>Retail business</fullName>
+                <default>false</default>
+                <label>Retail business</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Consultancy</fullName>
+                <default>false</default>
+                <label>Consultancy</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>brokers</fullName>
+                <default>false</default>
+                <label>brokers</label>
+            </value>
+            <value>
+                <fullName>distributors</fullName>
+                <default>false</default>
+                <label>distributors</label>
+            </value>
+            <value>
+                <fullName>Home appliances</fullName>
+                <default>false</default>
+                <label>Home appliances</label>
+            </value>
+            <value>
+                <fullName>packaging</fullName>
+                <default>false</default>
+                <label>packaging</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Teaching and research</fullName>
+                <default>false</default>
+                <label>Teaching and research</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Culture and Leisure</fullName>
+                <default>false</default>
+                <label>Entertainment - Culture and Leisure</label>
+            </value>
+            <value>
+                <fullName>Sport</fullName>
+                <default>false</default>
+                <label>Sport</label>
+            </value>
+            <value>
+                <fullName>pharmaceutical</fullName>
+                <default>false</default>
+                <label>pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>finance</fullName>
+                <default>false</default>
+                <label>finance</label>
+            </value>
+            <value>
+                <fullName>deductibles</fullName>
+                <default>false</default>
+                <label>deductibles</label>
+            </value>
+            <value>
+                <fullName>Smoke</fullName>
+                <default>false</default>
+                <label>Smoke</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>print shop</fullName>
+                <default>false</default>
+                <label>print shop</label>
+            </value>
+            <value>
+                <fullName>Hygiene and cleaning</fullName>
+                <default>false</default>
+                <label>Hygiene and cleaning</label>
+            </value>
+            <value>
+                <fullName>hotelier</fullName>
+                <default>false</default>
+                <label>hotelier</label>
+            </value>
+            <value>
+                <fullName>real estate</fullName>
+                <default>false</default>
+                <label>real estate</label>
+            </value>
+            <value>
+                <fullName>Press and Communication</fullName>
+                <default>false</default>
+                <label>Press and Communication</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <label>Industry</label>
+            </value>
+            <value>
+                <fullName>Internet</fullName>
+                <default>false</default>
+                <label>Internet</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Wood</fullName>
+                <default>false</default>
+                <label>Wood</label>
+            </value>
+            <value>
+                <fullName>Machines and equipment</fullName>
+                <default>false</default>
+                <label>Machines and equipment</label>
+            </value>
+            <value>
+                <fullName>Construction material</fullName>
+                <default>false</default>
+                <label>Construction material</label>
+            </value>
+            <value>
+                <fullName>Office Supplies</fullName>
+                <default>false</default>
+                <label>Office Supplies</label>
+            </value>
+            <value>
+                <fullName>Electronic Material (electronic components)</fullName>
+                <default>false</default>
+                <label>Electronic Material (electronic components)</label>
+            </value>
+            <value>
+                <fullName>mechanics</fullName>
+                <default>false</default>
+                <label>mechanics</label>
+            </value>
+            <value>
+                <fullName>Environment</fullName>
+                <default>false</default>
+                <label>Environment</label>
+            </value>
+            <value>
+                <fullName>Metallurgist and Steelworks</fullName>
+                <default>false</default>
+                <label>Metallurgist and Steelworks</label>
+            </value>
+            <value>
+                <fullName>Mining</fullName>
+                <default>false</default>
+                <label>Mining</label>
+            </value>
+            <value>
+                <fullName>Furniture and decoration</fullName>
+                <default>false</default>
+                <label>Furniture and decoration</label>
+            </value>
+            <value>
+                <fullName>non-metallic</fullName>
+                <default>false</default>
+                <label>non-metallic</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Paper And Cellulose</fullName>
+                <default>false</default>
+                <label>Paper And Cellulose</label>
+            </value>
+            <value>
+                <fullName>Perfumery and Cosmetics</fullName>
+                <default>false</default>
+                <label>Perfumery and Cosmetics</label>
+            </value>
+            <value>
+                <fullName>Petrochemical</fullName>
+                <default>false</default>
+                <label>Petrochemical</label>
+            </value>
+            <value>
+                <fullName>Plastic and Rubber</fullName>
+                <default>false</default>
+                <label>Plastic and Rubber</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+                <label>Chemical</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Health, Hospital and Laboratory</fullName>
+                <default>false</default>
+                <label>Health, Hospital and Laboratory</label>
+            </value>
+            <value>
+                <fullName>Insurance and Private Pension</fullName>
+                <default>false</default>
+                <label>Insurance and Private Pension</label>
+            </value>
+            <value>
+                <fullName>Services (others)</fullName>
+                <default>false</default>
+                <label>Services (others)</label>
+            </value>
+            <value>
+                <fullName>Public services</fullName>
+                <default>false</default>
+                <label>Public services</label>
+            </value>
+            <value>
+                <fullName>Technology and Informatics</fullName>
+                <default>false</default>
+                <label>Technology and Informatics</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Telemarketing and Call Center</fullName>
+                <default>false</default>
+                <label>Telemarketing and Call Center</label>
+            </value>
+            <value>
+                <fullName>Third Sector / NGOs</fullName>
+                <default>false</default>
+                <label>Third Sector / NGOs</label>
+            </value>
+            <value>
+                <fullName>Textile</fullName>
+                <default>false</default>
+                <label>Textile</label>
+            </value>
+            <value>
+                <fullName>Transportation and logistics</fullName>
+                <default>false</default>
+                <label>Transportation and logistics</label>
+            </value>
+            <value>
+                <fullName>Tourism</fullName>
+                <default>false</default>
+                <label>Tourism</label>
+            </value>
+            <value>
+                <fullName>Housewares</fullName>
+                <default>false</default>
+                <label>Housewares</label>
+            </value>
+            <value>
+                <fullName>Clothing</fullName>
+                <default>false</default>
+                <label>Clothing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

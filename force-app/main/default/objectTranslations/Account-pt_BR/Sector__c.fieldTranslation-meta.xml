@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Setor</label>
+    <name>Sector__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation>Contabilidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advertising</masterLabel>
+        <translation>Publicidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agriculture and Livestock</masterLabel>
+        <translation>Agricultura e Pecuária</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Associations</masterLabel>
+        <translation>Associações</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation>Automotivo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation</masterLabel>
+        <translation>Aviação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banks</masterLabel>
+        <translation>Bancos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bed, table and bath</masterLabel>
+        <translation>Cama, mesa e banho</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical</masterLabel>
+        <translation>Química</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clothing</masterLabel>
+        <translation>ClothingVestuário</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation>Construção Civil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction material</masterLabel>
+        <translation>Material de Construção</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultancy</masterLabel>
+        <translation>Consultoria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drinks</masterLabel>
+        <translation>Bebidas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Material (electronic components)</masterLabel>
+        <translation>Material Eletrônico (componentes eletrônicos)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy</masterLabel>
+        <translation>Energia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering</masterLabel>
+        <translation>Engenharia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment - Culture and Leisure</masterLabel>
+        <translation>Entretenimento - Cultura e Lazer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environment</masterLabel>
+        <translation>Meio Ambiente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foods</masterLabel>
+        <translation>Alimentos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footwear and Leather</masterLabel>
+        <translation>Calçados e Couro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign trade</masterLabel>
+        <translation>Comércio Exterior</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Furniture and decoration</masterLabel>
+        <translation>Móveis e Decoração</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gifts</masterLabel>
+        <translation>Brindes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation>Governo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health care</masterLabel>
+        <translation>Assistência Médica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health, Hospital and Laboratory</masterLabel>
+        <translation>Saúde, Hospitalar e Laboratorial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home appliances</masterLabel>
+        <translation>Eletrodomésticos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housewares</masterLabel>
+        <translation>Utilidades Domésticas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Resources</masterLabel>
+        <translation>Recursos Humanos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hygiene and cleaning</masterLabel>
+        <translation>Higiene e Limpeza</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry</masterLabel>
+        <translation>Indústria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance and Private Pension</masterLabel>
+        <translation>Seguradoras e Previdência Privada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet</masterLabel>
+        <translation>Internet</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation>Jurídico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machines and equipment</masterLabel>
+        <translation>Máquinas e Equipamentos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metallurgist and Steelworks</masterLabel>
+        <translation>Metalúrgico e Siderúrgico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mining</masterLabel>
+        <translation>Mineração</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office Supplies</masterLabel>
+        <translation>Material de Escritório</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation>Outros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paper And Cellulose</masterLabel>
+        <translation>Papel e Celulose</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perfumery and Cosmetics</masterLabel>
+        <translation>Perfumaria e Cosméticos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petrochemical</masterLabel>
+        <translation>Petroquímico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plastic and Rubber</masterLabel>
+        <translation>Plástico e Borracha</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Press and Communication</masterLabel>
+        <translation>Imprensa e Comunicação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public services</masterLabel>
+        <translation>Serviços Públicos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail business</masterLabel>
+        <translation>Comércio Varejista</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Services (others)</masterLabel>
+        <translation>Serviços (outros)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smoke</masterLabel>
+        <translation>Fumo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sport</masterLabel>
+        <translation>Esporte</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching and research</masterLabel>
+        <translation>Ensino e Pesquisa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology and Informatics</masterLabel>
+        <translation>Tecnologia e Informática</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecommunications</masterLabel>
+        <translation>Telecomunicações</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telemarketing and Call Center</masterLabel>
+        <translation>Telemarketing e Call Center</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textile</masterLabel>
+        <translation>Têxtil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Sector / NGOs</masterLabel>
+        <translation>Terceiro Setor / ONGs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools</masterLabel>
+        <translation>Ferramentas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tourism</masterLabel>
+        <translation>Turismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toys</masterLabel>
+        <translation>Brinquedos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation and logistics</masterLabel>
+        <translation>Transporte e Logística</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesale</masterLabel>
+        <translation>Comércio Atacadista</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood</masterLabel>
+        <translation>Madeira</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>audit</masterLabel>
+        <translation>Auditoria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>auto parts</masterLabel>
+        <translation>Autopeças</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>brokers</masterLabel>
+        <translation>Corretoras</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>deductibles</masterLabel>
+        <translation>Franquias</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>distributors</masterLabel>
+        <translation>Distribuidores</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>finance</masterLabel>
+        <translation>Finanças</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hotelier</masterLabel>
+        <translation>Hoteleiro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mechanics</masterLabel>
+        <translation>Mecânica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>non-metallic</masterLabel>
+        <translation>Não Metálicos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>packaging</masterLabel>
+        <translation>Embalagens</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pharmaceutical</masterLabel>
+        <translation>Famacêutico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>print shop</masterLabel>
+        <translation>Gráfica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>real estate</masterLabel>
+        <translation>Imobiliário</translation>
+    </picklistValues>
+</CustomFieldTranslation>

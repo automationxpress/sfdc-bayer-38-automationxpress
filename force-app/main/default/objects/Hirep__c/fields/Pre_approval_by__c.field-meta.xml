@@ -3,7 +3,7 @@
     <fullName>Pre_approval_by__c</fullName>
     <externalId>false</externalId>
     <label>Pre-approval by</label>
-    <length>20</length>
+    <length>50</length>
     <required>false</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Speak_subject__c</fullName>
+    <externalId>false</externalId>
+    <label>Speak subject</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Why visit the gynecologist frequently??</fullName>
+                <default>false</default>
+                <label>Why visit the gynecologist frequently??</label>
+            </value>
+            <value>
+                <fullName>Myths and truths about contraception</fullName>
+                <default>false</default>
+                <label>Myths and truths about contraception</label>
+            </value>
+            <value>
+                <fullName>women&apos;s mental health</fullName>
+                <default>false</default>
+                <label>women&apos;s mental health</label>
+            </value>
+            <value>
+                <fullName>Breast cancer: prevention and diagnosis</fullName>
+                <default>false</default>
+                <label>Breast cancer: prevention and diagnosis</label>
+            </value>
+            <value>
+                <fullName>Sexually Transmitted Infections (STIs)?</fullName>
+                <default>false</default>
+                <label>Sexually Transmitted Infections (STIs)?</label>
+            </value>
+            <value>
+                <fullName>Understanding your menstruation: Abnormal Uterine Bleeding (AUB) awareness</fullName>
+                <default>false</default>
+                <label>Understanding your menstruation: Abnormal Uterine Bleeding (AUB) awareness</label>
+            </value>
+            <value>
+                <fullName>The challenges of perimenopause</fullName>
+                <default>false</default>
+                <label>The challenges of perimenopause</label>
+            </value>
+            <value>
+                <fullName>Pregnancy, postpartum and baby care</fullName>
+                <default>false</default>
+                <label>Pregnancy, postpartum and baby care</label>
+            </value>
+            <value>
+                <fullName>Egg freezing</fullName>
+                <default>false</default>
+                <label>Egg freezing</label>
+            </value>
+            <value>
+                <fullName>LGBTQIA+ and Contraception</fullName>
+                <default>false</default>
+                <label>LGBTQIA+ and Contraception</label>
+            </value>
+            <value>
+                <fullName>Sex - Let&apos;s break that taboo</fullName>
+                <default>false</default>
+                <label>Sex - Let&apos;s break that taboo</label>
+            </value>
+            <value>
+                <fullName>Endometriosis</fullName>
+                <default>false</default>
+                <label>Endometriosis</label>
+            </value>
+            <value>
+                <fullName>STIs</fullName>
+                <default>false</default>
+                <label>STIs</label>
+            </value>
+            <value>
+                <fullName>IUD for my teenage daughter</fullName>
+                <default>false</default>
+                <label>IUD for my teenage daughter</label>
+            </value>
+            <value>
+                <fullName>Sports performance and IUD use</fullName>
+                <default>false</default>
+                <label>Sports performance and IUD use</label>
+            </value>
+            <value>
+                <fullName>Perimenopause</fullName>
+                <default>false</default>
+                <label>Perimenopause</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

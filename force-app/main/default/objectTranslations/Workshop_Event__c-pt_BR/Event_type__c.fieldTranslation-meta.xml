@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tipo do evento</label>
+    <name>Event_type__c</name>
+    <picklistValues>
+        <masterLabel>Hybrid</masterLabel>
+        <translation>Híbrido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In person</masterLabel>
+        <translation>Presencial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online</masterLabel>
+        <translation>Online</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>to be defined</masterLabel>
+        <translation>À definir</translation>
+    </picklistValues>
+</CustomFieldTranslation>
