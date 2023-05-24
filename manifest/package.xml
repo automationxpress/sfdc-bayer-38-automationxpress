@@ -548,6 +548,17 @@
 		<name>GlobalValueSetTranslation</name>
 	</types>
 	<types>
+		<members>Hirep_MAPV_ACDL</members>
+		<members>Hirep_PV_BRM</members>
+		<members>Hirep_PV_Management</members>
+		<members>Hirep_PV_Quality_Issues_Compliance</members>
+		<members>Hirep_PV_Regions</members>
+		<members>Hirep_PV_SBE</members>
+		<members>Hirep_PV_SCP</members>
+		<members>Hirep_RAD_MA</members>
+		<name>Group</name>
+	</types>
+	<types>
 		<members>Account-Account</members>
 		<members>Account-University</members>
 		<members>Contact-Lead Registration</members>
@@ -593,6 +604,17 @@
 		<members>GsGoal__c.clinical_team_goal</members>
 		<members>GsGoal__c.study_team_goal</members>
 		<name>RecordType</name>
+	</types>
+	<types>
+		<members>Hirep__c.Share_Hirep_to_MAPV_ACDL</members>
+		<members>Hirep__c.Share_Hirep_to_PV_BRM</members>
+		<members>Hirep__c.Share_Hirep_to_PV_Management</members>
+		<members>Hirep__c.Share_Hirep_to_PV_Quality_Issues_Compliance</members>
+		<members>Hirep__c.Share_Hirep_to_PV_Regions</members>
+		<members>Hirep__c.Share_Hirep_to_PV_SBE</members>
+		<members>Hirep__c.Share_Hirep_to_PV_SCP</members>
+		<members>Hirep__c.Share_Hirep_to_RAD_MA</members>
+		<name>SharingCriteriaRule</name>
 	</types>
 	<types>
 		<members>*</members>
