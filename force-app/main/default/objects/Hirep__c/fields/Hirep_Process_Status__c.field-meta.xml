@@ -22,9 +22,14 @@
                 <label>Final Approval Request</label>
             </value>
             <value>
-                <fullName>Completed</fullName>
+                <fullName>HIREP Request Completed</fullName>
                 <default>false</default>
-                <label>Completed</label>
+                <label>HIREP Request Completed</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
             </value>
         </valueSetDefinition>
     </valueSet>

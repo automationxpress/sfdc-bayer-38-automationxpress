@@ -5,7 +5,16 @@
     <fieldName>Hirep_Process_Status__c</fieldName>
     <masterLabel>Hirep Process Status</masterLabel>
     <pathAssistantSteps>
-        <picklistValueName>Completed</picklistValueName>
+        <picklistValueName>Final Approval Request</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>HIREP Request Completed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Onboarding</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Pre-approval Request</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>__MASTER__</recordTypeName>
 </PathAssistant>

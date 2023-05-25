@@ -42,11 +42,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Hirep__c.CH_Position__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Hirep__c.CWID__c</field>
         <readable>true</readable>
@@ -104,11 +99,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Hirep__c.FTE_Requirement__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Hirep__c.FTE__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
