@@ -143,7 +143,6 @@
 		<members>Hirep__c.Appointee_First_Name__c</members>
 		<members>Hirep__c.Appointee_Last_Name__c</members>
 		<members>Hirep__c.Approval_Date__c</members>
-		<members>Hirep__c.CH_Position__c</members>
 		<members>Hirep__c.CWID__c</members>
 		<members>Hirep__c.Commences__c</members>
 		<members>Hirep__c.Company__c</members>
@@ -155,7 +154,6 @@
 		<members>Hirep__c.Cost_Centre__c</members>
 		<members>Hirep__c.Deputy_Manager_Admin__c</members>
 		<members>Hirep__c.FTE_Requirement__c</members>
-		<members>Hirep__c.FTE__c</members>
 		<members>Hirep__c.Final_Approval_Comments__c</members>
 		<members>Hirep__c.Final_Approval_Date__c</members>
 		<members>Hirep__c.Final_Approval_Status__c</members>
@@ -537,6 +535,7 @@
 		<members>GsSendFeedback</members>
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
+		<members>User_Entry_on_Hirep_Create_Update</members>
 		<name>Flow</name>
 	</types>
 	<types>
@@ -642,6 +641,5 @@
 		<members>User_Entry__c.Restrict_UpdateExisting_To_NotRequired</members>
 		<name>ValidationRule</name>
 	</types>
-	
 	<version>55.0</version>
 </Package>
