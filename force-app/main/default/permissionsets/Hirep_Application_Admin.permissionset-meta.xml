@@ -235,6 +235,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Hirep__c.Posting__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Hirep__c.Pre_approval_Comments__c</field>
         <readable>true</readable>
     </fieldPermissions>

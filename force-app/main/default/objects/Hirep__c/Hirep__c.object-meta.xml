@@ -162,7 +162,10 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>HIREP</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+    </searchLayouts>
     <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
