@@ -545,6 +545,7 @@
 		<members>GoalsetterEditGoal</members>
 		<members>GsGoalSetterInitRecordTypeGoals</members>
 		<members>GsSendFeedback</members>
+		<members>Hirep_Send_Approval_Email</members>
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
 		<members>User_Entry_on_Hirep_Create_Update</members>
