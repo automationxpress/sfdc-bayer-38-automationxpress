@@ -237,7 +237,7 @@
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Hirep Application Admin</stringValue>
+                <stringValue>Hirep_Application_Admin</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -386,7 +386,7 @@
     <textTemplates>
         <name>EmailBody</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;Dear Alexander Biedermann,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please find hiring / replacement request(s) related to {!Final_MAPV_Department_String}&amp;nbsp;listed below:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!Table_Header}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: black;&quot;&gt;The requests have been approved by the respective functional head.&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;color: black;&quot;&gt;Please review and send it to Michael Devoy for his approval.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: &amp;quot;Segoe UI&amp;quot;, sans-serif; color: black;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; color: black;&quot;&gt;Many thanks in advance,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px; color: black;&quot;&gt;HIREP Admin&lt;/span&gt;&lt;/p&gt;</text>
+        <text>&lt;p&gt;Dear Alexander Biedermann,&lt;/p&gt;&lt;p&gt;Please find hiring / replacement request(s) related to {!Final_MAPV_Department_String}&amp;nbsp;listed below:&lt;/p&gt;&lt;p&gt;{!Table_Header}&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: black;&quot;&gt;The requests have been approved by the respective functional head.&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;color: black;&quot;&gt;Please review and send it to Michael Devoy for his approval.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: &amp;quot;Segoe UI&amp;quot;, sans-serif; color: black;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;﻿Many thanks in advance,&lt;/p&gt;&lt;p&gt;HIREP Admin&lt;/p&gt;</text>
     </textTemplates>
     <variables>
         <name>MAPV_Department_String</name>
