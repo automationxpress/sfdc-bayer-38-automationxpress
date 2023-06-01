@@ -472,14 +472,14 @@ Access gets revoked from previous manager.</description>
             <field>Resource_Manager_R_Line__c</field>
             <operator>IsNull</operator>
             <value>
-                <booleanValue>false</booleanValue>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <filters>
             <field>Deputy_Manager_Admin__c</field>
             <operator>IsNull</operator>
             <value>
-                <booleanValue>false</booleanValue>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>Hirep__c</object>
