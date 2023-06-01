@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Event_type__c</fullName>
+    <fullName>Event_status__c</fullName>
     <externalId>false</externalId>
-    <label>Event type</label>
+    <label>Event status</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
@@ -12,29 +12,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>In person</fullName>
+                <fullName>Scheduled</fullName>
                 <default>false</default>
-                <label>In person</label>
+                <label>Scheduled</label>
             </value>
             <value>
-                <fullName>Online</fullName>
+                <fullName>Canceled</fullName>
                 <default>false</default>
-                <label>Online</label>
+                <label>Canceled</label>
             </value>
             <value>
-                <fullName>Hybrid</fullName>
+                <fullName>Executed</fullName>
                 <default>false</default>
-                <label>Hybrid</label>
+                <label>Executed</label>
             </value>
             <value>
-                <fullName>To Be Defined</fullName>
+                <fullName>Postponed</fullName>
                 <default>false</default>
-                <label>To Be Defined</label>
-            </value>
-            <value>
-                <fullName>Stand / Fair</fullName>
-                <default>false</default>
-                <label>Stand / Fair</label>
+                <label>Postponed</label>
             </value>
         </valueSetDefinition>
     </valueSet>

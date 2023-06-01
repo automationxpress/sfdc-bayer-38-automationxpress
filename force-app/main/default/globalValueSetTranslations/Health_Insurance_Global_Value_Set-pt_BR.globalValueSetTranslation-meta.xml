@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Amy</masterLabel>
+        <translation>Amil</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Caixa Saúde</masterLabel>
+        <translation>Saúde Caixa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cassems</masterLabel>
+        <translation>Cassems</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fusex</masterLabel>
+        <translation>Fusex</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GEAP Health</masterLabel>
+        <translation>GEAP Saúde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>IPASGO</masterLabel>
+        <translation>IPASGO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Others</masterLabel>
+        <translation>Outros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Petrobras BR</masterLabel>
+        <translation>Petrobrás BR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Planserv</masterLabel>
+        <translation>Planserv</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Porto Seguro Health</masterLabel>
+        <translation>Porto Seguro Saúde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Postal Health Post Office</masterLabel>
+        <translation>Postal Saúde Correios</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prevent Senior</masterLabel>
+        <translation>Prevent Senior</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>South America</masterLabel>
+        <translation>Sulamérica</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Curitiba</masterLabel>
+        <translation>Unimed Curitiba</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed FESP</masterLabel>
+        <translation>Unimed FESP</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Farroupilha RS</masterLabel>
+        <translation>Unimed Farroupilha RS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Grande Florianópolis</masterLabel>
+        <translation>Unimed Grande Florianópolis</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Londrina</masterLabel>
+        <translation>Unimed Londrina</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed National Center</masterLabel>
+        <translation>Central Nacional Unimed</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Rio</masterLabel>
+        <translation>Unimed Rio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Seguros Saúde</masterLabel>
+        <translation>Unimed Seguros Saúde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unimed Vitória</masterLabel>
+        <translation>Unimed Vitória</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

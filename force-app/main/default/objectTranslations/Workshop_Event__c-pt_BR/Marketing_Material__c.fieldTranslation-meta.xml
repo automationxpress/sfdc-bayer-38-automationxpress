@@ -11,11 +11,15 @@
         <translation>Arte para publicação em story</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>PDF invitation to email (with link)</masterLabel>
-        <translation>Convite PDF para e-mail (com link)</translation>
+        <masterLabel>Editable Art</masterLabel>
+        <translation>Arte Editável</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>invitation to whatsapp</masterLabel>
+        <masterLabel>Invitation to whatsapp</masterLabel>
         <translation>Convite para whatsapp</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDF invitation to email (with link)</masterLabel>
+        <translation>Convite PDF para e-mail (com link)</translation>
     </picklistValues>
 </CustomFieldTranslation>

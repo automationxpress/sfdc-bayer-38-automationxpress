@@ -15,7 +15,11 @@
         <translation>Online</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>to be defined</masterLabel>
+        <masterLabel>Stand / Fair</masterLabel>
+        <translation>Stand / Feira</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To Be Defined</masterLabel>
         <translation>À definir</translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -17,9 +17,9 @@
                 <label>PDF invitation to email (with link)</label>
             </value>
             <value>
-                <fullName>invitation to whatsapp</fullName>
+                <fullName>Invitation to whatsapp</fullName>
                 <default>false</default>
-                <label>invitation to whatsapp</label>
+                <label>Invitation to whatsapp</label>
             </value>
             <value>
                 <fullName>Artwork for feed publishing</fullName>
@@ -30,6 +30,11 @@
                 <fullName>Artwork for story publishing</fullName>
                 <default>false</default>
                 <label>Artwork for story publishing</label>
+            </value>
+            <value>
+                <fullName>Editable Art</fullName>
+                <default>false</default>
+                <label>Editable Art</label>
             </value>
         </valueSetDefinition>
     </valueSet>
