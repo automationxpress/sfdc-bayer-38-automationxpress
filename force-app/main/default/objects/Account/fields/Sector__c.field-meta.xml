@@ -20,9 +20,9 @@
                 <label>Foods</label>
             </value>
             <value>
-                <fullName>Health care</fullName>
+                <fullName>Health Care</fullName>
                 <default>false</default>
-                <label>Health care</label>
+                <label>Health Care</label>
             </value>
             <value>
                 <fullName>Associations</fullName>
@@ -30,9 +30,9 @@
                 <label>Associations</label>
             </value>
             <value>
-                <fullName>audit</fullName>
+                <fullName>Audit</fullName>
                 <default>false</default>
-                <label>audit</label>
+                <label>Audit</label>
             </value>
             <value>
                 <fullName>Automotive</fullName>
@@ -40,9 +40,9 @@
                 <label>Automotive</label>
             </value>
             <value>
-                <fullName>auto parts</fullName>
+                <fullName>Auto Parts</fullName>
                 <default>false</default>
-                <label>auto parts</label>
+                <label>Auto Parts</label>
             </value>
             <value>
                 <fullName>Aviation</fullName>
@@ -75,9 +75,9 @@
                 <label>Footwear and Leather</label>
             </value>
             <value>
-                <fullName>Bed, table and bath</fullName>
+                <fullName>Bed, Table and Bath</fullName>
                 <default>false</default>
-                <label>Bed, table and bath</label>
+                <label>Bed, Table and Bath</label>
             </value>
             <value>
                 <fullName>Wholesale</fullName>
@@ -85,9 +85,9 @@
                 <label>Wholesale</label>
             </value>
             <value>
-                <fullName>Foreign trade</fullName>
+                <fullName>Foreign Trade</fullName>
                 <default>false</default>
-                <label>Foreign trade</label>
+                <label>Foreign Trade</label>
             </value>
             <value>
                 <fullName>Retail business</fullName>
@@ -110,24 +110,24 @@
                 <label>Accounting</label>
             </value>
             <value>
-                <fullName>brokers</fullName>
+                <fullName>Brokers</fullName>
                 <default>false</default>
-                <label>brokers</label>
+                <label>Brokers</label>
             </value>
             <value>
-                <fullName>distributors</fullName>
+                <fullName>Distributors</fullName>
                 <default>false</default>
-                <label>distributors</label>
+                <label>Distributors</label>
             </value>
             <value>
-                <fullName>Home appliances</fullName>
+                <fullName>Home Appliances</fullName>
                 <default>false</default>
-                <label>Home appliances</label>
+                <label>Home Appliances</label>
             </value>
             <value>
-                <fullName>packaging</fullName>
+                <fullName>Packaging</fullName>
                 <default>false</default>
-                <label>packaging</label>
+                <label>Packaging</label>
             </value>
             <value>
                 <fullName>Energy</fullName>
@@ -140,9 +140,9 @@
                 <label>Engineering</label>
             </value>
             <value>
-                <fullName>Teaching and research</fullName>
+                <fullName>Teaching and Research</fullName>
                 <default>false</default>
-                <label>Teaching and research</label>
+                <label>Teaching and Research</label>
             </value>
             <value>
                 <fullName>Entertainment - Culture and Leisure</fullName>
@@ -155,9 +155,9 @@
                 <label>Sport</label>
             </value>
             <value>
-                <fullName>pharmaceutical</fullName>
+                <fullName>Pharmaceutical</fullName>
                 <default>false</default>
-                <label>pharmaceutical</label>
+                <label>Pharmaceutical</label>
             </value>
             <value>
                 <fullName>Tools</fullName>
@@ -165,14 +165,14 @@
                 <label>Tools</label>
             </value>
             <value>
-                <fullName>finance</fullName>
+                <fullName>Finance</fullName>
                 <default>false</default>
-                <label>finance</label>
+                <label>Finance</label>
             </value>
             <value>
-                <fullName>deductibles</fullName>
+                <fullName>Deductibles</fullName>
                 <default>false</default>
-                <label>deductibles</label>
+                <label>Deductibles</label>
             </value>
             <value>
                 <fullName>Smoke</fullName>
@@ -185,24 +185,24 @@
                 <label>Government</label>
             </value>
             <value>
-                <fullName>print shop</fullName>
+                <fullName>Print Shop</fullName>
                 <default>false</default>
-                <label>print shop</label>
+                <label>Print Shop</label>
             </value>
             <value>
-                <fullName>Hygiene and cleaning</fullName>
+                <fullName>Hygiene and Cleaning</fullName>
                 <default>false</default>
-                <label>Hygiene and cleaning</label>
+                <label>Hygiene and Cleaning</label>
             </value>
             <value>
-                <fullName>hotelier</fullName>
+                <fullName>Hotelier</fullName>
                 <default>false</default>
-                <label>hotelier</label>
+                <label>Hotelier</label>
             </value>
             <value>
-                <fullName>real estate</fullName>
+                <fullName>Real Estate</fullName>
                 <default>false</default>
-                <label>real estate</label>
+                <label>Real Estate</label>
             </value>
             <value>
                 <fullName>Press and Communication</fullName>
@@ -230,14 +230,14 @@
                 <label>Wood</label>
             </value>
             <value>
-                <fullName>Machines and equipment</fullName>
+                <fullName>Machines and Equipment</fullName>
                 <default>false</default>
-                <label>Machines and equipment</label>
+                <label>Machines and Equipment</label>
             </value>
             <value>
-                <fullName>Construction material</fullName>
+                <fullName>Construction Material</fullName>
                 <default>false</default>
-                <label>Construction material</label>
+                <label>Construction Material</label>
             </value>
             <value>
                 <fullName>Office Supplies</fullName>
@@ -245,14 +245,14 @@
                 <label>Office Supplies</label>
             </value>
             <value>
-                <fullName>Electronic Material (electronic components)</fullName>
+                <fullName>Electronic Material (Electronic Components)</fullName>
                 <default>false</default>
-                <label>Electronic Material (electronic components)</label>
+                <label>Electronic Material (Electronic Components)</label>
             </value>
             <value>
-                <fullName>mechanics</fullName>
+                <fullName>Mechanics</fullName>
                 <default>false</default>
-                <label>mechanics</label>
+                <label>Mechanics</label>
             </value>
             <value>
                 <fullName>Environment</fullName>
@@ -270,14 +270,14 @@
                 <label>Mining</label>
             </value>
             <value>
-                <fullName>Furniture and decoration</fullName>
+                <fullName>Furniture and Decoration</fullName>
                 <default>false</default>
-                <label>Furniture and decoration</label>
+                <label>Furniture and Decoration</label>
             </value>
             <value>
-                <fullName>non-metallic</fullName>
+                <fullName>Non-metallic</fullName>
                 <default>false</default>
-                <label>non-metallic</label>
+                <label>Non-metallic</label>
             </value>
             <value>
                 <fullName>Others</fullName>
@@ -365,9 +365,9 @@
                 <label>Textile</label>
             </value>
             <value>
-                <fullName>Transportation and logistics</fullName>
+                <fullName>Transportation and Logistics</fullName>
                 <default>false</default>
-                <label>Transportation and logistics</label>
+                <label>Transportation and Logistics</label>
             </value>
             <value>
                 <fullName>Tourism</fullName>

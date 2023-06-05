@@ -163,8 +163,11 @@
     </nameField>
     <pluralLabel>HIREP</pluralLabel>
     <searchLayouts>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
         <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <listViewButtons>Email_for_final_approval</listViewButtons>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>

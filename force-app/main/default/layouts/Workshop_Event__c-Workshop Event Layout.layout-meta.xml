@@ -33,7 +33,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Payment_process__c</field>
+                <field>Event_status__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

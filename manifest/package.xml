@@ -58,7 +58,15 @@
 		<name>CustomApplication</name>
 	</types>
 	<types>
+		<members>Account.Available_Courses__c</members>
+		<members>Account.CNPJ__c</members>
+		<members>Account.Company_Size__c</members>
+		<members>Account.Email__c</members>
+		<members>Account.Health_Insurance__c</members>
+		<members>Account.Sector__c</members>
 		<members>Account.Unique_Name__c</members>
+		<members>Account.Website_Social_Media__c</members>
+		<members>Account.Women_Representatives__c</members>
 		<members>AccountContactRelation.Relationship_Strength__c</members>
 		<members>Azure_Client_Credentials__mdt.Callback_URL__c</members>
 		<members>Azure_Client_Credentials__mdt.Client_ID__c</members>
@@ -292,6 +300,7 @@
 		<members>Workshop_Event__c.Event_Password__c</members>
 		<members>Workshop_Event__c.Event_grade__c</members>
 		<members>Workshop_Event__c.Event_link__c</members>
+		<members>Workshop_Event__c.Event_status__c</members>
 		<members>Workshop_Event__c.Event_type__c</members>
 		<members>Workshop_Event__c.Guests__c</members>
 		<members>Workshop_Event__c.Marketing_Material__c</members>
@@ -536,6 +545,7 @@
 		<members>GoalsetterEditGoal</members>
 		<members>GsGoalSetterInitRecordTypeGoals</members>
 		<members>GsSendFeedback</members>
+		<members>Hirep_Send_Approval_Email</members>
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
 		<members>User_Entry_on_Hirep_Create_Update</members>
@@ -573,6 +583,15 @@
 	<types>
 		<members>*</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>Account.All</members>
+		<members>Account.All_Companies</members>
+		<members>Account.All_Universities</members>
+		<members>Speaker__c.All</members>
+		<members>Workshop_Event_Registration__c.All</members>
+		<members>Workshop_Event__c.All</members>
+		<name>ListView</name>
 	</types>
 	<types>
 		<members>*</members>

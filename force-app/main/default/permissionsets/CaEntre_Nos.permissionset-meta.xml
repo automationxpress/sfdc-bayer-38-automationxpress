@@ -4,6 +4,7 @@
         <application>Ca_Entre_Nos</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <description>This permission set grants access to Ca Entre Nos Application and related objects.</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.BillingAddress</field>
@@ -116,6 +117,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Speaker__c.Health_Insurance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Speaker__c.Professional_type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -156,6 +162,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Workshop_Event__c.Event_status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Workshop_Event__c.Event_type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -167,11 +178,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Workshop_Event__c.Marketing_Material__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Workshop_Event__c.Payment_process__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -210,7 +216,7 @@
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Speaker__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -230,7 +236,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Workshop_Event__c</object>
-        <viewAllRecords>true</viewAllRecords>
+        <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <recordTypeVisibilities>
         <recordType>Account.Company</recordType>

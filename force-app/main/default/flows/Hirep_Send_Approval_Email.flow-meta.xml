@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_To_User</name>
+        <label>Send Email To User</label>
+        <locationX>50</locationX>
+        <locationY>1490</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Display_Success_Message</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>AppendToandCC</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Email_Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Add_MAPV_Department_to_Subject</name>
+        <label>Add MAPV Department to Subject</label>
+        <locationX>314</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>MAPV_Department_String</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>{!Loop_Through_Hirep_Records.MAPV_Department__r.Name}, </stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Row_to_Table</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Row_to_Table</name>
+        <label>Add Row to Table</label>
+        <locationX>226</locationX>
+        <locationY>1082</locationY>
+        <assignmentItems>
+            <assignToReference>Table_Header</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Table_Row</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Hirep_Records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Columns_to_Table</name>
+        <label>Assign Columns to Table</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>Table_Header</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>TableColumn</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Hireps</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Close_Table_Tag</name>
+        <label>Close Table Tag</label>
+        <locationX>50</locationX>
+        <locationY>1274</locationY>
+        <assignmentItems>
+            <assignToReference>Table_Header</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>&lt;/table&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Logged_In_User_Hirep_Admin</name>
+        <label>Is Logged In User Hirep Admin?</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Display_Unsuccessful_Message</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Hirep_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Hirep_Admin_Permission_Set_Assignment.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Columns_to_Table</targetReference>
+            </connector>
+            <label>Hirep Admin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>MAPV_Department_exist_in_List</name>
+        <label>MAPV Department exist in List?</label>
+        <locationX>226</locationX>
+        <locationY>782</locationY>
+        <defaultConnector>
+            <targetReference>Add_MAPV_Department_to_Subject</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>MAPV_Department_String</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Loop_Through_Hirep_Records.MAPV_Department__r.Name</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Row_to_Table</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Send an approval email to the recipients added by user in screen. Email body contains Hirep records with Final Approval is Pending.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AppendToandCC</name>
+        <dataType>String</dataType>
+        <expression>{!To} + &apos;,&apos; +{!CC}</expression>
+    </formulas>
+    <formulas>
+        <name>Email_Subject</name>
+        <dataType>String</dataType>
+        <expression>&quot;HIREP APPROVAL REQUIRED: Hiring / replacement request(s) related to &quot;  +  {!Final_MAPV_Department_String}</expression>
+    </formulas>
+    <formulas>
+        <name>Final_MAPV_Department_String</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!MAPV_Department_String}, LEN({!MAPV_Department_String})-2)</expression>
+    </formulas>
+    <formulas>
+        <name>Table_Row</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Name}+ 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.MAPV_Department__r.Name} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.MAPV_Group__r.Name} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.Primary_Job_Role__r.Name} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Local_Job_Role_Title__c} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Location__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.FTE_Requirement__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Year_Required__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.Position_Type__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Replaces__c} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.Need_for_Position__c} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Contract_Type__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + ({!Loop_Through_Hirep_Records.Pre_approval_by__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.MGMT_Approval__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.Posting__c}) + 
+&apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
+    </formulas>
+    <interviewLabel>Hirep Approval Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Hirep Send Approval Email</label>
+    <loops>
+        <name>Loop_Through_Hirep_Records</name>
+        <label>Loop Through Hirep Records</label>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
+        <collectionReference>Get_Hireps</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>MAPV_Department_exist_in_List</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Close_Table_Tag</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Hirep_Admin_Permission_Set</name>
+        <label>Get Hirep Admin Permission Set</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Hirep_Admin_Permission_Set_Assignment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Hirep_Application_Admin</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSet</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Hirep_Admin_Permission_Set_Assignment</name>
+        <label>Get Hirep Admin Permission Set Assignment</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Logged_In_User_Hirep_Admin</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AssigneeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PermissionSetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Hirep_Admin_Permission_Set.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSetAssignment</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Hireps</name>
+        <label>Get Hireps</label>
+        <locationX>50</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Hirep_Records</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Final_Approval_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Hirep__c</object>
+        <sortField>Name</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>Display_Success_Message</name>
+        <label>Display Success Message</label>
+        <locationX>50</locationX>
+        <locationY>1598</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Display_Successful_Message_Text</name>
+            <fieldText>&lt;p&gt;Email has been sent Successfully&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Display_Unsuccessful_Message</name>
+        <label>Display Unsuccessful Message</label>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Error_Display</name>
+            <fieldText>&lt;p&gt;Access Denied. You don&apos;t have permission to access this functionality.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>50</locationX>
+        <locationY>1382</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>Cancel</backButtonLabel>
+        <connector>
+            <targetReference>Send_Email_To_User</targetReference>
+        </connector>
+        <fields>
+            <name>Send_Email_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Send_Email_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>To</name>
+                    <dataType>String</dataType>
+                    <fieldText>To :</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>CC</name>
+                    <dataType>String</dataType>
+                    <fieldText>CC :</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Send</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Hirep_Admin_Permission_Set</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Dear Alexander Biedermann,&lt;/p&gt;&lt;p&gt;Please find hiring / replacement request(s) related to {!Final_MAPV_Department_String}&amp;nbsp;listed below:&lt;/p&gt;&lt;p&gt;{!Table_Header}&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: black;&quot;&gt;The requests have been approved by the respective functional head.&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;color: black;&quot;&gt;Please review and send it to Michael Devoy for his approval.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: &amp;quot;Segoe UI&amp;quot;, sans-serif; color: black;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;﻿Many thanks in advance,&lt;/p&gt;&lt;p&gt;HIREP Admin&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>MAPV_Department_String</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Table_Header</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>&lt;table style=&quot;width:100%;border: 1px solid black;&quot;&gt;</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>TableColumn</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>&lt;tr&gt;   &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;   &gt;HIREP ID&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;MAPV Department&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;MAPV Group&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Primary Job Role&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Local Job Role Title&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Location&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;FTE Requirement&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Year Required&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Position Type&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Replaces&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Need for Position&lt;/th&gt; &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Contract Type&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Approval by&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;MGMT Approval&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Posting&lt;/th&gt;</stringValue>
+        </value>
+    </variables>
+</Flow>

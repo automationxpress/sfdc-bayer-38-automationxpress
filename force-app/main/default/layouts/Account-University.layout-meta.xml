@@ -23,7 +23,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Sector__c</field>
+                <field>Available_Courses__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
