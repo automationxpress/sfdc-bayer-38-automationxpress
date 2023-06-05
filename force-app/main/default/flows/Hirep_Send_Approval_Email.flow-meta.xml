@@ -46,7 +46,7 @@
             <assignToReference>MAPV_Department_String</assignToReference>
             <operator>Add</operator>
             <value>
-                <stringValue>{!Loop_Through_Hirep_Records.MAPV_Department__r.Name} , </stringValue>
+                <stringValue>{!Loop_Through_Hirep_Records.MAPV_Department__r.Name}, </stringValue>
             </value>
         </assignmentItems>
         <connector>
@@ -161,7 +161,7 @@
     <formulas>
         <name>Email_Subject</name>
         <dataType>String</dataType>
-        <expression>&quot;HIREP APPROVAL REQUIRED: Hiring / replacement request(s) related to&quot;  +  {!Final_MAPV_Department_String}</expression>
+        <expression>&quot;HIREP APPROVAL REQUIRED: Hiring / replacement request(s) related to &quot;  +  {!Final_MAPV_Department_String}</expression>
     </formulas>
     <formulas>
         <name>Final_MAPV_Department_String</name>
@@ -171,21 +171,21 @@
     <formulas>
         <name>Table_Row</name>
         <dataType>String</dataType>
-        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Name}+ 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.MAPV_Department__r.Name} + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.MAPV_Group__r.Name} + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.Primary_Job_Role__r.Name} + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Local_Job_Role_Title__c} + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Location__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.FTE_Requirement__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Year_Required__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.Position_Type__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Replaces__c} + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.Need_for_Position__c} + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Contract_Type__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + ({!Loop_Through_Hirep_Records.Pre_approval_by__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.MGMT_Approval__c}) + 
-&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.Posting__c}) + 
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Name}+ 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.MAPV_Department__r.Name} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.MAPV_Group__r.Name} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.Primary_Job_Role__r.Name} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Local_Job_Role_Title__c} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Location__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.FTE_Requirement__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Year_Required__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.Position_Type__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + {!Loop_Through_Hirep_Records.Replaces__c} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +{!Loop_Through_Hirep_Records.Need_for_Position__c} + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.Contract_Type__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + ({!Loop_Through_Hirep_Records.Pre_approval_by__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; +TEXT({!Loop_Through_Hirep_Records.MGMT_Approval__c}) + 
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black; text-align: center;&quot;&gt;&apos; + TEXT({!Loop_Through_Hirep_Records.Posting__c}) + 
 &apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
     </formulas>
     <interviewLabel>Hirep Approval Email {!$Flow.CurrentDateTime}</interviewLabel>
@@ -412,7 +412,7 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue>&lt;tr&gt;   &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;HIREP ID&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;MAPV Department&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;MAPV Group&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Primary Job Role&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Local Title&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Location&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;FTE&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Year&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Position Type&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Replaces&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Need for Position&lt;/th&gt; &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Contract Type&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Approval by&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;MGMT Approval&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot; bgcolor=&quot;#2A79C3&quot;&gt;Posting&lt;/th&gt;  </stringValue>
+            <stringValue>&lt;tr&gt;   &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;   &gt;HIREP ID&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;MAPV Department&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;MAPV Group&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Primary Job Role&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Local Job Role Title&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Location&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;FTE Requirement&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Year Required&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Position Type&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Replaces&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Need for Position&lt;/th&gt; &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Contract Type&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Approval by&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;MGMT Approval&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black; color:white&quot; bgcolor=&quot;#2A79C3&quot;&gt;Posting&lt;/th&gt;</stringValue>
         </value>
     </variables>
 </Flow>
