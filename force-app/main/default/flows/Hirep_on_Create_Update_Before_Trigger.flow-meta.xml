@@ -50,9 +50,9 @@
         </connector>
     </assignments>
     <assignments>
-        <name>Set_Hirep_Process_Status_to_Final_Approval_Status</name>
-        <label>Set Hirep Process Status to Final Approval Status</label>
-        <locationX>842</locationX>
+        <name>Set_Hirep_Process_Status_to_Final_Approval_Request</name>
+        <label>Set Hirep Process Status to Final Approval Request</label>
+        <locationX>314</locationX>
         <locationY>1319</locationY>
         <assignmentItems>
             <assignToReference>$Record.Hirep_Process_Status__c</assignToReference>
@@ -63,21 +63,8 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>Set_Hirep_Process_Status_to_OBC</name>
-        <label>Set Hirep Process Status to OBC</label>
-        <locationX>50</locationX>
-        <locationY>1319</locationY>
-        <assignmentItems>
-            <assignToReference>$Record.Hirep_Process_Status__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <stringValue>Onboarding</stringValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
-        <name>Set_HIREP_Process_status_to_Pre_Approval</name>
-        <label>Set HIREP Process status to Pre Approval</label>
+        <name>Set_HIREP_Process_status_to_Pre_approval_Request</name>
+        <label>Set HIREP Process status to Pre-approval Request</label>
         <locationX>578</locationX>
         <locationY>1319</locationY>
         <assignmentItems>
@@ -91,7 +78,7 @@
     <assignments>
         <name>Set_HIREP_Process_to_Completed</name>
         <label>Set HIREP Process to Completed</label>
-        <locationX>314</locationX>
+        <locationX>50</locationX>
         <locationY>1319</locationY>
         <assignmentItems>
             <assignToReference>$Record.Hirep_Process_Status__c</assignToReference>
@@ -207,60 +194,7 @@
         <label>Update Hirep Process Status?</label>
         <locationX>446</locationX>
         <locationY>1211</locationY>
-        <defaultConnector>
-            <targetReference>Set_Hirep_Process_Status_to_Final_Approval_Status</targetReference>
-        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>Update_Hirep_Process_Status_to_OBC</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_User_Entry_Records.Id</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>Get_User_Entry_Records.CWID__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Record.CWID__c</elementReference>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Final_Approval_Status__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Approved</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.CWID__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Appointee_First_Name__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Appointee_Last_Name__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Set_Hirep_Process_Status_to_OBC</targetReference>
-            </connector>
-            <label>Update Hirep Process Status to OBC</label>
-        </rules>
         <rules>
             <name>Update_Hirep_Process_Status_to_Hirep_Request_Completed</name>
             <conditionLogic>and</conditionLogic>
@@ -292,13 +226,56 @@
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Hirep_Process_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hirep_Process_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Set_HIREP_Process_to_Completed</targetReference>
             </connector>
             <label>Update Hirep Process Status to Hirep Request Completed</label>
         </rules>
         <rules>
-            <name>Update_Hirep_Process_Status_to_Pre_Approval_Pending</name>
+            <name>Update_Hirep_Process_Status_to_Final_Approval_Request</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Final_Approval_Status__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Hirep_Process_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hirep_Process_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Hirep_Process_Status_to_Final_Approval_Request</targetReference>
+            </connector>
+            <label>Update Hirep Process Status to Final Approval Request</label>
+        </rules>
+        <rules>
+            <name>Update_Hirep_Process_Status_to_Pre_Approval_Request</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Final_Approval_Status__c</leftValueReference>
@@ -314,10 +291,24 @@
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Hirep_Process_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Hirep_Process_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Onboarding</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>Set_HIREP_Process_status_to_Pre_Approval</targetReference>
+                <targetReference>Set_HIREP_Process_status_to_Pre_approval_Request</targetReference>
             </connector>
-            <label>Update Hirep Process Status to Pre Approval Pending</label>
+            <label>Update Hirep Process Status to Pre Approval Request</label>
         </rules>
     </decisions>
     <decisions>

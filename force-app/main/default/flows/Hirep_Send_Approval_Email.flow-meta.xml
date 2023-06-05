@@ -166,7 +166,7 @@
     <formulas>
         <name>Final_MAPV_Department_String</name>
         <dataType>String</dataType>
-        <expression>LEFT({!MAPV_Department_String}, LEN({!MAPV_Department_String})-3)</expression>
+        <expression>LEFT({!MAPV_Department_String}, LEN({!MAPV_Department_String})-2)</expression>
     </formulas>
     <formulas>
         <name>Table_Row</name>
