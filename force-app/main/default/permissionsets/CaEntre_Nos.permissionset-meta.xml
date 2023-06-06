@@ -7,6 +7,11 @@
     <description>This permission set grants access to Ca Entre Nos Application and related objects.</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Available_Courses__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.BillingAddress</field>
         <readable>true</readable>
     </fieldPermissions>

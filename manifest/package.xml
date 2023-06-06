@@ -523,6 +523,15 @@
 		<name>CustomTab</name>
 	</types>
 	<types>
+		<members>CEntreNs/PxuigGUOyYBbmNKuPECGsLNqRbbJZo</members>
+		<members>CEntreNs/VIcwXzTQYmMFpnkNPVFRrFzkcpmtfM</members>
+		<name>Dashboard</name>
+	</types>
+	<types>
+		<members>Ca_Entre_Nos_Email_Template/Ca_Entre_Nos_Lead_Notification_After_6Months_of_Contact</members>
+		<name>EmailTemplate</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>ExternalServiceRegistration</name>
 	</types>
@@ -560,6 +569,7 @@
 		<name>GlobalValueSetTranslation</name>
 	</types>
 	<types>
+		<members>Ca_Entre_Nos_Users</members>
 		<members>Hirep_MAPV_ACDL</members>
 		<members>Hirep_PV_BRM</members>
 		<members>Hirep_PV_Management</members>
@@ -626,6 +636,23 @@
 		<members>GsGoal__c.clinical_team_goal</members>
 		<members>GsGoal__c.study_team_goal</members>
 		<name>RecordType</name>
+	</types>
+	<types>
+		<members>CEntreNsReports/Contact_Names</members>
+		<members>CEntreNsReports/Contas_com_Eventos</members>
+		<members>CEntreNsReports/Copy_of_Contact_Names</members>
+		<members>CEntreNsReports/Eventos</members>
+		<members>CEntreNsReports/Eventos_por_LR_x_Mulheres_Impactadas1</members>
+		<members>CEntreNsReports/Eventos_x_Mulheres_x_Custo</members>
+		<members>CEntreNsReports/Formatos</members>
+		<members>CEntreNsReports/Lista_de_Contatos_e_Contas</members>
+		<members>CEntreNsReports/Speakers</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard_E</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard_H</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard_S</members>
+		<members>CEntreNsReportsforDashboards/Contact_Names_4_Dashbaord_Interaction</members>
+		<name>Report</name>
 	</types>
 	<types>
 		<members>Hirep__c.Share_Hirep_to_MAPV_ACDL</members>

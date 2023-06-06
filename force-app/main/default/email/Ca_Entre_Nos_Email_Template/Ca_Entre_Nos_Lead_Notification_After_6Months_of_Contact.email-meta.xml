@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Users will notified after contact to Lead as a part of Cá Entre Nós App</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Ca Entre Nos Lead Notification After 6Months of Contact</name>
+    <style>none</style>
+    <subject>{!Contact.LastName} Lead interacted on {!Contact.Last_Interaction__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
