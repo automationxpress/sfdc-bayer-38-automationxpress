@@ -14,7 +14,7 @@
         <inputParameters>
             <name>emailAddresses</name>
             <value>
-                <elementReference>AppendToandCC</elementReference>
+                <elementReference>To</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -154,11 +154,6 @@
     <description>Send an approval email to the recipients added by user in screen. Email body contains Hirep records with Final Approval is Pending.</description>
     <environments>Default</environments>
     <formulas>
-        <name>AppendToandCC</name>
-        <dataType>String</dataType>
-        <expression>{!To} + &apos;,&apos; +{!CC}</expression>
-    </formulas>
-    <formulas>
         <name>Email_Subject</name>
         <dataType>String</dataType>
         <expression>&quot;HIREP APPROVAL REQUIRED: Hiring / replacement request(s) related to &quot;  +  {!Final_MAPV_Department_String}</expression>
@@ -291,8 +286,8 @@
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Hirep__c</object>
-        <sortField>Name</sortField>
-        <sortOrder>Desc</sortOrder>
+        <sortField>MAPV_Department_Formula__c</sortField>
+        <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <runInMode>SystemModeWithoutSharing</runInMode>
@@ -350,13 +345,6 @@
                     <name>To</name>
                     <dataType>String</dataType>
                     <fieldText>To :</fieldText>
-                    <fieldType>InputField</fieldType>
-                    <isRequired>false</isRequired>
-                </fields>
-                <fields>
-                    <name>CC</name>
-                    <dataType>String</dataType>
-                    <fieldText>CC :</fieldText>
                     <fieldType>InputField</fieldType>
                     <isRequired>false</isRequired>
                 </fields>

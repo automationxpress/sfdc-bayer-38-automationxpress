@@ -3,8 +3,8 @@
     <fullName>Need_for_Position__c</fullName>
     <externalId>false</externalId>
     <label>Need for Position</label>
-    <length>150</length>
-    <required>false</required>
+    <length>255</length>
+    <required>true</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Text</type>

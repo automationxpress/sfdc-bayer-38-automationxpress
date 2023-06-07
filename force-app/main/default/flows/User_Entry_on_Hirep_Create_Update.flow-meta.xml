@@ -20,7 +20,7 @@
     <decisions>
         <name>Check_Confirmation</name>
         <label>Check Confirmation</label>
-        <locationX>1172</locationX>
+        <locationX>1634</locationX>
         <locationY>242</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -42,7 +42,7 @@
     <decisions>
         <name>Create_User_Entry</name>
         <label>Create User Entry?</label>
-        <locationX>710</locationX>
+        <locationX>1106</locationX>
         <locationY>458</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -182,6 +182,28 @@
             <label>Create New User Entry</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Update_Hirep_Process_Status_to_Onboarding</name>
+        <label>Update Hirep Process Status to Onboarding?</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Proceed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Would_you_still_like_to_move_it_to_Onboarding_Would_you_still_like_to_move_it_to</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Yes</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Hirep_Process_Status</targetReference>
+            </connector>
+            <label>Proceed</label>
+        </rules>
+    </decisions>
     <description>Create an User Entry record from Hirep process. Upon creating User Entry, update the Hirep Process status to Onboarding Completed.</description>
     <environments>Default</environments>
     <formulas>
@@ -213,7 +235,7 @@
     <recordCreates>
         <name>Create_User_Entry_Record</name>
         <label>Create User Entry Record</label>
-        <locationX>578</locationX>
+        <locationX>1106</locationX>
         <locationY>566</locationY>
         <connector>
             <targetReference>Update_Hirep_Record</targetReference>
@@ -323,7 +345,7 @@
     <recordLookups>
         <name>Get_User_Entry_Records</name>
         <label>Get User Entry Records</label>
-        <locationX>710</locationX>
+        <locationX>1106</locationX>
         <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -349,10 +371,34 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
+        <name>Update_Hirep_Process_Status</name>
+        <label>Update Hirep Process Status</label>
+        <locationX>50</locationX>
+        <locationY>782</locationY>
+        <faultConnector>
+            <targetReference>Display_Fail_Error_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RecordId.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Hirep_Process_Status__c</field>
+            <value>
+                <stringValue>Onboarding</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Hirep__c</object>
+    </recordUpdates>
+    <recordUpdates>
         <description>On successful User Entry creation update Hirep Process Status to Onboarding Completed.</description>
         <name>Update_Hirep_Record</name>
         <label>Update Hirep Record</label>
-        <locationX>578</locationX>
+        <locationX>1106</locationX>
         <locationY>674</locationY>
         <connector>
             <targetReference>Display_Success_Message</targetReference>
@@ -380,7 +426,7 @@
     <screens>
         <name>Continue_Confirmation_Screen</name>
         <label>Continue Confirmation Screen</label>
-        <locationX>1172</locationX>
+        <locationX>1634</locationX>
         <locationY>134</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -408,7 +454,7 @@
     <screens>
         <name>Display_Error_Message</name>
         <label>Display Error Message</label>
-        <locationX>1106</locationX>
+        <locationX>1634</locationX>
         <locationY>674</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -422,9 +468,25 @@
         <showHeader>false</showHeader>
     </screens>
     <screens>
+        <name>Display_Fail_Error_Message</name>
+        <label>Display  Fail Error Message</label>
+        <locationX>314</locationX>
+        <locationY>890</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Copy_1_of_DisplayUpdateErrorMsg</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;{!$Flow.FaultMessage}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <name>Display_Mandatory_Fields_Missing_Message</name>
         <label>Display Mandatory Fields Missing Message</label>
-        <locationX>314</locationX>
+        <locationX>842</locationX>
         <locationY>566</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -441,7 +503,7 @@
     <screens>
         <name>Display_Success_Message</name>
         <label>Display Success Message</label>
-        <locationX>578</locationX>
+        <locationX>1106</locationX>
         <locationY>782</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -457,7 +519,7 @@
     <screens>
         <name>Display_Update_Fail_Error_Message</name>
         <label>Display Update Fail Error Message</label>
-        <locationX>842</locationX>
+        <locationX>1370</locationX>
         <locationY>782</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -473,22 +535,34 @@
     <screens>
         <name>Display_User_Entry_Exist_Message</name>
         <label>Display User Entry Exist Message</label>
-        <locationX>50</locationX>
+        <locationX>314</locationX>
         <locationY>566</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Hirep_Process_Status_to_Onboarding</targetReference>
+        </connector>
         <fields>
             <name>Display_Unsuccessful_Text</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;User Entry profile is already exist for given HIREP entry details.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 32, 32);&quot;&gt;User Entry profile already exists for given HIREP entry details. Please manually update the User Entry profile&amp;nbsp;in UMA, if required.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Would_you_still_like_to_move_it_to_Onboarding_Would_you_still_like_to_move_it_to</name>
+            <choiceReferences>Yes</choiceReferences>
+            <choiceReferences>No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Would you still like to move it to &apos;Onboarding&apos;?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
         </fields>
         <nextOrFinishButtonLabel>Okay</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>1046</locationX>
+        <locationX>1508</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Continue_Confirmation_Screen</targetReference>
