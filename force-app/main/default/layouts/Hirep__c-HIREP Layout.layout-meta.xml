@@ -12,11 +12,11 @@
         <label>HIREP Entries</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>MAPV_Department__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Primary_Job_Role__c</field>
             </layoutItems>
             <layoutItems>
@@ -24,11 +24,11 @@
                 <field>Local_Job_Role_Title__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Company__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Contract_Type__c</field>
             </layoutItems>
             <layoutItems>
@@ -36,7 +36,7 @@
                 <field>Contract_Period_From__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>FTE_Requirement__c</field>
             </layoutItems>
             <layoutItems>
@@ -44,29 +44,29 @@
                 <field>Person_replaced_contract_extended__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Resource_Manager_R_Line__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Cost_Centre__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>MAPV_Group__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Location__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Position_Type__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Year_Required__c</field>
             </layoutItems>
             <layoutItems>
@@ -82,7 +82,7 @@
                 <field>Working_Hours__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Need_for_Position__c</field>
             </layoutItems>
             <layoutItems>

@@ -291,8 +291,8 @@
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Hirep__c</object>
-        <sortField>Name</sortField>
-        <sortOrder>Desc</sortOrder>
+        <sortField>MAPV_Department_Formula__c</sortField>
+        <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <runInMode>SystemModeWithoutSharing</runInMode>

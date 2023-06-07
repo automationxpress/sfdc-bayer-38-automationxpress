@@ -3,7 +3,7 @@
     <fullName>Contract_Type__c</fullName>
     <externalId>false</externalId>
     <label>Contract Type</label>
-    <required>false</required>
+    <required>true</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
