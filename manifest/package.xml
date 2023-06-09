@@ -585,7 +585,6 @@
 		<members>Account-University</members>
 		<members>Contact-Lead Registration</members>
 		<members>Hirep__c-HIREP Layout</members>
-				<members>User_Entry__c-User Entry Layout</members>
 		<members>Speaker__c-Speaker Layout</members>
 		<members>Workshop_Event_Registration__c-Workshop Event Registration Layout</members>
 		<members>Workshop_Event__c-Workshop Event Layout</members>
