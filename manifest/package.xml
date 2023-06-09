@@ -578,6 +578,7 @@
 		<members>Hirep_PV_SBE</members>
 		<members>Hirep_PV_SCP</members>
 		<members>Hirep_RAD_MA</members>
+		<members>UMA_Admin</members>
 		<name>Group</name>
 	</types>
 	<types>
@@ -586,6 +587,7 @@
 		<members>Contact-Lead Registration</members>
 		<members>Hirep__c-HIREP Layout</members>
 		<members>Speaker__c-Speaker Layout</members>
+		<members>User_Entry__c-User Entry Layout</members>
 		<members>Workshop_Event_Registration__c-Workshop Event Registration Layout</members>
 		<members>Workshop_Event__c-Workshop Event Layout</members>
 		<name>Layout</name>
