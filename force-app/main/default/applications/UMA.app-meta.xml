@@ -69,7 +69,6 @@
     <tabs>Prima_Security_Group__c</tabs>
     <tabs>User_MyLearning_Program__c</tabs>
     <tabs>Hirep__c</tabs>
-    <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>UAM_UtilityBar</utilityBar>
 </CustomApplication>
