@@ -19,6 +19,14 @@
         <translation>Associações</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Audit</masterLabel>
+        <translation>Auditoria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Parts</masterLabel>
+        <translation>Autopeças</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Automotive</masterLabel>
         <translation>Automotivo</translation>
     </picklistValues>
@@ -31,8 +39,12 @@
         <translation>Bancos</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Bed, table and bath</masterLabel>
+        <masterLabel>Bed, Table and Bath</masterLabel>
         <translation>Cama, mesa e banho</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brokers</masterLabel>
+        <translation>Corretoras</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Chemical</masterLabel>
@@ -47,7 +59,7 @@
         <translation>Construção Civil</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Construction material</masterLabel>
+        <masterLabel>Construction Material</masterLabel>
         <translation>Material de Construção</translation>
     </picklistValues>
     <picklistValues>
@@ -55,11 +67,19 @@
         <translation>Consultoria</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Deductibles</masterLabel>
+        <translation>Franquias</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributors</masterLabel>
+        <translation>Distribuidores</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Drinks</masterLabel>
         <translation>Bebidas</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Electronic Material (electronic components)</masterLabel>
+        <masterLabel>Electronic Material (Electronic Components)</masterLabel>
         <translation>Material Eletrônico (componentes eletrônicos)</translation>
     </picklistValues>
     <picklistValues>
@@ -79,6 +99,10 @@
         <translation>Meio Ambiente</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation>Finanças</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Foods</masterLabel>
         <translation>Alimentos</translation>
     </picklistValues>
@@ -87,11 +111,11 @@
         <translation>Calçados e Couro</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Foreign trade</masterLabel>
+        <masterLabel>Foreign Trade</masterLabel>
         <translation>Comércio Exterior</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Furniture and decoration</masterLabel>
+        <masterLabel>Furniture and Decoration</masterLabel>
         <translation>Móveis e Decoração</translation>
     </picklistValues>
     <picklistValues>
@@ -103,7 +127,7 @@
         <translation>Governo</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Health care</masterLabel>
+        <masterLabel>Health Care</masterLabel>
         <translation>Assistência Médica</translation>
     </picklistValues>
     <picklistValues>
@@ -111,8 +135,12 @@
         <translation>Saúde, Hospitalar e Laboratorial</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Home appliances</masterLabel>
+        <masterLabel>Home Appliances</masterLabel>
         <translation>Eletrodomésticos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotelier</masterLabel>
+        <translation>Hoteleiro</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Housewares</masterLabel>
@@ -123,7 +151,7 @@
         <translation>Recursos Humanos</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Hygiene and cleaning</masterLabel>
+        <masterLabel>Hygiene and Cleaning</masterLabel>
         <translation>Higiene e Limpeza</translation>
     </picklistValues>
     <picklistValues>
@@ -143,8 +171,12 @@
         <translation>Jurídico</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Machines and equipment</masterLabel>
+        <masterLabel>Machines and Equipment</masterLabel>
         <translation>Máquinas e Equipamentos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanics</masterLabel>
+        <translation>Mecânica</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Metallurgist and Steelworks</masterLabel>
@@ -155,12 +187,20 @@
         <translation>Mineração</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Non-metallic</masterLabel>
+        <translation>Não Metálicos</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Office Supplies</masterLabel>
         <translation>Material de Escritório</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Others</masterLabel>
         <translation>Outros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packaging</masterLabel>
+        <translation>Embalagens</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Paper And Cellulose</masterLabel>
@@ -175,6 +215,10 @@
         <translation>Petroquímico</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Pharmaceutical</masterLabel>
+        <translation>Famacêutico</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Plastic and Rubber</masterLabel>
         <translation>Plástico e Borracha</translation>
     </picklistValues>
@@ -183,8 +227,16 @@
         <translation>Imprensa e Comunicação</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Print Shop</masterLabel>
+        <translation>Gráfica</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Public services</masterLabel>
         <translation>Serviços Públicos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate</masterLabel>
+        <translation>Imobiliário</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Retail business</masterLabel>
@@ -203,7 +255,7 @@
         <translation>Esporte</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Teaching and research</masterLabel>
+        <masterLabel>Teaching and Research</masterLabel>
         <translation>Ensino e Pesquisa</translation>
     </picklistValues>
     <picklistValues>
@@ -239,7 +291,7 @@
         <translation>Brinquedos</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Transportation and logistics</masterLabel>
+        <masterLabel>Transportation and Logistics</masterLabel>
         <translation>Transporte e Logística</translation>
     </picklistValues>
     <picklistValues>
@@ -249,57 +301,5 @@
     <picklistValues>
         <masterLabel>Wood</masterLabel>
         <translation>Madeira</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>audit</masterLabel>
-        <translation>Auditoria</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>auto parts</masterLabel>
-        <translation>Autopeças</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>brokers</masterLabel>
-        <translation>Corretoras</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>deductibles</masterLabel>
-        <translation>Franquias</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>distributors</masterLabel>
-        <translation>Distribuidores</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>finance</masterLabel>
-        <translation>Finanças</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>hotelier</masterLabel>
-        <translation>Hoteleiro</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>mechanics</masterLabel>
-        <translation>Mecânica</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>non-metallic</masterLabel>
-        <translation>Não Metálicos</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>packaging</masterLabel>
-        <translation>Embalagens</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>pharmaceutical</masterLabel>
-        <translation>Famacêutico</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>print shop</masterLabel>
-        <translation>Gráfica</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>real estate</masterLabel>
-        <translation>Imobiliário</translation>
     </picklistValues>
 </CustomFieldTranslation>
