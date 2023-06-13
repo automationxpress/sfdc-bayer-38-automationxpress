@@ -367,7 +367,6 @@
 	</types>
 	<types>
 		<members>Account</members>
-		<members>Account</members>
 		<members>AccountContactRelation</members>
 		<members>AccountContactRole</members>
 		<members>Activity</members>
@@ -578,7 +577,7 @@
 		<members>Hirep_PV_SBE</members>
 		<members>Hirep_PV_SCP</members>
 		<members>Hirep_RAD_MA</members>
-		<members>UMA_Admin</members>
+		<members>UMA_Admins</members>
 		<name>Group</name>
 	</types>
 	<types>
@@ -595,15 +594,6 @@
 	<types>
 		<members>*</members>
 		<name>LightningComponentBundle</name>
-	</types>
-	<types>
-		<members>Account.All</members>
-		<members>Account.All_Companies</members>
-		<members>Account.All_Universities</members>
-		<members>Speaker__c.All</members>
-		<members>Workshop_Event_Registration__c.All</members>
-		<members>Workshop_Event__c.All</members>
-		<name>ListView</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -680,6 +670,8 @@
 		<name>Translations</name>
 	</types>
 	<types>
+		<members>Account.CNPJ_Format</members>
+		<members>Account.Zip_Code_Format</members>
 		<members>Contact.Zip_Code_Format</members>
 		<members>GsGoalPeriod__c.EditEndDateGreaterThanEditStartDate</members>
 		<members>GsGoalPeriod__c.PeriodEndDateGreaterThanPeriodStartDate</members>
