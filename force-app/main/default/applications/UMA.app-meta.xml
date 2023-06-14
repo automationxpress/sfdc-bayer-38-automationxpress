@@ -26,6 +26,24 @@
         <type>Flexipage</type>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>HIREP_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Hirep__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>HIREP_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Hirep__c</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>uma_logo</logo>
@@ -50,6 +68,7 @@
     <tabs>Prima_Role__c</tabs>
     <tabs>Prima_Security_Group__c</tabs>
     <tabs>User_MyLearning_Program__c</tabs>
+    <tabs>Hirep__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>UAM_UtilityBar</utilityBar>
 </CustomApplication>

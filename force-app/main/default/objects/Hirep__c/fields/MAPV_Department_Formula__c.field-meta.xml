@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MAPV_Department_Formula__c</fullName>
+    <description>Used in HIREP sharing settings to share the record to respective request manager of MAPV Department.</description>
+    <externalId>false</externalId>
+    <label>MAPV Department Formula</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

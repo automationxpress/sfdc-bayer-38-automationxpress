@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Porte da empresa</label>
+    <name>Company_Size__c</name>
+    <picklistValues>
+        <masterLabel>+10,000 employees</masterLabel>
+        <translation>+10.000 funcionários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1,001 - 5,000 employees</masterLabel>
+        <translation>1.001 - 5.000 funcionários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>201 - 500 employees</masterLabel>
+        <translation>201 - 500 funcionários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5,001 - 10,000 employees</masterLabel>
+        <translation>5.001 - 10.000 funcionários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>501 - 1,000 employees</masterLabel>
+        <translation>501 - 1.000 funcionários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>51 - 200 employees</masterLabel>
+        <translation>51 - 200 funcionários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up to 50 employees</masterLabel>
+        <translation>Até 50 funcionários</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Event type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In person</fullName>
+                <default>false</default>
+                <label>In person</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <label>Online</label>
+            </value>
+            <value>
+                <fullName>Hybrid</fullName>
+                <default>false</default>
+                <label>Hybrid</label>
+            </value>
+            <value>
+                <fullName>To Be Defined</fullName>
+                <default>false</default>
+                <label>To Be Defined</label>
+            </value>
+            <value>
+                <fullName>Stand / Fair</fullName>
+                <default>false</default>
+                <label>Stand / Fair</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

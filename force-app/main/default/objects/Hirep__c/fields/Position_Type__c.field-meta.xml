@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Position Type</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addition</fullName>
+                <default>false</default>
+                <label>Addition</label>
+            </value>
+            <value>
+                <fullName>Replacement</fullName>
+                <default>false</default>
+                <label>Replacement</label>
+            </value>
+            <value>
+                <fullName>Contract Extension</fullName>
+                <default>false</default>
+                <label>Contract Extension</label>
+            </value>
+            <value>
+                <fullName>Person Transfer</fullName>
+                <default>false</default>
+                <label>Person Transfer</label>
+            </value>
+            <value>
+                <fullName>Position Transfer</fullName>
+                <default>false</default>
+                <label>Position Transfer</label>
+            </value>
+            <value>
+                <fullName>Position Conversion</fullName>
+                <default>false</default>
+                <label>Position Conversion</label>
+            </value>
+            <value>
+                <fullName>Temp to Perm Conversion</fullName>
+                <default>false</default>
+                <label>Temp to Perm Conversion</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

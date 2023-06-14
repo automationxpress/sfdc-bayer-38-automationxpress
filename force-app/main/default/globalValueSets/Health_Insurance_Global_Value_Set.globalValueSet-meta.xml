@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Amy</fullName>
+        <default>false</default>
+        <label>Amy</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Curitiba</fullName>
+        <default>false</default>
+        <label>Unimed Curitiba</label>
+    </customValue>
+    <customValue>
+        <fullName>South America</fullName>
+        <default>false</default>
+        <label>South America</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Rio</fullName>
+        <default>false</default>
+        <label>Unimed Rio</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Vitória</fullName>
+        <default>false</default>
+        <label>Unimed Vitória</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Grande Florianópolis</fullName>
+        <default>false</default>
+        <label>Unimed Grande Florianópolis</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed National Center</fullName>
+        <default>false</default>
+        <label>Unimed National Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Londrina</fullName>
+        <default>false</default>
+        <label>Unimed Londrina</label>
+    </customValue>
+    <customValue>
+        <fullName>Prevent Senior</fullName>
+        <default>false</default>
+        <label>Prevent Senior</label>
+    </customValue>
+    <customValue>
+        <fullName>Cassems</fullName>
+        <default>false</default>
+        <label>Cassems</label>
+    </customValue>
+    <customValue>
+        <fullName>Porto Seguro Health</fullName>
+        <default>false</default>
+        <label>Porto Seguro Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Petrobras BR</fullName>
+        <default>false</default>
+        <label>Petrobras BR</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Seguros Saúde</fullName>
+        <default>false</default>
+        <label>Unimed Seguros Saúde</label>
+    </customValue>
+    <customValue>
+        <fullName>GEAP Health</fullName>
+        <default>false</default>
+        <label>GEAP Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed FESP</fullName>
+        <default>false</default>
+        <label>Unimed FESP</label>
+    </customValue>
+    <customValue>
+        <fullName>Caixa Saúde</fullName>
+        <default>false</default>
+        <label>Caixa Saúde</label>
+    </customValue>
+    <customValue>
+        <fullName>Postal Health Post Office</fullName>
+        <default>false</default>
+        <label>Postal Health Post Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Fusex</fullName>
+        <default>false</default>
+        <label>Fusex</label>
+    </customValue>
+    <customValue>
+        <fullName>Unimed Farroupilha RS</fullName>
+        <default>false</default>
+        <label>Unimed Farroupilha RS</label>
+    </customValue>
+    <customValue>
+        <fullName>IPASGO</fullName>
+        <default>false</default>
+        <label>IPASGO</label>
+    </customValue>
+    <customValue>
+        <fullName>Planserv</fullName>
+        <default>false</default>
+        <label>Planserv</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <masterLabel>Health Insurance Global Value Set</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

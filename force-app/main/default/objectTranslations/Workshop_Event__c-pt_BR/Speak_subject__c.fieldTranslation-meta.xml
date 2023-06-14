@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tema da palestra</label>
+    <name>Speak_subject__c</name>
+    <picklistValues>
+        <masterLabel>Breast cancer: prevention and diagnosis</masterLabel>
+        <translation>Câncer de mama: prevenção e diagnóstico​</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Egg freezing</masterLabel>
+        <translation>Congelamento de óvulos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endometriosis</masterLabel>
+        <translation>Endometriose</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IUD for my teenage daughter</masterLabel>
+        <translation>DIU para minha filha adolescente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LGBTQIA+ and Contraception</masterLabel>
+        <translation>LGBTQIA+ e a Contracepção</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Myths and truths about contraception</masterLabel>
+        <translation>Mitos e verdades sobre contracepção​</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation>Outros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perimenopause</masterLabel>
+        <translation>Perimenopausa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pregnancy, postpartum and baby care</masterLabel>
+        <translation>Gravidez, pós-parto e cuidados com o bebê</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STIs</masterLabel>
+        <translation>ISTs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sex - Let&apos;s break that taboo</masterLabel>
+        <translation>Sexo - Vamos quebrar esse tabu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sexually Transmitted Infections (STIs)?</masterLabel>
+        <translation>Infecções Sexualmente Transmissíveis (ISTs)​</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports performance and IUD use</masterLabel>
+        <translation>Performance esportiva e uso de DIUs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The challenges of perimenopause</masterLabel>
+        <translation>Os desafios da perimenopausa​</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Understanding your menstruation: Abnormal Uterine Bleeding (AUB) awareness</masterLabel>
+        <translation>Entendendo sua menstruação: conscientização sobre Sangramento Uterino Anormal (SUA)​</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Why visit the gynecologist frequently??</masterLabel>
+        <translation>Porque visitar o ginecologista frequentemente?​</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>women&apos;s mental health</masterLabel>
+        <translation>Saúde mental da mulher</translation>
+    </picklistValues>
+</CustomFieldTranslation>

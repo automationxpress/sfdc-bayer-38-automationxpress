@@ -7,7 +7,7 @@ on:
     pull_request:
       # The events are that a PR is opened, or when a commit is pushed
       # to a branch that has an existing pull request
-      types: [opened, synchronize]
+      types: [opened, reopened, synchronize]
       # The branches filter allows to specify that this workflow should only
       # run if the branch name is "main". This way we prevent this workflow
       # from running when PRs are opened on other branches
@@ -25,10 +25,10 @@ jobs:
         runs-on: ubuntu-latest
         if: ${{ github.actor != 'dependabot[bot]' }}
         steps:
-            # Now we install nodejs in the VM, and specify version 14
-            - uses: actions/setup-node@v2
+            # Now we install Nodejs in the VM, and specify latest version
+            - uses: actions/setup-node@v3
               with:
-                node-version: '16'
+                node-version: 'latest'
 
             # The idea is that the VM can access your remote repository
             # because your repository is an sfdx project.
@@ -43,7 +43,7 @@ jobs:
             # to the destination org
 
             - name: 'Checkout source code'
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
               with:
                 fetch-depth: 0
 
@@ -68,7 +68,9 @@ jobs:
 
             # Install java as it is required for the next step
             - name: 'Installing java'
-              run: sudo apt-get install openjdk-8-jdk
+              run: |
+                  sudo apt-get update
+                  sudo apt-get install openjdk-8-jdk
 
             # Install SFDX scanner
             - name: 'Installing SFDX scanner'

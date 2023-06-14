@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Advertisement</masterLabel>
+        <translation><!-- Advertisement --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Benefits managers | QUAL</masterLabel>
+        <translation>Gestoras de benefícios | QUAL</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Customer Event</masterLabel>
+        <translation><!-- Customer Event --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Employee Referral</masterLabel>
+        <translation><!-- Employee Referral --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>External Referral</masterLabel>
+        <translation><!-- External Referral --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Google AdWords</masterLabel>
+        <translation><!-- Google AdWords --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Here Among Us e-mail box</masterLabel>
+        <translation>Caixa de e-mail Cá Entre Nós</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Linkedin / Social Media</masterLabel>
+        <translation>Linkedin / Mídias Sociais</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Others</masterLabel>
+        <translation>Outros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Purchased List</masterLabel>
+        <translation><!-- Purchased List --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Technical Consultant | Raquel Almeida</masterLabel>
+        <translation>Consultor Técnico | Raquel Almeida</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Technical Consultant | Ricardo Gregorio</masterLabel>
+        <translation>Consultor Técnico | Ricardo Gregório</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Trade Show</masterLabel>
+        <translation><!-- Trade Show --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Webinar</masterLabel>
+        <translation><!-- Webinar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Website</masterLabel>
+        <translation><!-- Website --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Especialidade</label>
+    <name>Specialties__c</name>
+    <picklistValues>
+        <masterLabel>Angiology/Vascular</masterLabel>
+        <translation>Angiologia/Vascular</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation>Cardiologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endocrinology</masterLabel>
+        <translation>Endocrinologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gynecology and Obstetrics</masterLabel>
+        <translation>Ginecologia e Obstetrícia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oncology</masterLabel>
+        <translation>Oncologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation>Oftalmologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation>Outros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatry</masterLabel>
+        <translation>Psiquiatria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urology</masterLabel>
+        <translation>Urologia</translation>
+    </picklistValues>
+</CustomFieldTranslation>

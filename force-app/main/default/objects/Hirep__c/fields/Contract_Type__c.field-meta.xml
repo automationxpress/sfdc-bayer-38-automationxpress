@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Contract Type</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <label>Permanent</label>
+            </value>
+            <value>
+                <fullName>Temporary</fullName>
+                <default>false</default>
+                <label>Temporary</label>
+            </value>
+            <value>
+                <fullName>Contractor/Insourced</fullName>
+                <default>false</default>
+                <label>Contractor/Insourced</label>
+            </value>
+            <value>
+                <fullName>CRO/Outsourced</fullName>
+                <default>false</default>
+                <label>CRO/Outsourced</label>
+            </value>
+            <value>
+                <fullName>BayJob</fullName>
+                <default>false</default>
+                <label>BayJob</label>
+            </value>
+            <value>
+                <fullName>Intern</fullName>
+                <default>false</default>
+                <label>Intern</label>
+            </value>
+            <value>
+                <fullName>Short Term Assignment</fullName>
+                <default>false</default>
+                <label>Short Term Assignment</label>
+            </value>
+            <value>
+                <fullName>No Contract</fullName>
+                <default>false</default>
+                <label>No Contract</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

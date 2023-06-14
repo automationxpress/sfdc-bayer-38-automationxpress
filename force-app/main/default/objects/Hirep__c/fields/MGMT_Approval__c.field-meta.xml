@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MGMT_Approval__c</fullName>
+    <externalId>false</externalId>
+    <label>MGMT Approval</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-approval Pending</fullName>
+                <default>false</default>
+                <label>Pre-approval Pending</label>
+            </value>
+            <value>
+                <fullName>Pre-approval Rejected</fullName>
+                <default>false</default>
+                <label>Pre-approval Rejected</label>
+            </value>
+            <value>
+                <fullName>Pre-approval Approved</fullName>
+                <default>false</default>
+                <label>Pre-approval Approved</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>On-hold</fullName>
+                <default>false</default>
+                <label>On-hold</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status do Evento</label>
+    <name>Event_status__c</name>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation>Cancelado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executed</masterLabel>
+        <translation>Executado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postponed</masterLabel>
+        <translation>Adiado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled</masterLabel>
+        <translation>Agendado</translation>
+    </picklistValues>
+</CustomFieldTranslation>

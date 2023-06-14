@@ -15,6 +15,11 @@ jobs:
         runs-on: ubuntu-latest
         if: ${{ github.actor != 'dependabot[bot]' }}
         steps:
+            # Now we install Nodejs in the VM, on latest version
+            - uses: actions/setup-node@v3
+              with:
+                node-version: 'latest'
+
             # Install Salesforce CLI
             - name: 'Install Salesforce CLI'
               run: |
@@ -32,7 +37,7 @@ jobs:
 
             # Checkout the source code
             - name: 'Checkout source code'
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
               with:
                 fetch-depth: 0
 
@@ -41,7 +46,6 @@ jobs:
               shell: bash
               run: |
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
-                  echo ${{ secrets.SFDX_STAGING_URL}} > ./SFDX_STAGING_URL.txt
 
             - name: 'Create delta packages for new, modified or deleted metadata'
               run: |
@@ -52,8 +56,8 @@ jobs:
             - name: 'Authenticate to Integration Org'
               run: sfdx auth:sfdxurl:store -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
-            - name: 'Deploy the entire branch to Integration org'
-              run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json
+            - name: 'Deploy Delta Changes to Integration org'
+              run: sfdx force:source:deploy -p "changed-sources/force-app" --testlevel RunLocalTests --json
 
             - name: 'Deploy destructive changes (if any) to Integration org'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
+              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --ignorewarnings

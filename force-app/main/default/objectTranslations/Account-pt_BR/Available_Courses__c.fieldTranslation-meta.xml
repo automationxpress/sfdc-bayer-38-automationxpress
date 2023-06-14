@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Cursos Disponíveis</label>
+    <name>Available_Courses__c</name>
+    <picklistValues>
+        <masterLabel>Accounting Sciences</masterLabel>
+        <translation>Ciências Contábeis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administration</masterLabel>
+        <translation>Administração</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aeronautical Engineering</masterLabel>
+        <translation>Engenharia Aeronáutica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agribusiness</masterLabel>
+        <translation>Agronegócio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agroindustry</masterLabel>
+        <translation>Agroindústria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agronomy</masterLabel>
+        <translation>Agronomia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Animal Science</masterLabel>
+        <translation>Zootecnia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Animation</masterLabel>
+        <translation>Animação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anthropology</masterLabel>
+        <translation>Antropologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architecture and Urbanism</masterLabel>
+        <translation>Arquitetura e Urbanismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arts</masterLabel>
+        <translation>Artes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biochemical Engineering</masterLabel>
+        <translation>Engenharia Bioquímica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biology</masterLabel>
+        <translation>Biologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biomedical Engineering</masterLabel>
+        <translation>Engenharia Biomédica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biomedicine</masterLabel>
+        <translation>Biomedicina</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Management</masterLabel>
+        <translation>Gestão de Negócios</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cartographic Engineering</masterLabel>
+        <translation>Engenharia Cartográfica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical Engineering</masterLabel>
+        <translation>Engenharia Química</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemistry</masterLabel>
+        <translation>Química</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cinema</masterLabel>
+        <translation>Cinema</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Construction</masterLabel>
+        <translation>Construção Civil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Engineering</masterLabel>
+        <translation>Engenharia Civil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Management</masterLabel>
+        <translation>Gestão Comercial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communication Networks Engineering</masterLabel>
+        <translation>Engenharia de Redes de Comunicação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer Engineering</masterLabel>
+        <translation>Engenharia de Computação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer Science</masterLabel>
+        <translation>Ciência da Computação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control and Automation Engineering</masterLabel>
+        <translation>Engenharia de Controle e Automação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cultural Production</masterLabel>
+        <translation>Produção Cultural</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dance</masterLabel>
+        <translation>Dança</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Database</masterLabel>
+        <translation>Banco de Dados</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design</masterLabel>
+        <translation>Design</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Interiors</masterLabel>
+        <translation>Design de Interiores</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economics</masterLabel>
+        <translation>Economia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Engineering</masterLabel>
+        <translation>Engenharia Elétrica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Engineering</masterLabel>
+        <translation>Engenharia Eletrônica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrotechnical Engineering</masterLabel>
+        <translation>Engenharia Eletrotécnica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Forestry</masterLabel>
+        <translation>Engenharia Florestal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Materials</masterLabel>
+        <translation>Engenharia de Materiais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Management</masterLabel>
+        <translation>Gestão de Empresas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entrepreneurship</masterLabel>
+        <translation>Empreendedorismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Engineering</masterLabel>
+        <translation>Engenharia Ambiental</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Events</masterLabel>
+        <translation>Eventos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fashion Design</masterLabel>
+        <translation>Desenho de Moda</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Management</masterLabel>
+        <translation>Gestão Financeira</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Engineering</masterLabel>
+        <translation>Engenharia de Alimentos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Technology</masterLabel>
+        <translation>Tecnologia de Alimentos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gastronomy</masterLabel>
+        <translation>Gastronomia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geography</masterLabel>
+        <translation>Geografia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geological Engineering</masterLabel>
+        <translation>Engenharia Geológica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geology</masterLabel>
+        <translation>Geologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geophysics</masterLabel>
+        <translation>Geofísica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geoprocessing</masterLabel>
+        <translation>Geoprocessamento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Arts</masterLabel>
+        <translation>Artes Gráficas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Creation</masterLabel>
+        <translation>Criação Gráfica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>History</masterLabel>
+        <translation>História</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Economics</masterLabel>
+        <translation>Economia Doméstica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital Administration</masterLabel>
+        <translation>Administração Hospitalar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality</masterLabel>
+        <translation>Hotelaria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Automation</masterLabel>
+        <translation>Automação Industrial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Design</masterLabel>
+        <translation>Desenho Industrial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Engineering</masterLabel>
+        <translation>Engenharia Industrial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Production Management</masterLabel>
+        <translation>Gestão da Produção Industrial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Informatics</masterLabel>
+        <translation>Informática</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information Management</masterLabel>
+        <translation>Gestão da Informação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information Science</masterLabel>
+        <translation>Ciência da Informação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information Security</masterLabel>
+        <translation>Segurança da Informação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information Technology</masterLabel>
+        <translation>Tecnologia da Informação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Institutional Communication</masterLabel>
+        <translation>Comunicação Institucional</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation>Seguros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Business</masterLabel>
+        <translation>Negócios Internacionais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Relations</masterLabel>
+        <translation>Relações Internacionais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Journalism</masterLabel>
+        <translation>Jornalismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landscaping</masterLabel>
+        <translation>Paisagismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Law</masterLabel>
+        <translation>Direito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letters</masterLabel>
+        <translation>Letras</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Librarianship</masterLabel>
+        <translation>Biblioteconomia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linguistics</masterLabel>
+        <translation>Linguística</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logistics Management</masterLabel>
+        <translation>Gestão Logística</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Human Resources</masterLabel>
+        <translation>Gestão de Recursos Humanos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation>Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Materials Production Engineering</masterLabel>
+        <translation>Engenharia de Produção de Materiais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mathematics</masterLabel>
+        <translation>Matemática</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanical Engineering</masterLabel>
+        <translation>Engenharia Mecânica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechatronics Engineering</masterLabel>
+        <translation>Engenharia Mecatrônica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicine</masterLabel>
+        <translation>Medicina</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metallurgical Engineering</masterLabel>
+        <translation>Engenharia Metalúrgica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meteorology</masterLabel>
+        <translation>Meteorologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microbiology</masterLabel>
+        <translation>Microbiologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mining Engineering</masterLabel>
+        <translation>Engenharia de Minas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation>Diversos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multimedia Production</masterLabel>
+        <translation>Produção de Multimídia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music</masterLabel>
+        <translation>Música</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Naval Engineering</masterLabel>
+        <translation>Engenharia Naval</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear Engineering</masterLabel>
+        <translation>Engenharia Nuclear</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing</masterLabel>
+        <translation>Enfermagem</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nutrition</masterLabel>
+        <translation>Nutrição</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational Therapy</masterLabel>
+        <translation>Terapia Ocupacional</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oceanography</masterLabel>
+        <translation>Oceanografia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Odon tology</masterLabel>
+        <translation>Odontologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil and Gas</masterLabel>
+        <translation>Petróleo e Gás</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation>Outros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pedagogy</masterLabel>
+        <translation>Pedagogia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petroleum Engineering</masterLabel>
+        <translation>Engenharia de Petróleo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharmacy</masterLabel>
+        <translation>Farmácia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Philosophy</masterLabel>
+        <translation>Filosofia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photography</masterLabel>
+        <translation>Fotografia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Education</masterLabel>
+        <translation>Educação Física</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Engineering</masterLabel>
+        <translation>Engenharia Física</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physics</masterLabel>
+        <translation>Física</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physiotherapy</masterLabel>
+        <translation>Fisioterapia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plastic Arts</masterLabel>
+        <translation>Artes Plásticas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Design</masterLabel>
+        <translation>Design de Produto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Engineering</masterLabel>
+        <translation>Engenharia de Produção</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychology</masterLabel>
+        <translation>Psicologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Administration</masterLabel>
+        <translation>Administração Pública</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Health</masterLabel>
+        <translation>Saúde Pública</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Relations</masterLabel>
+        <translation>Relações Públicas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publicity and Propaganda</masterLabel>
+        <translation>Publicidade e Propaganda</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Management</masterLabel>
+        <translation>Gestão de Qualidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radialism</masterLabel>
+        <translation>Radialismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology</masterLabel>
+        <translation>Radiologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate</masterLabel>
+        <translation>Negócios Imobiliários</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety Management</masterLabel>
+        <translation>Gestão da Segurança</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sanitary Engineering</masterLabel>
+        <translation>Engenharia Sanitária</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Management</masterLabel>
+        <translation>Gestão de Serviços</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Communication</masterLabel>
+        <translation>Comunicação Social</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Sciences</masterLabel>
+        <translation>Ciências Sociais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Studies</masterLabel>
+        <translation>Estudos Sociais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Work</masterLabel>
+        <translation>Serviço Social</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sociology</masterLabel>
+        <translation>Sociologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Development</masterLabel>
+        <translation>Desenvolvimento de Softwares</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sound and Image</masterLabel>
+        <translation>Som e Imagem</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech Therapy</masterLabel>
+        <translation>Fonoaudiologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statistics</masterLabel>
+        <translation>Estatística</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Systems Analysis and Development</masterLabel>
+        <translation>Análise e Desenvolvimento de Sistemas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecommunications Engineering</masterLabel>
+        <translation>Engenharia de Telecomunicações</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textile Engineering</masterLabel>
+        <translation>Engenharia Têxtil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theater</masterLabel>
+        <translation>Teatro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theology</masterLabel>
+        <translation>Teologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tourism</masterLabel>
+        <translation>Turismo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veterinary Medicine</masterLabel>
+        <translation>Medicina Veterinária</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual Arts</masterLabel>
+        <translation>Artes Visuais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Resources Engineering</masterLabel>
+        <translation>Engenharia de Recursos Hídricos</translation>
+    </picklistValues>
+</CustomFieldTranslation>
