@@ -2,8 +2,6 @@
 public class UserEntryServiceTest {
     @TestSetup
     static void setupTestData() {
-        Account company = TestDataService.getDefaultAccount();
-        insert company;
 
         Job_Role__c jobRole = TestDataService.getDefaultJobRole();
         insert jobRole;
@@ -17,8 +15,7 @@ public class UserEntryServiceTest {
         Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
         ));
         insert roleMatrix;
         
@@ -39,13 +36,13 @@ public class UserEntryServiceTest {
         User u = TestDataService.getDefaultUser();
         u.ProfileId = p.Id;
         insert u;
-        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
 
         User_Entry__c ue = (User_Entry__c) TestDataService.createUserEntry(new User_Entry__c(
             Primary_Job_Role__c = roleMatrix.Job_Role__c,
             MAPV_Department__c = roleMatrix.MAPV_Department__c,
             MAPV_Group__c = roleMatrix.MAPV_Group__c,
-            Company__c = roleMatrix.Company__c,
+            Uma_Company__c = roleMatrix.Uma_Company__c,
             Resource_Manager__c = u.Id
         ));
         insert ue;
@@ -72,7 +69,7 @@ public class UserEntryServiceTest {
     static void testUserEntrySharingsWithManagers() {
         Profile endUserProfile = UserUtils.getPlatformEndUserProfile();
         Profile adminProfile = [SELECT Id FROM Profile WHERE Name = 'System Administrator' LIMIT 1];
-        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
 
         List<User> users = new List<User>();
 
@@ -92,7 +89,7 @@ public class UserEntryServiceTest {
                 Primary_Job_Role__c = roleMatrix.Job_Role__c,
                 MAPV_Department__c = roleMatrix.MAPV_Department__c,
                 MAPV_Group__c = roleMatrix.MAPV_Group__c,
-                Company__c = roleMatrix.Company__c,
+                Uma_Company__c = roleMatrix.Uma_Company__c,
                 Resource_Manager__c = u2.Id,
                 Deputy_Manager__c = UserInfo.getUserId()
             ));
@@ -114,13 +111,13 @@ public class UserEntryServiceTest {
         u.ProfileId = p.Id;
         insert u;
         
-        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
 
         User_Entry__c ue = (User_Entry__c) TestDataService.createUserEntry(new User_Entry__c(
             Primary_Job_Role__c = roleMatrix.Job_Role__c,
             MAPV_Department__c = roleMatrix.MAPV_Department__c,
             MAPV_Group__c = roleMatrix.MAPV_Group__c,
-            Company__c = roleMatrix.Company__c,
+            Uma_Company__c = roleMatrix.Uma_Company__c,
             Resource_Manager__c = u.Id
         ));
         insert ue;
@@ -136,12 +133,12 @@ public class UserEntryServiceTest {
 
     @isTest
     static void testUpdateLockedUserEntries() {
-        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
 	    User_Entry__c ue = (User_Entry__c) TestDataService.createUserEntry(new User_Entry__c(
             Primary_Job_Role__c = roleMatrix.Job_Role__c,
             MAPV_Department__c = roleMatrix.MAPV_Department__c,
             MAPV_Group__c = roleMatrix.MAPV_Group__c,
-            Company__c = roleMatrix.Company__c
+            Uma_Company__c = roleMatrix.Uma_Company__c
         ));
         insert ue;
 

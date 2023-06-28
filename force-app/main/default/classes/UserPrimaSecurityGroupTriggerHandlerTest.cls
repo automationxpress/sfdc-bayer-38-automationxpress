@@ -35,14 +35,12 @@ public class UserPrimaSecurityGroupTriggerHandlerTest {
         ));
         insert permissionSetAssignments;
 
-        Account company = TestDataService.getDefaultAccount();
         MAPV_Department__c mapvDepartment = TestDataService.getDefaultMapvDepartment();
         MAPV_Group__c mapvGroup = TestDataService.getDefaultMapvGroup();
         Job_Role__c jobRole = TestDataService.getDefaultJobRole();
         Prima_Security_Group__c primaSecurityGroup = TestDataService.getDefaultPrimaSecurityGroup();
 
         System.runAs(applicationAdmin){
-            insert company;
             insert mapvDepartment;
             insert mapvGroup;
             insert jobRole;
@@ -53,8 +51,7 @@ public class UserPrimaSecurityGroupTriggerHandlerTest {
             Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
             ));
             insert roleMatrix;
             
@@ -67,7 +64,6 @@ public class UserPrimaSecurityGroupTriggerHandlerTest {
         System.runAs(manager){
             User_Entry__c userEntry = TestDataService.createUserEntry(new User_Entry__c(
                 Resource_Manager__c = manager.Id,
-                Company__c = company.Id, 
                 MAPV_Department__c = mapvDepartment.Id, 
                 MAPV_Group__c = mapvGroup.Id, 
                 Primary_Job_Role__c = jobRole.Id

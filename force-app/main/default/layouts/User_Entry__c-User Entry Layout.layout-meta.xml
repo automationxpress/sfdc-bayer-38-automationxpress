@@ -89,7 +89,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Company__c</field>
+                <field>Uma_Company__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

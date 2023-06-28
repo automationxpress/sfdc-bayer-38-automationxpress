@@ -3,8 +3,6 @@
 private class UserTimeTrackingTriggerHandlerTest {
 	@TestSetup
     private static void setupTestData(){
-        Account company = TestDataService.getDefaultAccount();
-        insert company;
 
         Job_Role__c jobRole = TestDataService.getDefaultJobRole();
         insert jobRole;
@@ -18,12 +16,11 @@ private class UserTimeTrackingTriggerHandlerTest {
         Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
         ));
         insert roleMatrix;
         
-        Role_Matrix__c roleMatrix1 = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix1 = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
         Profile profileRecord = UserUtils.getPlatformEndUserProfile();
         User userRecord = TestDataService.getDefaultUser();
         userRecord.ProfileId = profileRecord.Id;
@@ -34,7 +31,7 @@ private class UserTimeTrackingTriggerHandlerTest {
             Primary_Job_Role__c = roleMatrix1.Job_Role__c,
             MAPV_Department__c = roleMatrix1.MAPV_Department__c,
             MAPV_Group__c = roleMatrix1.MAPV_Group__c,
-            Company__c = roleMatrix1.Company__c,
+            Uma_Company__c = roleMatrix1.Uma_Company__c,
             Resource_Manager__c = userRecord.Id
         ));
         insert userEntry;

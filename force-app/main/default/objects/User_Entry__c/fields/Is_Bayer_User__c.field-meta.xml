@@ -2,8 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Is_Bayer_User__c</fullName>
     <externalId>false</externalId>
-    <formula>UPPER(Company__r.Name) = &apos;BAYER&apos;</formula>
-    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <formula>UPPER(TEXT(Uma_Company__c)) == &apos;BAYER&apos;</formula>
     <label>Is Bayer User</label>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

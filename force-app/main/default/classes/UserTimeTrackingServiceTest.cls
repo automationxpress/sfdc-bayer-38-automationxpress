@@ -12,8 +12,6 @@ public class UserTimeTrackingServiceTest {
         ));
         insert manager;
         
-        Account company = TestDataService.getDefaultAccount();
-        insert company;
         
         MAPV_Department__c mapvDepartment = TestDataService.getDefaultMapvDepartment();
         insert mapvDepartment;
@@ -36,8 +34,7 @@ public class UserTimeTrackingServiceTest {
         Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
         ));
         insert roleMatrix;
         
@@ -50,7 +47,6 @@ public class UserTimeTrackingServiceTest {
         
         User_Entry__c userEntryCreate = TestDataService.createUserEntry(new User_Entry__c(
             Resource_Manager__c = manager.Id,
-            Company__c = company.Id, 
             MAPV_Department__c = mapvDepartment.Id, 
             MAPV_Group__c = mapvGroup.Id, 
             Primary_Job_Role__c = jobRole.Id,

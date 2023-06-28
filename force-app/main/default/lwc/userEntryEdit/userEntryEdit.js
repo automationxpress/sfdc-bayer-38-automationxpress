@@ -93,7 +93,7 @@ export default class UserEntryEdit extends LightningElement {
     primaryJobRoleValue;
     selectedMAPVDepartmentId;
     selectedMAPVGroupId;
-    selectedCompanyId;
+    selectedUmaCompany;
     selectedLocations;
     resourceManagerId;
     submittedForApproval = false;
@@ -134,7 +134,7 @@ export default class UserEntryEdit extends LightningElement {
                 this.primaryJobRole = result.primaryJobRoleId;
                 this.selectedMAPVDepartmentId = result.MAPVDepartment;
                 this.selectedMAPVGroupId = result.MAPVGroup;
-                this.selectedCompanyId = result.company;
+                this.selectedUmaCompany=result.umaCompany;
                 this.approvalStatus = result.approvalStatus;
                 this.selectedLocations = result.locations;
                 this.timeTrackingRequired = result.timeTrackingRequired;
@@ -153,14 +153,14 @@ export default class UserEntryEdit extends LightningElement {
     }
 
     getRoleMatrixData() {
-        if (this.selectedMAPVDepartmentId != null && this.selectedMAPVGroupId != null && this.selectedCompanyId != null && this.isStaffStatusLeft != null && this.isStaffStatusLongTermLeave != null && this.primaryJobRole != null) {
+        if (this.selectedMAPVDepartmentId != null && this.selectedMAPVGroupId != null && this.selectedUmaCompany != null && this.isStaffStatusLeft != null && this.isStaffStatusLongTermLeave != null && this.primaryJobRole != null) {
             var userEntryDetails = {
                 userEntryId: this.userEntryId,
                 isStaffStatusLeft: this.isStaffStatusLeft,
                 isStaffStatusLongTermLeave: this.isStaffStatusLongTermLeave,
                 MAPVDepartment: this.selectedMAPVDepartmentId,
                 MAPVGroup: this.selectedMAPVGroupId,
-                company: this.selectedCompanyId,
+                umaCompany: this.selectedUmaCompany,
                 primaryJobRoleId: this.primaryJobRole,
                 jobRoles: this.jobRoleData,
                 timeTrackingRequired: this.timeTrackingRequired,
@@ -295,7 +295,7 @@ export default class UserEntryEdit extends LightningElement {
         fields.Primary_Job_Role__c = this.primaryJobRole;
         fields.MAPV_Department__c = this.selectedMAPVDepartmentId;
         fields.MAPV_Group__c = this.selectedMAPVGroupId;
-        fields.Company__c = this.selectedCompanyId;
+        fields.Uma_Company__c=this.selectedUmaCompany;
         fields.Locations__c = this.selectedLocations;
     }
 
@@ -440,7 +440,10 @@ export default class UserEntryEdit extends LightningElement {
             Value: this.primaryJobRoleValue
         });
     }
-
+    handleCompanyChange(event){
+        this.selectedUmaCompany=event.target.value;
+        this.getRoleMatrixData();
+    }
     handleRecordSelected(event) {
         this.updateRecordSelections(event);
         this.showWarningMsg=true;
@@ -480,11 +483,6 @@ export default class UserEntryEdit extends LightningElement {
         } else if (objectName == "MAPV_Group__c") {
             this.selectedMAPVGroupId = selectedId;
             if (this.selectedMAPVGroupId) {
-                this.getRoleMatrixData();
-            }
-        } else if (objectName == "Account") {
-            this.selectedCompanyId = selectedId;
-            if (this.selectedCompanyId) {
                 this.getRoleMatrixData();
             }
         }

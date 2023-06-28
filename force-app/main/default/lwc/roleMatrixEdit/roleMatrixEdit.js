@@ -333,7 +333,7 @@ export default class RoleMatrixEdit extends LightningElement {
         event.preventDefault();
         const fields = event.detail.fields;
         if (this.isGlobalJobRole) {
-            fields.Company__c = null;
+            fields.Uma_Company__c = null;
             fields.MAPV_Department__c = null;
             fields.MAPV_Group__c = null;
         }
