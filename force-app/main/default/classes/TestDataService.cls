@@ -37,6 +37,7 @@ public class TestDataService {
             Last_Name__c = 'Test',
             Email__c = 'john.test@bayer.com',
             CWID__c = 'BYXXF',
+            Uma_Company__c = 'TCS (IT)',
             Staff_Status__c = UserEntryUtils.STAFF_STATUS_CURRENT,
             Locations__c = UserEntryUtils.LOCATION_GERMANY_BERLIN,
             Grant_access_to_UMA__c = UserEntryUtils.GRANT_ACCESS_TO_UMA_NO,
@@ -94,7 +95,8 @@ public class TestDataService {
 
     public static Role_Matrix__c getDefaultRoleMatrix(){
         return new Role_Matrix__c(
-        	Role_Matrix_Type__c = '4-Criteria Role Matrix'
+        	Role_Matrix_Type__c = '4-Criteria Role Matrix',
+            Uma_Company__c = 'TCS (IT)'
         );
     }
 

@@ -106,7 +106,7 @@
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>RecordId.Company__c</leftValueReference>
+                <leftValueReference>RecordId.Uma_Company__c</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -204,7 +204,8 @@
             <label>Proceed</label>
         </rules>
     </decisions>
-    <description>Create an User Entry record from Hirep process. Upon creating User Entry, update the Hirep Process status to Onboarding Completed.</description>
+    <description>Create an User Entry record from Hirep process. Upon creating User Entry, update the Hirep Process status to Onboarding Completed.
+V2-replaced Account lookup field by Uma_Company__c picklist.</description>
     <environments>Default</environments>
     <formulas>
         <name>Error_Handling_Message</name>
@@ -247,12 +248,6 @@
             <field>CWID__c</field>
             <value>
                 <elementReference>RecordId.CWID__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Company__c</field>
-            <value>
-                <elementReference>RecordId.Company__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -331,6 +326,12 @@
             <field>Time_Tracking_Required__c</field>
             <value>
                 <elementReference>RecordId.Time_Tracking_Required__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Uma_Company__c</field>
+            <value>
+                <elementReference>RecordId.Uma_Company__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

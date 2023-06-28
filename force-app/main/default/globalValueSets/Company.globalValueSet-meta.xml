@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accenture</fullName>
+        <default>false</default>
+        <label>Accenture</label>
+    </customValue>
+    <customValue>
+        <fullName>BAYER</fullName>
+        <default>false</default>
+        <label>BAYER</label>
+    </customValue>
+    <customValue>
+        <fullName>CAPTATIVA</fullName>
+        <default>false</default>
+        <label>CAPTATIVA</label>
+    </customValue>
+    <customValue>
+        <fullName>EPS</fullName>
+        <default>false</default>
+        <label>EPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Genpact Inc</fullName>
+        <default>false</default>
+        <label>Genpact Inc</label>
+    </customValue>
+    <customValue>
+        <fullName>TCS (IT)</fullName>
+        <default>false</default>
+        <label>TCS (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>TCS (PV)</fullName>
+        <default>false</default>
+        <label>TCS (PV)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sample Account for Entitlements</fullName>
+        <default>false</default>
+        <label>Sample Account for Entitlements</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER EXT.</fullName>
+        <default>false</default>
+        <label>OTHER EXT.</label>
+    </customValue>
+    <description>Company global value set Used for User Entry, Role Matrix and Hirep</description>
+    <masterLabel>Company</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

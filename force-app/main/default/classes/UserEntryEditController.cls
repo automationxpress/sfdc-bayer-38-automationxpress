@@ -39,8 +39,7 @@ public with sharing class UserEntryEditController {
             userEntryData.MAPVDepartmentName = userEntry.MAPV_Department__r.Name;
             userEntryData.MAPVGroup = userEntry.MAPV_Group__c;
             userEntryData.MAPVGroupName = userEntry.MAPV_Group__r.Name;
-            userEntryData.company = userEntry.Company__c;
-            userEntryData.companyName = userEntry.Company__r.Name;
+            userEntryData.umaCompany = userEntry.Uma_Company__c;
             userEntryData.approvalStatus = userEntry.Approval_Status__c;
             userEntryData.locations = userEntry.Locations__c;
             userEntryData.timeTrackingRequired = userEntry.Time_Tracking_Required__c;
@@ -88,7 +87,7 @@ public with sharing class UserEntryEditController {
             jobRoleIds, 
             userEntryDetails.MAPVDepartment, 
             userEntryDetails.MAPVGroup, 
-            userEntryDetails.company
+            userEntryDetails.umaCompany
         );
         System.debug('roleMatrices: '+roleMatrices);
         

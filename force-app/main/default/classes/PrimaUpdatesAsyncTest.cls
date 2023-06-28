@@ -11,9 +11,7 @@ private class PrimaUpdatesAsyncTest {
         ));
         insert manager;
 
-        Account company = TestDataService.getDefaultAccount();
-        insert company;
-
+       
         MAPV_Department__c mapvDepartment = TestDataService.getDefaultMapvDepartment();
         insert mapvDepartment;
 
@@ -32,8 +30,7 @@ private class PrimaUpdatesAsyncTest {
         Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
         ));
         insert roleMatrix;
         
@@ -49,7 +46,6 @@ private class PrimaUpdatesAsyncTest {
 
         User_Entry__c userEntry = TestDataService.createUserEntry(new User_Entry__c(
             Resource_Manager__c = manager.Id,
-            Company__c = company.Id, 
             MAPV_Department__c = mapvDepartment.Id, 
             MAPV_Group__c = mapvGroup.Id, 
             Primary_Job_Role__c = jobRole.Id

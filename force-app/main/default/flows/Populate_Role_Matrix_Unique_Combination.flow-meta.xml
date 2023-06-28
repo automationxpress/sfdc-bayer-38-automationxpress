@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <description>Populate Unique_Combination__c equals to the concatenation of five fields.</description>
+        <name>Populate_Unique_Combination</name>
+        <label>Populate Unique Combination</label>
+        <locationX>526</locationX>
+        <locationY>108</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Unique_Combination__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ConcatenatedString</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Removed Main_Role_Add_on__c from unique combination.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ConcatenatedString</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Job_Role__r.Name}+{!$Record.MAPV_Department__r.Name}+{!$Record.MAPV_Group__r.Name}+TEXT({!$Record.Uma_Company__c})</expression>
+    </formulas>
+    <interviewLabel>Populate Role Matrix-Unique Combination {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Populate Role Matrix-Unique Combination</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Populate_Unique_Combination</targetReference>
+        </connector>
+        <object>Role_Matrix__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

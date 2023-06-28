@@ -2,8 +2,6 @@
 private class UserEntryEditControllerTest {
     @TestSetup
     private static void setupTestData() {
-        Account company = TestDataService.getDefaultAccount();
-        insert company;
 
         Job_Role__c jobRole = TestDataService.getDefaultJobRole();
         insert jobRole;
@@ -17,8 +15,7 @@ private class UserEntryEditControllerTest {
         Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
         ));
         insert roleMatrix;
         
@@ -74,7 +71,7 @@ private class UserEntryEditControllerTest {
                 Primary_Job_Role__c = roleMatrix.Job_Role__c,
                 MAPV_Department__c = roleMatrix.MAPV_Department__c,
                 MAPV_Group__c = roleMatrix.MAPV_Group__c,
-                Company__c = roleMatrix.Company__c,
+                Uma_Company__c = roleMatrix.Uma_Company__c,
                 Resource_Manager__c = u2.Id
                 ));
         insert ue;
@@ -107,7 +104,7 @@ private class UserEntryEditControllerTest {
     @isTest
     static void testGetUserEntryData() {
         User_Entry__c ue = [SELECT Id, Name, Is_Locked__c, Approval_Status__c, Staff_Status__c, Primary_Job_Role__c, Primary_Job_Role__r.Name, 
-                       MAPV_Department__c, MAPV_Department__r.Name, MAPV_Group__c, MAPV_Group__r.Name, Company__c, Company__r.Name,
+                       MAPV_Department__c, MAPV_Department__r.Name, MAPV_Group__c, MAPV_Group__r.Name, Uma_Company__c,
                        Resource_Manager__c, Deputy_Manager__c,Locations__c,
                         (SELECT Id, MyLearning_Program__c, MyLearning_Program__r.Name, Status__c FROM User_MyLearning_Programs__r),
                         (SELECT Id, Prima_Role__c, Prima_Role__r.Name, Status__c FROM User_Prima_Roles__r),

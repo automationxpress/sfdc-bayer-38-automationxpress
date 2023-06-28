@@ -20,8 +20,6 @@ private class RoleMatrixServiceTest {
         insert permissionSetAssignment;
 
         System.runAs(applicationAdmin){
-            Account company = TestDataService.getDefaultAccount();
-            insert company;
 
             Job_Role__c jobRole = TestDataService.getDefaultJobRole();
             insert jobRole;
@@ -35,8 +33,7 @@ private class RoleMatrixServiceTest {
             Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
                 Job_Role__c = jobRole.Id,
                 MAPV_Department__c = mapvDepartment.Id,
-                MAPV_Group__c = mapvGroup.Id,
-                Company__c = company.Id
+                MAPV_Group__c = mapvGroup.Id
             ));
             insert roleMatrix;
         
@@ -71,8 +68,7 @@ private class RoleMatrixServiceTest {
                 Job_Role__c = jobRole1.Id,
                 Role_Matrix_Type__c  ='Global Job role/ Add-On role',
                 MAPV_Department__c = mapvDepartment.Id,
-                MAPV_Group__c = mapvGroup.Id,
-                Company__c = company.Id
+                MAPV_Group__c = mapvGroup.Id
             ));
             insert roleMatrix1;
         }

@@ -18,8 +18,7 @@ public class UserEntryData {
     @AuraEnabled public String MAPVDepartmentName { get; set; }
     @AuraEnabled public String MAPVGroup { get; set; }
     @AuraEnabled public String MAPVGroupName { get; set; }
-    @AuraEnabled public String company { get; set; }
-    @AuraEnabled public String companyName { get; set; }
+    @AuraEnabled public String umaCompany { get; set; }
     @AuraEnabled public String approvalStatus { get; set; }
     @AuraEnabled public String locations { get; set; }
     @AuraEnabled public String timeTrackingRequired { get; set; }

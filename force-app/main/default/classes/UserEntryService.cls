@@ -270,24 +270,36 @@ public class UserEntryService {
             searchMatchingRoleMatrix(userEntry);
         }
     }
-    
+
     //Search for matching Role Matrix record with selected Primary Job Role, MAPV Dept, MAPV Group and Company in User Entry
     //if not found, show error msg
     private static void searchMatchingRoleMatrix(User_Entry__c userEntry) {
-        Set<Id> jobRoleId = new Set<Id>();
-        jobRoleId.add(userEntry.Primary_Job_Role__c);
-        List<Role_Matrix__c> roleMatrices = RoleMatrixUtils.getRoleMatrices(
-            jobRoleId,
-            userEntry.MAPV_Department__c, 
-            userEntry.MAPV_Group__c, 
-            userEntry.Company__c
-        );
-        
+         List<Role_Matrix__c> roleMatrices = [SELECT Id, Name, Job_Role__c,Role_Matrix_Type__c
+                                             FROM Role_Matrix__c 
+                                             WHERE Job_Role__c =: userEntry.Primary_Job_Role__c
+                                             AND ( 
+                                                 Role_Matrix_Type__c = 'Global Job role/ Add-On role'
+                                                 OR (
+                                                     Role_Matrix_Type__c = '4-Criteria Role Matrix'
+                                                     AND MAPV_Department__c = :userEntry.MAPV_Department__c
+                                                     AND MAPV_Group__c = :userEntry.MAPV_Group__c
+                                                     AND Uma_Company__c =:userEntry.Uma_Company__c
+                                                 )
+                                                 OR(
+                                                     Role_Matrix_Type__c = '3-Criteria Role Matrix'
+                                                     AND Uma_Company__c =:userEntry.Uma_Company__c
+                                                     AND MAPV_Department__c = :userEntry.MAPV_Department__c
+                                                 )
+                                                 OR (
+                                                         Role_Matrix_Type__c = '2-Criteria Role Matrix'
+                                                         AND Uma_Company__c =:userEntry.Uma_Company__c
+                                                     )
+                                             )
+                                            ];
+                            
         if(roleMatrices.size()==0){
             userEntry.addError('Incorrect combination of entries, please contact your UMA Admins');
         }
-    }
-    
-    
+    } 
     
 }

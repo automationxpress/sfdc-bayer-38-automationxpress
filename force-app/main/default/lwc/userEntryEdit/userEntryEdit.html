@@ -111,18 +111,7 @@
                                 onrecordremoved={handleRecordRemoved}
                             ></c-user-entry-searchable-picklist>
                         </div>
-                        <div class="slds-m-bottom_x-small">
-                            <c-user-entry-searchable-picklist
-                                user-entry-id={userEntryId}
-                                object-label="Company"
-                                object-api-name="Account"
-                                search-placeholder="Search Companies..."
-                                icon-name="standard:account"
-                                onrecordselected={handleRecordSelected}
-                                onrecordremoved={handleRecordRemoved}
-                            ></c-user-entry-searchable-picklist>
-                        </div>
-                        
+                        <lightning-input-field field-name="Uma_Company__c" onchange={handleCompanyChange}></lightning-input-field>
                         <lightning-input-field field-name="Alternate_ML_Supervisor__c"></lightning-input-field>
                         <lightning-input-field field-name="Staff_Status__c" onchange={handleStaffStatusChanged}></lightning-input-field>
                         <lightning-input-field field-name="Working_Hours__c" value={workingHours} onchange={handleWorkingHoursChange}></lightning-input-field>
