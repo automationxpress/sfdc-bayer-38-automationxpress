@@ -6,14 +6,39 @@
         <label>Accenture</label>
     </customValue>
     <customValue>
+        <fullName>ARGUS Consult</fullName>
+        <default>false</default>
+        <label>ARGUS Consult</label>
+    </customValue>
+    <customValue>
+        <fullName>Aristo</fullName>
+        <default>false</default>
+        <label>Aristo</label>
+    </customValue>
+    <customValue>
+        <fullName>Averbis</fullName>
+        <default>false</default>
+        <label>Averbis</label>
+    </customValue>
+    <customValue>
         <fullName>BAYER</fullName>
         <default>false</default>
         <label>BAYER</label>
     </customValue>
     <customValue>
+        <fullName>Capgemini</fullName>
+        <default>false</default>
+        <label>Capgemini</label>
+    </customValue>
+    <customValue>
         <fullName>CAPTATIVA</fullName>
         <default>false</default>
         <label>CAPTATIVA</label>
+    </customValue>
+    <customValue>
+        <fullName>Cognizant</fullName>
+        <default>false</default>
+        <label>Cognizant</label>
     </customValue>
     <customValue>
         <fullName>EPS</fullName>
@@ -26,6 +51,41 @@
         <label>Genpact Inc</label>
     </customValue>
     <customValue>
+        <fullName>JNR PV Solutions</fullName>
+        <default>false</default>
+        <label>JNR PV Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Lenolution</fullName>
+        <default>false</default>
+        <label>Lenolution</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER EXT.</fullName>
+        <default>false</default>
+        <label>OTHER EXT.</label>
+    </customValue>
+    <customValue>
+        <fullName>Pinnaxis</fullName>
+        <default>false</default>
+        <label>Pinnaxis</label>
+    </customValue>
+    <customValue>
+        <fullName>RxLogix</fullName>
+        <default>false</default>
+        <label>RxLogix</label>
+    </customValue>
+    <customValue>
+        <fullName>Scala</fullName>
+        <default>false</default>
+        <label>Scala</label>
+    </customValue>
+    <customValue>
+        <fullName>Syncwork</fullName>
+        <default>false</default>
+        <label>Syncwork</label>
+    </customValue>
+    <customValue>
         <fullName>TCS (IT)</fullName>
         <default>false</default>
         <label>TCS (IT)</label>
@@ -35,17 +95,7 @@
         <default>false</default>
         <label>TCS (PV)</label>
     </customValue>
-    <customValue>
-        <fullName>Sample Account for Entitlements</fullName>
-        <default>false</default>
-        <label>Sample Account for Entitlements</label>
-    </customValue>
-    <customValue>
-        <fullName>OTHER EXT.</fullName>
-        <default>false</default>
-        <label>OTHER EXT.</label>
-    </customValue>
     <description>Company global value set Used for User Entry, Role Matrix and Hirep</description>
     <masterLabel>Company</masterLabel>
-    <sorted>false</sorted>
+    <sorted>true</sorted>
 </GlobalValueSet>

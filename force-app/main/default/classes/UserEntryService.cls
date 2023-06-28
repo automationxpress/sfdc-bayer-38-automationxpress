@@ -266,40 +266,41 @@ public class UserEntryService {
     
     // Method for Hard check in User Entry
     public static void validateUserEntrieseWithRoleMatrix(List<User_Entry__c> newUserEntries) {
+        List<Role_Matrix__c> allRoleMatrices = [SELECT Id, Name, Job_Role__c,Role_Matrix_Type__c, MAPV_Department__c,MAPV_Group__c,Uma_Company__c 
+                                                       FROM Role_Matrix__c];
         for(User_Entry__c userEntry : newUserEntries){
-            searchMatchingRoleMatrix(userEntry);
+            searchMatchingRoleMatrix(userEntry, allRoleMatrices);
         }
     }
-
+    
     //Search for matching Role Matrix record with selected Primary Job Role, MAPV Dept, MAPV Group and Company in User Entry
     //if not found, show error msg
-    private static void searchMatchingRoleMatrix(User_Entry__c userEntry) {
-         List<Role_Matrix__c> roleMatrices = [SELECT Id, Name, Job_Role__c,Role_Matrix_Type__c
-                                             FROM Role_Matrix__c 
-                                             WHERE Job_Role__c =: userEntry.Primary_Job_Role__c
-                                             AND ( 
-                                                 Role_Matrix_Type__c = 'Global Job role/ Add-On role'
-                                                 OR (
-                                                     Role_Matrix_Type__c = '4-Criteria Role Matrix'
-                                                     AND MAPV_Department__c = :userEntry.MAPV_Department__c
-                                                     AND MAPV_Group__c = :userEntry.MAPV_Group__c
-                                                     AND Uma_Company__c =:userEntry.Uma_Company__c
-                                                 )
-                                                 OR(
-                                                     Role_Matrix_Type__c = '3-Criteria Role Matrix'
-                                                     AND Uma_Company__c =:userEntry.Uma_Company__c
-                                                     AND MAPV_Department__c = :userEntry.MAPV_Department__c
-                                                 )
-                                                 OR (
-                                                         Role_Matrix_Type__c = '2-Criteria Role Matrix'
-                                                         AND Uma_Company__c =:userEntry.Uma_Company__c
-                                                     )
-                                             )
-                                            ];
-                            
-        if(roleMatrices.size()==0){
+    
+    private static void searchMatchingRoleMatrix(User_Entry__c userEntry, List<Role_Matrix__c> allRoleMatrices){
+        
+        Boolean isRoleMatrixMatch = false;
+        for(Role_Matrix__c roleMatrix : allRoleMatrices){
+            if(userEntry.Primary_Job_Role__c == roleMatrix.Job_Role__c){
+                    if(roleMatrix.Role_Matrix_Type__c == 'Global Job role/ Add-On role'){
+                        isRoleMatrixMatch = true;
+                    }
+                    else if(roleMatrix.Role_Matrix_Type__c == '4-Criteria Role Matrix' && roleMatrix.MAPV_Department__c== userEntry.MAPV_Department__c && 
+                            roleMatrix.MAPV_Group__c == userEntry.MAPV_Group__c && roleMatrix.Uma_Company__c== userEntry.Uma_Company__c){
+                        isRoleMatrixMatch = true;
+                    }
+                    else if(roleMatrix.Role_Matrix_Type__c == '3-Criteria Role Matrix' && roleMatrix.MAPV_Department__c== userEntry.MAPV_Department__c && 
+                            roleMatrix.Uma_Company__c== userEntry.Uma_Company__c){
+                        isRoleMatrixMatch = true;
+                    }
+                    else if(roleMatrix.Role_Matrix_Type__c == '2-Criteria Role Matrix' && roleMatrix.Uma_Company__c== userEntry.Uma_Company__c){
+                        isRoleMatrixMatch = true;
+                    }
+            }
+        }
+        if(isRoleMatrixMatch == false){
             userEntry.addError('Incorrect combination of entries, please contact your UMA Admins');
         }
-    } 
-    
+    }
+   
+   
 }
