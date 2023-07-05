@@ -233,8 +233,10 @@
 		<members>Role_Matrix__c.MAPV_Group__c</members>
 		<members>Role_Matrix__c.Main_Role_Add_on_Formula__c</members>
 		<members>Role_Matrix__c.Role_Matrix_Type__c</members>
+		<members>Role_Matrix__c.Uma_Company__c</members>
 		<members>Role_Matrix__c.Unique_Combination__c</members>
 		<members>Speaker__c.HCP_ID_number__c</members>
+		<members>Speaker__c.Health_Insurance__c</members>
 		<members>Speaker__c.Professional_type__c</members>
 		<members>Speaker__c.Specialties__c</members>
 		<members>UMA_Settings__mdt.Max_nr_of_Prima_POST_request_attempts__c</members>
@@ -262,6 +264,7 @@
 		<members>User_Entry__c.SecondaryCWID__c</members>
 		<members>User_Entry__c.Staff_Status__c</members>
 		<members>User_Entry__c.Time_Tracking_Required__c</members>
+		<members>User_Entry__c.Uma_Company__c</members>
 		<members>User_Entry__c.Working_Hours__c</members>
 		<members>User_MyLearning_Program__c.Alternate_ML_Supervisor__c</members>
 		<members>User_MyLearning_Program__c.Error_Message__c</members>
@@ -556,6 +559,7 @@
 		<members>Hirep_Send_Approval_Email</members>
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
+		<members>Populate_Role_Matrix_Unique_Combination</members>
 		<members>User_Entry_on_Hirep_Create_Update</members>
 		<name>Flow</name>
 	</types>
@@ -619,6 +623,8 @@
 		<name>QuickAction</name>
 	</types>
 	<types>
+		<members>Account.Company</members>
+		<members>Account.University</members>
 		<members>Contact.Lead</members>
 		<members>GsGoal__c.GsCountryRecruitmentGoal</members>
 		<members>GsGoal__c.GsCovanceGoal</members>
