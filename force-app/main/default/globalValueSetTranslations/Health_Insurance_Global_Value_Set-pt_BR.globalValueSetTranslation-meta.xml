@@ -69,6 +69,10 @@
         <translation>Outros</translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Particular</masterLabel>
+        <translation><!-- Particular --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Petrobras BR</masterLabel>
         <translation>Petrobrás BR</translation>
     </valueTranslation>
