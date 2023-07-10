@@ -185,6 +185,11 @@
         <default>false</default>
         <label>TOPMED</label>
     </customValue>
+    <customValue>
+        <fullName>Particular</fullName>
+        <default>false</default>
+        <label>Particular</label>
+    </customValue>
     <masterLabel>Health Insurance Global Value Set</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

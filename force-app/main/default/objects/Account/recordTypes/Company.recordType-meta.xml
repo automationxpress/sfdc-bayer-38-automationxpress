@@ -715,6 +715,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Particular</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Petrobras BR</fullName>
             <default>false</default>
         </values>
