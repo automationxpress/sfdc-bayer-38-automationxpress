@@ -110,6 +110,86 @@
         <default>false</default>
         <label>Others</label>
     </customValue>
+    <customValue>
+        <fullName>Abertta</fullName>
+        <default>false</default>
+        <label>Abertta</label>
+    </customValue>
+    <customValue>
+        <fullName>Bradesco</fullName>
+        <default>false</default>
+        <label>Bradesco</label>
+    </customValue>
+    <customValue>
+        <fullName>Careplus</fullName>
+        <default>false</default>
+        <label>Careplus</label>
+    </customValue>
+    <customValue>
+        <fullName>CASSI</fullName>
+        <default>false</default>
+        <label>CASSI</label>
+    </customValue>
+    <customValue>
+        <fullName>CNU</fullName>
+        <default>false</default>
+        <label>CNU</label>
+    </customValue>
+    <customValue>
+        <fullName>GNDI</fullName>
+        <default>false</default>
+        <label>GNDI</label>
+    </customValue>
+    <customValue>
+        <fullName>Hapvida</fullName>
+        <default>false</default>
+        <label>Hapvida</label>
+    </customValue>
+    <customValue>
+        <fullName>Humana Saude</fullName>
+        <default>false</default>
+        <label>Humana Saude</label>
+    </customValue>
+    <customValue>
+        <fullName>Med Service</fullName>
+        <default>false</default>
+        <label>Med Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Omint</fullName>
+        <default>false</default>
+        <label>Omint</label>
+    </customValue>
+    <customValue>
+        <fullName>Porto Seguro</fullName>
+        <default>false</default>
+        <label>Porto Seguro</label>
+    </customValue>
+    <customValue>
+        <fullName>Santa Helena</fullName>
+        <default>false</default>
+        <label>Santa Helena</label>
+    </customValue>
+    <customValue>
+        <fullName>Seguros Unimed</fullName>
+        <default>false</default>
+        <label>Seguros Unimed</label>
+    </customValue>
+    <customValue>
+        <fullName>SUS</fullName>
+        <default>false</default>
+        <label>SUS</label>
+    </customValue>
+    <customValue>
+        <fullName>TOPMED</fullName>
+        <default>false</default>
+        <label>TOPMED</label>
+    </customValue>
+    <customValue>
+        <fullName>Particular</fullName>
+        <default>false</default>
+        <label>Particular</label>
+    </customValue>
     <masterLabel>Health Insurance Global Value Set</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

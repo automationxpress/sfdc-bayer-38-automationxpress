@@ -34,6 +34,7 @@
 	</types>
 	<types>
 		<members>Ca_Entre_Nos</members>
+		<members>Ca_Entre_Nos</members>
 		<members>GsGoalSetter</members>
 		<members>Lead_Generation</members>
 		<members>Relationship_Management</members>
@@ -64,7 +65,15 @@
 		<members>Account.Email__c</members>
 		<members>Account.Health_Insurance__c</members>
 		<members>Account.Sector__c</members>
+		<members>Account.Available_Courses__c</members>
+		<members>Account.CNPJ__c</members>
+		<members>Account.Company_Size__c</members>
+		<members>Account.Email__c</members>
+		<members>Account.Health_Insurance__c</members>
+		<members>Account.Sector__c</members>
 		<members>Account.Unique_Name__c</members>
+		<members>Account.Website_Social_Media__c</members>
+		<members>Account.Women_Representatives__c</members>
 		<members>Account.Website_Social_Media__c</members>
 		<members>Account.Women_Representatives__c</members>
 		<members>AccountContactRelation.Relationship_Strength__c</members>
@@ -73,6 +82,9 @@
 		<members>Azure_Client_Credentials__mdt.Client_Secret__c</members>
 		<members>Azure_Client_Credentials__mdt.Scope__c</members>
 		<members>Azure_Client_Credentials__mdt.Tenant_ID__c</members>
+		<members>Contact.Last_Interaction__c</members>
+		<members>Contact.Linkedin__c</members>
+		<members>Contact.Position__c</members>
 		<members>Contact.Last_Interaction__c</members>
 		<members>Contact.Linkedin__c</members>
 		<members>Contact.Position__c</members>
@@ -193,6 +205,52 @@
 		<members>Hirep__c.Time_Tracking_Required__c</members>
 		<members>Hirep__c.Working_Hours__c</members>
 		<members>Hirep__c.Year_Required__c</members>
+		<members>Hirep__c.Appointee_Bayer_E_mail__c</members>
+		<members>Hirep__c.Appointee_First_Name__c</members>
+		<members>Hirep__c.Appointee_Last_Name__c</members>
+		<members>Hirep__c.Approval_Date__c</members>
+		<members>Hirep__c.CWID__c</members>
+		<members>Hirep__c.Commences_Date__c</members>
+		<members>Hirep__c.Commences__c</members>
+		<members>Hirep__c.Company__c</members>
+		<members>Hirep__c.Consumer_Health_Related_Position__c</members>
+		<members>Hirep__c.Contract_Period_From__c</members>
+		<members>Hirep__c.Contract_Period_To__c</members>
+		<members>Hirep__c.Contract_Type__c</members>
+		<members>Hirep__c.Cost_Center_Owner__c</members>
+		<members>Hirep__c.Cost_Centre__c</members>
+		<members>Hirep__c.Deputy_Manager_Admin__c</members>
+		<members>Hirep__c.FTE_Requirement__c</members>
+		<members>Hirep__c.Final_Approval_Comments__c</members>
+		<members>Hirep__c.Final_Approval_Date__c</members>
+		<members>Hirep__c.Final_Approval_Status__c</members>
+		<members>Hirep__c.Final_Approval_by__c</members>
+		<members>Hirep__c.Grant_access_to_UMA__c</members>
+		<members>Hirep__c.Hirep_Process_Status__c</members>
+		<members>Hirep__c.Local_Job_Role_Title__c</members>
+		<members>Hirep__c.Location__c</members>
+		<members>Hirep__c.MAPV_Department_Formula__c</members>
+		<members>Hirep__c.MAPV_Department__c</members>
+		<members>Hirep__c.MAPV_Group__c</members>
+		<members>Hirep__c.MGMT_Approval__c</members>
+		<members>Hirep__c.Name__c</members>
+		<members>Hirep__c.Need_for_Position__c</members>
+		<members>Hirep__c.Person_replaced_contract_extended__c</members>
+		<members>Hirep__c.Position_Type__c</members>
+		<members>Hirep__c.Posting__c</members>
+		<members>Hirep__c.Pre_approval_Comments__c</members>
+		<members>Hirep__c.Pre_approval_Date__c</members>
+		<members>Hirep__c.Pre_approval_Status__c</members>
+		<members>Hirep__c.Pre_approval_by__c</members>
+		<members>Hirep__c.Primary_Job_Role__c</members>
+		<members>Hirep__c.Recruitment_Comment__c</members>
+		<members>Hirep__c.Recruitment_Status__c</members>
+		<members>Hirep__c.Replaces__c</members>
+		<members>Hirep__c.Resource_Manager_R_Line__c</members>
+		<members>Hirep__c.Staff_Status__c</members>
+		<members>Hirep__c.Time_Tracking_Required__c</members>
+		<members>Hirep__c.Working_Hours__c</members>
+		<members>Hirep__c.Year_Required__c</members>
 		<members>In_App_Checklist_Settings__c.ProfileKey__c</members>
 		<members>In_App_Checklist_Settings__c.Sales_Cloud_In_App_Page__c</members>
 		<members>Integration_Config__mdt.One_Trust_Api_Key__c</members>
@@ -233,8 +291,10 @@
 		<members>Role_Matrix__c.MAPV_Group__c</members>
 		<members>Role_Matrix__c.Main_Role_Add_on_Formula__c</members>
 		<members>Role_Matrix__c.Role_Matrix_Type__c</members>
+		<members>Role_Matrix__c.Uma_Company__c</members>
 		<members>Role_Matrix__c.Unique_Combination__c</members>
 		<members>Speaker__c.HCP_ID_number__c</members>
+		<members>Speaker__c.Health_Insurance__c</members>
 		<members>Speaker__c.Professional_type__c</members>
 		<members>Speaker__c.Specialties__c</members>
 		<members>UMA_Settings__mdt.Max_nr_of_Prima_POST_request_attempts__c</members>
@@ -262,6 +322,7 @@
 		<members>User_Entry__c.SecondaryCWID__c</members>
 		<members>User_Entry__c.Staff_Status__c</members>
 		<members>User_Entry__c.Time_Tracking_Required__c</members>
+		<members>User_Entry__c.Uma_Company__c</members>
 		<members>User_Entry__c.Working_Hours__c</members>
 		<members>User_MyLearning_Program__c.Alternate_ML_Supervisor__c</members>
 		<members>User_MyLearning_Program__c.Error_Message__c</members>
@@ -291,6 +352,22 @@
 		<members>User_Time_Tracking__c.Status__c</members>
 		<members>User_Time_Tracking__c.Time_Tracking_Required__c</members>
 		<members>User_Time_Tracking__c.User_Entry__c</members>
+		<members>Workshop_Event_Registration__c.Speaker__c</members>
+		<members>Workshop_Event_Registration__c.Workshop_Event__c</members>
+		<members>Workshop_Event__c.Address__c</members>
+		<members>Workshop_Event__c.Company__c</members>
+		<members>Workshop_Event__c.Costs__c</members>
+		<members>Workshop_Event__c.Event_Date_Time__c</members>
+		<members>Workshop_Event__c.Event_Password__c</members>
+		<members>Workshop_Event__c.Event_grade__c</members>
+		<members>Workshop_Event__c.Event_link__c</members>
+		<members>Workshop_Event__c.Event_status__c</members>
+		<members>Workshop_Event__c.Event_type__c</members>
+		<members>Workshop_Event__c.Guests__c</members>
+		<members>Workshop_Event__c.Marketing_Material__c</members>
+		<members>Workshop_Event__c.Payment_process__c</members>
+		<members>Workshop_Event__c.Speak_subject__c</members>
+		<members>Workshop_Event__c.Women_impacted__c</members>
 		<members>Workshop_Event_Registration__c.Speaker__c</members>
 		<members>Workshop_Event_Registration__c.Workshop_Event__c</members>
 		<members>Workshop_Event__c.Address__c</members>
@@ -413,6 +490,7 @@
 		<members>GsGoalPeriod__c</members>
 		<members>GsGoal__c</members>
 		<members>Hirep__c</members>
+		<members>Hirep__c</members>
 		<members>Idea</members>
 		<members>Image</members>
 		<members>In_App_Checklist_Settings__c</members>
@@ -474,6 +552,7 @@
 		<members>SocialPost</members>
 		<members>Solution</members>
 		<members>Speaker__c</members>
+		<members>Speaker__c</members>
 		<members>StreamActivityAccess</members>
 		<members>StreamingChannel</members>
 		<members>Task</members>
@@ -499,7 +578,21 @@
 		<members>WorkThanks</members>
 		<members>Workshop_Event_Registration__c</members>
 		<members>Workshop_Event__c</members>
+		<members>Workshop_Event_Registration__c</members>
+		<members>Workshop_Event__c</members>
 		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Account-en_US</members>
+		<members>Account-pt_BR</members>
+		<members>Contact-pt_BR</members>
+		<members>Speaker__c-en_US</members>
+		<members>Speaker__c-pt_BR</members>
+		<members>Workshop_Event_Registration__c-en_US</members>
+		<members>Workshop_Event_Registration__c-pt_BR</members>
+		<members>Workshop_Event__c-en_US</members>
+		<members>Workshop_Event__c-pt_BR</members>
+		<name>CustomObjectTranslation</name>
 	</types>
 	<types>
 		<members>Account-en_US</members>
@@ -520,6 +613,15 @@
 	<types>
 		<members>*</members>
 		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>CEntreNs/PxuigGUOyYBbmNKuPECGsLNqRbbJZo</members>
+		<members>CEntreNs/VIcwXzTQYmMFpnkNPVFRrFzkcpmtfM</members>
+		<name>Dashboard</name>
+	</types>
+	<types>
+		<members>Ca_Entre_Nos_Email_Template/Ca_Entre_Nos_Lead_Notification_After_6Months_of_Contact</members>
+		<name>EmailTemplate</name>
 	</types>
 	<types>
 		<members>CEntreNs/PxuigGUOyYBbmNKuPECGsLNqRbbJZo</members>
@@ -556,6 +658,7 @@
 		<members>Hirep_Send_Approval_Email</members>
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
+		<members>Populate_Role_Matrix_Unique_Combination</members>
 		<members>User_Entry_on_Hirep_Create_Update</members>
 		<name>Flow</name>
 	</types>
@@ -566,6 +669,30 @@
 	<types>
 		<members>*</members>
 		<name>GlobalValueSetTranslation</name>
+	</types>
+	<types>
+		<members>Ca_Entre_Nos_Users</members>
+		<members>Hirep_MAPV_ACDL</members>
+		<members>Hirep_PV_BRM</members>
+		<members>Hirep_PV_Management</members>
+		<members>Hirep_PV_Quality_Issues_Compliance</members>
+		<members>Hirep_PV_Regions</members>
+		<members>Hirep_PV_SBE</members>
+		<members>Hirep_PV_SCP</members>
+		<members>Hirep_RAD_MA</members>
+		<members>UMA_Admins</members>
+		<name>Group</name>
+	</types>
+	<types>
+		<members>Account-Account</members>
+		<members>Account-University</members>
+		<members>Contact-Lead Registration</members>
+		<members>Hirep__c-HIREP Layout</members>
+		<members>Speaker__c-Speaker Layout</members>
+		<members>User_Entry__c-User Entry Layout</members>
+		<members>Workshop_Event_Registration__c-Workshop Event Registration Layout</members>
+		<members>Workshop_Event__c-Workshop Event Layout</members>
+		<name>Layout</name>
 	</types>
 	<types>
 		<members>Ca_Entre_Nos_Users</members>
@@ -604,6 +731,10 @@
 		<name>PathAssistant</name>
 	</types>
 	<types>
+		<members>Hirep_Process_Status</members>
+		<name>PathAssistant</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>PermissionSet</name>
 	</types>
@@ -619,6 +750,8 @@
 		<name>QuickAction</name>
 	</types>
 	<types>
+		<members>Account.Company</members>
+		<members>Account.University</members>
 		<members>Contact.Lead</members>
 		<members>GsGoal__c.GsCountryRecruitmentGoal</members>
 		<members>GsGoal__c.GsCovanceGoal</members>
@@ -662,10 +795,49 @@
 		<name>StandardValueSetTranslation</name>
 	</types>
 	<types>
+		<members>CEntreNsReports/Contact_Names</members>
+		<members>CEntreNsReports/Contas_com_Eventos</members>
+		<members>CEntreNsReports/Copy_of_Contact_Names</members>
+		<members>CEntreNsReports/Eventos</members>
+		<members>CEntreNsReports/Eventos_por_LR_x_Mulheres_Impactadas1</members>
+		<members>CEntreNsReports/Eventos_x_Mulheres_x_Custo</members>
+		<members>CEntreNsReports/Formatos</members>
+		<members>CEntreNsReports/Lista_de_Contatos_e_Contas</members>
+		<members>CEntreNsReports/Speakers</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard_E</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard_H</members>
+		<members>CEntreNsReportsforDashboards/Companies_and_Universities_4_Dashboard_S</members>
+		<members>CEntreNsReportsforDashboards/Contact_Names_4_Dashbaord_Interaction</members>
+		<name>Report</name>
+	</types>
+	<types>
+		<members>Hirep__c.Share_Hirep_to_MAPV_ACDL</members>
+		<members>Hirep__c.Share_Hirep_to_PV_BRM</members>
+		<members>Hirep__c.Share_Hirep_to_PV_Management</members>
+		<members>Hirep__c.Share_Hirep_to_PV_Quality_Issues_Compliance</members>
+		<members>Hirep__c.Share_Hirep_to_PV_Regions</members>
+		<members>Hirep__c.Share_Hirep_to_PV_SBE</members>
+		<members>Hirep__c.Share_Hirep_to_PV_SCP</members>
+		<members>Hirep__c.Share_Hirep_to_RAD_MA</members>
+		<name>SharingCriteriaRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>StandardValueSetTranslation</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>StaticResource</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Translations</name>
+	</types>
+	<types>
+		<members>Account.CNPJ_Format</members>
+		<members>Account.Zip_Code_Format</members>
+		<members>Contact.Zip_Code_Format</members>
 		<members>*</members>
 		<name>Translations</name>
 	</types>

@@ -2,9 +2,7 @@
 public class PrimaRequestsInProgressRestApiTest {
     @TestSetup
     static void setupTestData() {
-        Account company = TestDataService.getDefaultAccount();
-        insert company;
-
+    
         Job_Role__c jobRole = TestDataService.getDefaultJobRole();
         insert jobRole;
 
@@ -17,21 +15,20 @@ public class PrimaRequestsInProgressRestApiTest {
         Role_Matrix__c roleMatrix = TestDataService.createRoleMatrix(new Role_Matrix__c(
             Job_Role__c = jobRole.Id,
             MAPV_Department__c = mapvDepartment.Id,
-            MAPV_Group__c = mapvGroup.Id,
-            Company__c = company.Id
+            MAPV_Group__c = mapvGroup.Id
         ));
         insert roleMatrix;
     }
 
     @isTest
     static void testGetPrimaRequestsInProgress() {
-        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
 
         User_Entry__c ue = (User_Entry__c) TestDataService.createUserEntry(new User_Entry__c(
             Primary_Job_Role__c = roleMatrix.Job_Role__c,
             MAPV_Department__c = roleMatrix.MAPV_Department__c,
             MAPV_Group__c = roleMatrix.MAPV_Group__c,
-            Company__c = roleMatrix.Company__c
+            Uma_Company__c = roleMatrix.Uma_Company__c
         ));
         insert ue;
 
@@ -44,13 +41,13 @@ public class PrimaRequestsInProgressRestApiTest {
 
     @isTest
     static void testUpdatePrimaRequestsInProgress() {
-        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Company__c FROM Role_Matrix__c LIMIT 1];
+        Role_Matrix__c roleMatrix = [SELECT Id, Job_Role__c, MAPV_Department__c, MAPV_Group__c, Uma_Company__c FROM Role_Matrix__c LIMIT 1];
 
         User_Entry__c ue = (User_Entry__c) TestDataService.createUserEntry(new User_Entry__c(
             Primary_Job_Role__c = roleMatrix.Job_Role__c,
             MAPV_Department__c = roleMatrix.MAPV_Department__c,
             MAPV_Group__c = roleMatrix.MAPV_Group__c,
-            Company__c = roleMatrix.Company__c
+            Uma_Company__c = roleMatrix.Uma_Company__c
         ));
         insert ue;
 

@@ -48,8 +48,8 @@ public class UserEntryUtils {
         List<User_Entry__c> getUserEntryDetails = new List<User_Entry__c>();
         try{
             getUserEntryDetails = [SELECT Id, Name, Is_Locked__c, Approval_Status__c, Staff_Status__c, Primary_Job_Role__c, Primary_Job_Role__r.Name, 
-                                   MAPV_Department__c, MAPV_Department__r.Name, MAPV_Group__c, MAPV_Group__r.Name, Company__c, Company__r.Name,
-                                   Resource_Manager__c, Deputy_Manager__c,Locations__c,Time_Tracking_Required__c,Working_Hours__c,
+                                   MAPV_Department__c, MAPV_Department__r.Name, MAPV_Group__c, MAPV_Group__r.Name,
+                                   Uma_Company__c, Resource_Manager__c, Deputy_Manager__c,Locations__c,Time_Tracking_Required__c,Working_Hours__c,
                                    (SELECT Id, MyLearning_Program__c, MyLearning_Program__r.Name, Status__c FROM User_MyLearning_Programs__r),
                                    (SELECT Id, Prima_Role__c, Prima_Role__r.Name, Status__c FROM User_Prima_Roles__r),
                                    (SELECT Id, Prima_Security_Group__c, Prima_Security_Group__r.Name, Status__c FROM User_Prima_Security_Groups__r),

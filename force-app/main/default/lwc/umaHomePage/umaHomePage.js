@@ -8,7 +8,7 @@ const inputColumns = [
         { label: 'User Entry Name', fieldName: 'Name', sortable: "true"},
         { label: 'CWID', fieldName: 'CWID__c', sortable: "true"},
         { label: 'Email', fieldName: 'Email__c', sortable: "true" },
-        { label: 'Company', fieldName: 'Company__r.Name', sortable: "true" },
+        { label: 'Company', fieldName: 'Uma_Company__c', sortable: "true" },
         { label: 'Primary Job Role', fieldName: 'Primary_Job_Role__r.Name', sortable: "true"},
         { label: 'Locations', fieldName: 'Locations__c', sortable: "true" },
         { label: 'MAPV Department', fieldName: 'MAPV_Department__r.Name', sortable: "true"},
@@ -63,12 +63,12 @@ export default class UmaHomePage extends LightningElement {
                     "Id": row.Id,
                     "CWID__c": row.CWID__c,
                     "Email__c": row.Email__c,
-                    "Company__r.Name": row.Company__r?.Name,
+                    "Uma_Company__c": row.Uma_Company__c,
                     "Primary_Job_Role__r.Name": row.Primary_Job_Role__r?.Name,
                     "Locations__c": row.Locations__c,
                     "MAPV_Department__r.Name": row.MAPV_Department__r?.Name,
                     "MAPV_Group__r.Name": row.MAPV_Group__r?.Name,
-                    "Resource_Manager__r.Name": row.Resource_Manager__r.Name,
+                    "Resource_Manager__r.Name": row.Resource_Manager__r?.Name,
                     
                     
                 }, row)

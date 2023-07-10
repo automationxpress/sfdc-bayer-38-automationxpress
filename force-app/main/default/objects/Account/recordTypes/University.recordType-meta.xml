@@ -659,11 +659,31 @@
     <picklistValues>
         <picklist>Health_Insurance__c</picklist>
         <values>
+            <fullName>Abertta</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Amy</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNU</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Caixa Saúde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Careplus</fullName>
             <default>false</default>
         </values>
         <values>
@@ -679,11 +699,35 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>GNDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapvida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humana Saude</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>IPASGO</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>Med Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omint</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Particular</fullName>
             <default>false</default>
         </values>
         <values>
@@ -692,6 +736,10 @@
         </values>
         <values>
             <fullName>Planserv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porto Seguro</fullName>
             <default>false</default>
         </values>
         <values>
@@ -707,7 +755,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>SUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Helena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguros Unimed</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>South America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOPMED</fullName>
             <default>false</default>
         </values>
         <values>

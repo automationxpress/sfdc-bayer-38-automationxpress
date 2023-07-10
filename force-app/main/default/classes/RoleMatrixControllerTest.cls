@@ -24,8 +24,6 @@ private class RoleMatrixControllerTest {
         MAPV_Group__c group1 = TestDataService.getDefaultMapvGroup();
         insert group1;
         
-        Account acc1= TestDataService.getDefaultAccount();
-        insert acc1;
         
         MyLearning_Program__c myLearnings = TestDataService.getDefaultMyLearningProgram();
         insert myLearnings;
@@ -35,7 +33,6 @@ private class RoleMatrixControllerTest {
         roleMatrix1.Role_Matrix_Type__c='4-Criteria Role Matrix';
         roleMatrix1.MAPV_Department__c = [Select Id from MAPV_Department__c][0].Id;
         roleMatrix1.MAPV_Group__c = [Select Id from MAPV_Group__c][0].Id;
-        roleMatrix1.Company__c = [Select Id from Account][0].Id;
         insert roleMatrix1;
         
         Role_Matrix_ML__c roleMatrix_MyLearning = new Role_Matrix_ML__c();
@@ -47,7 +44,6 @@ private class RoleMatrixControllerTest {
         roleMatrix_3_criteria.Job_Role__c = [Select Id from Job_Role__c where Name=:'Test Job Role1'].Id;
         roleMatrix_3_criteria.Role_Matrix_Type__c='3-Criteria Role Matrix';
         roleMatrix_3_criteria.MAPV_Department__c = [Select Id from MAPV_Department__c][0].Id;
-        roleMatrix_3_criteria.Company__c = [Select Id from Account][0].Id;
         insert roleMatrix_3_criteria;
         Role_Matrix_ML__c roleMatrix_MyLearning_3_criteria = new Role_Matrix_ML__c();
         roleMatrix_MyLearning_3_criteria.Role_Matrix__c = roleMatrix_3_criteria.Id;

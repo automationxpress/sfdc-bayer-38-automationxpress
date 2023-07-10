@@ -32,15 +32,15 @@ public class RoleMatrixUtils {
     
     
     //Return List of Role Matrices based on selection of Job Role, MAPV Dept, Group and Company in User Entry
-    public static List<Role_Matrix__c> getRoleMatrices(Set<Id> jobRoleIds, Id mapvDepartmentId, Id mapvGroupId, Id companyId) {
+    public static List<Role_Matrix__c> getRoleMatrices(Set<Id> jobRoleIds, Id mapvDepartmentId, Id mapvGroupId, String umaCompany) {
         List<Role_Matrix__c> roleMatrixList = new List<Role_Matrix__c>();
         try{
             for(Id jobRoleId:jobRoleIds ){
                 List<Role_Matrix__c> roleMatrixsingleList = new List<Role_Matrix__c>();
                 Id mapvDepartmentIds= mapvDepartmentId;
                 Id mapvGroupIds= mapvGroupId;
-                Id companyIds=companyId;
-                roleMatrixsingleList=RoleMatrixUtils.getRoleMatrix(jobRoleId, mapvDepartmentIds, mapvGroupIds, companyIds);
+                String umaCompanies=umaCompany;
+                roleMatrixsingleList=RoleMatrixUtils.getRoleMatrix(jobRoleId, mapvDepartmentIds, mapvGroupIds, umaCompanies);
                 roleMatrixList.addall(roleMatrixsingleList);
             }
         }
@@ -55,7 +55,7 @@ public class RoleMatrixUtils {
     //Matching logic is based on the prioriry order of Role Matrix Type
     //staring from 4-Criteria Role Matrix(/Global Job role/ Add-On role), 3-Criteria Role Matrix, 2-Criteria Role Matrix
     
-    public static List<Role_Matrix__c> getRoleMatrix(Id jobRoleId, Id mapvDepartmentId, Id mapvGroupId, Id companyId){
+    public static List<Role_Matrix__c> getRoleMatrix(Id jobRoleId, Id mapvDepartmentId, Id mapvGroupId, String umaCompany){
         List<Role_Matrix__c> roleMatrixList = new List<Role_Matrix__c>();
         roleMatrixList= [SELECT Id, Name, Job_Role__c,Role_Matrix_Type__c,
                          (SELECT Id, MyLearning_Program__c, MyLearning_Program__r.Name FROM Role_Matrix_MyLearning_Programs__r),
@@ -69,7 +69,7 @@ public class RoleMatrixUtils {
                                  Role_Matrix_Type__c = '4-Criteria Role Matrix'
                                  AND MAPV_Department__c = :mapvDepartmentId
                                  AND MAPV_Group__c = :mapvGroupId
-                                 AND Company__c = :companyId
+                                 AND Uma_Company__c =:umaCompany
                              )     
                          )
                         ];
@@ -84,7 +84,7 @@ public class RoleMatrixUtils {
                              WHERE Job_Role__c = : jobRoleId
                              AND (
                                  Role_Matrix_Type__c = '3-Criteria Role Matrix'
-                                 AND Company__c = :companyId
+                                 AND Uma_Company__c =:umaCompany
                                  AND MAPV_Department__c = :mapvDepartmentId
                              )
                             ];
@@ -98,7 +98,7 @@ public class RoleMatrixUtils {
                                  WHERE Job_Role__c = : jobRoleId
                                  AND (
                                      Role_Matrix_Type__c = '2-Criteria Role Matrix'
-                                     AND Company__c = :companyId	
+                                     AND Uma_Company__c =:umaCompany
                                  )
                                 ];
                 

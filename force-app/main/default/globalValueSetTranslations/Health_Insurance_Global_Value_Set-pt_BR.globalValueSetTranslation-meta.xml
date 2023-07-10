@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <valueTranslation>
+        <masterLabel>Abertta</masterLabel>
+        <translation><!-- Abertta --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Amy</masterLabel>
         <translation>Amil</translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Bradesco</masterLabel>
+        <translation><!-- Bradesco --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CASSI</masterLabel>
+        <translation><!-- CASSI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CNU</masterLabel>
+        <translation><!-- CNU --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Caixa Saúde</masterLabel>
         <translation>Saúde Caixa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Careplus</masterLabel>
+        <translation><!-- Careplus --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Cassems</masterLabel>
@@ -21,12 +41,36 @@
         <translation>GEAP Saúde</translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>GNDI</masterLabel>
+        <translation><!-- GNDI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hapvida</masterLabel>
+        <translation><!-- Hapvida --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Humana Saude</masterLabel>
+        <translation><!-- Humana Saude --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>IPASGO</masterLabel>
         <translation>IPASGO</translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>Med Service</masterLabel>
+        <translation><!-- Med Service --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Omint</masterLabel>
+        <translation><!-- Omint --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>Others</masterLabel>
         <translation>Outros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Particular</masterLabel>
+        <translation><!-- Particular --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Petrobras BR</masterLabel>
@@ -35,6 +79,10 @@
     <valueTranslation>
         <masterLabel>Planserv</masterLabel>
         <translation>Planserv</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Porto Seguro</masterLabel>
+        <translation><!-- Porto Seguro --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Porto Seguro Health</masterLabel>
@@ -49,8 +97,24 @@
         <translation>Prevent Senior</translation>
     </valueTranslation>
     <valueTranslation>
+        <masterLabel>SUS</masterLabel>
+        <translation><!-- SUS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Santa Helena</masterLabel>
+        <translation><!-- Santa Helena --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Seguros Unimed</masterLabel>
+        <translation><!-- Seguros Unimed --></translation>
+    </valueTranslation>
+    <valueTranslation>
         <masterLabel>South America</masterLabel>
         <translation>Sulamérica</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TOPMED</masterLabel>
+        <translation><!-- TOPMED --></translation>
     </valueTranslation>
     <valueTranslation>
         <masterLabel>Unimed Curitiba</masterLabel>
