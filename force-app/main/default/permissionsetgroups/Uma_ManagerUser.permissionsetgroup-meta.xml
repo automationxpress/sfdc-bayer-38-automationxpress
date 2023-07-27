@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides required access to UMA Manager User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Uma ManagerUser</label>
+    <permissionSets>Access_to_UMA_Application</permissionSets>
+    <permissionSets>Manage_User_Additional_Roles</permissionSets>
+    <permissionSets>Manage_User_Entries</permissionSets>
+    <permissionSets>Read_Create_Custom_Exceptions</permissionSets>
+    <permissionSets>Read_Job_Role_Mapv_Department_Mapv_Group</permissionSets>
+    <permissionSets>Read_My_Learning_Programs_Prima_Roles_Prima_Security_Groups</permissionSets>
+    <permissionSets>Read_Record_History</permissionSets>
+    <permissionSets>Read_User_MyLearning_Programs</permissionSets>
+    <permissionSets>Read_User_Prima_Role_Prima_Security_Groups</permissionSets>
+    <permissionSets>View_All_Role_Matrices</permissionSets>
+    <permissionSets>View_All_Role_Matrices_My_Learning_Prima_Role_Prima_Security_Group</permissionSets>
+    <permissionSets>View_Role_Matrices_Overview</permissionSets>
+    <permissionSets>View_and_Modify_All_User_Entries</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
