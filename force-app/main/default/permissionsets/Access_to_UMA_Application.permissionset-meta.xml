@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>UMA</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Provides UMA Application Access to Uma Users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access to UMA Application</label>
+    <license>Salesforce Platform</license>
+</PermissionSet>

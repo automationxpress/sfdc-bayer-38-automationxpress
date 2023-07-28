@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Hirep Object access Hirep Application Admin</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Hirep ApplicationAdmin</label>
+    <permissionSets>Access_to_Tabs_of_Job_Role_Mapv_Department_Mapv_Group</permissionSets>
+    <permissionSets>Access_to_UMA_Application</permissionSets>
+    <permissionSets>Manage_Hirep</permissionSets>
+    <permissionSets>Read_Job_Role_Mapv_Department_Mapv_Group</permissionSets>
+    <permissionSets>View_All_Role_Matrices</permissionSets>
+    <permissionSets>View_Role_Matrices_Overview_Tab</permissionSets>
+    <permissionSets>View_and_Modify_All_Hirep</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Hirep Object access Hirep End User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Hirep EndUser</label>
+    <permissionSets>Access_to_UMA_Application</permissionSets>
+    <permissionSets>Manage_Hirep</permissionSets>
+    <permissionSets>Read_Job_Role_Mapv_Department_Mapv_Group</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

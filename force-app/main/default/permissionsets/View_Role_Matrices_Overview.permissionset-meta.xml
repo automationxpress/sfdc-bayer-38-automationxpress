@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Tab access to Role Matrices Overview</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>View Role Matrices Overview</label>
+    <license>Salesforce Platform</license>
+    <tabSettings>
+        <tab>Role_Matrix_Overview</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

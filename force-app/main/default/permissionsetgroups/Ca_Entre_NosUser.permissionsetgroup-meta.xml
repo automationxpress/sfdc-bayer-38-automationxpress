@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides required access to Ca Entre Nos users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Ca Entre NosUser</label>
+    <permissionSets>Access_to_Ca_Entre_Nos_App</permissionSets>
+    <permissionSets>Manage_Accounts</permissionSets>
+    <permissionSets>Manage_Contacts</permissionSets>
+    <permissionSets>Manage_Speakers_Workshop_Events_Workshop_Event_Registration</permissionSets>
+    <permissionSets>View_and_Modify_All_Speakers</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
