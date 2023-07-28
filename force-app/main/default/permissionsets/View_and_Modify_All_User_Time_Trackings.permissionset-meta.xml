@@ -38,6 +38,7 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>View and Modify All User Time Trackings</label>
+    <license>Salesforce Platform</license>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

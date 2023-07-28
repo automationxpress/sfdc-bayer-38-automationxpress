@@ -3,6 +3,7 @@
     <description>Provides Tab access to Role Matrices Overview</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>View Role Matrices Overview</label>
+    <license>Salesforce Platform</license>
     <tabSettings>
         <tab>Role_Matrix_Overview</tab>
         <visibility>Visible</visibility>
