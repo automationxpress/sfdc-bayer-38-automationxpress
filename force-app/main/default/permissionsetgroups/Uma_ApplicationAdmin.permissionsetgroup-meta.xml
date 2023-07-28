@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides required access to UMA Application Admin</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Uma ApplicationAdmin</label>
+    <permissionSets>Access_to_UMA_Application</permissionSets>
+    <permissionSets>Delete_All_Prima_Items_Custom_Permission</permissionSets>
+    <permissionSets>Manage_Job_Role_Mapv_Department_Mapv_Group</permissionSets>
+    <permissionSets>Manage_My_Learning_Programs_Prima_Roles_Prima_Security_Groups</permissionSets>
+    <permissionSets>Manage_Role_Matrices_My_Learning_Prima_Role_Prima_Security_Group</permissionSets>
+    <permissionSets>Manage_Role_Matrix</permissionSets>
+    <permissionSets>Manage_User_Additional_Roles</permissionSets>
+    <permissionSets>Manage_User_Entries</permissionSets>
+    <permissionSets>Manage_User_MyLearning_Programs</permissionSets>
+    <permissionSets>Manage_User_Prima_Role_Prima_Security_Groups</permissionSets>
+    <permissionSets>Manage_User_Time_Trackings</permissionSets>
+    <permissionSets>Read_Create_Custom_Exceptions</permissionSets>
+    <permissionSets>Read_Record_History</permissionSets>
+    <permissionSets>View_Role_Matrices_Overview</permissionSets>
+    <permissionSets>View_and_Modify_All_Job_Role_Mapv_Department_Mapv_Group</permissionSets>
+    <permissionSets>View_and_Modify_All_My_Learning_Programs_Prima_Roles_Prima_Security_Groups</permissionSets>
+    <permissionSets>View_and_Modify_All_Role_Matrices_My_Learning_Prima_Role_Prima_Security_Group</permissionSets>
+    <permissionSets>View_and_Modify_All_Role_Matrix</permissionSets>
+    <permissionSets>View_and_Modify_All_User_Additional_Roles</permissionSets>
+    <permissionSets>View_and_Modify_All_User_Entries</permissionSets>
+    <permissionSets>View_and_Modify_All_User_MyLearning_Programs</permissionSets>
+    <permissionSets>View_and_Modify_All_User_Prima_Role_Prima_Security_Groups</permissionSets>
+    <permissionSets>View_and_Modify_All_User_Time_Trackings</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

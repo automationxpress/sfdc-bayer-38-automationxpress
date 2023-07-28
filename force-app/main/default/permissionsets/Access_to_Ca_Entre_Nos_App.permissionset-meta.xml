@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Ca_Entre_Nos</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Provides access to Ca Entre Nos Application</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access to Ca Entre Nos App</label>
+    <license>Salesforce Platform</license>
+</PermissionSet>
