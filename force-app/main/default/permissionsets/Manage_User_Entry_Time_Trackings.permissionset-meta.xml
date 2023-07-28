@@ -37,7 +37,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Manage User Time Trackings</label>
+    <label>Manage User Entry Time Trackings</label>
     <license>Salesforce Platform</license>
     <objectPermissions>
         <allowCreate>false</allowCreate>

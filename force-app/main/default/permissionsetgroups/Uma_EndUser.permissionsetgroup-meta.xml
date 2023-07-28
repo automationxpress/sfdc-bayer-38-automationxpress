@@ -13,6 +13,6 @@
     <permissionSets>Read_User_Prima_Role_Prima_Security_Groups</permissionSets>
     <permissionSets>View_All_Role_Matrices</permissionSets>
     <permissionSets>View_All_Role_Matrices_My_Learning_Prima_Role_Prima_Security_Group</permissionSets>
-    <permissionSets>View_Role_Matrices_Overview</permissionSets>
+    <permissionSets>View_Role_Matrices_Overview_Tab</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

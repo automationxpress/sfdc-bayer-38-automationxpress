@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Provide Read, Create, Edit, Delete Access to User Time Trackings.</description>
+    <description>Provide View and Modify all Access to User Time Trackings.</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>User_Time_Tracking__c.Cost_Center__c</field>
@@ -37,7 +37,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Manage User Time Trackings</label>
+    <label>View and Modify All User Entry Time Trackings</label>
     <license>Salesforce Platform</license>
     <objectPermissions>
         <allowCreate>false</allowCreate>
@@ -49,13 +49,13 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
+        <allowCreate>false</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>User_Time_Tracking__c</object>
-        <viewAllRecords>false</viewAllRecords>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
         <tab>User_Time_Tracking__c</tab>
