@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Provides View and Modify all access to User Prima Role, Prima Security Groups</description>
+    <classAccesses>
+        <apexClass>PrimaNewRequestsRestApi</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>PrimaNewRequestsRestApiTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Provides View and Modify all access to User Prima Role, Prima Security Groups and provides access to PrimaNewRequestRestApi and PrimaNewRequestRestApi test classes</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>User_Prima_Role__c.Error_Message__c</field>
@@ -72,7 +80,7 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
+        <allowCreate>false</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
@@ -81,7 +89,7 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
+        <allowCreate>false</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>

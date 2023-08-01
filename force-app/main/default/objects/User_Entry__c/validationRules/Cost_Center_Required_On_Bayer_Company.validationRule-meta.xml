@@ -4,7 +4,7 @@
     <active>true</active>
     <description>Cost Center field is required when Company is selected as Bayer.</description>
     <errorConditionFormula>AND(
-   CASESAFEID( Company__c ) =  $Label.BayerId,
+    ISPICKVAL(Uma_Company__c, &apos;BAYER&apos;) ,  
    ISPICKVAL(Cost_Center__c, &apos;&apos;)
 )</errorConditionFormula>
     <errorDisplayField>Cost_Center__c</errorDisplayField>
