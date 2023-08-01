@@ -639,6 +639,7 @@
 		<name>FlexiPage</name>
 	</types>
 	<types>
+		<members>Create_or_Update_UMA_User</members>
 		<members>GetImpactStudiesOccupationcode</members>
 		<members>GoalSetterCheckUserEditingRights</members>
 		<members>GoalSetterLockGoalPeriod</members>
@@ -742,6 +743,7 @@
 		<members>Hirep_EndUser</members>
 		<members>Uma_ApplicationAdmin</members>
 		<members>Uma_EndUser</members>
+		<members>Uma_IntegrationUser</members>
 		<members>Uma_ManagerUser</members>
 		<members>Uma_MyLearningAdmin</members>
 		<name>PermissionSetGroup</name>
@@ -788,6 +790,10 @@
 		<name>Report</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Role</name>
+	</types>
+	<types>
 		<members>Hirep__c.Share_Hirep_to_MAPV_ACDL</members>
 		<members>Hirep__c.Share_Hirep_to_PV_BRM</members>
 		<members>Hirep__c.Share_Hirep_to_PV_Management</members>
@@ -797,6 +803,10 @@
 		<members>Hirep__c.Share_Hirep_to_PV_SCP</members>
 		<members>Hirep__c.Share_Hirep_to_RAD_MA</members>
 		<name>SharingCriteriaRule</name>
+	</types>
+	<types>
+		<members>Account</members>
+		<name>SharingRules</name>
 	</types>
 	<types>
 		<members>*</members>
