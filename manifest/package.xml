@@ -615,6 +615,7 @@
 		<members>Ca_Entre_NosUser</members>
 		<members>Hirep_ApplicationAdmin</members>
 		<members>Hirep_EndUser</members>
+		<members>SailPoint_IdentityNOW_Integration_User</members>
 		<members>Uma_ApplicationAdmin</members>
 		<members>Uma_EndUser</members>
 		<members>Uma_IntegrationUser</members>
@@ -623,6 +624,7 @@
 		<name>PermissionSetGroup</name>
 	</types>
 	<types>
+		<members>Platform Integration System Admin</members>
 		<members>Platform Integration User</members>
 		<name>Profile</name>
 	</types>
