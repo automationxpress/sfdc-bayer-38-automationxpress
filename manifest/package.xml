@@ -623,6 +623,10 @@
 		<name>PermissionSetGroup</name>
 	</types>
 	<types>
+		<members>Platform Integration User</members>
+		<name>Profile</name>
+	</types>
+	<types>
 		<members>GsGoalPeriod__c.GsLockYear</members>
 		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
 		<members>GsGoal__c.GsEditGoal</members>
