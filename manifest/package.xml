@@ -33,6 +33,7 @@
 		<name>ContentAsset</name>
 	</types>
 	<types>
+		<members>Bayer_Cerca</members>
 		<members>Ca_Entre_Nos</members>
 		<members>GsGoalSetter</members>
 		<members>Lead_Generation</members>
