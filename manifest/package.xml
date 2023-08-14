@@ -33,6 +33,7 @@
 		<name>ContentAsset</name>
 	</types>
 	<types>
+		<members>Bayer_Cerca</members>
 		<members>Ca_Entre_Nos</members>
 		<members>GsGoalSetter</members>
 		<members>Lead_Generation</members>
@@ -505,8 +506,8 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Account-en_US</members>
 		<members>Account-pt_BR</members>
+		<members>Case-es</members>
 		<members>Contact-pt_BR</members>
 		<members>Speaker__c-en_US</members>
 		<members>Speaker__c-pt_BR</members>
@@ -616,12 +617,18 @@
 		<members>Ca_Entre_NosUser</members>
 		<members>Hirep_ApplicationAdmin</members>
 		<members>Hirep_EndUser</members>
+		<members>SailPoint_IdentityNOW_Integration_User</members>
 		<members>Uma_ApplicationAdmin</members>
 		<members>Uma_EndUser</members>
 		<members>Uma_IntegrationUser</members>
 		<members>Uma_ManagerUser</members>
 		<members>Uma_MyLearningAdmin</members>
 		<name>PermissionSetGroup</name>
+	</types>
+	<types>
+		<members>Platform Integration System Admin</members>
+		<members>Platform Integration User</members>
+		<name>Profile</name>
 	</types>
 	<types>
 		<members>GsGoalPeriod__c.GsLockYear</members>
@@ -665,6 +672,10 @@
 		<name>Report</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Role</name>
+	</types>
+	<types>
 		<members>Hirep__c.Share_Hirep_to_MAPV_ACDL</members>
 		<members>Hirep__c.Share_Hirep_to_PV_BRM</members>
 		<members>Hirep__c.Share_Hirep_to_PV_Management</members>
@@ -674,6 +685,10 @@
 		<members>Hirep__c.Share_Hirep_to_PV_SCP</members>
 		<members>Hirep__c.Share_Hirep_to_RAD_MA</members>
 		<name>SharingCriteriaRule</name>
+	</types>
+	<types>
+		<members>Account</members>
+		<name>SharingRules</name>
 	</types>
 	<types>
 		<members>*</members>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides required access for integration with IndentityNow</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SailPoint IdentityNOW Integration User</label>
+    <permissionSets>Manage_Accounts</permissionSets>
+    <permissionSets>Manage_Contacts</permissionSets>
+    <permissionSets>Manage_Standard_Object_Permissions</permissionSets>
+    <permissionSets>View_and_Modify_All_Accounts</permissionSets>
+    <permissionSets>View_and_Modify_All_Contacts</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
