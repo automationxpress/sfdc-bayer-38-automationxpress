@@ -504,8 +504,8 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Account-en_US</members>
 		<members>Account-pt_BR</members>
+		<members>Case-es</members>
 		<members>Contact-pt_BR</members>
 		<members>Speaker__c-en_US</members>
 		<members>Speaker__c-pt_BR</members>
