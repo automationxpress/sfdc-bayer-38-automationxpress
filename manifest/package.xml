@@ -308,6 +308,7 @@
 		<members>Workshop_Event__c.Event_type__c</members>
 		<members>Workshop_Event__c.Guests__c</members>
 		<members>Workshop_Event__c.Marketing_Material__c</members>
+		<members>Workshop_Event__c.Payment_process__c</members>
 		<members>Workshop_Event__c.Speak_subject__c</members>
 		<members>Workshop_Event__c.Women_impacted__c</members>
 		<name>CustomField</name>
