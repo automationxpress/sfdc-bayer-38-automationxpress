@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides access to view Goal Classics Tab</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>View Goal Classics Tab</label>
+    <license>Salesforce Platform</license>
+    <tabSettings>
+        <tab>GsGoalsClassic</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>
