@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set grants basic user permission to the GoalSetter application allowing the user to manage goals</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GoalSetter End User</label>
+    <mutingPermissionSets>GoalSetter_End_User_Muted</mutingPermissionSets>
+    <permissionSets>Access_to_GoalSetter_App</permissionSets>
+    <permissionSets>Create_GoalSetter_Feedbacks</permissionSets>
+    <permissionSets>Create_Goals</permissionSets>
+    <permissionSets>Read_Goal_Periods</permissionSets>
+    <permissionSets>Run_System_Permissions</permissionSets>
+    <permissionSets>View_All_GoalSetter_Feedbacks</permissionSets>
+    <permissionSets>View_All_Goals</permissionSets>
+    <permissionSets>View_Goal_Classics_Tab</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

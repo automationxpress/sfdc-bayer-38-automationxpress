@@ -601,6 +601,11 @@
 		<name>LightningComponentBundle</name>
 	</types>
 	<types>
+		<members>GoalSetter_Application_Admin_Muted</members>
+		<members>GoalSetter_End_User_Muted</members>
+		<name>MutingPermissionSet</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>NamedCredential</name>
 	</types>
@@ -614,6 +619,9 @@
 	</types>
 	<types>
 		<members>Ca_Entre_NosUser</members>
+		<members>GoalSetter_Application_Admin</members>
+		<members>GoalSetter_End_User</members>
+		<members>GoalSetter_Integration_User</members>
 		<members>Hirep_ApplicationAdmin</members>
 		<members>Hirep_EndUser</members>
 		<members>SailPoint_IdentityNOW_Integration_User</members>
