@@ -32,7 +32,7 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Bayer_Cerca_Company_Record_Page</content>
+        <content>Account_Record_Page_with_Dynamic_Forms</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -41,7 +41,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Bayer_Cerca_Company_Record_Page</content>
+        <content>Account_Record_Page_with_Dynamic_Forms</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -50,7 +50,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Bayer_Cerca_Company_Record_Page</content>
+        <content>Account_Record_Page_with_Dynamic_Forms</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -59,12 +59,44 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Bayer_Cerca_Company_Record_Page</content>
+        <content>Account_Record_Page_with_Dynamic_Forms</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
         <type>Flexipage</type>
         <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -105,6 +137,7 @@
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Case</tabs>
+    <tabs>Approval_Configuration__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Argentina_UtilityBar</utilityBar>
 </CustomApplication>
