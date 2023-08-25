@@ -78,6 +78,8 @@
 		<members>Azure_Client_Credentials__mdt.Client_Secret__c</members>
 		<members>Azure_Client_Credentials__mdt.Scope__c</members>
 		<members>Azure_Client_Credentials__mdt.Tenant_ID__c</members>
+		<members>Case.Approval_Status__c</members>
+		<members>Case.Product__c</members>
 		<members>Contact.Last_Interaction__c</members>
 		<members>Contact.Linkedin__c</members>
 		<members>Contact.Position__c</members>

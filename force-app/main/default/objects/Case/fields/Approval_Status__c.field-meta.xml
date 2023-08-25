@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending for First Approval</fullName>
+                <default>false</default>
+                <label>Pending for First Approval</label>
+            </value>
+            <value>
+                <fullName>First Approval Rejected</fullName>
+                <default>false</default>
+                <label>First Approval Rejected</label>
+            </value>
+            <value>
+                <fullName>Second Approval Pending</fullName>
+                <default>false</default>
+                <label>Second Approval Pending</label>
+            </value>
+            <value>
+                <fullName>Second Approval Approved</fullName>
+                <default>false</default>
+                <label>Second Approval Approved</label>
+            </value>
+            <value>
+                <fullName>Second Approval Rejected</fullName>
+                <default>false</default>
+                <label>Second Approval Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
