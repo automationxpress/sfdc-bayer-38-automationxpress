@@ -733,5 +733,17 @@
 		<members>User_Entry__c.Restrict_UpdateExisting_To_NotRequired</members>
 		<name>ValidationRule</name>
 	</types>
+	<types>
+		<members>Case.Approval_Status_as_FinalApprovalApproved</members>
+		<members>Case.Approval_Status_as_FinalApprovalRejected</members>
+		<members>Case.Approval_Status_as_FirstApprovalRejected</members>
+		<members>Case.Approval_Status_as_SecondApprovalPending</members>
+		<members>Case.Update_Approval_Status</members>
+		<members>Case.Update_Approval_Status_as_None</members>
+		<members>Case.Update_Status</members>
+		<members>Case.Update_Status_as_New</members>
+		<members>Case.Update_Status_to_Close</members>
+		<name>WorkflowFieldUpdate</name>
+	</types>
 	<version>55.0</version>
 </Package>

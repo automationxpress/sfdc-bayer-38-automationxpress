@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Approval_Status_as_FinalApprovalApproved</fullName>
+        <description>Update Approval Status to Second Approval Approved</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Second Approval Approved</literalValue>
+        <name>Approval Status as FinalApprovalApproved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_as_FinalApprovalRejected</fullName>
+        <description>Update Approval Status to Second Approval Rejected</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Second Approval Rejected</literalValue>
+        <name>Approval Status as FinalApprovalRejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_as_FirstApprovalRejected</fullName>
+        <description>Update Approval Status to First Approval Rejected</description>
+        <field>Approval_Status__c</field>
+        <literalValue>First Approval Rejected</literalValue>
+        <name>Approval Status as FirstApprovalRejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_as_SecondApprovalPending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Second Approval Pending</literalValue>
+        <name>Approval Status as SecondApprovalPending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status</fullName>
+        <description>Update Approval Status to Pending for First Approval</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending for First Approval</literalValue>
+        <name>Update Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_as_None</fullName>
+        <description>Update Approval Status as None</description>
+        <field>Approval_Status__c</field>
+        <name>Update Approval Status as None</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <description>Update the Status as Escalated.</description>
+        <field>Status</field>
+        <literalValue>Escalated</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_as_New</fullName>
+        <description>Update the Status as New.</description>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+        <name>Update Status as New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Close</fullName>
+        <description>Update Status as Close</description>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>Update Status to Close</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
