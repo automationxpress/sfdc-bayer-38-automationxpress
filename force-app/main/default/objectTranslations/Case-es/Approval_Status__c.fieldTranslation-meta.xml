@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Estado de aprobación</label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>First Approval Rejected</masterLabel>
+        <translation>Primera aprobacion rechazada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for First Approval</masterLabel>
+        <translation>Pendiente de primera aprobacion</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending for Second Approval</masterLabel>
+        <translation>Segunda aprobacion aprobada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Second Approval Approved</masterLabel>
+        <translation>Pendiente de segunda aprobacion</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Second Approval Rejected</masterLabel>
+        <translation>Segunda aprobacion rechazada</translation>
+    </picklistValues>
+</CustomFieldTranslation>

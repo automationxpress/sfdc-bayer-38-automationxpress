@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Bayer Cerca End Users</label>
+    <mutingPermissionSets>Bayer_Cerca_End_Users_Muted</mutingPermissionSets>
+    <permissionSets>Access_to_Bayer_Cerca_Application</permissionSets>
+    <permissionSets>Manage_Cases</permissionSets>
+    <permissionSets>Read_Acounts</permissionSets>
+    <permissionSets>Read_Approval_Configurations</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
