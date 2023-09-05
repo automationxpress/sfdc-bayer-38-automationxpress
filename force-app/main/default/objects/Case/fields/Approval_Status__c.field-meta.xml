@@ -23,9 +23,14 @@
                 <label>First Approval Rejected</label>
             </value>
             <value>
-                <fullName>Second Approval Pending</fullName>
+                <fullName>Pending for Second Approval</fullName>
                 <default>false</default>
-                <label>Second Approval Pending</label>
+                <label>Pending for Second Approval</label>
+            </value>
+            <value>
+                <fullName>Second Approval Rejected</fullName>
+                <default>false</default>
+                <label>Second Approval Rejected</label>
             </value>
             <value>
                 <fullName>Second Approval Approved</fullName>
@@ -33,9 +38,10 @@
                 <label>Second Approval Approved</label>
             </value>
             <value>
-                <fullName>Second Approval Rejected</fullName>
+                <fullName>Second Approval Pending</fullName>
                 <default>false</default>
-                <label>Second Approval Rejected</label>
+                <isActive>false</isActive>
+                <label>Second Approval Pending</label>
             </value>
         </valueSetDefinition>
     </valueSet>

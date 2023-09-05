@@ -9,8 +9,9 @@
         <field>CaseNumber</field>
         <field>Account</field>
         <field>Reason</field>
+        <field>Product__c</field>
+        <field>Description</field>
         <field>Owner</field>
-        <field>Product</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
@@ -66,6 +67,7 @@
         </rejectionActions>
     </approvalStep>
     <description>Submit the Case record for approval when record type is Product Support Case and relevant  Case Reason is selected.</description>
+    <emailTemplate>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Assignment_Notification</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
@@ -81,12 +83,20 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
+            <name>Bayer_Cerca_Notify_User_when_Approval_is_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
             <name>Update_Status_to_Close</name>
             <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
     <finalRejectionActions>
+        <action>
+            <name>Bayer_Cerca_Notify_Users_when_Approval_is_Rejected</name>
+            <type>Alert</type>
+        </action>
         <action>
             <name>Update_Status_to_Close</name>
             <type>FieldUpdate</type>

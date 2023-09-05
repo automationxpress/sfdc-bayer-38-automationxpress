@@ -79,7 +79,10 @@
 		<members>Azure_Client_Credentials__mdt.Scope__c</members>
 		<members>Azure_Client_Credentials__mdt.Tenant_ID__c</members>
 		<members>Case.Approval_Status__c</members>
+		<members>Case.First_Approver__c</members>
+		<members>Case.Is_Assigned_to_Me__c</members>
 		<members>Case.Product__c</members>
+		<members>Case.Second_Approver__c</members>
 		<members>Contact.Last_Interaction__c</members>
 		<members>Contact.Linkedin__c</members>
 		<members>Contact.Position__c</members>
@@ -538,6 +541,9 @@
 		<name>Dashboard</name>
 	</types>
 	<types>
+		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Approved_Notification_Email</members>
+		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Assignment_Notification</members>
+		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Rejected_Notification_Email</members>
 		<members>Ca_Entre_Nos_Email_Template/Ca_Entre_Nos_Lead_Notification_After_6Months_of_Contact</members>
 		<name>EmailTemplate</name>
 	</types>
@@ -550,6 +556,8 @@
 		<name>FlexiPage</name>
 	</types>
 	<types>
+		<members>Case_on_Create_Before_Handler</members>
+		<members>Case_on_Update_After_Handler</members>
 		<members>Create_or_Update_UMA_User</members>
 		<members>GetImpactStudiesOccupationcode</members>
 		<members>GoalSetterCheckUserEditingRights</members>
@@ -732,6 +740,11 @@
 		<members>User_Entry__c.Restrict_NotRequired_To_UpdateExisting</members>
 		<members>User_Entry__c.Restrict_UpdateExisting_To_NotRequired</members>
 		<name>ValidationRule</name>
+	</types>
+	<types>
+		<members>Case.Bayer_Cerca_Notify_User_when_Approval_is_Approved</members>
+		<members>Case.Bayer_Cerca_Notify_Users_when_Approval_is_Rejected</members>
+		<name>WorkflowAlert</name>
 	</types>
 	<types>
 		<members>Case.Approval_Status_as_FinalApprovalApproved</members>

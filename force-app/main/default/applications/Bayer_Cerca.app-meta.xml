@@ -32,7 +32,7 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Account_Record_Page_with_Dynamic_Forms</content>
+        <content>Bayer_Cerca_Company_Record_Page</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -41,7 +41,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Account_Record_Page_with_Dynamic_Forms</content>
+        <content>Bayer_Cerca_Company_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -50,7 +50,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Account_Record_Page_with_Dynamic_Forms</content>
+        <content>Bayer_Cerca_Company_Record_Page</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -59,7 +59,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Account_Record_Page_with_Dynamic_Forms</content>
+        <content>Bayer_Cerca_Company_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Company</recordType>
@@ -135,8 +135,8 @@
         <profile>Platform End User</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
-    <tabs>standard-Account</tabs>
     <tabs>standard-Case</tabs>
+    <tabs>standard-Account</tabs>
     <tabs>Approval_Configuration__c</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-report</tabs>

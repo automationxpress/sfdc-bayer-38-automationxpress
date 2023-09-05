@@ -1,0 +1,31 @@
+{!Case.OwnerFullName},
+<br> </br>
+<br>Su petición de aprobación del caso {!Case.CaseNumber} (Cuenta:{!Case.Account} – Producto: {!Case.Product__c}  ) ha sido aprobada</br>
+
+<p><b>Detalles del caso:</b></p>
+<table style="width:50%;border: 1px solid black;">
+		
+	<tr>
+                <td style="border: 1px solid black; text-align: center;"> <b>Numero</b> </th>
+		<td style="border: 1px solid black; text-align: center;"> {!Case.CaseNumber} </th>
+	</tr>
+        <tr>
+                <td style="border: 1px solid black; text-align: center;"><b> Cuenta</b></th>
+		<td style="border: 1px solid black; text-align: center;"> {!Case.Account} </th>
+	</tr>
+        <tr>
+                <td style="border: 1px solid black; text-align: center;"><b> Producto</b></th>
+		<td style="border: 1px solid black; text-align: center;"> {!Case.Product__c} </th>
+	</tr>
+        <tr>
+                <td style="border: 1px solid black; text-align: center;"> <b>Motivo</b></th>
+		<td style="border: 1px solid black; text-align: center;"> {!Case.Reason}</th>
+	</tr>
+        <tr>
+                <td style="border: 1px solid black; text-align: center;"><b> Descripción</b> </th>
+		<td style="border: 1px solid black; text-align: center;"> {!Case.Description} </th>
+	</tr>
+</table>	
+
+<br>Muchas gracias por su colaboración,</br>
+<br>Salesforce</br>

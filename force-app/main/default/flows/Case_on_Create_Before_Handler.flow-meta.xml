@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <constants>
+        <name>Product_Support_Case_Record_Type</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Product_Support_Case</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Case record is of product support case type and relevant Case reason is selected.</description>
+        <name>Is_Product_Support_Case_Record_Type</name>
+        <label>Is Product Support Case Record Type?</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5) AND 6</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Product_Support_Case_Record_Type</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Reason</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Price Proposal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Reason</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No Demand/Bad Information</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Reason</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Value Proposal - Patients</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Reason</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Value Proposal for Accesibility</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Approval_Status__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Approval_Configuration</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Populate First Approver and Second Approver from Approval Configuration on Before Create of Product Support Case Type of Cases.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case on Create Before Handler</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Approval_Configuration</name>
+        <label>Get Approval Configuration</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Cases</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Case_Reason__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Reason</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Approval_Configuration__c</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Cases</name>
+        <label>Update Cases</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>First_Approver__c</field>
+            <value>
+                <elementReference>Get_Approval_Configuration.First_Approver__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Second_Approver__c</field>
+            <value>
+                <elementReference>Get_Approval_Configuration.Second_Approver__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Product_Support_Case_Record_Type</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

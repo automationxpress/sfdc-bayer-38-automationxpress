@@ -93,6 +93,12 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.OwnerId</fieldItem>
                 <identifier>RecordOwnerIdField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Name}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -103,6 +109,12 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CreatedById</fieldItem>
                 <identifier>RecordCreatedByIdField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Name}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -113,6 +125,12 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.LastModifiedById</fieldItem>
                 <identifier>RecordLastModifiedByIdField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Name}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-30981be5-4631-41b4-97c0-8288c5f6b2c9</name>

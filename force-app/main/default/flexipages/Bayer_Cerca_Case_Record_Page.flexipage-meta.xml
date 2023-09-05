@@ -57,7 +57,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.AccountId</fieldItem>
                 <identifier>RecordAccountIdField</identifier>
@@ -67,10 +67,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Product__c</fieldItem>
-                <identifier>RecordProduct_cField</identifier>
+                <fieldItem>Record.Reason</fieldItem>
+                <identifier>RecordReasonField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -79,8 +79,24 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Reason</fieldItem>
-                <identifier>RecordReasonField</identifier>
+                <fieldItem>Record.Description</fieldItem>
+                <identifier>RecordDescriptionField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Approval_Status__c</fieldItem>
+                <identifier>RecordApproval_Status_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.CaseNumber}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ad1a8cd8-9b5e-4ddf-a0cf-41b847001147</name>
@@ -93,18 +109,8 @@
                     <name>uiBehavior</name>
                     <value>required</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Status</fieldItem>
-                <identifier>RecordStatusField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Approval_Status__c</fieldItem>
-                <identifier>RecordApproval_Status_cField</identifier>
+                <fieldItem>Record.Product__c</fieldItem>
+                <identifier>RecordProduct_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -115,6 +121,12 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.First_Approver__c</fieldItem>
                 <identifier>RecordStrategic_Access_Manager_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.CaseNumber}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -125,6 +137,60 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Second_Approver__c</fieldItem>
                 <identifier>RecordPricing_Manager_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.CaseNumber}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.OwnerId</fieldItem>
+                <identifier>RecordOwnerIdField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.CaseNumber}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CreatedById</fieldItem>
+                <identifier>RecordCreatedByIdField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.CaseNumber}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.LastModifiedById</fieldItem>
+                <identifier>RecordLastModifiedByIdField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.CaseNumber}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-cf192fa9-2668-4339-9891-545e83f72cfc</name>
