@@ -249,6 +249,8 @@
 		<members>Speaker__c.Professional_type__c</members>
 		<members>Speaker__c.Specialties__c</members>
 		<members>UMA_Settings__mdt.Max_nr_of_Prima_POST_request_attempts__c</members>
+		<members>User.CompanyCode__c</members>
+		<members>User.ManagerCWID__c</members>
 		<members>User_Additional_Role__c.Job_Role__c</members>
 		<members>User_Additional_Role__c.User_Entry__c</members>
 		<members>User_Entry__c.Alternate_ML_Supervisor__c</members>
