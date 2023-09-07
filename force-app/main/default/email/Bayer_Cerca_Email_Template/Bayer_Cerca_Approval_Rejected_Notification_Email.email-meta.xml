@@ -5,20 +5,20 @@
     <name>Bayer Cerca Approval Rejected Notification Email</name>
     <style>none</style>
     <subject>Su petición de aprobación del caso {!Case.CaseNumber} (Cuenta:{!Case.Account}, Producto: {!Case.Product__c}) ha sido rechazada</subject>
-    <textOnly>{!User.Name},   
+    <textOnly>{!Case.OwnerFullName},
 
-El caso {!Case.CaseNumber}.esta pendiente de su aprobación, por favor, diríjase el enlace debajo.  
+Su petición de aprobación del caso {!Case.CaseNumber} (Cuenta:{!Case.Account} – Producto: {!Case.Product__c}  ) ha sido rechazada
 
-Detalles del caso: 
-Numero: {!Case.CaseNumber} 
-Cuenta: {!Case.Account} 
-Producto: {!Case.Product__c} 
-Motivo: {!Case.Reason} 
-Descripción: {!Case.Description}  
+Detalles del caso:
 
-Por favor haga clic aquí para aprobar o rechazar  
+Numero    {!Case.CaseNumber}
+Cuenta   {!Case.Account}
+Producto   {!Case.Product__c}
+Motivo   {!Case.Reason}
+Descripción    {!Case.Description}
 
-Muchas gracias por su colaboración, 
+
+Muchas gracias por su colaboración,
 Salesforce</textOnly>
     <type>custom</type>
     <uiType>Aloha</uiType>

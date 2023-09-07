@@ -61,16 +61,6 @@
                 <identifier>RecordCase_Reason_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.First_Approver__c</fieldItem>
-                <identifier>RecordFirst_Approver_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-05a7534c-d38f-43d4-a476-5d27486e980d</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -81,10 +71,48 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.First_Approver__c</fieldItem>
+                <identifier>RecordFirst_Approver_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Second_Approver__c</fieldItem>
                 <identifier>RecordSecond_Approver_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-30981be5-4631-41b4-97c0-8288c5f6b2c9</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-05a7534c-d38f-43d4-a476-5d27486e980d</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-30981be5-4631-41b4-97c0-8288c5f6b2c9</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-46e53c97-ac56-47c4-9b3c-2094e38358e1</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -117,6 +145,10 @@
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-1bc277a1-6c7b-49cb-ba11-fdae4a841a9e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -133,7 +165,7 @@
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-30981be5-4631-41b4-97c0-8288c5f6b2c9</name>
+        <name>Facet-71a2343f-6bf7-4e2f-a1e0-36af320ff770</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -141,23 +173,23 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-05a7534c-d38f-43d4-a476-5d27486e980d</value>
+                    <value>Facet-1bc277a1-6c7b-49cb-ba11-fdae4a841a9e</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column</identifier>
+                <identifier>flexipage_column3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-30981be5-4631-41b4-97c0-8288c5f6b2c9</value>
+                    <value>Facet-71a2343f-6bf7-4e2f-a1e0-36af320ff770</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column2</identifier>
+                <identifier>flexipage_column4</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-46e53c97-ac56-47c4-9b3c-2094e38358e1</name>
+        <name>Facet-66e110b5-3853-4e39-b037-a4c68d25dec8</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -173,10 +205,28 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Section</value>
+                    <value>{!$Label.Details}</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-66e110b5-3853-4e39-b037-a4c68d25dec8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>{!$Label.System_Information}</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection2</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>

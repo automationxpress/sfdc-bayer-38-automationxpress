@@ -4,21 +4,22 @@
     <encodingKey>UTF-8</encodingKey>
     <name>Bayer Cerca Approval Assignment Notification</name>
     <style>none</style>
-    <subject>Solicitud de aprobación para el caso {!Case.CaseNumber} (Cuenta:{!Case.Account}, Producto:{!Case.Product__c})</subject>
-    <textOnly>{!User.Name},   
+    <subject>Solicitud de aprobación para el caso {!Case.CaseNumber} (Cuenta:{!Case.Account} - Producto:{!Case.Product__c})</subject>
+    <textOnly>{!User.Name},
 
-El caso {!Case.CaseNumber}.esta pendiente de su aprobación, por favor, diríjase el enlace debajo.  
+El caso {!Case.CaseNumber} esta pendiente de su aprobación, por favor, diríjase el enlace debajo.
 
-Detalles del caso: 
-Numero: {!Case.CaseNumber} 
-Cuenta: {!Case.Account} 
-Producto: {!Case.Product__c} 
-Motivo: {!Case.Reason} 
-Descripción: {!Case.Description}  
+Detalles del caso:
 
-Por favor haga clic aquí para aprobar o rechazar  
+Numero    {!Case.CaseNumber}
+Cuenta   {!Case.Account}
+Producto   {!Case.Product__c}
+Motivo   {!Case.Reason}
+Descripción    {!Case.Description}
 
-Muchas gracias por su colaboración, 
+
+Por favor haga clic aquí para aprobar o rechazar
+Muchas gracias por su colaboración,
 Salesforce</textOnly>
     <type>custom</type>
     <uiType>Aloha</uiType>

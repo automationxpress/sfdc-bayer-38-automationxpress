@@ -342,6 +342,7 @@
 		<members>Create_New_Role_Matrix</members>
 		<members>DecryptionAlgorithm_ConsentForm</members>
 		<members>Delete</members>
+		<members>Details</members>
 		<members>EmailBody_ConsentForm</members>
 		<members>EmailRrequired_ConsentForm</members>
 		<members>EmailSubject_ConsentForm</members>
@@ -357,10 +358,16 @@
 		<members>Next</members>
 		<members>NoResults</members>
 		<members>Previous</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessField</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessObject</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_unknownField</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_unknownObject</members>
+		<members>Profile2PermSet__dmlmanager_errormessage_unknownaccess</members>
 		<members>Save</members>
 		<members>Save_and_Submit_for_Approval</members>
 		<members>Search</members>
 		<members>Send_ConsentForm</members>
+		<members>System_Information</members>
 		<members>Text1_ConsentForm</members>
 		<members>Text2_ConsentForm</members>
 		<members>ToBeAssigned</members>
@@ -606,6 +613,7 @@
 	<types>
 		<members>Account-Account</members>
 		<members>Account-University</members>
+		<members>Case-Case Layout</members>
 		<members>Contact-Lead Registration</members>
 		<members>Hirep__c-HIREP Layout</members>
 		<members>Speaker__c-Speaker Layout</members>

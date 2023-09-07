@@ -31,6 +31,22 @@
     <label>Bayer Cerca</label>
     <navType>Standard</navType>
     <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Getting_Started_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Getting_Started_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>Bayer_Cerca_Company_Record_Page</content>
         <formFactor>Small</formFactor>

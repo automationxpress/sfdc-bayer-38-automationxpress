@@ -286,4 +286,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <label>Bayer Cerca Application Admin Muted</label>
+    <recordTypeVisibilities>
+        <recordType>Account.University</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 </MutingPermissionSet>

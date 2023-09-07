@@ -29,7 +29,7 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <description>Submit the approval request to First Approver.</description>
-        <label>Approval - Send to First Approver</label>
+        <label>Aprobación: enviada al primer aprobador</label>
         <name>Approval_Send_to_First_Approver</name>
         <rejectionActions>
             <action>
@@ -54,7 +54,7 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <description>Submit the approval request to Second Approver.</description>
-        <label>Approval - Sent to Second Approver</label>
+        <label>Aprobación: enviada al segundo aprobador</label>
         <name>Approval_Send_to_Second_Approver</name>
         <rejectBehavior>
             <type>RejectRequest</type>
@@ -102,7 +102,7 @@
             <type>FieldUpdate</type>
         </action>
     </finalRejectionActions>
-    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
             <name>Update_Approval_Status</name>
