@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Complex functionality</masterLabel>
+        <translation><!-- Complex functionality --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Existing problem</masterLabel>
+        <translation><!-- Existing problem --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Instructions not clear</masterLabel>
+        <translation><!-- Instructions not clear --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New problem</masterLabel>
+        <translation><!-- New problem --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>No Demand/Bad Information</masterLabel>
+        <translation>Falta de Demanda/Mala Información</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Price Proposal</masterLabel>
+        <translation>Propuesta de Precio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>User didn&apos;t attend training</masterLabel>
+        <translation><!-- User didn&apos;t attend training --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Value Proposal - Patients</masterLabel>
+        <translation>Propuesta de Valor - Pacientes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Value Proposal for Accesibility</masterLabel>
+        <translation>Propuesta de Valor para Accesibilidad</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

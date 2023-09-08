@@ -78,6 +78,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Workshop_Event__c.Women_Impacted_After_Event__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Workshop_Event__c.Women_impacted__c</field>
         <readable>true</readable>
     </fieldPermissions>

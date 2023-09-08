@@ -20,9 +20,11 @@
     </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
-        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+        <logo>Bayer_Cerca_Application_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
-    <description>Bayer Cerca es una estrategia integral que busca usar la tecnología para mejorar la vida de las pacientes dentro del sistema de salud de Conosur. En este caso, un sistema de tickets para el seguimiento de casos para lograr la accesibilidad de productos de</description>
+    <description>Sistema de tickets para lograr la accesibilidad de productos de pharma en los distintos pagadores del sistema, optimizando los procesos, los pedidos y la asignación de recursos.</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
@@ -31,6 +33,22 @@
     <label>Bayer Cerca</label>
     <navType>Standard</navType>
     <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Getting_Started_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Getting_Started_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>Bayer_Cerca_Company_Record_Page</content>
         <formFactor>Small</formFactor>
@@ -65,6 +83,38 @@
         <recordType>Account.Company</recordType>
         <type>Flexipage</type>
         <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Platform End User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bayer_Cerca_Approval_Configuration_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Approval_Configuration__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -103,8 +153,11 @@
         <profile>Platform End User</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
-    <tabs>standard-Account</tabs>
     <tabs>standard-Case</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Approval_Configuration__c</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Argentina_UtilityBar</utilityBar>
 </CustomApplication>

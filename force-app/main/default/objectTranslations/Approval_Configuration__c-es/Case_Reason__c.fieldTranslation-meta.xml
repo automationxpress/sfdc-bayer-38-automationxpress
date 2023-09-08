@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Motivo</label>
+    <name>Case_Reason__c</name>
+    <picklistValues>
+        <masterLabel>No Demand/Bad Information</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Proposal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Proposal - Patients</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Proposal for Accesibility</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>
