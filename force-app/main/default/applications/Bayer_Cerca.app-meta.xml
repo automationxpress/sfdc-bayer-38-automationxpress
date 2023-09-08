@@ -20,9 +20,11 @@
     </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
+        <logo>Bayer_Cerca_Application_Logo</logo>
+        <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
-    <description>Bayer Cerca es una estrategia integral que busca usar la tecnología para mejorar la vida de las pacientes dentro del sistema de salud de Conosur. En este caso, un sistema de tickets para el seguimiento de casos para lograr la accesibilidad de productos de</description>
+    <description>Sistema de tickets para lograr la accesibilidad de productos de pharma en los distintos pagadores del sistema, optimizando los procesos, los pedidos y la asignación de recursos.</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>

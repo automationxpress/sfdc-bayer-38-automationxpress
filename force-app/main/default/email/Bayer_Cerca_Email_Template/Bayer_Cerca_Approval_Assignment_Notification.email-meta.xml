@@ -5,7 +5,7 @@
     <name>Bayer Cerca Approval Assignment Notification</name>
     <style>none</style>
     <subject>Solicitud de aprobación para el caso {!Case.CaseNumber} (Cuenta:{!Case.Account} - Producto:{!Case.Product__c})</subject>
-    <textOnly>{!User.Name},
+    <textOnly>Estimado Usuario,
 
 El caso {!Case.CaseNumber} esta pendiente de su aprobación, por favor, diríjase el enlace debajo.
 

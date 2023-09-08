@@ -614,6 +614,7 @@
 	<types>
 		<members>Account-Account</members>
 		<members>Account-University</members>
+		<members>Approval_Configuration-Approver Configuration Layout</members>
 		<members>Case-Case Layout</members>
 		<members>Contact-Lead Registration</members>
 		<members>Hirep__c-HIREP Layout</members>
@@ -674,6 +675,10 @@
 		<name>QuickAction</name>
 	</types>
 	<types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
+	<types>
 		<members>Account.Company</members>
 		<members>Account.University</members>
 		<members>Contact.Lead</members>
@@ -687,6 +692,7 @@
 		<name>RecordType</name>
 	</types>
 	<types>
+		<members>BayerCercaReports/Bayer_Cerca_Approval_Process_Time_SO8</members>
 		<members>CEntreNsReports/Contact_Names</members>
 		<members>CEntreNsReports/Contas_com_Eventos</members>
 		<members>CEntreNsReports/Copy_of_Contact_Names</members>
@@ -703,6 +709,10 @@
 		<members>CEntreNsReportsforDashboards/Contact_Names_4_Dashbaord_Interaction</members>
 		<name>Report</name>
 	</types>
+	<types>
+        <members>*</members>
+        <name>ReportType</name>
+    </types>
 	<types>
 		<members>*</members>
 		<name>Role</name>

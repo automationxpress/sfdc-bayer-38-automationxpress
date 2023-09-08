@@ -6,23 +6,23 @@
 <table style="width:50%;border: 1px solid black;">
 		
 	<tr>
-                <td style="border: 1px solid black; text-align: center;"> <b>Numero</b> </th>
+                <td style="border: 1px solid black; text-align: left;"> <b>Numero</b> </th>
 		<td style="border: 1px solid black; text-align: left;"> {!Case.CaseNumber} </th>
 	</tr>
         <tr>
-                <td style="border: 1px solid black; text-align: center;"><b> Cuenta</b></th>
+                <td style="border: 1px solid black; text-align: left;"><b> Cuenta</b></th>
 		<td style="border: 1px solid black; text-align: left;"> {!Case.Account} </th>
 	</tr>
         <tr>
-                <td style="border: 1px solid black; text-align: center;"><b> Producto</b></th>
+                <td style="border: 1px solid black; text-align: left;"><b> Producto</b></th>
 		<td style="border: 1px solid black; text-align: left;"> {!Case.Product__c} </th>
 	</tr>
         <tr>
-                <td style="border: 1px solid black; text-align: center;"> <b>Motivo</b></th>
+                <td style="border: 1px solid black; text-align: left;"> <b>Motivo</b></th>
 		<td style="border: 1px solid black; text-align: left;"> {!Case.Reason}</th>
 	</tr>
         <tr>
-                <td style="border: 1px solid black; text-align: center;"><b> Descripción</b> </th>
+                <td style="border: 1px solid black; text-align: left;"><b> Descripción</b> </th>
 		<td style="border: 1px solid black; text-align: left;"> {!Case.Description} </th>
 	</tr>
 </table>	
