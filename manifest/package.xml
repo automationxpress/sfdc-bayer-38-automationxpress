@@ -164,7 +164,6 @@
 		<members>Hirep__c.CWID__c</members>
 		<members>Hirep__c.Commences_Date__c</members>
 		<members>Hirep__c.Commences__c</members>
-		<members>Hirep__c.Company__c</members>
 		<members>Hirep__c.Consumer_Health_Related_Position__c</members>
 		<members>Hirep__c.Contract_Period_From__c</members>
 		<members>Hirep__c.Contract_Period_To__c</members>
