@@ -654,6 +654,7 @@
 		<members>Uma_ApplicationAdmin</members>
 		<members>Uma_EndUser</members>
 		<members>Uma_IntegrationUser</members>
+		<members>Uma_IntegrationUser</members>
 		<members>Uma_ManagerUser</members>
 		<members>Uma_MyLearningAdmin</members>
 		<name>PermissionSetGroup</name>
