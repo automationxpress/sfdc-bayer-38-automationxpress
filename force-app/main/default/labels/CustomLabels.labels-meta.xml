@@ -146,6 +146,13 @@
         <value>Delete</value>
     </labels>
     <labels>
+        <fullName>Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
         <fullName>EmailBody_ConsentForm</fullName>
         <categories>ConsentForm</categories>
         <language>en_US</language>
@@ -288,6 +295,13 @@
         <protected>false</protected>
         <shortDescription>Send_ConsentForm</shortDescription>
         <value>Gönder</value>
+    </labels>
+    <labels>
+        <fullName>System_Information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Information</shortDescription>
+        <value>System Information</value>
     </labels>
     <labels>
         <fullName>Text1_ConsentForm</fullName>

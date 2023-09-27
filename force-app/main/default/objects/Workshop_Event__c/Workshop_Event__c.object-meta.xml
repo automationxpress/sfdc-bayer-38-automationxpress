@@ -161,8 +161,8 @@
     </nameField>
     <pluralLabel>Workshop Events</pluralLabel>
     <searchLayouts>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

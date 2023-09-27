@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Support_Case_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>CaseNumber</fields>
+    <fields>Status</fields>
+    <label>Product Support Case Compact Layout</label>
+</CompactLayout>

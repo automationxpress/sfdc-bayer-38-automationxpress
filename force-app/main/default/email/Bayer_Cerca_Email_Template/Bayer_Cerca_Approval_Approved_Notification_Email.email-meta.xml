@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Bayer Cerca Approval Approved Notification Email</name>
+    <style>none</style>
+    <subject>Su petición de aprobación del caso {!Case.CaseNumber} (Cuenta:{!Case.Account} - Producto: {!Case.Product__c}) ha sido aprobada</subject>
+    <textOnly>{!Case.OwnerFullName},
+
+Su petición de aprobación del caso {!Case.CaseNumber} (Cuenta:{!Case.Account} – Producto: {!Case.Product__c}  ) ha sido aprobada
+
+Detalles del caso:
+
+Numero    {!Case.CaseNumber}
+Cuenta   {!Case.Account}
+Producto   {!Case.Product__c}
+Motivo   {!Case.Reason}
+Descripción    {!Case.Description}
+
+
+Muchas gracias por su colaboración,
+Salesforce</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

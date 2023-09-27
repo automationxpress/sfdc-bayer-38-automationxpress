@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Support_Case</fullName>
+    <active>true</active>
+    <businessProcess>Product_Support_Case</businessProcess>
+    <compactLayoutAssignment>Product_Support_Case_Compact_Layout</compactLayoutAssignment>
+    <description>Represents Cases created for Bayer Cerca products</description>
+    <label>Product Support Case</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>First Approval Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending for First Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending for Second Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Second Approval Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Second Approval Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Adempas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eylia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firialta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kovaltry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyleena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexavar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nubeqa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stivarga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventavis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verquvo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitrakvi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xarelto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xofigo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>No Demand%2FBad Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Proposal - Patients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Proposal for Accesibility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

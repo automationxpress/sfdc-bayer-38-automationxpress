@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set grants admin permission in the GoalSetter application allowing users to manage goal periods and advanced goal maintenance.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GoalSetter Application Admin</label>
+    <mutingPermissionSets>GoalSetter_Application_Admin_Muted</mutingPermissionSets>
+    <permissionSets>Access_to_GoalSetter_App</permissionSets>
+    <permissionSets>Create_Goals</permissionSets>
+    <permissionSets>GoalSetterAdmin_Custom_Permission</permissionSets>
+    <permissionSets>Manage_GoalSetter_Feedbacks</permissionSets>
+    <permissionSets>Manage_Goal_Periods</permissionSets>
+    <permissionSets>Run_System_Permissions</permissionSets>
+    <permissionSets>View_All_GoalSetter_Feedbacks</permissionSets>
+    <permissionSets>View_All_Goals</permissionSets>
+    <permissionSets>View_Goal_Classics_Tab</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

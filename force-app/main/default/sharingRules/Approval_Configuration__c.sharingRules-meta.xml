@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Bayer_Cerca_Admin_Approval_Configuration</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Provide Access to Approval configuration records to Bayer Cerca Admin</description>
+        <label>Bayer Cerca Admin Approval Configuration</label>
+        <sharedTo>
+            <role>Bayer_Cerca_Application_Admin</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Bayer_Cerca_Application_Admin</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Bayer_Cerca_End_Users_Share_to_Approval_Configuration</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Provide Read access to Approval configuration records to Bayer Cerca End Users</description>
+        <label>Bayer Cerca End Users Share to Approval Configuration</label>
+        <sharedTo>
+            <role>Bayer_Cerca_End_User</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Bayer_Cerca_Application_Admin</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
