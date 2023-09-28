@@ -10,4 +10,8 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Por favor, seleccionar segundo aprobador.</errorMessage>
+        <name>Second_Approver_Required</name>
+    </validationRules>
 </CustomObjectTranslation>

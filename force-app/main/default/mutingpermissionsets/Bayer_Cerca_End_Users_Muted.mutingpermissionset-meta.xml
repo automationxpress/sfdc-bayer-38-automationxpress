@@ -202,6 +202,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Case.Number_of_Approvers__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Case.ParentId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -268,6 +273,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.Type</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.WhoId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
     <label>Bayer Cerca End Users Muted</label>

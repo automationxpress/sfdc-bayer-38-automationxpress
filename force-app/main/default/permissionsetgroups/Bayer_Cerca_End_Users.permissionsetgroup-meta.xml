@@ -6,6 +6,7 @@
     <mutingPermissionSets>Bayer_Cerca_End_Users_Muted</mutingPermissionSets>
     <permissionSets>Access_to_Bayer_Cerca_Application</permissionSets>
     <permissionSets>Manage_Cases</permissionSets>
+    <permissionSets>Manage_Task</permissionSets>
     <permissionSets>Read_Acounts</permissionSets>
     <permissionSets>Read_Approval_Configurations</permissionSets>
     <status>Updated</status>

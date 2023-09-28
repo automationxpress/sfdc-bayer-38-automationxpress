@@ -66,7 +66,8 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Populate First Approver and Second Approver from Approval Configuration on Before Create of Product Support Case Type of Cases.</description>
+    <description>Populate First Approver and Second Approver from Approval Configuration on Before Create of Product Support Case Type of Cases.
+v2 - Populating Number of Approvers in Case from Approval Configuration</description>
     <environments>Default</environments>
     <interviewLabel>Case {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Case on Create Before Handler</label>
@@ -128,6 +129,12 @@
             <field>First_Approver__c</field>
             <value>
                 <elementReference>Get_Approval_Configuration.First_Approver__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Number_of_Approvers__c</field>
+            <value>
+                <elementReference>Get_Approval_Configuration.Number_of_Approvers__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
