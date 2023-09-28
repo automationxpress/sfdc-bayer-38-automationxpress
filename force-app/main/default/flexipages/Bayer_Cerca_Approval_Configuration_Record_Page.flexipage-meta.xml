@@ -72,7 +72,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Case_Reason__c</fieldItem>
                 <identifier>RecordCase_Reason_cField</identifier>
@@ -87,6 +87,16 @@
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Number_of_Approvers__c</fieldItem>
+                <identifier>RecordNumber_of_Approvers_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.First_Approver__c</fieldItem>
                 <identifier>RecordFirst_Approver_cField</identifier>
