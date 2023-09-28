@@ -8,5 +8,6 @@
     <permissionSets>Manage_Accounts</permissionSets>
     <permissionSets>Manage_Approval_Configuration</permissionSets>
     <permissionSets>Manage_Cases</permissionSets>
+    <permissionSets>Manage_Task</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

@@ -72,6 +72,7 @@
 		<members>Approval_Configuration__c.Active__c</members>
 		<members>Approval_Configuration__c.Case_Reason__c</members>
 		<members>Approval_Configuration__c.First_Approver__c</members>
+		<members>Approval_Configuration__c.Number_of_Approvers__c</members>
 		<members>Approval_Configuration__c.Second_Approver__c</members>
 		<members>Azure_Client_Credentials__mdt.Callback_URL__c</members>
 		<members>Azure_Client_Credentials__mdt.Client_ID__c</members>
@@ -81,6 +82,7 @@
 		<members>Case.Approval_Status__c</members>
 		<members>Case.First_Approver__c</members>
 		<members>Case.Is_Assigned_to_Me__c</members>
+		<members>Case.Number_of_Approvers__c</members>
 		<members>Case.Product__c</members>
 		<members>Case.Second_Approver__c</members>
 		<members>Contact.Last_Interaction__c</members>
@@ -319,8 +321,8 @@
 		<members>Workshop_Event__c.Guests__c</members>
 		<members>Workshop_Event__c.Marketing_Material__c</members>
 		<members>Workshop_Event__c.Speak_subject__c</members>
-		<members>Workshop_Event__c.Women_impacted__c</members>
 		<members>Workshop_Event__c.Women_Impacted_After_Event__c</members>
+		<members>Workshop_Event__c.Women_impacted__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>
@@ -614,11 +616,12 @@
 	<types>
 		<members>Account-Account</members>
 		<members>Account-University</members>
-		<members>Approval_Configuration-Approver Configuration Layout</members>
+<members>Approval_Configuration-Approver Configuration Layout</members>
 		<members>Case-Case Layout</members>
 		<members>Contact-Lead Registration</members>
 		<members>Hirep__c-HIREP Layout</members>
 		<members>Speaker__c-Speaker Layout</members>
+		<members>Task-Task Layout</members>
 		<members>User_Entry__c-User Entry Layout</members>
 		<members>Workshop_Event_Registration__c-Workshop Event Registration Layout</members>
 		<members>Workshop_Event__c-Workshop Event Layout</members>
@@ -674,11 +677,11 @@
 		<members>GsGoal__c.GsUndoWithdraw</members>
 		<members>GsGoal__c.GsWithdrawGoal</members>
 		<name>QuickAction</name>
-	</types>
+</types>
 	<types>
         <members>*</members>
         <name>ContentAsset</name>
-    </types>
+	</types>
 	<types>
 		<members>Account.Company</members>
 		<members>Account.University</members>
@@ -711,9 +714,9 @@
 		<name>Report</name>
 	</types>
 	<types>
-        <members>*</members>
-        <name>ReportType</name>
-    </types>
+		<members>*</members>
+		<name>ReportType</name>
+	</types>
 	<types>
 		<members>*</members>
 		<name>Role</name>

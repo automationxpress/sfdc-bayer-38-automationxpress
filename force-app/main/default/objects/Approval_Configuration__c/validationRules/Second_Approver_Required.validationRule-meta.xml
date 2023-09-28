@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Approver_Required</fullName>
+    <active>true</active>
+    <description>Provides an error message when Number of Approver is 2(Two) and Second Approver cannot be blank</description>
+    <errorConditionFormula>AND( ISPICKVAL( Number_of_Approvers__c ,&apos;2&apos;),    (ISBLANK(Second_Approver__c))  )</errorConditionFormula>
+    <errorDisplayField>Second_Approver__c</errorDisplayField>
+    <errorMessage>Please select Second Approver.</errorMessage>
+</ValidationRule>
