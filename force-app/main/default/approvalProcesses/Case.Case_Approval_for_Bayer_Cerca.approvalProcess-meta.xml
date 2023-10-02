@@ -54,6 +54,13 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <description>Submit the approval request to Second Approver.</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Case.Number_of_Approvers__c</field>
+                <operation>equals</operation>
+                <value>2</value>
+            </criteriaItems>
+        </entryCriteria>
         <label>Aprobación: enviada al segundo aprobador</label>
         <name>Approval_Send_to_Second_Approver</name>
         <rejectBehavior>
