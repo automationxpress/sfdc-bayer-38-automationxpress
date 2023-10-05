@@ -34,6 +34,7 @@
 	</types>
 	<types>
 		<members>Bayer_Cerca</members>
+		<members>Bayer_Cerca</members>
 		<members>Ca_Entre_Nos</members>
 		<members>GsGoalSetter</members>
 		<members>Lead_Generation</members>
@@ -253,6 +254,8 @@
 		<members>UMA_Settings__mdt.Max_nr_of_Prima_POST_request_attempts__c</members>
 		<members>User.CompanyCode__c</members>
 		<members>User.ManagerCWID__c</members>
+		<members>User.CompanyCode__c</members>
+		<members>User.ManagerCWID__c</members>
 		<members>User_Additional_Role__c.Job_Role__c</members>
 		<members>User_Additional_Role__c.User_Entry__c</members>
 		<members>User_Entry__c.Alternate_ML_Supervisor__c</members>
@@ -346,6 +349,7 @@
 		<members>DecryptionAlgorithm_ConsentForm</members>
 		<members>Delete</members>
 		<members>Details</members>
+		<members>Details</members>
 		<members>EmailBody_ConsentForm</members>
 		<members>EmailRrequired_ConsentForm</members>
 		<members>EmailSubject_ConsentForm</members>
@@ -366,10 +370,16 @@
 		<members>Profile2PermSet__dmlmanager_errorMessage_unknownField</members>
 		<members>Profile2PermSet__dmlmanager_errorMessage_unknownObject</members>
 		<members>Profile2PermSet__dmlmanager_errormessage_unknownaccess</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessField</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessObject</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_unknownField</members>
+		<members>Profile2PermSet__dmlmanager_errorMessage_unknownObject</members>
+		<members>Profile2PermSet__dmlmanager_errormessage_unknownaccess</members>
 		<members>Save</members>
 		<members>Save_and_Submit_for_Approval</members>
 		<members>Search</members>
 		<members>Send_ConsentForm</members>
+		<members>System_Information</members>
 		<members>System_Information</members>
 		<members>Text1_ConsentForm</members>
 		<members>Text2_ConsentForm</members>
@@ -393,6 +403,7 @@
 		<members>AccountContactRelation</members>
 		<members>AccountContactRole</members>
 		<members>Activity</members>
+		<members>Approval_Configuration__c</members>
 		<members>Approval_Configuration__c</members>
 		<members>Asset</members>
 		<members>AssetRelationship</members>
@@ -530,6 +541,9 @@
 		<members>Approval_Configuration__c-en_US</members>
 		<members>Approval_Configuration__c-es</members>
 		<members>Case-es</members>
+		<members>Approval_Configuration__c-en_US</members>
+		<members>Approval_Configuration__c-es</members>
+		<members>Case-es</members>
 		<members>Contact-pt_BR</members>
 		<members>Speaker__c-en_US</members>
 		<members>Speaker__c-pt_BR</members>
@@ -556,6 +570,9 @@
 		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Approved_Notification_Email</members>
 		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Assignment_Notification</members>
 		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Rejected_Notification_Email</members>
+		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Approved_Notification_Email</members>
+		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Assignment_Notification</members>
+		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Rejected_Notification_Email</members>
 		<members>Ca_Entre_Nos_Email_Template/Ca_Entre_Nos_Lead_Notification_After_6Months_of_Contact</members>
 		<name>EmailTemplate</name>
 	</types>
@@ -568,6 +585,8 @@
 		<name>FlexiPage</name>
 	</types>
 	<types>
+		<members>Case_on_Create_Before_Handler</members>
+		<members>Case_on_Update_After_Handler</members>
 		<members>Case_on_Create_Before_Handler</members>
 		<members>Case_on_Update_After_Handler</members>
 		<members>Create_or_Update_UMA_User</members>
@@ -637,6 +656,11 @@
 		<name>MutingPermissionSet</name>
 	</types>
 	<types>
+		<members>Bayer_Cerca_Application_Admin_Muted</members>
+		<members>Bayer_Cerca_End_Users_Muted</members>
+		<name>MutingPermissionSet</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>NamedCredential</name>
 	</types>
@@ -651,6 +675,8 @@
 	<types>
 		<members>Bayer_Cerca_Application_Admin</members>
 		<members>Bayer_Cerca_End_Users</members>
+		<members>Bayer_Cerca_Application_Admin</members>
+		<members>Bayer_Cerca_End_Users</members>
 		<members>Ca_Entre_NosUser</members>
 		<members>Hirep_ApplicationAdmin</members>
 		<members>Hirep_EndUser</members>
@@ -658,9 +684,15 @@
 		<members>Uma_EndUser</members>
 		<members>Uma_IntegrationUser</members>
 		<members>Uma_IntegrationUser</members>
+		<members>Uma_IntegrationUser</members>
 		<members>Uma_ManagerUser</members>
 		<members>Uma_MyLearningAdmin</members>
 		<name>PermissionSetGroup</name>
+	</types>
+	<types>
+		<members>Platform Integration System Admin</members>
+		<members>Platform Integration User</members>
+		<name>Profile</name>
 	</types>
 	<types>
 		<members>Platform Integration System Admin</members>
@@ -696,6 +728,7 @@
 		<name>RecordType</name>
 	</types>
 	<types>
+		<members>BayerCercaReports/Bayer_Cerca_Approval_Process_Time_SO8</members>
 		<members>BayerCercaReports/Bayer_Cerca_Approval_Process_Time_SO8</members>
 		<members>CEntreNsReports/Contact_Names</members>
 		<members>CEntreNsReports/Contas_com_Eventos</members>
@@ -746,6 +779,19 @@
 		<name>SharingRules</name>
 	</types>
 	<types>
+		<members>Account.Bayer_Cerca_Admin_Account_Sharing</members>
+		<members>Account.Bayer_Cerca_End_User_Account_Sharing</members>
+		<members>Approval_Configuration__c.Bayer_Cerca_Admin_Approval_Configuration</members>
+		<members>Approval_Configuration__c.Bayer_Cerca_End_Users_Share_to_Approval_Configuration</members>
+		<name>SharingOwnerRule</name>
+	</types>
+	<types>
+		<members>Account</members>
+		<members>Approval_Configuration__c</members>
+		<members>Case</members>
+		<name>SharingRules</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>StandardValueSetTranslation</name>
 	</types>
@@ -772,6 +818,23 @@
 		<members>User_Entry__c.Restrict_NotRequired_To_UpdateExisting</members>
 		<members>User_Entry__c.Restrict_UpdateExisting_To_NotRequired</members>
 		<name>ValidationRule</name>
+	</types>
+	<types>
+		<members>Case.Bayer_Cerca_Notify_User_when_Approval_is_Approved</members>
+		<members>Case.Bayer_Cerca_Notify_Users_when_Approval_is_Rejected</members>
+		<name>WorkflowAlert</name>
+	</types>
+	<types>
+		<members>Case.Approval_Status_as_FinalApprovalApproved</members>
+		<members>Case.Approval_Status_as_FinalApprovalRejected</members>
+		<members>Case.Approval_Status_as_FirstApprovalRejected</members>
+		<members>Case.Approval_Status_as_SecondApprovalPending</members>
+		<members>Case.Update_Approval_Status</members>
+		<members>Case.Update_Approval_Status_as_None</members>
+		<members>Case.Update_Status</members>
+		<members>Case.Update_Status_as_New</members>
+		<members>Case.Update_Status_to_Close</members>
+		<name>WorkflowFieldUpdate</name>
 	</types>
 	<types>
 		<members>Case.Bayer_Cerca_Notify_User_when_Approval_is_Approved</members>
