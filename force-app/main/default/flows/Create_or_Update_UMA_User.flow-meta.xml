@@ -4,7 +4,7 @@
         <name>Change_User_Entry_Owner</name>
         <label>Change User Entry Owner</label>
         <locationX>226</locationX>
-        <locationY>974</locationY>
+        <locationY>1082</locationY>
         <actionName>UserEntryOwnerChange</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -21,7 +21,7 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>54.0</apiVersion>
+    <apiVersion>56.0</apiVersion>
     <decisions>
         <name>Change_Owner</name>
         <label>Change Owner?</label>
@@ -64,11 +64,12 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Get_Profile</targetReference>
+                <targetReference>Get_Role</targetReference>
             </connector>
             <label>Create User</label>
         </rules>
     </decisions>
+    <description>Create User Record when User Entry is created</description>
     <environments>Default</environments>
     <formulas>
         <name>Alias</name>
@@ -121,7 +122,7 @@
         <name>Create_User_Record</name>
         <label>Create User Record</label>
         <locationX>50</locationX>
-        <locationY>566</locationY>
+        <locationY>674</locationY>
         <assignRecordIdToReference>UserId</assignRecordIdToReference>
         <connector>
             <targetReference>Get_Permission_Set_Group</targetReference>
@@ -193,6 +194,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>UserRoleId</field>
+            <value>
+                <elementReference>Get_Role.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Username</field>
             <value>
                 <elementReference>Username</elementReference>
@@ -204,7 +211,7 @@
         <name>Permission_Set_Assignment</name>
         <label>Permission Set Assignment</label>
         <locationX>50</locationX>
-        <locationY>782</locationY>
+        <locationY>890</locationY>
         <connector>
             <targetReference>Change_User_Entry_Owner</targetReference>
         </connector>
@@ -244,7 +251,7 @@
         <name>Get_Permission_Set_Group</name>
         <label>Get Permission Set Group</label>
         <locationX>50</locationX>
-        <locationY>674</locationY>
+        <locationY>782</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Permission_Set_Assignment</targetReference>
@@ -267,7 +274,7 @@
         <name>Get_Profile</name>
         <label>Get Profile</label>
         <locationX>50</locationX>
-        <locationY>458</locationY>
+        <locationY>566</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_User_Record</targetReference>
@@ -285,6 +292,27 @@
             <assignToReference>ProfileId</assignToReference>
             <field>Id</field>
         </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Role</name>
+        <label>Get Role</label>
+        <locationX>50</locationX>
+        <locationY>458</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Profile</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>UMA_End_User</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>UserRole</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>Get_User</name>
