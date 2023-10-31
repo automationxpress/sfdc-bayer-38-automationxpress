@@ -4,7 +4,7 @@
     <name>Approval_Status__c</name>
     <picklistValues>
         <masterLabel>Approved</masterLabel>
-        <translation></translation>
+        <translation>Genehmigt</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>BU Head</masterLabel>

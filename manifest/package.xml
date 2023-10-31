@@ -616,6 +616,7 @@
 		<members>Contact-pt_BR</members>
 		<members>Donation__c-de</members>
 		<members>Donation__c-en_US</members>
+		<members>Record_History__c-de</members>
 		<members>Speaker__c-en_US</members>
 		<members>Speaker__c-pt_BR</members>
 		<members>Workshop_Event_Registration__c-en_US</members>
@@ -901,6 +902,7 @@
 		<members>Donation__c.Update_Approval_Status_to_Approved</members>
 		<members>Donation__c.Update_Approval_Status_to_BPC</members>
 		<members>Donation__c.Update_Approval_Status_to_BU_Head</members>
+		<members>Donation__c.Update_Approval_Status_to_CSE_CL</members>
 		<members>Donation__c.Update_Approval_Status_to_Head_PH_Med</members>
 		<members>Donation__c.Update_Approval_Status_to_Null</members>
 		<members>Donation__c.Update_Approval_Status_to_SBR_BayerVital</members>

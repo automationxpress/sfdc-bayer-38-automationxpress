@@ -1,15 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Set_Approver_as_Approval_Configuration</name>
+        <label>Set Approver as Approval Configuration</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CSE_Country_Lead__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Approval_Configuration.CSE_Country_Lead__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Partner_Compliance__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Approval_Configuration.Business_Partner_Compliance__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.BU_Head__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Approval_Configuration.BU_Head__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Head_PH_Med__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Approval_Configuration.Head_PH_Med__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.SBR_Bayer_Vital__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Approval_Configuration.SBR_Bayer_Vital__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Manager_Name</name>
+        <label>Set Manager Name</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Manager__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Users.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Are_Approvers_changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Manager_to_Null</name>
+        <label>Set Manager to Null</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Manager__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Are_Approvers_changed</targetReference>
+        </connector>
+    </assignments>
     <decisions>
         <name>Are_Approvers_changed</name>
         <label>Are Approvers changed?</label>
         <locationX>182</locationX>
-        <locationY>695</locationY>
+        <locationY>803</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Changed</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.BU_Head__c</leftValueReference>
                 <operator>NotEqualTo</operator>
@@ -46,7 +116,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_Donations</targetReference>
+                <targetReference>Set_Approver_as_Approval_Configuration</targetReference>
             </connector>
             <label>Changed</label>
         </rules>
@@ -57,9 +127,9 @@
         <locationX>182</locationX>
         <locationY>395</locationY>
         <defaultConnector>
-            <targetReference>Are_Approvers_changed</targetReference>
+            <targetReference>Set_Manager_to_Null</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
             <name>Yes</name>
             <conditionLogic>and</conditionLogic>
@@ -68,13 +138,6 @@
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record__Prior.Manager__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <elementReference>$Record.Manager__c</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -150,7 +213,7 @@
         <locationY>503</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Are_Approvers_changed</targetReference>
+            <targetReference>Set_Manager_Name</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -166,49 +229,6 @@
         <sortOrder>Desc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordUpdates>
-        <name>Update_Donations</name>
-        <label>Update Donations</label>
-        <locationX>50</locationX>
-        <locationY>803</locationY>
-        <inputAssignments>
-            <field>BU_Head__c</field>
-            <value>
-                <elementReference>Get_Approval_Configuration.BU_Head__r.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Business_Partner_Compliance__c</field>
-            <value>
-                <elementReference>Get_Approval_Configuration.Business_Partner_Compliance__r.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>CSE_Country_Lead__c</field>
-            <value>
-                <elementReference>Get_Approval_Configuration.CSE_Country_Lead__r.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Head_PH_Med__c</field>
-            <value>
-                <elementReference>Get_Approval_Configuration.Head_PH_Med__r.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Manager__c</field>
-            <value>
-                <elementReference>Get_Users.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>SBR_Bayer_Vital__c</field>
-            <value>
-                <elementReference>Get_Approval_Configuration.SBR_Bayer_Vital__r.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
     <start>
         <locationX>56</locationX>
         <locationY>0</locationY>

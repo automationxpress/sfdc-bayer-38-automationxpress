@@ -62,6 +62,17 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Approval_Status_to_CSE_CL</fullName>
+        <description>Update Approval Status field to CSE Country Lead</description>
+        <field>Approval_Status__c</field>
+        <literalValue>CSE Country Lead</literalValue>
+        <name>Update Approval Status to CSE CL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Approval_Status_to_Head_PH_Med</fullName>
         <description>Updates Approval Status to Head PH-Med</description>
         <field>Approval_Status__c</field>
