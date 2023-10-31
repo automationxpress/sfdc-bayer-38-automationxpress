@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recipient_Selection_Description__c</fullName>
+    <defaultValue>&quot;Are there comprehensible reasons for the selection of the recipient? Did you consider other entities as recipients? In case of an NGO, is the NGO formally established and legally recognized in the home country?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Recipient Selection Description</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Organization Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>HCO</fullName>
+                <default>false</default>
+                <label>HCO</label>
+            </value>
+            <value>
+                <fullName>Med. Institute</fullName>
+                <default>false</default>
+                <label>Med. Institute</label>
+            </value>
+            <value>
+                <fullName>Not Relevant</fullName>
+                <default>false</default>
+                <label>Not Relevant</label>
+            </value>
+            <value>
+                <fullName>Health Organization</fullName>
+                <default>false</default>
+                <label>Health Organization</label>
+            </value>
+            <value>
+                <fullName>Study Related</fullName>
+                <default>false</default>
+                <label>Study Related</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

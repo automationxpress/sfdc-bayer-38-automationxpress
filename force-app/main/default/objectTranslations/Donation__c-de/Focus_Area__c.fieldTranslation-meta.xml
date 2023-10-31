@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Fokusbereich</label>
+    <name>Focus_Area__c</name>
+    <picklistValues>
+        <masterLabel>Biodiversity</masterLabel>
+        <translation>Biodiversität</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Climate Change</masterLabel>
+        <translation>Klimawandel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health for all - Child Health</masterLabel>
+        <translation>Health for all  – Gesundheit von Kindern</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health for all - Public Health</masterLabel>
+        <translation>Health for all  – Öffentliche Gesundheit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health for all - Reproductive Health (Contraception)</masterLabel>
+        <translation>Health for all  – Reproduktionsgesundheit (Verhütung)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health for all - Self care and access to health programs for vulnerable groups in LMIC</masterLabel>
+        <translation>Health for all  – Selbstversorgung und Zugang zu Gesundheitsprogrammen für gefährdete Gruppen in Entwicklungs- und Schwellenländern (LMIC)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hunger for none - Food availability (vulnerable groups)</masterLabel>
+        <translation>Hunger for none – Lebensmittelverfügbarkeit (gefährdete Gruppen, Schützbedürftige)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hunger for none - Food security, food loss, food quality</masterLabel>
+        <translation>Hunger for none – Ernährungssicherheit, Lebensmittelverlust, Lebensmittelqualität</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others (Exceptional)</masterLabel>
+        <translation>Andere (Ausnahmen)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science for a Better Life -  Development of science talents</masterLabel>
+        <translation>Science for a Better Life – Entwicklung wissenschaftlicher Talente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science for a Better Life -  Science and Society</masterLabel>
+        <translation>Science for a Better Life – Wissenschaft und Gesellschaft</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science for a Better Life -  Support of frontier research in the life sciences, data science and environmental sciences</masterLabel>
+        <translation>Science for a Better Life – Unterstützung der Grundlagenforschung in den Bereichen Natur-, Informations- und Umweltwissenschaften</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science for a Better Life -  Supporting education programs in the Life Sciences, environmental science and data science</masterLabel>
+        <translation>Science for a Better Life – Unterstützung von Bildungsprogrammen in den Bereichen Biowissenschaften, Umwelt- und Informationswissenschaft</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waste Management</masterLabel>
+        <translation>Abfallwirtschaft</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Management</masterLabel>
+        <translation>Wasserwirtschaft</translation>
+    </picklistValues>
+</CustomFieldTranslation>

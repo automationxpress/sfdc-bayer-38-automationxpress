@@ -17,6 +17,13 @@
         <value>The consent collection has failed. Please try again or contact your Sales Representative.</value>
     </labels>
     <labels>
+        <fullName>Account_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Details</shortDescription>
+        <value>Account Details</value>
+    </labels>
+    <labels>
         <fullName>Add</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -24,11 +31,25 @@
         <value>Add</value>
     </labels>
     <labels>
+        <fullName>Approvers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Approvers</shortDescription>
+        <value>Approvers</value>
+    </labels>
+    <labels>
         <fullName>AreYouSureYouWantToDeleteThis</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>AreYouSureYouWantToDeleteThis</shortDescription>
         <value>Are you sure you want to delete this</value>
+    </labels>
+    <labels>
+        <fullName>Bank_Information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bank Information</shortDescription>
+        <value>Bank Information</value>
     </labels>
     <labels>
         <fullName>BayerId</fullName>
@@ -92,6 +113,13 @@
         <value>&lt;b&gt;Dernek üyeliği bilgisi için;&lt;/b&gt; indirimli kongre katılım bedelinden faydalanılması için dernek üyeliği bilginizin işlenmesi.</value>
     </labels>
     <labels>
+        <fullName>Compliance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Compliance</shortDescription>
+        <value>Compliance</value>
+    </labels>
+    <labels>
         <fullName>ConsentGivenSuccessMsg_ConsentForm</fullName>
         <categories>Consent_Form</categories>
         <language>en_US</language>
@@ -151,6 +179,20 @@
         <protected>false</protected>
         <shortDescription>Details</shortDescription>
         <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation cancel confirmation message.</shortDescription>
+        <value>Are you sure you want to cancel this donation request?</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Details</shortDescription>
+        <value>Donation Details</value>
     </labels>
     <labels>
         <fullName>EmailBody_ConsentForm</fullName>
@@ -268,6 +310,13 @@
         <value>Previous</value>
     </labels>
     <labels>
+        <fullName>Requestor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Requestor</shortDescription>
+        <value>Requestor</value>
+    </labels>
+    <labels>
         <fullName>Save</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -295,6 +344,13 @@
         <protected>false</protected>
         <shortDescription>Send_ConsentForm</shortDescription>
         <value>Gönder</value>
+    </labels>
+    <labels>
+        <fullName>Submit_for_Approval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Submit for Approval Confirmation Message</shortDescription>
+        <value>Are you sure you want to submit this donation request?</value>
     </labels>
     <labels>
         <fullName>System_Information</fullName>

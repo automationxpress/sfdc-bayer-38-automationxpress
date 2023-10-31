@@ -1,0 +1,12 @@
+Guten Tag,
+<br> </br>
+
+<br>Es liegt ein Antrag zur Genehmigung der Spende ({!Donation__c.Name}) für Sie vor. Bitte klicken Sie auf nachstehenden link.
+</br>
+
+<br><a href={!Donation__c.Link}>{!Donation__c.Name}</a></br>
+
+
+<br>Freundliche Grüße</br>
+
+<br>Salesforce</br>

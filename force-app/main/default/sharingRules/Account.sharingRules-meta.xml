@@ -14,7 +14,7 @@
             <role>Bayer_Cerca_Application_Admin</role>
         </sharedTo>
         <sharedFrom>
-            <role>Bayer_Cerca_Application_Admin</role>
+            <roleAndSubordinates>Bayer_Cerca_Application_Admin</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
@@ -31,7 +31,7 @@
             <role>Bayer_Cerca_End_User</role>
         </sharedTo>
         <sharedFrom>
-            <role>Bayer_Cerca_Application_Admin</role>
+            <roleAndSubordinates>Bayer_Cerca_Application_Admin</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
@@ -49,6 +49,40 @@
         </sharedTo>
         <sharedFrom>
             <role>Ca_Entre_Nos_User</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Donation_Account_Admin_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing Donation application related Account records to Donation Application Admin with Read/Write Access</description>
+        <label>Donation Account Admin Sharing</label>
+        <sharedTo>
+            <role>Donation_Application_Admin</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Donation_Application_Admin</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Donation_Account_End_User_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing Donation application related Account records to Donation End User with Read access</description>
+        <label>Donation Account End User Sharing</label>
+        <sharedTo>
+            <role>Donation_End_User</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Donation_Application_Admin</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
 </SharingRules>

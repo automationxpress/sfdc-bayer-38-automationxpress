@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origin_of_Funding__c</fullName>
+    <externalId>false</externalId>
+    <label>Origin of Funding</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Divisional budget</fullName>
+                <default>false</default>
+                <label>Divisional budget</label>
+            </value>
+            <value>
+                <fullName>PS Site Budget</fullName>
+                <default>false</default>
+                <label>PS Site Budget</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

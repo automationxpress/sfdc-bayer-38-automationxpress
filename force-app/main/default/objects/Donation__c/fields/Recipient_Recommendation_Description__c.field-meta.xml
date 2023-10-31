@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recipient_Recommendation_Description__c</fullName>
+    <defaultValue>&quot;Did a governmental official or contracting partner of Bayer recommend or propose the recipient? If yes check by Compliance Manager required.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Recipient Recommendation Description</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

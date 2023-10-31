@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Finanzierung</label>
+    <name>Origin_of_Funding__c</name>
+    <picklistValues>
+        <masterLabel>Divisional budget</masterLabel>
+        <translation>Lokales Budget</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Andere</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PS Site Budget</masterLabel>
+        <translation>Globales Budget</translation>
+    </picklistValues>
+</CustomFieldTranslation>
