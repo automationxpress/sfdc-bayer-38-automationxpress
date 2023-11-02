@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Healthcare_Relation_Description__c</fullName>
+    <defaultValue>&quot;Is the recipient a HealthCare Professional, a HealthCare Organization or a patient organization? If yes, have you aligned the request with your responsible Code Compliance Officer?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Healthcare Relation Description</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

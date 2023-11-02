@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Organisationstyp</label>
+    <name>Organization_Type__c</name>
+    <picklistValues>
+        <masterLabel>Agency</masterLabel>
+        <translation>Agentur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HCO</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Organization</masterLabel>
+        <translation>Patientenorganisation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Med. Institute</masterLabel>
+        <translation>Med.Institution</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Relevant</masterLabel>
+        <translation>Nicht relevant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Study Related</masterLabel>
+        <translation>Studien-Bezogen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

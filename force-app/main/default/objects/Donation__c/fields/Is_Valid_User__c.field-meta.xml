@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Valid_User__c</fullName>
+    <description>Internal field used to validate if user is authorized to Submit for approval and Cancel the Donation request. Returns true if current user is either Requestor or Owner of Donation.</description>
+    <externalId>false</externalId>
+    <formula>OR(
+ $User.Id =  Requestor__c , 
+ $User.Id = OwnerId 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Valid User</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

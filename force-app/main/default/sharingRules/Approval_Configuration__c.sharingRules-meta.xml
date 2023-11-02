@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingOwnerRules>
-        <fullName>Bayer_Cerca_Admin_Approval_Configuration</fullName>
+        <fullName>Bayer_Cerca_Approval_Configuration_Admin_Sharing</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Provide Access to Approval configuration records to Bayer Cerca Admin</description>
-        <label>Bayer Cerca Admin Approval Configuration</label>
+        <label>Bayer Cerca Approval Configuration Admin Sharing</label>
         <sharedTo>
             <role>Bayer_Cerca_Application_Admin</role>
         </sharedTo>
         <sharedFrom>
-            <role>Bayer_Cerca_Application_Admin</role>
+            <roleAndSubordinates>Bayer_Cerca_Application_Admin</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
-        <fullName>Bayer_Cerca_End_Users_Share_to_Approval_Configuration</fullName>
+        <fullName>Bayer_Cerca_Approval_Configuration_End_User_Sharing</fullName>
         <accessLevel>Read</accessLevel>
-        <description>Provide Read access to Approval configuration records to Bayer Cerca End Users</description>
-        <label>Bayer Cerca End Users Share to Approval Configuration</label>
+        <description>Provide Access to Approval configuration records to Bayer Cerca End User</description>
+        <label>Bayer Cerca Approval Configuration End User Sharing</label>
         <sharedTo>
             <role>Bayer_Cerca_End_User</role>
         </sharedTo>
         <sharedFrom>
-            <role>Bayer_Cerca_Application_Admin</role>
+            <roleAndSubordinates>Bayer_Cerca_Application_Admin</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Donation_Approval_Configuration_Admin_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Provide Access to Approval configuration records to Donation Admin</description>
+        <label>Donation Approval Configuration Admin Sharing</label>
+        <sharedTo>
+            <role>Donation_Application_Admin</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Donation_Application_Admin</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Donation_Approval_Configuration_End_User_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Provide Access to Approval configuration records to Donation End User</description>
+        <label>Donation Approval Configuration End User Sharing</label>
+        <sharedTo>
+            <role>Donation_End_User</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Donation_Application_Admin</roleAndSubordinates>
         </sharedFrom>
     </sharingOwnerRules>
 </SharingRules>

@@ -29,13 +29,17 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>Donation__c.Donation_Compact_Layout</members>
+		<name>CompactLayout</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>ContentAsset</name>
 	</types>
 	<types>
 		<members>Bayer_Cerca</members>
-		<members>Bayer_Cerca</members>
 		<members>Ca_Entre_Nos</members>
+		<members>Donation</members>
 		<members>GsGoalSetter</members>
 		<members>Lead_Generation</members>
 		<members>Relationship_Management</members>
@@ -71,9 +75,15 @@
 		<members>Account.Women_Representatives__c</members>
 		<members>AccountContactRelation.Relationship_Strength__c</members>
 		<members>Approval_Configuration__c.Active__c</members>
+		<members>Approval_Configuration__c.BU_Approver__c</members>
+		<members>Approval_Configuration__c.Bayer_AG_CEO__c</members>
+		<members>Approval_Configuration__c.Business_Partner_Compliance__c</members>
+		<members>Approval_Configuration__c.Business_Unit__c</members>
+		<members>Approval_Configuration__c.CSE_Country_Lead__c</members>
 		<members>Approval_Configuration__c.Case_Reason__c</members>
 		<members>Approval_Configuration__c.First_Approver__c</members>
-		<members>Approval_Configuration__c.Number_of_Approvers__c</members>
+		<members>Approval_Configuration__c.Head_PH_Med__c</members>
+		<members>Approval_Configuration__c.SBR_Bayer_Vital__c</members>
 		<members>Approval_Configuration__c.Second_Approver__c</members>
 		<members>Azure_Client_Credentials__mdt.Callback_URL__c</members>
 		<members>Azure_Client_Credentials__mdt.Client_ID__c</members>
@@ -83,7 +93,6 @@
 		<members>Case.Approval_Status__c</members>
 		<members>Case.First_Approver__c</members>
 		<members>Case.Is_Assigned_to_Me__c</members>
-		<members>Case.Number_of_Approvers__c</members>
 		<members>Case.Product__c</members>
 		<members>Case.Second_Approver__c</members>
 		<members>Contact.Last_Interaction__c</members>
@@ -97,6 +106,74 @@
 		<members>Custom_Exception__c.Method_Name__c</members>
 		<members>Custom_Exception__c.Related_To_Id__c</members>
 		<members>Custom_Exception__c.Stack_Trace__c</members>
+		<members>Donation__c.Account__c</members>
+		<members>Donation__c.Address__c</members>
+		<members>Donation__c.Approval_Status__c</members>
+		<members>Donation__c.Approver__c</members>
+		<members>Donation__c.BIC__c</members>
+		<members>Donation__c.BU_Head__c</members>
+		<members>Donation__c.Bank_City__c</members>
+		<members>Donation__c.Bank_Reference__c</members>
+		<members>Donation__c.Bank__c</members>
+		<members>Donation__c.Bayer_AG_CEO__c</members>
+		<members>Donation__c.Bayer_Icon__c</members>
+		<members>Donation__c.Business_Affiliations_Description__c</members>
+		<members>Donation__c.Business_Affiliations__c</members>
+		<members>Donation__c.Business_Partner_Compliance__c</members>
+		<members>Donation__c.Business_Unit__c</members>
+		<members>Donation__c.CSE_Country_Lead__c</members>
+		<members>Donation__c.CWID__c</members>
+		<members>Donation__c.City__c</members>
+		<members>Donation__c.Company_Code__c</members>
+		<members>Donation__c.Company_Name__c</members>
+		<members>Donation__c.Contact_Email__c</members>
+		<members>Donation__c.Contact_First_Name__c</members>
+		<members>Donation__c.Contact_Last_Name__c</members>
+		<members>Donation__c.Contact_Phone__c</members>
+		<members>Donation__c.Contract_and_Payment_Description__c</members>
+		<members>Donation__c.Contract_and_Payment__c</members>
+		<members>Donation__c.Country__c</members>
+		<members>Donation__c.Crystal_AID__c</members>
+		<members>Donation__c.Department__c</members>
+		<members>Donation__c.Document_No__c</members>
+		<members>Donation__c.Donation_Type_Description__c</members>
+		<members>Donation__c.Email_Address__c</members>
+		<members>Donation__c.First_Name__c</members>
+		<members>Donation__c.Focus_Area__c</members>
+		<members>Donation__c.Head_PH_Med__c</members>
+		<members>Donation__c.Healthcare_Relation_Description__c</members>
+		<members>Donation__c.Healthcare_Relation__c</members>
+		<members>Donation__c.IBAN__c</members>
+		<members>Donation__c.Id_Donation_Info_Requestor__c</members>
+		<members>Donation__c.Id__c</members>
+		<members>Donation__c.Is_Assigned_to_Me__c</members>
+		<members>Donation__c.Is_Valid_User__c</members>
+		<members>Donation__c.Last_Name__c</members>
+		<members>Donation__c.Manager__c</members>
+		<members>Donation__c.Organization_Type__c</members>
+		<members>Donation__c.Origin_of_Funding__c</members>
+		<members>Donation__c.Overall_Net_Amount__c</members>
+		<members>Donation__c.Political_Affiliations_Description__c</members>
+		<members>Donation__c.Political_Affiliations__c</members>
+		<members>Donation__c.Postal_Code__c</members>
+		<members>Donation__c.Purpose_of_Donation__c</members>
+		<members>Donation__c.Recipient_Recommendation_Description__c</members>
+		<members>Donation__c.Recipient_Recommendation__c</members>
+		<members>Donation__c.Recipient_Reputation_Description__c</members>
+		<members>Donation__c.Recipient_Reputation__c</members>
+		<members>Donation__c.Recipient_Selection_Description__c</members>
+		<members>Donation__c.Recipient_Selection__c</members>
+		<members>Donation__c.Recipient_Stakeholders_Description__c</members>
+		<members>Donation__c.Recipient_Stakeholders__c</members>
+		<members>Donation__c.Request_Id__c</members>
+		<members>Donation__c.Requestor__c</members>
+		<members>Donation__c.SBR_Bayer_Vital__c</members>
+		<members>Donation__c.Salutation__c</members>
+		<members>Donation__c.Status__c</members>
+		<members>Donation__c.Tax_ID_Number__c</members>
+		<members>Donation__c.Title_Account__c</members>
+		<members>Donation__c.Title__c</members>
+		<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
 		<members>GsFeedback__c.GsComment__c</members>
 		<members>GsFeedback__c.GsDescription__c</members>
 		<members>GsFeedback__c.GsStatus__c</members>
@@ -167,7 +244,6 @@
 		<members>Hirep__c.CWID__c</members>
 		<members>Hirep__c.Commences_Date__c</members>
 		<members>Hirep__c.Commences__c</members>
-		<members>Hirep__c.Company__c</members>
 		<members>Hirep__c.Consumer_Health_Related_Position__c</members>
 		<members>Hirep__c.Contract_Period_From__c</members>
 		<members>Hirep__c.Contract_Period_To__c</members>
@@ -253,8 +329,6 @@
 		<members>Speaker__c.Specialties__c</members>
 		<members>UMA_Settings__mdt.Max_nr_of_Prima_POST_request_attempts__c</members>
 		<members>User.CompanyCode__c</members>
-		<members>User.CompanyCode__c</members>
-		<members>User.ManagerCWID__c</members>
 		<members>User.ManagerCWID__c</members>
 		<members>User_Additional_Role__c.Job_Role__c</members>
 		<members>User_Additional_Role__c.User_Entry__c</members>
@@ -263,7 +337,6 @@
 		<members>User_Entry__c.CWID_Deactivated__c</members>
 		<members>User_Entry__c.CWID__c</members>
 		<members>User_Entry__c.Comments__c</members>
-		<members>User_Entry__c.Company__c</members>
 		<members>User_Entry__c.Cost_Center__c</members>
 		<members>User_Entry__c.Deputy_Manager__c</members>
 		<members>User_Entry__c.Email__c</members>
@@ -331,8 +404,11 @@
 	<types>
 		<members>AESKey_ConsentForm</members>
 		<members>APICallFailMsg_ConsentForm</members>
+		<members>Account_Details</members>
 		<members>Add</members>
+		<members>Approvers</members>
 		<members>AreYouSureYouWantToDeleteThis</members>
+		<members>Bank_Information</members>
 		<members>BayerId</members>
 		<members>BayerRestrictedData</members>
 		<members>BayerRestrictedDataOnRight</members>
@@ -341,6 +417,7 @@
 		<members>Checkbox2SubText_ConsentForm</members>
 		<members>Checkbox2_ConsentForm</members>
 		<members>Checkbox3_ConsentForm</members>
+		<members>Compliance</members>
 		<members>ConsentGivenSuccessMsg_ConsentForm</members>
 		<members>ConsentNotGivenSuccessMsg_ConsentForm</members>
 		<members>ConsentOnlyForMultichannelMarketing_ConsentForm</members>
@@ -349,7 +426,8 @@
 		<members>DecryptionAlgorithm_ConsentForm</members>
 		<members>Delete</members>
 		<members>Details</members>
-		<members>Details</members>
+		<members>Donation_Cancel</members>
+		<members>Donation_Details</members>
 		<members>EmailBody_ConsentForm</members>
 		<members>EmailRrequired_ConsentForm</members>
 		<members>EmailSubject_ConsentForm</members>
@@ -365,21 +443,12 @@
 		<members>Next</members>
 		<members>NoResults</members>
 		<members>Previous</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessField</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessField</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessObject</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_insufficientAccessObject</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_unknownField</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_unknownField</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_unknownObject</members>
-		<members>Profile2PermSet__dmlmanager_errorMessage_unknownObject</members>
-		<members>Profile2PermSet__dmlmanager_errormessage_unknownaccess</members>
-		<members>Profile2PermSet__dmlmanager_errormessage_unknownaccess</members>
+		<members>Requestor</members>
 		<members>Save</members>
 		<members>Save_and_Submit_for_Approval</members>
 		<members>Search</members>
 		<members>Send_ConsentForm</members>
-		<members>System_Information</members>
+		<members>Submit_for_Approval</members>
 		<members>System_Information</members>
 		<members>Text1_ConsentForm</members>
 		<members>Text2_ConsentForm</members>
@@ -404,7 +473,6 @@
 		<members>AccountContactRole</members>
 		<members>Activity</members>
 		<members>Approval_Configuration__c</members>
-		<members>Approval_Configuration__c</members>
 		<members>Asset</members>
 		<members>AssetRelationship</members>
 		<members>AssistantProgress</members>
@@ -425,6 +493,7 @@
 		<members>ContractContactRole</members>
 		<members>ContractLineItem</members>
 		<members>Custom_Exception__c</members>
+		<members>Donation__c</members>
 		<members>DuplicateRecordItem</members>
 		<members>DuplicateRecordSet</members>
 		<members>EmailMessage</members>
@@ -537,14 +606,17 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Account-de</members>
 		<members>Account-pt_BR</members>
-		<members>Approval_Configuration__c-en_US</members>
+		<members>Approval_Configuration__c-de</members>
 		<members>Approval_Configuration__c-en_US</members>
 		<members>Approval_Configuration__c-es</members>
-		<members>Approval_Configuration__c-es</members>
-		<members>Case-es</members>
+		<members>Azure_Client_Credentials__mdt-en_US</members>
 		<members>Case-es</members>
 		<members>Contact-pt_BR</members>
+		<members>Donation__c-de</members>
+		<members>Donation__c-en_US</members>
+		<members>Record_History__c-de</members>
 		<members>Speaker__c-en_US</members>
 		<members>Speaker__c-pt_BR</members>
 		<members>Workshop_Event_Registration__c-en_US</members>
@@ -568,12 +640,12 @@
 	</types>
 	<types>
 		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Approved_Notification_Email</members>
-		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Approved_Notification_Email</members>
 		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Assignment_Notification</members>
-		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Assignment_Notification</members>
-		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Rejected_Notification_Email</members>
 		<members>Bayer_Cerca_Email_Template/Bayer_Cerca_Approval_Rejected_Notification_Email</members>
 		<members>Ca_Entre_Nos_Email_Template/Ca_Entre_Nos_Lead_Notification_After_6Months_of_Contact</members>
+		<members>Donation_Email_Template/Donation_Approval_Approved_Notification_Email</members>
+		<members>Donation_Email_Template/Donation_Approval_Reject_Notification_Email</members>
+		<members>Donation_Email_Template/Donation_Request_for_Approval_Notification_Email</members>
 		<name>EmailTemplate</name>
 	</types>
 	<types>
@@ -586,10 +658,10 @@
 	</types>
 	<types>
 		<members>Case_on_Create_Before_Handler</members>
-		<members>Case_on_Create_Before_Handler</members>
-		<members>Case_on_Update_After_Handler</members>
 		<members>Case_on_Update_After_Handler</members>
 		<members>Create_or_Update_UMA_User</members>
+		<members>Donation_on_Create_Update_After_Handler</members>
+		<members>Donation_on_Create_Update_Before_Handler</members>
 		<members>GetImpactStudiesOccupationcode</members>
 		<members>GoalSetterCheckUserEditingRights</members>
 		<members>GoalSetterLockGoalPeriod</members>
@@ -608,6 +680,8 @@
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
 		<members>Populate_Role_Matrix_Unique_Combination</members>
+		<members>Submit_Donation_for_Approval</members>
+		<members>Update_Donation_Record_Status_to_Cancelled</members>
 		<members>User_Entry_on_Hirep_Create_Update</members>
 		<name>Flow</name>
 	</types>
@@ -635,9 +709,9 @@
 	<types>
 		<members>Account-Account</members>
 		<members>Account-University</members>
-		<members>Approval_Configuration-Approver Configuration Layout</members>
 		<members>Case-Case Layout</members>
 		<members>Contact-Lead Registration</members>
+		<members>Donation__c-Donation Layout</members>
 		<members>Hirep__c-HIREP Layout</members>
 		<members>Speaker__c-Speaker Layout</members>
 		<members>Task-Task Layout</members>
@@ -654,6 +728,8 @@
 	<types>
 		<members>Bayer_Cerca_Application_Admin_Muted</members>
 		<members>Bayer_Cerca_End_Users_Muted</members>
+		<members>Donation_Application_Admin_Muted</members>
+		<members>Donation_End_User_Muted</members>
 		<members>GoalSetter_Application_Admin_Muted</members>
 		<members>GoalSetter_End_User_Muted</members>
 		<name>MutingPermissionSet</name>
@@ -663,6 +739,7 @@
 		<name>NamedCredential</name>
 	</types>
 	<types>
+		<members>Donation_Status</members>
 		<members>Hirep_Process_Status</members>
 		<name>PathAssistant</name>
 	</types>
@@ -674,6 +751,8 @@
 		<members>Bayer_Cerca_Application_Admin</members>
 		<members>Bayer_Cerca_End_Users</members>
 		<members>Ca_Entre_NosUser</members>
+		<members>Donation_Application_Admin</members>
+		<members>Donation_End_User</members>
 		<members>GoalSetter_Application_Admin</members>
 		<members>GoalSetter_End_User</members>
 		<members>GoalSetter_Integration_User</members>
@@ -692,6 +771,8 @@
 		<name>Profile</name>
 	</types>
 	<types>
+		<members>Donation__c.Cancel</members>
+		<members>Donation__c.Submit_for_Approval</members>
 		<members>GsGoalPeriod__c.GsLockYear</members>
 		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
 		<members>GsGoal__c.GsEditGoal</members>
@@ -756,14 +837,21 @@
 	<types>
 		<members>Account.Bayer_Cerca_Admin_Account_Sharing</members>
 		<members>Account.Bayer_Cerca_End_User_Account_Sharing</members>
-		<members>Approval_Configuration__c.Bayer_Cerca_Admin_Approval_Configuration</members>
-		<members>Approval_Configuration__c.Bayer_Cerca_End_Users_Share_to_Approval_Configuration</members>
+		<members>Account.Donation_Account_Admin_Sharing</members>
+		<members>Account.Donation_Account_End_User_Sharing</members>
+		<members>Approval_Configuration__c.Bayer_Cerca_Approval_Configuration_Admin_Sharing</members>
+		<members>Approval_Configuration__c.Bayer_Cerca_Approval_Configuration_End_User_Sharing</members>
+		<members>Approval_Configuration__c.Donation_Approval_Configuration_Admin_Sharing</members>
+		<members>Approval_Configuration__c.Donation_Approval_Configuration_End_User_Sharing</members>
+		<members>Donation__c.Donation_Admin_Sharing</members>
+		<members>Donation__c.Donation_End_User_Sharing</members>
 		<name>SharingOwnerRule</name>
 	</types>
 	<types>
 		<members>Account</members>
 		<members>Approval_Configuration__c</members>
 		<members>Case</members>
+		<members>Donation__c</members>
 		<name>SharingRules</name>
 	</types>
 	<types>
@@ -797,6 +885,8 @@
 	<types>
 		<members>Case.Bayer_Cerca_Notify_User_when_Approval_is_Approved</members>
 		<members>Case.Bayer_Cerca_Notify_Users_when_Approval_is_Rejected</members>
+		<members>Donation__c.Donation_Notify_User_when_Approval_is_Approved</members>
+		<members>Donation__c.Donation_Notify_User_when_Approval_is_Rejected</members>
 		<name>WorkflowAlert</name>
 	</types>
 	<types>
@@ -809,6 +899,17 @@
 		<members>Case.Update_Status</members>
 		<members>Case.Update_Status_as_New</members>
 		<members>Case.Update_Status_to_Close</members>
+		<members>Donation__c.Update_Approval_Status_to_Approved</members>
+		<members>Donation__c.Update_Approval_Status_to_BPC</members>
+		<members>Donation__c.Update_Approval_Status_to_BU_Head</members>
+		<members>Donation__c.Update_Approval_Status_to_CSE_CL</members>
+		<members>Donation__c.Update_Approval_Status_to_Head_PH_Med</members>
+		<members>Donation__c.Update_Approval_Status_to_Null</members>
+		<members>Donation__c.Update_Approval_Status_to_SBR_BayerVital</members>
+		<members>Donation__c.Update_Status_to_Approved</members>
+		<members>Donation__c.Update_Status_to_Draft</members>
+		<members>Donation__c.Update_Status_to_Reject</members>
+		<members>Donation__c.Update_Status_to_Wait_for_Approval</members>
 		<name>WorkflowFieldUpdate</name>
 	</types>
 	<version>58.0</version>

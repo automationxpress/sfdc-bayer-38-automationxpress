@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Affiliations_Description__c</fullName>
+    <defaultValue>&quot;Is the recipient a customer or supplier of Bayer or does it maintain any other commercial relationship with Bayer? If yes, please confirm that there is no connection with any business transaction (e. g. a hidden discount etc.) and that there are no obligations of the customer or supplier towards Bayer or a third party in the future commercial relationship deriving from the receipt of the donation. Check by Compliance Manager required&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Business Affiliations Description</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

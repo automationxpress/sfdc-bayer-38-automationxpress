@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Focus_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Focus Area</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Health for all - Child Health</fullName>
+                <default>false</default>
+                <label>Health for all - Child Health</label>
+            </value>
+            <value>
+                <fullName>Health for all - Reproductive Health (Contraception)</fullName>
+                <default>false</default>
+                <label>Health for all - Reproductive Health (Contraception)</label>
+            </value>
+            <value>
+                <fullName>Health for all - Self care and access to health programs for vulnerable groups in LMIC</fullName>
+                <default>false</default>
+                <label>Health for all - Self care and access to health programs for vulnerable groups in LMIC</label>
+            </value>
+            <value>
+                <fullName>Health for all - Public Health</fullName>
+                <default>false</default>
+                <label>Health for all - Public Health</label>
+            </value>
+            <value>
+                <fullName>Climate Change</fullName>
+                <default>false</default>
+                <label>Climate Change</label>
+            </value>
+            <value>
+                <fullName>Biodiversity</fullName>
+                <default>false</default>
+                <label>Biodiversity</label>
+            </value>
+            <value>
+                <fullName>Water Management</fullName>
+                <default>false</default>
+                <label>Water Management</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+            <value>
+                <fullName>Hunger for none - Food security, food loss, food quality</fullName>
+                <default>false</default>
+                <label>Hunger for none - Food security, food loss, food quality</label>
+            </value>
+            <value>
+                <fullName>Hunger for none - Food availability (vulnerable groups)</fullName>
+                <default>false</default>
+                <label>Hunger for none - Food availability (vulnerable groups)</label>
+            </value>
+            <value>
+                <fullName>Science for a Better Life -  Support of frontier research in the life sciences, data science and environmental sciences</fullName>
+                <default>false</default>
+                <label>Science for a Better Life -  Support of frontier research in the life sciences, data science and environmental sciences</label>
+            </value>
+            <value>
+                <fullName>Science for a Better Life -  Development of science talents</fullName>
+                <default>false</default>
+                <label>Science for a Better Life -  Development of science talents</label>
+            </value>
+            <value>
+                <fullName>Science for a Better Life -  Supporting education programs in the Life Sciences, environmental science and data science</fullName>
+                <default>false</default>
+                <label>Science for a Better Life -  Supporting education programs in the Life Sciences, environmental science and data science</label>
+            </value>
+            <value>
+                <fullName>Science for a Better Life -  Science and Society</fullName>
+                <default>false</default>
+                <label>Science for a Better Life -  Science and Society</label>
+            </value>
+            <value>
+                <fullName>Others (Exceptional)</fullName>
+                <default>false</default>
+                <label>Others (Exceptional)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

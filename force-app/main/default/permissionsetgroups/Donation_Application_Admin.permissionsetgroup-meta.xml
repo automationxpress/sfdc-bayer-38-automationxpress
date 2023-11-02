@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides required access to Donation Application Admin persona</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Donation Application Admin</label>
+    <mutingPermissionSets>Donation_Application_Admin_Muted</mutingPermissionSets>
+    <permissionSets>Access_to_Donation_Application</permissionSets>
+    <permissionSets>Manage_Accounts</permissionSets>
+    <permissionSets>Manage_Approval_Configuration</permissionSets>
+    <permissionSets>Manage_Donations</permissionSets>
+    <permissionSets>Read_Record_History</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
