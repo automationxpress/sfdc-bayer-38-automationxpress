@@ -29,6 +29,10 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>BrandingSet</name>
+	</types>
+	<types>
 		<members>Donation__c.Donation_Compact_Layout</members>
 		<name>CompactLayout</name>
 	</types>
@@ -724,6 +728,10 @@
 	<types>
 		<members>*</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningExperienceTheme</name>
 	</types>
 	<types>
 		<members>Bayer_Cerca_Application_Admin_Muted</members>
