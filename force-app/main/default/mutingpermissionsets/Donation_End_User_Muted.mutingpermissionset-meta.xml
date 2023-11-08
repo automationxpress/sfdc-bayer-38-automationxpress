@@ -155,6 +155,16 @@
         <field>Approval_Configuration__c.Second_Approver__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Record_History__c.Related_Object__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Record_History__c.User_Entry__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <label>Donation End User Muted</label>
     <recordTypeVisibilities>
         <recordType>Account.University</recordType>

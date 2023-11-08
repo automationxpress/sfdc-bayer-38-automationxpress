@@ -8,6 +8,6 @@
     <permissionSets>Manage_Accounts</permissionSets>
     <permissionSets>Manage_Donations</permissionSets>
     <permissionSets>Read_Approval_Configurations</permissionSets>
-    <permissionSets>Read_Record_History</permissionSets>
+    <permissionSets>View_All_Record_History</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

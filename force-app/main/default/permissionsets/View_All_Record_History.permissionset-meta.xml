@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Provides Read Access to Record History</description>
+    <description>Provide View All Access to Record History</description>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Record_History__c.Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Record_History__c.Donation__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Record_History__c.Field__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Record_History__c.New_Value__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Record_History__c.Original_Value__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -47,7 +47,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Read Record History</label>
+    <label>View All Record History</label>
     <license>Salesforce Platform</license>
     <objectPermissions>
         <allowCreate>false</allowCreate>
