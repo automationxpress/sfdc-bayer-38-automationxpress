@@ -42,6 +42,14 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>BrandingSet</name>
+	</types>
+	<types>
+		<members>Donation__c.Donation_Compact_Layout</members>
+		<name>CompactLayout</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>ContentAsset</name>
 	</types>
 	<types>

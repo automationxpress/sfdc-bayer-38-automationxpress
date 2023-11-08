@@ -18,12 +18,6 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>submitterId</name>
-            <value>
-                <elementReference>Get_Donations.OwnerId</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
             <name>processDefinitionNameOrId</name>
             <value>
                 <stringValue>Donation_Approval_Process</stringValue>
