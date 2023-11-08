@@ -5,7 +5,7 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PrimaNewRequestsRestApiTest</apexClass>
+        <apexClass>PrimaRequestsInProgressRestApi</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <description>Provides View and Modify all access to User Prima Role, Prima Security Groups and provides access to PrimaNewRequestRestApi and PrimaNewRequestRestApi test classes</description>
