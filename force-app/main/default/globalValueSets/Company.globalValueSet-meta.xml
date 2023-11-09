@@ -71,9 +71,9 @@
         <label>Pinnaxis</label>
     </customValue>
     <customValue>
-        <fullName>RxLogix</fullName>
+        <fullName>RxLogic</fullName>
         <default>false</default>
-        <label>RxLogix</label>
+        <label>RxLogic</label>
     </customValue>
     <customValue>
         <fullName>Scala</fullName>
