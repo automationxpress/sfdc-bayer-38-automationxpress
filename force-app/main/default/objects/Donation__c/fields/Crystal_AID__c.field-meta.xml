@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Crystal_AID__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Crystal Activity ID is assigned by the system</inlineHelpText>
     <label>Crystal AID</label>
     <length>15</length>
     <required>false</required>

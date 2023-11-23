@@ -4,7 +4,7 @@
         <name>Submit_Approval</name>
         <label>Submit Approval</label>
         <locationX>182</locationX>
-        <locationY>350</locationY>
+        <locationY>458</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <connector>
@@ -27,10 +27,64 @@
     </actionCalls>
     <apiVersion>59.0</apiVersion>
     <decisions>
+        <description>Checks if all approvers are populated in Donation prior to submit for approval.</description>
+        <name>Is_Approver_Null</name>
+        <label>Is Approver Null?</label>
+        <locationX>380</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>Approver_Missing_Error_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Donations.CSE_Country_Lead__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Donations.Business_Partner_Compliance__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Donations.BU_Head__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Donations.Head_PH_Med__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Donations.SBR_Bayer_Vital__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Display_Approval_Confirmation_Message</targetReference>
+            </connector>
+            <label>Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Is_Manager_Null</name>
         <label>Is Manager Null?</label>
         <locationX>182</locationX>
-        <locationY>458</locationY>
+        <locationY>566</locationY>
         <defaultConnector>
             <targetReference>Update_Approval_Status_to_CSE_Country_Lead</targetReference>
         </defaultConnector>
@@ -51,7 +105,7 @@
             <label>No</label>
         </rules>
     </decisions>
-    <description>Screen flow to submit Donation for Approval and updates Approval Status values</description>
+    <description>Screen flow to submit Donation for Approval and update Approval Status field.</description>
     <environments>Default</environments>
     <interviewLabel>Submit Donation for Approval {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Submit Donation for Approval</label>
@@ -77,11 +131,11 @@
     <recordLookups>
         <name>Get_Donations</name>
         <label>Get Donations</label>
-        <locationX>182</locationX>
+        <locationX>380</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Submit_for_Approval_Screen</targetReference>
+            <targetReference>Is_Approver_Null</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -99,7 +153,7 @@
         <name>Update_Approval_Status_to_CSE_Country_Lead</name>
         <label>Update Approval Status to CSE Country Lead</label>
         <locationX>314</locationX>
-        <locationY>566</locationY>
+        <locationY>674</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -120,7 +174,7 @@
         <name>Update_Approval_Status_to_Manager</name>
         <label>Update Approval Status to Manager</label>
         <locationX>50</locationX>
-        <locationY>566</locationY>
+        <locationY>674</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -139,10 +193,27 @@
     </recordUpdates>
     <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
-        <name>Submit_for_Approval_Screen</name>
-        <label>Submit for Approval Screen</label>
+        <name>Approver_Missing_Error_Screen</name>
+        <label>Approver Missing Error Screen</label>
+        <locationX>578</locationX>
+        <locationY>350</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Approver_Details</name>
+            <fieldText>&lt;p&gt;{!$Label.Approver_Missing_Message}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Okay</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Display_Approval_Confirmation_Message</name>
+        <label>Display Approval Confirmation Message</label>
         <locationX>182</locationX>
-        <locationY>242</locationY>
+        <locationY>350</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -160,7 +231,7 @@
         <showHeader>true</showHeader>
     </screens>
     <start>
-        <locationX>56</locationX>
+        <locationX>254</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Donations</targetReference>

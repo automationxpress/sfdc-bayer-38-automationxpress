@@ -83,4 +83,8 @@
         <label></label>
         <name>Requestor</name>
     </sharingReasons>
+    <validationRules>
+        <errorMessage>Bitte fügen Sie das Telefon im richtigen Format hinzu</errorMessage>
+        <name>Phone_Validation</name>
+    </validationRules>
 </CustomObjectTranslation>

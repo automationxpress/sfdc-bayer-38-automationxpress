@@ -12,6 +12,7 @@ public class DonationTriggerHandlerTest {
             Focus_Area__c = 'Waste Management',
             Salutation__c = 'Mr.',
             Account__c= acc.id,
+            Account_Name__c= acc.Name,
             Requestor__c = requestor.id,
             Overall_Net_Amount__c=5100,
             Organization_Type__c='Agency',
@@ -19,8 +20,11 @@ public class DonationTriggerHandlerTest {
             Contact_Last_Name__c='ing',
             Contact_Email__c='test@gmail.com',
             Bank__c='icic',
-            IBAN__c='hhh',
-            Business_Unit__c='BV-PH-VU'
+            IBAN__c='DE12345678901234567890',
+            Business_Unit__c='BV-PH-VU',
+            Origin_of_Funding__c='Divisional budget',
+            Tax_ID_Number__c='testttt'
+            
         );
         insert oldDonation;
     }
@@ -45,7 +49,7 @@ public class DonationTriggerHandlerTest {
             Status__c = 'Approved',
             Focus_Area__c = 'Water Management',
             Salutation__c = 'Mrs.',
-            Account__c= accNew.id,
+            Account_Name__c= accNew.Name,
             Requestor__c = requestor.id,
             Overall_Net_Amount__c= 50000,
             Organization_Type__c='HCO',
@@ -53,13 +57,16 @@ public class DonationTriggerHandlerTest {
             Contact_Last_Name__c='Contact',
             Contact_Email__c='TestContact@example.com',
             Bank__c='WBO',
-            IBAN__c='23456',
-            Business_Unit__c='BV-PH-GUOP'
+            IBAN__c='DE12345678901234560987',
+            Business_Unit__c='BV-PH-GU-Oph',
+            Origin_of_Funding__c='PS Site Budget',
+            Tax_ID_Number__c='testtax'
+            
         );
         update newDonation;
         
         List<Record_History__c> recordHistoryList = [SELECT Action__c, Field__c, Original_Value__c, New_Value__c,Donation__c FROM Record_History__c where Donation__c=:newDonation.Id];
-        System.assertEquals(13, recordHistoryList.size(), 'Expected 13 Record_History__c records to be created for 13 field updates.');
+        System.assertEquals(15, recordHistoryList.size(), 'Expected 15 Record_History__c records to be created for 15 field updates.');
         
     }
     

@@ -2,8 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Origin_of_Funding__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Applicant ensures that the donation is included in the donation budget</inlineHelpText>
     <label>Origin of Funding</label>
-    <required>false</required>
+    <required>true</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -19,11 +20,6 @@
                 <fullName>PS Site Budget</fullName>
                 <default>false</default>
                 <label>PS Site Budget</label>
-            </value>
-            <value>
-                <fullName>Other</fullName>
-                <default>false</default>
-                <label>Other</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -407,6 +407,7 @@
 		<members>APICallFailMsg_ConsentForm</members>
 		<members>Account_Details</members>
 		<members>Add</members>
+		<members>Approver_Missing_Message</members>
 		<members>Approvers</members>
 		<members>AreYouSureYouWantToDeleteThis</members>
 		<members>Bank_Information</members>

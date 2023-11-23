@@ -7,7 +7,7 @@
 *  
 * *********************************************************/
 public class DonationService {
-	public static final String ACTION_FIELD_UPDATE = 'Field Updated';    
+    public static final String ACTION_FIELD_UPDATE = 'Field Updated';    
     
     public static void createRecordHistoryOnDonationUpdate(Map<Id, Donation__c> newDonations, Map<Id, Donation__c> oldDonationMap){
         List<Record_History__c> recordHistoryList = new List<Record_History__c>();
@@ -34,7 +34,7 @@ public class DonationService {
                 addRecordHstoryList(recordHistoryList, 'Salutation', oldDonationMap.get(newDonation.Id).Salutation__c, newDonation.Salutation__c, newDonation.Id);
             }
             //Track Contact_First_Name__c field
-           if (newDonation.Contact_First_Name__c != oldDonationMap.get(newDonation.Id).Contact_First_Name__c){
+            if (newDonation.Contact_First_Name__c != oldDonationMap.get(newDonation.Id).Contact_First_Name__c){
                 addRecordHstoryList(recordHistoryList, 'Contact FirstName', oldDonationMap.get(newDonation.Id).Contact_First_Name__c, newDonation.Contact_First_Name__c, newDonation.Id);
             }
             //Track Contact_Last_Name__c field
@@ -57,43 +57,62 @@ public class DonationService {
             if (newDonation.Requestor__c != oldDonationMap.get(newDonation.Id).Requestor__c){
                 addRecordHstoryList(recordHistoryList, 'Requestor', UserUtils.getUserById(oldDonationMap.get(newDonation.Id).Requestor__c)?.Name , UserUtils.getUserById(newDonation.Requestor__c)?.Name, newDonation.Id);
             }
-            //Track Account__c field
-            if (newDonation.Account__c != oldDonationMap.get(newDonation.Id).Account__c){
-                system.debug('@@DonationService.createRecordHistoryOnDonationUpdate> Account= '+ AccountUtils.getAccountById(oldDonationMap.get(newDonation.Id).Account__c));
-                addRecordHstoryList(recordHistoryList, 'Account', AccountUtils.getAccountById(oldDonationMap.get(newDonation.Id).Account__c)?.Name , AccountUtils.getAccountById(newDonation.Account__c)?.Name, newDonation.Id);
-            }
             //Track Business_Unit__c field
             if (newDonation.Business_Unit__c != oldDonationMap.get(newDonation.Id).Business_Unit__c){
                 addRecordHstoryList(recordHistoryList, 'Business Unit', oldDonationMap.get(newDonation.Id).Business_Unit__c, newDonation.Business_Unit__c, newDonation.Id);
             }
-           
+            //Track Origin_of_Funding__c field
+            if (newDonation.Origin_of_Funding__c != oldDonationMap.get(newDonation.Id).Origin_of_Funding__c){
+                addRecordHstoryList(recordHistoryList, 'Origin of Funding', oldDonationMap.get(newDonation.Id).Origin_of_Funding__c, newDonation.Business_Unit__c, newDonation.Id);
+            }
+            //Track Tax_ID_Number__c field
+            if (newDonation.Tax_ID_Number__c != oldDonationMap.get(newDonation.Id).Tax_ID_Number__c){
+                addRecordHstoryList(recordHistoryList, 'Tax Id Number', oldDonationMap.get(newDonation.Id).Tax_ID_Number__c, newDonation.Tax_ID_Number__c, newDonation.Id);
+            }
+            //Track Address__c field
+            if (newDonation.Address__c != oldDonationMap.get(newDonation.Id).Address__c){
+                String richTextNewAddress= newDonation.Address__c;
+                String richTextOldAddress= oldDonationMap.get(newDonation.Id).Address__c;
+                if(oldDonationMap.get(newDonation.Id).Address__c==null){
+                    addRecordHstoryList(recordHistoryList, 'Address', oldDonationMap.get(newDonation.Id).Address__c, richTextNewAddress.replace('<br>', ' ,'), newDonation.Id);
+                    
+                }
+                else{
+                    addRecordHstoryList(recordHistoryList, 'Address', richTextOldAddress.replace('<br>', ' ,'), richTextNewAddress.replace('<br>', ' ,'), newDonation.Id);
+                }
+            }
+            //Track Account_Name__c field
+            if (newDonation.Account_Name__c != oldDonationMap.get(newDonation.Id).Account_Name__c){
+                addRecordHstoryList(recordHistoryList, 'Account Name', oldDonationMap.get(newDonation.Id).Account_Name__c, newDonation.Account_Name__c, newDonation.Id);
+            }
+            
         }
         
         system.debug('@@DonationService.createRecordHistoryOnDonationUpdate> recordHistoryList= '+ recordHistoryList);
         //Insert Record_History__c records related to Donation
-         if (!recordHistoryList.isEmpty()) {
-              insert recordHistoryList;
-         }
+        if (!recordHistoryList.isEmpty()) {
+            insert recordHistoryList;
+        }
         
     }
     
     //Adds a new record to a Record History list
     private static List<Record_History__c> addRecordHstoryList(List<Record_History__c> recordHistoryList, String fieldToTrack, String oldValue, String newValue, Id donationId){
         recordHistoryList.add(new Record_History__c(
-                    Action__c = ACTION_FIELD_UPDATE, 
-                    Field__c= fieldToTrack,
-                    Original_Value__c = oldValue, 
-                    New_Value__c = newValue,
-                    User__c = UserInfo.getUserId(),
-                    Date__c = System.now(),
-                    Donation__c = donationId
-                ));
+            Action__c = ACTION_FIELD_UPDATE, 
+            Field__c= fieldToTrack,
+            Original_Value__c = oldValue, 
+            New_Value__c = newValue,
+            User__c = UserInfo.getUserId(),
+            Date__c = System.now(),
+            Donation__c = donationId
+        ));
         
-         return recordHistoryList;
+        return recordHistoryList;
     }
     
-  
-
- 
+    
+    
+    
     
 }

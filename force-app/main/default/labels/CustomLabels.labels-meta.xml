@@ -18,6 +18,7 @@
     </labels>
     <labels>
         <fullName>Account_Details</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Account Details</shortDescription>
@@ -31,7 +32,18 @@
         <value>Add</value>
     </labels>
     <labels>
+        <fullName>Approver_Missing_Message</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Display the message to user if Approvers are missing while approval submission</shortDescription>
+        <value>You are unable to submit your donation because the approval
+configuration related to the business unit that you have selected is not
+properly maintained. Please contact with the Application Admin.</value>
+    </labels>
+    <labels>
         <fullName>Approvers</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Approvers</shortDescription>
@@ -46,6 +58,7 @@
     </labels>
     <labels>
         <fullName>Bank_Information</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Bank Information</shortDescription>
@@ -114,6 +127,7 @@
     </labels>
     <labels>
         <fullName>Compliance</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Compliance</shortDescription>
@@ -175,6 +189,7 @@
     </labels>
     <labels>
         <fullName>Details</fullName>
+        <categories>Bayer Cerca, Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Details</shortDescription>
@@ -182,13 +197,15 @@
     </labels>
     <labels>
         <fullName>Donation_Cancel</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation cancel confirmation message.</shortDescription>
-        <value>Are you sure you want to cancel this donation request?</value>
+        <value>Are you sure you want to cancel this Donation request?</value>
     </labels>
     <labels>
         <fullName>Donation_Details</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation Details</shortDescription>
@@ -311,6 +328,7 @@
     </labels>
     <labels>
         <fullName>Requestor</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Requestor</shortDescription>
@@ -347,13 +365,15 @@
     </labels>
     <labels>
         <fullName>Submit_for_Approval</fullName>
+        <categories>Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation Submit for Approval Confirmation Message</shortDescription>
-        <value>Are you sure you want to submit this donation request?</value>
+        <value>Are you sure you want to submit this Donation request?</value>
     </labels>
     <labels>
         <fullName>System_Information</fullName>
+        <categories>Bayer Cerca, Donation</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>System Information</shortDescription>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Business_Affiliations_Description__c</fullName>
-    <defaultValue>&quot;Is the recipient a customer or supplier of Bayer or does it maintain any other commercial relationship with Bayer? If yes, please confirm that there is no connection with any business transaction (e. g. a hidden discount etc.) and that there are no obligations of the customer or supplier towards Bayer or a third party in the future commercial relationship deriving from the receipt of the donation. Check by Compliance Manager required&quot;</defaultValue>
+    <defaultValue>&quot;Ist der Empfänger ein Kunde oder Lieferant von Bayer oder unterhält er eine andere Geschäftsbeziehung zu Bayer? Wenn ja, bestätigen Sie bitte, dass kein Zusammenhang mit einer geschäftlichen Transaktion besteht (z. B. ein versteckter Rabatt usw.) und dass sich aus der Annahme der Spende keine Verpflichtungen des Kunden oder Lieferanten gegenüber Bayer oder einem Dritten in der künftigen Geschäftsbeziehung ergeben.&quot;</defaultValue>
     <externalId>false</externalId>
-    <label>Business Affiliations Description</label>
+    <label>Business Affiliations</label>
     <length>32768</length>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

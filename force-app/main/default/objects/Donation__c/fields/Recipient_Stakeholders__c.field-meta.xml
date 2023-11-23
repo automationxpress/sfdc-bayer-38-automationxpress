@@ -3,10 +3,12 @@
     <fullName>Recipient_Stakeholders__c</fullName>
     <externalId>false</externalId>
     <label>Recipient Stakeholders</label>
-    <length>255</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
 </CustomField>
