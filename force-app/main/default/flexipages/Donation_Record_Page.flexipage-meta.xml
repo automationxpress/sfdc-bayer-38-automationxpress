@@ -520,7 +520,7 @@
                 <identifier>RecordAddress_cField2</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.Request_Id__c}</leftValue>
+                        <leftValue>{!Record.Id__c}</leftValue>
                         <operator>NE</operator>
                     </criteria>
                 </visibilityRule>
