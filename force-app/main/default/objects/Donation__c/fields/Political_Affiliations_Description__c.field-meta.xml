@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Political_Affiliations_Description__c</fullName>
-    <defaultValue>&quot;Is the recipient an organization closely affiliated to a political party? If yes, provide a specific reason for the donation and an explanation on the appropriateness, e.g. the absence of an influence of the donation on the political par. Check by Compliance Manager required&quot;</defaultValue>
+    <defaultValue>&quot;Handelt es sich bei dem Empfänger um eine Organisation, die eng mit einer politischen Partei verbunden ist?&quot;</defaultValue>
     <externalId>false</externalId>
-    <label>Political Affiliations Description</label>
+    <label>Political Affiliations</label>
     <length>32768</length>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

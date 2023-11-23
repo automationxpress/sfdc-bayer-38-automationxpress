@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Recipient_Reputation_Description__c</fullName>
-    <defaultValue>&quot;To the best of your knowledge, does the recipient have a reputation linked to corruption or is it the subject of credible rumors or media reports involving bribery, corruption, inappropriate payments or other questionable conduct? If yes, check by Compliance Manager required.&quot;</defaultValue>
+    <defaultValue>&quot;Hat der Empfänger nach Ihrem besten Wissen einen Ruf, der mit Korruption in Verbindung gebracht wird, oder ist er Gegenstand glaubwürdiger Gerüchte oder Medienberichte über Bestechung, Korruption, unangemessene Zahlungen oder andere fragwürdige Verhaltensweisen?&quot;</defaultValue>
     <externalId>false</externalId>
-    <label>Recipient Reputation Description</label>
+    <label>Recipient Reputation</label>
     <length>32768</length>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

@@ -3,7 +3,7 @@
     <fullName>Donation_Compact_Layout</fullName>
     <fields>Name</fields>
     <fields>Status__c</fields>
-    <fields>Account__c</fields>
+    <fields>Account_Name__c</fields>
     <fields>Overall_Net_Amount__c</fields>
     <label>Donation Compact Layout</label>
 </CompactLayout>

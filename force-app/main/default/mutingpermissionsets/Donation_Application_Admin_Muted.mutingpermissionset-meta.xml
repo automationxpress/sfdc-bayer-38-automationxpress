@@ -175,4 +175,12 @@
         <recordType>Account.University</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ActivitiesAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewAllActivities</name>
+    </userPermissions>
 </MutingPermissionSet>

@@ -26,19 +26,9 @@
                 <label>Med. Institute</label>
             </value>
             <value>
-                <fullName>Not Relevant</fullName>
-                <default>false</default>
-                <label>Not Relevant</label>
-            </value>
-            <value>
                 <fullName>Health Organization</fullName>
                 <default>false</default>
                 <label>Health Organization</label>
-            </value>
-            <value>
-                <fullName>Study Related</fullName>
-                <default>false</default>
-                <label>Study Related</label>
             </value>
         </valueSetDefinition>
     </valueSet>

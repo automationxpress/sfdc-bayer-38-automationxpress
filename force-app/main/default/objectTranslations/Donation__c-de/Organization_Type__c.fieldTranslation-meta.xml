@@ -18,12 +18,4 @@
         <masterLabel>Med. Institute</masterLabel>
         <translation>Med.Institution</translation>
     </picklistValues>
-    <picklistValues>
-        <masterLabel>Not Relevant</masterLabel>
-        <translation>Nicht relevant</translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>Study Related</masterLabel>
-        <translation>Studien-Bezogen</translation>
-    </picklistValues>
 </CustomFieldTranslation>

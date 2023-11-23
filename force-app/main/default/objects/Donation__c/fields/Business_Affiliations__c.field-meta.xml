@@ -3,10 +3,12 @@
     <fullName>Business_Affiliations__c</fullName>
     <externalId>false</externalId>
     <label>Business Affiliations</label>
-    <length>255</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
 </CustomField>

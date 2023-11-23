@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Crystal Activity ID wird vom System vergeben.</help>
     <label>Crystal Activity ID</label>
     <name>Crystal_AID__c</name>
 </CustomFieldTranslation>

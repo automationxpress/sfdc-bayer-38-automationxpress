@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Recipient_Stakeholders_Description__c</fullName>
-    <defaultValue>&quot;Is the recipient or one of the recipient’s key directors or owners a governmental official or another person (e.g. an employee of a customer of Bayer) having authority over approvals or other decisions relevant to Bayer? If yes, please provide an explanation how it is ensured that the donation does not inappropriately influence a respective decision to be taken. Check by Compliance Manager&quot;</defaultValue>
+    <defaultValue>&quot;Ist ein wichtiger Vertreter oder Eigentümer des Empfängers ein Regierungsbeamter oder eine andere Person (z. B. ein Mitarbeiter eines Kunden von Bayer) mit Befugnis zu Genehmigungen oder anderen Entscheidungen, die für Bayer relevant sind?&quot;</defaultValue>
     <externalId>false</externalId>
-    <label>Recipient Stakeholders Description</label>
+    <label>Recipient Stakeholders</label>
     <length>32768</length>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>LongTextArea</type>
-    <visibleLines>3</visibleLines>
+    <visibleLines>4</visibleLines>
 </CustomField>

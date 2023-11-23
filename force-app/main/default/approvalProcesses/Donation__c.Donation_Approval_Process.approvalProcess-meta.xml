@@ -172,7 +172,7 @@
             <type>FieldUpdate</type>
         </action>
     </finalRejectionActions>
-    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
             <name>Update_Status_to_Wait_for_Approval</name>
