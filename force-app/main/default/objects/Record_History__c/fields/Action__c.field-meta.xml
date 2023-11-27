@@ -30,6 +30,11 @@
                 <default>false</default>
                 <label>Related Record Deleted</label>
             </value>
+            <value>
+                <fullName>Record Created</fullName>
+                <default>false</default>
+                <label>Record Created</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
