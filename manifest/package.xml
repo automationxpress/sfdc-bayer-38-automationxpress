@@ -445,6 +445,7 @@
 		<members>Next</members>
 		<members>NoResults</members>
 		<members>Previous</members>
+		<members>Record_History</members>
 		<members>Requestor</members>
 		<members>Save</members>
 		<members>Save_and_Submit_for_Approval</members>
