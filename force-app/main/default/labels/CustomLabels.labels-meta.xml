@@ -327,6 +327,14 @@ properly maintained. Please contact with the Application Admin.</value>
         <value>Previous</value>
     </labels>
     <labels>
+        <fullName>Record_History</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record History</shortDescription>
+        <value>Record History</value>
+    </labels>
+    <labels>
         <fullName>Requestor</fullName>
         <categories>Donation</categories>
         <language>en_US</language>
