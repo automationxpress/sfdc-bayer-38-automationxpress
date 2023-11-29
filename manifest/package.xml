@@ -778,6 +778,10 @@
 		<name>Profile</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Prompt</name>
+	</types>
+	<types>
 		<members>Donation__c.Cancel</members>
 		<members>Donation__c.Submit_for_Approval</members>
 		<members>GsGoalPeriod__c.GsLockYear</members>

@@ -79,7 +79,7 @@ public class DonationService {
             //Track Origin_of_Funding__c field
             if (newDonation.Origin_of_Funding__c != oldDonationMap.get(newDonation.Id).Origin_of_Funding__c){
                 Schema.DescribeFieldResult originofFundingDescription = donationSchema.get('Origin_of_Funding__c').getDescribe();
-                addRecordHstoryList(recordHistoryList, originofFundingDescription.getLabel(), oldDonationMap.get(newDonation.Id).Origin_of_Funding__c, newDonation.Business_Unit__c, newDonation.Id);
+                addRecordHstoryList(recordHistoryList, originofFundingDescription.getLabel(), oldDonationMap.get(newDonation.Id).Origin_of_Funding__c, newDonation.Origin_of_Funding__c, newDonation.Id);
             }
             //Track Tax_ID_Number__c field
             if (newDonation.Tax_ID_Number__c != oldDonationMap.get(newDonation.Id).Tax_ID_Number__c){
@@ -104,7 +104,7 @@ public class DonationService {
                 Schema.DescribeFieldResult accountNameDescription = donationSchema.get('Account_Name__c').getDescribe();
                 addRecordHstoryList(recordHistoryList, accountNameDescription.getLabel(), oldDonationMap.get(newDonation.Id).Account_Name__c, newDonation.Account_Name__c, newDonation.Id);
             }
-           
+            
         }
         
         system.debug('@@DonationService.createRecordHistoryOnDonationUpdate> recordHistoryList= '+ recordHistoryList);
