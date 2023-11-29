@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Donation_Admin_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing Donation application related records to Donation Application Admin</description>
+        <label>Donation Admin Sharing</label>
+        <sharedTo>
+            <role>Donation_Application_Admin</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Donation_Application_Admin</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Donation_End_User_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing Donation related records to Donation End User</description>
+        <label>Donation End User Sharing</label>
+        <sharedTo>
+            <role>Donation_End_User</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Donation_Application_Admin</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

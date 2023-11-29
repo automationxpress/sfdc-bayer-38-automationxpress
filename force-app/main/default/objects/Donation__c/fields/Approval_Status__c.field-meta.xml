@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>CSE Country Lead</fullName>
+                <default>false</default>
+                <label>CSE Country Lead</label>
+            </value>
+            <value>
+                <fullName>Business Partner Compliance</fullName>
+                <default>false</default>
+                <label>Business Partner Compliance</label>
+            </value>
+            <value>
+                <fullName>BU Head</fullName>
+                <default>false</default>
+                <label>BU Head</label>
+            </value>
+            <value>
+                <fullName>Head PH-Med</fullName>
+                <default>false</default>
+                <label>Head PH-Med</label>
+            </value>
+            <value>
+                <fullName>SBR Bayer Vital</fullName>
+                <default>false</default>
+                <label>SBR Bayer Vital</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Final Approval</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Final Approval</label>
+            </value>
+            <value>
+                <fullName>Pending with Business Partner Compliance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending with Business Partner Compliance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

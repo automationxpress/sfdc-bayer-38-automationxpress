@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recipient_Reputation_Description__c</fullName>
+    <defaultValue>&quot;Hat der Empfänger nach Ihrem besten Wissen einen Ruf, der mit Korruption in Verbindung gebracht wird, oder ist er Gegenstand glaubwürdiger Gerüchte oder Medienberichte über Bestechung, Korruption, unangemessene Zahlungen oder andere fragwürdige Verhaltensweisen?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Recipient Reputation</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

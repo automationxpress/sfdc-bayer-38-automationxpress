@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
-        <fullName>Share_Hirep_to_MAPV_ACDL</fullName>
-        <accessLevel>Edit</accessLevel>
-        <description>Share the Hirep records to request managers of MAPV ACDL</description>
-        <label>Share Hirep to MAPV ACDL</label>
+        <fullName>Share_Hirep_to_Hirep_Worker_s_Council</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Hirep to Hirep Worker&apos;s Council</label>
         <sharedTo>
-            <role>Hirep_MAPV_ACDL</role>
+            <role>Hirep_German_Worker_s_Council_User</role>
         </sharedTo>
         <criteriaItems>
-            <field>MAPV_Department_Formula__c</field>
-            <operation>contains</operation>
-            <value>MAPV ACDL</value>
+            <field>Position_Workers_Council_Relevant__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -76,47 +75,32 @@
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
-        <fullName>Share_Hirep_to_PV_SBE</fullName>
+        <fullName>Share_Hirep_to_PV_SBO</fullName>
         <accessLevel>Edit</accessLevel>
         <description>Share the Hirep records to request managers of PV SBE</description>
-        <label>Share Hirep to PV SBE</label>
+        <label>Share Hirep to PV SBO</label>
         <sharedTo>
-            <role>Hirep_PV_SBE</role>
+            <role>Hirep_PV_SBO</role>
         </sharedTo>
         <criteriaItems>
             <field>MAPV_Department_Formula__c</field>
             <operation>contains</operation>
-            <value>PV SBE</value>
+            <value>PV SBO</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
-        <fullName>Share_Hirep_to_PV_SCP</fullName>
+        <fullName>Share_Hirep_to_PV_SMA</fullName>
         <accessLevel>Edit</accessLevel>
-        <description>Share the Hirep records to request managers of PV SCP</description>
-        <label>Share Hirep to PV SCP</label>
+        <description>Share the Hirep records to request managers of PV ACDL</description>
+        <label>Share Hirep to PV SMA</label>
         <sharedTo>
-            <role>Hirep_PV_SCP</role>
+            <role>Hirep_PV_SMA</role>
         </sharedTo>
         <criteriaItems>
             <field>MAPV_Department_Formula__c</field>
             <operation>contains</operation>
-            <value>PV SCP</value>
-        </criteriaItems>
-        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
-    </sharingCriteriaRules>
-    <sharingCriteriaRules>
-        <fullName>Share_Hirep_to_RAD_MA</fullName>
-        <accessLevel>Edit</accessLevel>
-        <description>Share the Hirep records to request managers of RAD MA</description>
-        <label>Share Hirep to RAD MA</label>
-        <sharedTo>
-            <role>Hirep_RAD_MA</role>
-        </sharedTo>
-        <criteriaItems>
-            <field>MAPV_Department_Formula__c</field>
-            <operation>contains</operation>
-            <value>RAD MA</value>
+            <value>PV SMA</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>

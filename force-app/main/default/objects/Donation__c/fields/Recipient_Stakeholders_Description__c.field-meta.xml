@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recipient_Stakeholders_Description__c</fullName>
+    <defaultValue>&quot;Ist ein wichtiger Vertreter oder Eigentümer des Empfängers ein Regierungsbeamter oder eine andere Person (z. B. ein Mitarbeiter eines Kunden von Bayer) mit Befugnis zu Genehmigungen oder anderen Entscheidungen, die für Bayer relevant sind?&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Recipient Stakeholders</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

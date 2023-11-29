@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Detaillierte Beschreibung des Empfänger-Projektes, das Bayer mit dieser Spende unterstützen  möchte</help>
+    <label>Zweck der Spende</label>
+    <name>Purpose_of_Donation__c</name>
+</CustomFieldTranslation>

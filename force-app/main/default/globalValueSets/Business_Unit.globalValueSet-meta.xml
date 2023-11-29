@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BV-PH-GU-Oph</fullName>
+        <default>false</default>
+        <label>BV-PH-GU-Oph</label>
+    </customValue>
+    <customValue>
+        <fullName>BV-PH-GU-Onc</fullName>
+        <default>false</default>
+        <label>BV-PH-GU-Onc</label>
+    </customValue>
+    <customValue>
+        <fullName>BV-PH-VU</fullName>
+        <default>false</default>
+        <label>BV-PH-VU</label>
+    </customValue>
+    <customValue>
+        <fullName>BV-PH-GU-Car</fullName>
+        <default>false</default>
+        <label>BV-PH-GU-Car</label>
+    </customValue>
+    <customValue>
+        <fullName>BV-JPH-WH</fullName>
+        <default>false</default>
+        <label>BV-JPH-WH</label>
+    </customValue>
+    <customValue>
+        <fullName>BV-CH</fullName>
+        <default>false</default>
+        <label>BV-CH</label>
+    </customValue>
+    <customValue>
+        <fullName>BV-CH-GERM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BV-CH-GERM</label>
+    </customValue>
+    <description>Business Unit is used in Donation and Approval Configuration</description>
+    <masterLabel>Business Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

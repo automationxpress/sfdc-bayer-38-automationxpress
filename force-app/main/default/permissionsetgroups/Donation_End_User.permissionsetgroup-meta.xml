@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provide required access to Donation End User</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Donation End User</label>
+    <mutingPermissionSets>Donation_End_User_Muted</mutingPermissionSets>
+    <permissionSets>Access_to_Donation_Application</permissionSets>
+    <permissionSets>Manage_Accounts</permissionSets>
+    <permissionSets>Manage_Donations</permissionSets>
+    <permissionSets>Read_Approval_Configurations</permissionSets>
+    <permissionSets>View_All_Record_History</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

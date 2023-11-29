@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Donation_Notify_User_when_Approval_is_Approved</fullName>
+        <description>Donation: Notify User when Approval is Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Requestor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Donation_Email_Template/Donation_Approval_Approved_Notification_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Donation_Notify_User_when_Approval_is_Rejected</fullName>
+        <description>Donation: Notify User when Approval is Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Requestor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Donation_Email_Template/Donation_Approval_Reject_Notification_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Approved</fullName>
+        <description>Updates Approval Status to Approved</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Approval Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_BPC</fullName>
+        <description>Update Approval Status to Business Partner Compliance</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Business Partner Compliance</literalValue>
+        <name>Update Approval Status to BPC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_BU_Head</fullName>
+        <description>Update Approval Status to BU Head</description>
+        <field>Approval_Status__c</field>
+        <literalValue>BU Head</literalValue>
+        <name>Update Approval Status to BU-Head</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_CSE_CL</fullName>
+        <description>Update Approval Status field to CSE Country Lead</description>
+        <field>Approval_Status__c</field>
+        <literalValue>CSE Country Lead</literalValue>
+        <name>Update Approval Status to CSE CL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Head_PH_Med</fullName>
+        <description>Updates Approval Status to Head PH-Med</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Head PH-Med</literalValue>
+        <name>Update Approval Status to Head PH-Med</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_Null</fullName>
+        <description>Update Approval Status value to Null</description>
+        <field>Approval_Status__c</field>
+        <name>Update Approval Status to Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_SBR_BayerVital</fullName>
+        <description>Update Approval Status to SBR Bayer Vital</description>
+        <field>Approval_Status__c</field>
+        <literalValue>SBR Bayer Vital</literalValue>
+        <name>Update Approval Status to SBR BayerVital</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Approved</fullName>
+        <description>Updates Status field to Approved.</description>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Draft</fullName>
+        <description>Updates Status field to Draft.</description>
+        <field>Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Update Status to Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Reject</fullName>
+        <description>Updates Status field to Reject.</description>
+        <field>Status__c</field>
+        <literalValue>Reject</literalValue>
+        <name>Update Status to Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Wait_for_Approval</fullName>
+        <description>Change Status value from Draft to Wait for Approval</description>
+        <field>Status__c</field>
+        <literalValue>Wait for Approval</literalValue>
+        <name>Update Status to Wait for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

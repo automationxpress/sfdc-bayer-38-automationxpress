@@ -1,0 +1,10 @@
+Guten Tag,
+<br> </br>
+
+<br>Ihr Antrag zur Spende ({!Donation__c.Name}) wurde final genehmigt / abgelehnt. Weitere Einzelheiten finden Sie unter diesem Link</br>
+
+<br><a href={!Donation__c.Link}>{!Donation__c.Name}</a></br>
+
+<br>Freundliche Grüße</br>
+
+<br>Salesforce</br>

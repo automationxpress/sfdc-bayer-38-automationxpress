@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Affiliations_Description__c</fullName>
+    <defaultValue>&quot;Ist der Empfänger ein Kunde oder Lieferant von Bayer oder unterhält er eine andere Geschäftsbeziehung zu Bayer? Wenn ja, bestätigen Sie bitte, dass kein Zusammenhang mit einer geschäftlichen Transaktion besteht (z. B. ein versteckter Rabatt usw.) und dass sich aus der Annahme der Spende keine Verpflichtungen des Kunden oder Lieferanten gegenüber Bayer oder einem Dritten in der künftigen Geschäftsbeziehung ergeben.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Business Affiliations</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

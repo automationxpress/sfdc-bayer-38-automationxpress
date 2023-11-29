@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Zulassungsstatus</label>
+    <name>Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation>Genehmigt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BU Head</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Partner Compliance</masterLabel>
+        <translation>Geschäftspartner-Compliance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSE Country Lead</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head PH-Med</masterLabel>
+        <translation>Leiter PH-Med</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBR Bayer Vital</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

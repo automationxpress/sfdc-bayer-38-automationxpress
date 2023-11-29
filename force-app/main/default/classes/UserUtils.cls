@@ -85,5 +85,14 @@ public class UserUtils {
         }
         return assigneeIds;
     }
+    
+    //Return User record based on UserId
+     public static User getUserById(Id userId) {
+        User userRecord;
+        if (userId != null) {
+            userRecord = [SELECT Name FROM User WHERE Id = :userId LIMIT 1];
+        }
+        return userRecord;
+    }
 
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Assigned_to_Me__c</fullName>
+    <description>Internal field used to indicate if Donation request is assigned to current user for approval.</description>
+    <externalId>false</externalId>
+    <formula>OR( AND( Manager__c = $User.Id , ISPICKVAL(Approval_Status__c, &apos;Manager&apos;) ) ,
+AND(  CSE_Country_Lead__c  = $User.Id , ISPICKVAL(Approval_Status__c, &apos;CSE Country Lead&apos;)),
+AND(   Business_Partner_Compliance__c   = $User.Id , ISPICKVAL(Approval_Status__c, &apos;Business Partner Compliance&apos;)),
+AND(  BU_Head__c  = $User.Id , ISPICKVAL(Approval_Status__c, &apos;BU Head&apos;) ) ,
+AND(  Head_PH_Med__c  = $User.Id , ISPICKVAL(Approval_Status__c, &apos;Head PH-Med&apos;) ) ,
+AND(  SBR_Bayer_Vital__c  = $User.Id , ISPICKVAL(Approval_Status__c, &apos;SBR Bayer Vita&apos;) ) 
+ )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Assigned to Me</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
