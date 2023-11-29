@@ -104,7 +104,7 @@ public class DonationService {
                 Schema.DescribeFieldResult accountNameDescription = donationSchema.get('Account_Name__c').getDescribe();
                 addRecordHstoryList(recordHistoryList, accountNameDescription.getLabel(), oldDonationMap.get(newDonation.Id).Account_Name__c, newDonation.Account_Name__c, newDonation.Id);
             }
-            
+           
         }
         
         system.debug('@@DonationService.createRecordHistoryOnDonationUpdate> recordHistoryList= '+ recordHistoryList);
