@@ -123,20 +123,17 @@
 		<members>Donation__c.Business_Unit__c</members>
 		<members>Donation__c.CSE_Country_Lead__c</members>
 		<members>Donation__c.CWID__c</members>
-		<members>Donation__c.City__c</members>
 		<members>Donation__c.Company_Code__c</members>
 		<members>Donation__c.Company_Name__c</members>
 		<members>Donation__c.Contact_Email__c</members>
 		<members>Donation__c.Contact_First_Name__c</members>
 		<members>Donation__c.Contact_Last_Name__c</members>
-		<members>Donation__c.Contact_Phone__c</members>
 		<members>Donation__c.Contract_and_Payment_Description__c</members>
 		<members>Donation__c.Contract_and_Payment__c</members>
 		<members>Donation__c.Country__c</members>
 		<members>Donation__c.Crystal_AID__c</members>
 		<members>Donation__c.Department__c</members>
 		<members>Donation__c.Document_No__c</members>
-		<members>Donation__c.Donation_Type_Description__c</members>
 		<members>Donation__c.Email_Address__c</members>
 		<members>Donation__c.First_Name__c</members>
 		<members>Donation__c.Focus_Area__c</members>
@@ -155,7 +152,6 @@
 		<members>Donation__c.Overall_Net_Amount__c</members>
 		<members>Donation__c.Political_Affiliations_Description__c</members>
 		<members>Donation__c.Political_Affiliations__c</members>
-		<members>Donation__c.Postal_Code__c</members>
 		<members>Donation__c.Purpose_of_Donation__c</members>
 		<members>Donation__c.Recipient_Recommendation_Description__c</members>
 		<members>Donation__c.Recipient_Recommendation__c</members>
