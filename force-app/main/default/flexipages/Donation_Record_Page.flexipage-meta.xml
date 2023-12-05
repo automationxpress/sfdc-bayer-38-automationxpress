@@ -130,8 +130,24 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Translation_of_Purpose_of_Donation__c</fieldItem>
-                <identifier>RecordTranslate_Purpose_of_Donation_cField</identifier>
+                <fieldItem>Record.Organization_Type__c</fieldItem>
+                <identifier>RecordOrganization_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Id_Donation_Info_Requestor__c</fieldItem>
+                <identifier>RecordId_Donation_Info_Requestor_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Id__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -154,32 +170,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Organization_Type__c</fieldItem>
-                <identifier>RecordOrganization_Type_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Id_Donation_Info_Requestor__c</fieldItem>
-                <identifier>RecordId_Donation_Info_Requestor_cField</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Id__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
