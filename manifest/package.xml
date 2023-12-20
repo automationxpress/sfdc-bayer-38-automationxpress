@@ -769,6 +769,7 @@
 		<name>PermissionSetGroup</name>
 	</types>
 	<types>
+		<members>Platform End User</members>
 		<members>Platform Integration System Admin</members>
 		<members>Platform Integration User</members>
 		<name>Profile</name>
