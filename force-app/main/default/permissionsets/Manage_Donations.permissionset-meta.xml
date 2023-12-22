@@ -68,11 +68,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Donation__c.City__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Donation__c.Company_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -182,11 +177,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Donation__c.Postal_Code__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Donation__c.Purpose_of_Donation__c</field>
         <readable>true</readable>
@@ -262,6 +252,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Donation__c.Tax_ID_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Donation__c.Title_Account__c</field>
         <readable>true</readable>
@@ -269,11 +264,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Donation__c.Title__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Donation__c.Translation_of_Purpose_of_Donation__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
