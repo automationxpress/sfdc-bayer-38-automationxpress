@@ -177,6 +177,7 @@
         </inputAssignments>
         <object>Donation__c</object>
     </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <start>
         <locationX>56</locationX>
         <locationY>0</locationY>
