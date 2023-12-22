@@ -191,7 +191,7 @@
         </inputAssignments>
         <object>Donation__c</object>
     </recordUpdates>
-    <runInMode>DefaultMode</runInMode>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Approver_Missing_Error_Screen</name>
         <label>Approver Missing Error Screen</label>
