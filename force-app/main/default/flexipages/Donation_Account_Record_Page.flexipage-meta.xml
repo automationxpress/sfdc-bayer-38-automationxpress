@@ -55,6 +55,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>required</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Tax_ID_Number__c</fieldItem>
+                <identifier>RecordTax_ID_Number_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-60c909b8-206a-443f-9158-348585e95e13</name>
         <type>Facet</type>
     </flexiPageRegions>

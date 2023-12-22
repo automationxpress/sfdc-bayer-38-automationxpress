@@ -3,10 +3,9 @@
     <fullName>Recipient_Selection__c</fullName>
     <externalId>false</externalId>
     <label>Recipient Selection</label>
-    <length>255</length>
-    <required>false</required>
+    <length>131072</length>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
 </CustomField>

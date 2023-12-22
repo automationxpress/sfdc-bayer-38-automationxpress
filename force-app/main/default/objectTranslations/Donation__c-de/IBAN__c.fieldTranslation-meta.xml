@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Bitte geben Sie das richtige Format ein (2 Länderbuchstaben + Ziffern). Zum Beispiel DE123456....</help>
     <label></label>
     <name>IBAN__c</name>
 </CustomFieldTranslation>
