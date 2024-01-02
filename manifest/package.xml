@@ -74,6 +74,7 @@
 		<members>Account.Email__c</members>
 		<members>Account.Health_Insurance__c</members>
 		<members>Account.Sector__c</members>
+		<members>Account.Tax_ID_Number__c</members>
 		<members>Account.Unique_Name__c</members>
 		<members>Account.Website_Social_Media__c</members>
 		<members>Account.Women_Representatives__c</members>
@@ -116,7 +117,7 @@
 		<members>Donation__c.Bank_City__c</members>
 		<members>Donation__c.Bank_Reference__c</members>
 		<members>Donation__c.Bank__c</members>
-		<members>Donation__c.Bayer_Icon__c</members>
+<members>Donation__c.Bayer_Icon__c</members>
 		<members>Donation__c.Business_Affiliations_Description__c</members>
 		<members>Donation__c.Business_Affiliations__c</members>
 		<members>Donation__c.Business_Partner_Compliance__c</members>
@@ -169,7 +170,7 @@
 		<members>Donation__c.Tax_ID_Number__c</members>
 		<members>Donation__c.Title_Account__c</members>
 		<members>Donation__c.Title__c</members>
-		<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
+<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
 		<members>GsFeedback__c.GsComment__c</members>
 		<members>GsFeedback__c.GsDescription__c</members>
 		<members>GsFeedback__c.GsStatus__c</members>
@@ -678,6 +679,7 @@
 		<members>Hirep_Send_Approval_Email</members>
 		<members>Hirep_on_Create_Update_After_Trigger</members>
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
+		<members>Populate_Approvers_in_Donation</members>
 		<members>Populate_Role_Matrix_Unique_Combination</members>
 		<members>Submit_Donation_for_Approval</members>
 		<members>Update_Donation_Record_Status_to_Cancelled</members>

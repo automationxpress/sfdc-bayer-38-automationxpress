@@ -42,6 +42,10 @@
                 <behavior>Readonly</behavior>
                 <field>Request_Id__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Tax_ID_Number__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -139,10 +143,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Address__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Tax_ID_Number__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

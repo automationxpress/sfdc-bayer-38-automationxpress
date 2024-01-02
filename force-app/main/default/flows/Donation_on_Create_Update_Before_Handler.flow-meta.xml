@@ -40,6 +40,13 @@
                 <elementReference>Address</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Tax_ID_Number__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Accounts.Tax_ID_Number__c</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Requestor_Manager_s_CWID_isBlank</targetReference>
         </connector>
@@ -236,7 +243,7 @@
             <label>Reject</label>
         </rules>
     </decisions>
-    <description>Update Account Name &amp; Address from corresponding Account, Manager based on Requestor field and Approvers from Approval Configurations.</description>
+    <description>Update Account Name, Address and Tax ID Number from corresponding Account, Manager based on Requestor field and Approvers from Approval Configurations.</description>
     <environments>Default</environments>
     <formulas>
         <name>Address</name>

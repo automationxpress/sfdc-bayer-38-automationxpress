@@ -84,6 +84,10 @@
         <name>Requestor</name>
     </sharingReasons>
     <validationRules>
+        <errorMessage>Bitte geben Sie das richtige Format ein</errorMessage>
+        <name>IBAN_Validation</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>Bitte fügen Sie das Telefon im richtigen Format hinzu</errorMessage>
         <name>Phone_Validation</name>
     </validationRules>

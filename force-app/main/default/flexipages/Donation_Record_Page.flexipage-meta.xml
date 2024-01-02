@@ -520,10 +520,16 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Tax_ID_Number__c</fieldItem>
-                <identifier>RecordTax_Id_Number_cField</identifier>
+                <identifier>RecordTax_ID_Number_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Id__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-d1cff598-d9ed-4c10-9078-a42da75bc66e</name>

@@ -4,7 +4,7 @@
         <name>Submit_Approval</name>
         <label>Submit Approval</label>
         <locationX>182</locationX>
-        <locationY>458</locationY>
+        <locationY>566</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <connector>
@@ -31,7 +31,7 @@
         <name>Is_Approver_Null</name>
         <label>Is Approver Null?</label>
         <locationX>380</locationX>
-        <locationY>242</locationY>
+        <locationY>350</locationY>
         <defaultConnector>
             <targetReference>Approver_Missing_Error_Screen</targetReference>
         </defaultConnector>
@@ -84,7 +84,7 @@
         <name>Is_Manager_Null</name>
         <label>Is Manager Null?</label>
         <locationX>182</locationX>
-        <locationY>566</locationY>
+        <locationY>674</locationY>
         <defaultConnector>
             <targetReference>Update_Approval_Status_to_CSE_Country_Lead</targetReference>
         </defaultConnector>
@@ -132,7 +132,7 @@
         <name>Get_Donations</name>
         <label>Get Donations</label>
         <locationX>380</locationX>
-        <locationY>134</locationY>
+        <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Is_Approver_Null</targetReference>
@@ -153,7 +153,7 @@
         <name>Update_Approval_Status_to_CSE_Country_Lead</name>
         <label>Update Approval Status to CSE Country Lead</label>
         <locationX>314</locationX>
-        <locationY>674</locationY>
+        <locationY>782</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -174,7 +174,7 @@
         <name>Update_Approval_Status_to_Manager</name>
         <label>Update Approval Status to Manager</label>
         <locationX>50</locationX>
-        <locationY>674</locationY>
+        <locationY>782</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -196,7 +196,7 @@
         <name>Approver_Missing_Error_Screen</name>
         <label>Approver Missing Error Screen</label>
         <locationX>578</locationX>
-        <locationY>350</locationY>
+        <locationY>458</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -213,7 +213,7 @@
         <name>Display_Approval_Confirmation_Message</name>
         <label>Display Approval Confirmation Message</label>
         <locationX>182</locationX>
-        <locationY>350</locationY>
+        <locationY>458</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -234,10 +234,27 @@
         <locationX>254</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Get_Donations</targetReference>
+            <targetReference>Get_Approvers</targetReference>
         </connector>
     </start>
     <status>Active</status>
+    <subflows>
+        <name>Get_Approvers</name>
+        <label>Get Approvers</label>
+        <locationX>380</locationX>
+        <locationY>134</locationY>
+        <connector>
+            <targetReference>Get_Donations</targetReference>
+        </connector>
+        <flowName>Populate_Approvers_in_Donation</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>

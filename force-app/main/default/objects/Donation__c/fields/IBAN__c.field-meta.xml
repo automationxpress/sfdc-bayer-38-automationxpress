@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>IBAN__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Please enter the right format (2 Country Letter + Digits). For example DE123456....</inlineHelpText>
     <label>IBAN</label>
     <length>50</length>
     <required>true</required>
