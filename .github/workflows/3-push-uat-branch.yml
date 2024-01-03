@@ -23,17 +23,17 @@ jobs:
             # Install Salesforce CLI
             - name: 'Install Salesforce CLI'
               run: |
-                  wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-                  mkdir ~/sfdx
-                  tar xJf sfdx-linux-x64.tar.xz -C ~/sfdx --strip-components 1
-                  echo "$HOME/sfdx/bin" >> $GITHUB_PATH
-                  ~/sfdx/bin/sfdx version
+                  wget https://developer.salesforce.com/media/salesforce-cli/sf/channels/stable/sf-linux-x64.tar.xz
+                  mkdir ~/sf
+                  tar xJf sf-linux-x64.tar.xz -C ~/sfdx --strip-components 1
+                  echo "$HOME/sf/bin" >> $GITHUB_PATH
+                  ~/sfdx/bin/sf version
 
             # install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
-            - name: 'Installing sfdx git delta'
+            - name: 'Installing sf git delta'
               run: |
-                  echo y | sfdx plugins:install sfdx-git-delta
-                  sfdx plugins
+                  echo y | sf plugins:install sfdx-git-delta
+                  sf plugins
 
             # Checkout the source code
             - name: 'Checkout source code'
@@ -50,14 +50,14 @@ jobs:
             - name: 'Create delta packages for new, modified or deleted metadata'
               run: |
                   mkdir changed-sources
-                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+                  sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
 
             # Authenticate to org
             - name: 'Authenticate to UAT Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_UAT_URL.txt -s -a uat
+              run: sf	org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a uat
 
             - name: 'Deploy Delta Changes to UAT org'
-              run: sfdx force:source:deploy -p "changed-sources/force-app" --testlevel RunLocalTests --json
+              run: sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests  --json
 
             - name: 'Deploy destructive changes (if any) to UAT org'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --ignorewarnings
+              run: sf force:mdapi:deploy -d "changed-sources/destructiveChanges" --ignorewarnings
