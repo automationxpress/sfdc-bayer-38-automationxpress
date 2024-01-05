@@ -27,7 +27,7 @@ jobs:
                   mkdir ~/sf
                   tar xJf sf-linux-x64.tar.xz -C ~/sf --strip-components 1
                   echo "$HOME/sf/bin" >> $GITHUB_PATH
-                  ~/sf/bin/sf version
+                  ~/sfdx/bin/sf version
 
             # install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
             - name: 'Installing sf git delta'
