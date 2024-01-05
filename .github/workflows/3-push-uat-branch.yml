@@ -25,7 +25,7 @@ jobs:
               run: |
                   wget https://developer.salesforce.com/media/salesforce-cli/sf/channels/stable/sf-linux-x64.tar.xz
                   mkdir ~/sf
-                  tar xJf sf-linux-x64.tar.xz -C ~/sfdx --strip-components 1
+                  tar xJf sf-linux-x64.tar.xz -C ~/sf --strip-components 1
                   echo "$HOME/sf/bin" >> $GITHUB_PATH
                   ~/sfdx/bin/sf version
 
