@@ -76,6 +76,31 @@
             <field>PermissionSet.NamespacePrefix</field>
             <table>PermissionSetAssignment</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assignee.Email</field>
+            <table>PermissionSetAssignment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assignee.Username</field>
+            <table>PermissionSetAssignment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assignee.UserRole.Name</field>
+            <table>PermissionSetAssignment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assignee.IsActive</field>
+            <table>PermissionSetAssignment</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assignee.LastLoginDate</field>
+            <table>PermissionSetAssignment</table>
+        </columns>
         <masterLabel>Permission Set Assignments</masterLabel>
     </sections>
 </ReportType>
