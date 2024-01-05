@@ -50,11 +50,11 @@ jobs:
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
               run: |
-                  wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-                  mkdir ~/sfdx
-                  tar xJf sfdx-linux-x64.tar.xz -C ~/sfdx --strip-components 1
-                  echo "$HOME/sfdx/bin" >> $GITHUB_PATH
-                  ~/sfdx/bin/sfdx version
+                  wget https://developer.salesforce.com/media/salesforce-cli/sf/channels/stable/sf-linux-x64.tar.xz
+                  mkdir ~/sf
+                  tar xJf sf-linux-x64.tar.xz -C ~/sf --strip-components 1
+                  echo "$HOME/sf/bin" >> $GITHUB_PATH
+                  ~/sf/bin/sf version
 
             # Then we install the SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
             # This is an awesome plugin that allows us to extract a package.xml with the metadata
@@ -63,8 +63,8 @@ jobs:
 
             - name: 'Installing sfdx git delta'
               run: |
-                  echo y | sfdx plugins:install sfdx-git-delta
-                  sfdx plugins
+                  echo y | sf plugins:install sfdx-git-delta
+                  sf plugins
 
             # Install java as it is required for the next step
             - name: 'Installing java'
@@ -73,8 +73,8 @@ jobs:
                   sudo apt-get install openjdk-8-jdk
 
             # Install SFDX scanner
-            - name: 'Installing SFDX scanner'
-              run: sfdx plugins:install @salesforce/sfdx-scanner
+            - name: 'Installing SF scanner'
+              run: sf plugins:install @salesforce/sfdx-scanner
 
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the Production org.
@@ -96,7 +96,7 @@ jobs:
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to PRODUCTION Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_PRODUCTION_URL.txt -s -a production
+              run: sf	org login sfdx-url -f ./SFDX_PRODUCTION_URL.txt -s -a production
 
             # We use SFDX Git Delta to create a directory with only the metadata that has changed.
             # this allows us to deploy only those changes, as opposed to deploying the entire branch.
@@ -104,12 +104,12 @@ jobs:
             - name: 'Create delta packages for new, modified or deleted metadata'
               run: |
                   mkdir changed-sources
-                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+                  sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
 
             # If the env variable equals all, we run all tests
             - name: 'Check-only deploy delta changes - run all tests'
               run: |
-                  sfdx force:source:deploy -p "changed-sources/force-app" --checkonly --testlevel RunLocalTests  --json
+                  sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests  --json
 
             - name: 'Deploy destructive changes (if any)'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
+              run: sf force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
