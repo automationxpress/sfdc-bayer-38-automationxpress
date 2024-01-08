@@ -151,7 +151,8 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Send an approval email to the recipients added by user in screen. Email body contains Hirep records with Final Approval is Pending.</description>
+    <description>Send an approval email to the recipients added by user in screen. Email body contains Hirep records with Final Approval is Pending.
+V2 - Replaced Permission Set with Permission Set Group</description>
     <environments>Default</environments>
     <formulas>
         <name>Email_Subject</name>
@@ -219,27 +220,6 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordLookups>
-        <name>Get_Hirep_Admin_Permission_Set</name>
-        <label>Get Hirep Admin Permission Set</label>
-        <locationX>182</locationX>
-        <locationY>134</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Get_Hirep_Admin_Permission_Set_Assignment</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Name</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Hirep_Application_Admin</stringValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>PermissionSet</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
         <name>Get_Hirep_Admin_Permission_Set_Assignment</name>
         <label>Get Hirep Admin Permission Set Assignment</label>
         <locationX>182</locationX>
@@ -257,14 +237,37 @@
             </value>
         </filters>
         <filters>
-            <field>PermissionSetId</field>
+            <field>PermissionSetGroupId</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Get_Hirep_Admin_Permission_Set.Id</elementReference>
+                <elementReference>Get_Hirep_Admin_Permission_Set_Group.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>PermissionSetAssignment</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Hirep_Admin_Permission_Set_Group</name>
+        <label>Get Hirep Admin Permission Set Group</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Hirep_Admin_Permission_Set_Assignment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Hirep_ApplicationAdmin</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSetGroup</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -367,7 +370,7 @@
         <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Get_Hirep_Admin_Permission_Set</targetReference>
+            <targetReference>Get_Hirep_Admin_Permission_Set_Group</targetReference>
         </connector>
     </start>
     <status>Active</status>
