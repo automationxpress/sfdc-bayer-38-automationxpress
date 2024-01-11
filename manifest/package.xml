@@ -734,6 +734,7 @@
 	<types>
 		<members>Bayer_Cerca_Application_Admin_Muted</members>
 		<members>Bayer_Cerca_End_Users_Muted</members>
+		<members>Ca_Entre_NosUser_Muted</members>
 		<members>Donation_Application_Admin_Muted</members>
 		<members>Donation_End_User_Muted</members>
 		<members>GoalSetter_Application_Admin_Muted</members>

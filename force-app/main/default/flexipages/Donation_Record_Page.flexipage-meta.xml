@@ -1197,16 +1197,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Business_Partner_Compliance__c</fieldItem>
-                <identifier>RecordBusiness_Partner_Compliance_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.BU_Head__c</fieldItem>
                 <identifier>RecordBU_Head_cField</identifier>
             </fieldInstance>
@@ -1219,6 +1209,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Head_PH_Med__c</fieldItem>
                 <identifier>RecordHead_PH_Med_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Business_Partner_Compliance__c</fieldItem>
+                <identifier>RecordBusiness_Partner_Compliance_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
