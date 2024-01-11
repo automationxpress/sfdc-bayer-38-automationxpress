@@ -3,6 +3,7 @@
     <description>Provides required access to Ca Entre Nos users.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Ca Entre NosUser</label>
+    <mutingPermissionSets>Ca_Entre_NosUser_Muted</mutingPermissionSets>
     <permissionSets>Access_to_Ca_Entre_Nos_App</permissionSets>
     <permissionSets>Manage_Accounts</permissionSets>
     <permissionSets>Manage_Contacts</permissionSets>

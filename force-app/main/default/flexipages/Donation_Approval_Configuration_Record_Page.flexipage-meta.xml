@@ -67,8 +67,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Business_Partner_Compliance__c</fieldItem>
-                <identifier>RecordBusiness_Partner_Compliance_cField</identifier>
+                <fieldItem>Record.Head_PH_Med__c</fieldItem>
+                <identifier>RecordHead_PH_Med_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -77,8 +77,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Head_PH_Med__c</fieldItem>
-                <identifier>RecordHead_PH_Med_cField</identifier>
+                <fieldItem>Record.Business_Partner_Compliance__c</fieldItem>
+                <identifier>RecordBusiness_Partner_Compliance_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
