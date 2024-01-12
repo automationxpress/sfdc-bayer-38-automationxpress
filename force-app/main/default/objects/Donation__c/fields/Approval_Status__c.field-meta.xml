@@ -22,11 +22,6 @@
                 <label>CSE Country Lead</label>
             </value>
             <value>
-                <fullName>Business Partner Compliance</fullName>
-                <default>false</default>
-                <label>Business Partner Compliance</label>
-            </value>
-            <value>
                 <fullName>BU Head</fullName>
                 <default>false</default>
                 <label>BU Head</label>
@@ -34,7 +29,12 @@
             <value>
                 <fullName>Head PH-Med</fullName>
                 <default>false</default>
-                <label>Head PH-Med</label>
+                <label>Medical Head Bayer Vital</label>
+            </value>
+            <value>
+                <fullName>Business Partner Compliance</fullName>
+                <default>false</default>
+                <label>Compliance Business Partner</label>
             </value>
             <value>
                 <fullName>SBR Bayer Vital</fullName>

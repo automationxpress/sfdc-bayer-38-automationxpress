@@ -42,7 +42,7 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_Approval_Status_to_BPC</name>
+                <name>Update_Approval_Status_to_BU_Head</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -63,28 +63,7 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_Approval_Status_to_BU_Head</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
-        <assignedApprover>
-            <approver>
-                <name>Business_Partner_Compliance__c</name>
-                <type>relatedUserField</type>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <label>Business Partner Compliance</label>
-        <name>Business_Partner_Compliance</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
-    </approvalStep>
-    <approvalStep>
-        <allowDelegate>false</allowDelegate>
-        <approvalActions>
-            <action>
-                <name>Update_Approval_Status_to_Head_PH_Med</name>
+                <name>Update_Approval_Status_to_MHBV</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -105,7 +84,7 @@
         <allowDelegate>false</allowDelegate>
         <approvalActions>
             <action>
-                <name>Update_Approval_Status_to_SBR_BayerVital</name>
+                <name>Update_Approval_Status_to_CBP</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
@@ -116,8 +95,29 @@
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
-        <label>Head PH-Med</label>
-        <name>Head_PH_Med</name>
+        <label>Medical Head Bayer Vital</label>
+        <name>Medical_Head_Bayer_Vital</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Update_Approval_Status_to_SBR_BayerVital</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Business_Partner_Compliance__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Compliance Business Partner</label>
+        <name>Compliance_Business_Partner</name>
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
