@@ -51,11 +51,33 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Approval_Status_to_CBP</fullName>
+        <description>Updates Approval Status to Compliance Business Partner</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Business Partner Compliance</literalValue>
+        <name>Update Approval Status to CBP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Approval_Status_to_CSE_CL</fullName>
         <description>Update Approval Status field to CSE Country Lead</description>
         <field>Approval_Status__c</field>
         <literalValue>CSE Country Lead</literalValue>
         <name>Update Approval Status to CSE CL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status_to_MHBV</fullName>
+        <description>Update Approval Status to Medical Head Bayer Vital</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Head PH-Med</literalValue>
+        <name>Update Approval Status to MHBV</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
