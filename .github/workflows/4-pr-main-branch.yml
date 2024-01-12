@@ -112,4 +112,4 @@ jobs:
                   sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests  --json
 
             - name: 'Deploy destructive changes (if any)'
-              run: sf force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
+              run: sf project deploy start --source-dir "changed-sources/manifest/destructiveChanges.xml" --testlevel RunLocalTests --dry-run --json
