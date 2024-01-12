@@ -3,7 +3,7 @@
     <fullName>Business_Partner_Compliance__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Business Partner Compliance</label>
+    <label>Compliance Business Partner</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Approval_Configurations2</relationshipName>
     <required>false</required>

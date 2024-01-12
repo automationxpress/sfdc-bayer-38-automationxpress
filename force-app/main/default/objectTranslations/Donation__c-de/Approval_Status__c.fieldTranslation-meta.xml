@@ -11,20 +11,20 @@
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Business Partner Compliance</masterLabel>
-        <translation>Geschäftspartner-Compliance</translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>CSE Country Lead</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Head PH-Med</masterLabel>
-        <translation>Leiter PH-Med</translation>
+        <masterLabel>Compliance Business Partner</masterLabel>
+        <translation>Compliance-Geschäftspartnera</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Manager</masterLabel>
         <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Head Bayer Vital</masterLabel>
+        <translation>Medizinischer Leiter Bayer Vital</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SBR Bayer Vital</masterLabel>

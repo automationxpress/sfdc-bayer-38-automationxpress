@@ -40,22 +40,11 @@
         <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Update_Approval_Status_to_BPC</fullName>
-        <description>Update Approval Status to Business Partner Compliance</description>
-        <field>Approval_Status__c</field>
-        <literalValue>Business Partner Compliance</literalValue>
-        <name>Update Approval Status to BPC</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Update_Approval_Status_to_BU_Head</fullName>
         <description>Update Approval Status to BU Head</description>
         <field>Approval_Status__c</field>
         <literalValue>BU Head</literalValue>
-        <name>Update Approval Status to BU-Head</name>
+        <name>Update Approval Status to BU Head</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -67,17 +56,6 @@
         <field>Approval_Status__c</field>
         <literalValue>CSE Country Lead</literalValue>
         <name>Update Approval Status to CSE CL</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>false</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Update_Approval_Status_to_Head_PH_Med</fullName>
-        <description>Updates Approval Status to Head PH-Med</description>
-        <field>Approval_Status__c</field>
-        <literalValue>Head PH-Med</literalValue>
-        <name>Update Approval Status to Head PH-Med</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
