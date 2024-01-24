@@ -28,4 +28,8 @@
         <object>Power_Automate_Run_History__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>Power_Automate_Run_History__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

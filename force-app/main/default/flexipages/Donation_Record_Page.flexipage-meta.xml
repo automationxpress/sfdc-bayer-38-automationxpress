@@ -31,7 +31,7 @@
                         <valueListItems>
                             <value>Donation__c.Cancel</value>
                             <visibilityRule>
-                                <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+                                <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
                                 <criteria>
                                     <leftValue>{!Record.Status__c}</leftValue>
                                     <operator>EQUAL</operator>
@@ -43,9 +43,35 @@
                                     <rightValue>true</rightValue>
                                 </criteria>
                                 <criteria>
-                                    <leftValue>{!$User.UserRole.DeveloperName}</leftValue>
+                                    <leftValue>{!$Permission.CustomPermission.ViewDonationActionButtons}</leftValue>
                                     <operator>EQUAL</operator>
-                                    <rightValue>Donation_Application_Admin</rightValue>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Donation__c.Create_Agreement_Document</value>
+                            <visibilityRule>
+                                <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+                                <criteria>
+                                    <leftValue>{!Record.Approval_Status__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Approved</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$Permission.CustomPermission.ViewDonationActionButtons}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>true</rightValue>
+                                </criteria>
+                                <criteria>
+                                    <leftValue>{!$User.Profile.Name}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>System Administrator</rightValue>
                                 </criteria>
                             </visibilityRule>
                         </valueListItems>
