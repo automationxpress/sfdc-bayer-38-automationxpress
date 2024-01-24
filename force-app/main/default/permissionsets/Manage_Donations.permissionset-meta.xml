@@ -280,6 +280,6 @@
     </objectPermissions>
     <tabSettings>
         <tab>Donation__c</tab>
-        <visibility>Visible</visibility>
+        <visibility>Available</visibility>
     </tabSettings>
 </PermissionSet>

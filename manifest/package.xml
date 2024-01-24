@@ -117,7 +117,7 @@
 		<members>Donation__c.Bank_City__c</members>
 		<members>Donation__c.Bank_Reference__c</members>
 		<members>Donation__c.Bank__c</members>
-<members>Donation__c.Bayer_Icon__c</members>
+		<members>Donation__c.Bayer_Icon__c</members>
 		<members>Donation__c.Business_Affiliations_Description__c</members>
 		<members>Donation__c.Business_Affiliations__c</members>
 		<members>Donation__c.Business_Partner_Compliance__c</members>
@@ -170,7 +170,7 @@
 		<members>Donation__c.Tax_ID_Number__c</members>
 		<members>Donation__c.Title_Account__c</members>
 		<members>Donation__c.Title__c</members>
-<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
+		<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
 		<members>GsFeedback__c.GsComment__c</members>
 		<members>GsFeedback__c.GsDescription__c</members>
 		<members>GsFeedback__c.GsStatus__c</members>
@@ -473,6 +473,10 @@
 	<types>
 		<members>*</members>
 		<name>CustomMetadata</name>
+	</types>
+	<types>
+		<members>Power_Automate_Run_History_Notification</members>
+		<name>CustomNotificationType</name>
 	</types>
 	<types>
 		<members>Account</members>
