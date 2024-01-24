@@ -117,7 +117,7 @@
 		<members>Donation__c.Bank_City__c</members>
 		<members>Donation__c.Bank_Reference__c</members>
 		<members>Donation__c.Bank__c</members>
-		<members>Donation__c.Bayer_Icon__c</members>
+<members>Donation__c.Bayer_Icon__c</members>
 		<members>Donation__c.Business_Affiliations_Description__c</members>
 		<members>Donation__c.Business_Affiliations__c</members>
 		<members>Donation__c.Business_Partner_Compliance__c</members>
@@ -170,7 +170,7 @@
 		<members>Donation__c.Tax_ID_Number__c</members>
 		<members>Donation__c.Title_Account__c</members>
 		<members>Donation__c.Title__c</members>
-		<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
+<members>Donation__c.Translation_of_Purpose_of_Donation__c</members>
 		<members>GsFeedback__c.GsComment__c</members>
 		<members>GsFeedback__c.GsDescription__c</members>
 		<members>GsFeedback__c.GsStatus__c</members>
@@ -296,6 +296,9 @@
 		<members>Opportunity.Discovery_Completed__c</members>
 		<members>Opportunity.Loss_Reason__c</members>
 		<members>Opportunity.ROI_Analysis_Completed__c</members>
+		<members>Power_Automate_Run_History__c.Donation__c</members>
+		<members>Power_Automate_Run_History__c.Flow_Id__c</members>
+		<members>Power_Automate_Run_History__c.Status__c</members>
 		<members>Prima_Role__c.Unique_Name__c</members>
 		<members>Prima_Security_Group__c.Unique_Name__c</members>
 		<members>Record_History__c.Action__c</members>
@@ -425,8 +428,12 @@
 		<members>DecryptionAlgorithm_ConsentForm</members>
 		<members>Delete</members>
 		<members>Details</members>
+		<members>Donation_Bell_Notification_Body</members>
+		<members>Donation_Bell_Notification_Title</members>
 		<members>Donation_Cancel</members>
 		<members>Donation_Details</members>
+		<members>Donation_Document_Generation_Fail_Message</members>
+		<members>Donation_Document_Generation_Flow_Message</members>
 		<members>EmailBody_ConsentForm</members>
 		<members>EmailRrequired_ConsentForm</members>
 		<members>EmailSubject_ConsentForm</members>
@@ -546,6 +553,7 @@
 		<members>OrgMetricScanResult</members>
 		<members>OrgMetricScanSummary</members>
 		<members>PartnerRole</members>
+		<members>Power_Automate_Run_History__c</members>
 		<members>Pricebook2</members>
 		<members>PricebookEntry</members>
 		<members>Prima_Role__c</members>
@@ -662,6 +670,7 @@
 		<members>Create_or_Update_UMA_User</members>
 		<members>Donation_on_Create_Update_After_Handler</members>
 		<members>Donation_on_Create_Update_Before_Handler</members>
+		<members>Donations_Agreement_Document_Generation</members>
 		<members>GetImpactStudiesOccupationcode</members>
 		<members>GoalSetterCheckUserEditingRights</members>
 		<members>GoalSetterLockGoalPeriod</members>
@@ -681,6 +690,7 @@
 		<members>Hirep_on_Create_Update_Before_Trigger</members>
 		<members>Populate_Approvers_in_Donation</members>
 		<members>Populate_Role_Matrix_Unique_Combination</members>
+		<members>Power_Automate_Run_History_on_Update_After_Handler</members>
 		<members>Submit_Donation_for_Approval</members>
 		<members>Update_Donation_Record_Status_to_Cancelled</members>
 		<members>User_Entry_on_Create_Update_Before_Handler</members>
@@ -739,6 +749,7 @@
 		<members>Donation_End_User_Muted</members>
 		<members>GoalSetter_Application_Admin_Muted</members>
 		<members>GoalSetter_End_User_Muted</members>
+		<members>Power_Automate_Integration_User_Muted</members>
 		<name>MutingPermissionSet</name>
 	</types>
 	<types>
@@ -765,6 +776,7 @@
 		<members>GoalSetter_Integration_User</members>
 		<members>Hirep_ApplicationAdmin</members>
 		<members>Hirep_EndUser</members>
+		<members>Power_Automate_Integration_User</members>
 		<members>Uma_ApplicationAdmin</members>
 		<members>Uma_EndUser</members>
 		<members>Uma_IntegrationUser</members>
@@ -784,6 +796,7 @@
 	</types>
 	<types>
 		<members>Donation__c.Cancel</members>
+		<members>Donation__c.Create_Agreement_Document</members>
 		<members>Donation__c.Submit_for_Approval</members>
 		<members>GsGoalPeriod__c.GsLockYear</members>
 		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
