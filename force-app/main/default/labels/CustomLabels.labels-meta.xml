@@ -204,6 +204,22 @@ properly maintained. Please contact with the Application Admin.</value>
         <value>document is generated. Please find the document in Files section.</value>
     </labels>
     <labels>
+        <fullName>Donation_Bell_Notification_Fail_Body</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Bell Notification Fail Body</shortDescription>
+        <value>Please contact your system administrator</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Bell_Notification_Fail_Title</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Bell Notification Fail Title</shortDescription>
+        <value>document generation failed</value>
+    </labels>
+    <labels>
         <fullName>Donation_Bell_Notification_Title</fullName>
         <categories>Donation</categories>
         <language>en_US</language>
