@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provide required access to Integrate with Power Automate platform.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Power Automate Integration User</label>
+    <mutingPermissionSets>Power_Automate_Integration_User_Muted</mutingPermissionSets>
+    <permissionSets>Manage_Donations</permissionSets>
+    <permissionSets>Manage_Power_Automate_Run_History</permissionSets>
+    <permissionSets>View_and_Modify_All_Donations</permissionSets>
+    <permissionSets>View_and_Modify_All_Power_Automate_Run_Histories</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
