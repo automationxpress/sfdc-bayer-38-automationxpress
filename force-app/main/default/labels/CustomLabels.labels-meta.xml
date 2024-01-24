@@ -201,7 +201,7 @@ properly maintained. Please contact with the Application Admin.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation Bell Notification Body</shortDescription>
-        <value>Donation document is generated. Please find the document in Files section.</value>
+        <value>document is generated. Please find the document in Files section.</value>
     </labels>
     <labels>
         <fullName>Donation_Bell_Notification_Title</fullName>
@@ -209,7 +209,7 @@ properly maintained. Please contact with the Application Admin.</value>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation Bell Notification Title</shortDescription>
-        <value>Donation document generation request is completed.</value>
+        <value>document generation request is completed.</value>
     </labels>
     <labels>
         <fullName>Donation_Cancel</fullName>

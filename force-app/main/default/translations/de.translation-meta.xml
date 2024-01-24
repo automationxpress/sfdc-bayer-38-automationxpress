@@ -103,11 +103,11 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
         <name>Details</name>
     </customLabels>
     <customLabels>
-        <label>Das Spendendokument wird generiert. Das Dokument finden Sie im Anhang</label>
+        <label>Dokument generiert wird. Das Dokument finden Sie im Anhang</label>
         <name>Donation_Bell_Notification_Body</name>
     </customLabels>
     <customLabels>
-        <label>Die Anforderung zur Generierung des Spendendokuments ist abgeschlossen.</label>
+        <label>Die Anforderung zur Dokumentengenerierung ist abgeschlossen</label>
         <name>Donation_Bell_Notification_Title</name>
     </customLabels>
     <customLabels>

@@ -23,13 +23,13 @@
         <inputParameters>
             <name>title</name>
             <value>
-                <elementReference>$Label.Donation_Bell_Notification_Title</elementReference>
+                <elementReference>NotificationTitle</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
             <name>body</name>
             <value>
-                <elementReference>$Label.Donation_Bell_Notification_Body</elementReference>
+                <elementReference>NotificationBody</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -38,6 +38,8 @@
                 <elementReference>$Record.Donation__c</elementReference>
             </value>
         </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
     <assignments>
@@ -61,7 +63,12 @@
     <formulas>
         <name>NotificationBody</name>
         <dataType>String</dataType>
-        <expression>&apos;Donation document is generated. Please find the document in Files section.&apos;</expression>
+        <expression>IF(TEXT({!$Record.Status__c})=&apos;Succeeded&apos; , $Record.Donation__r.Request_Id__c  +&apos; &apos;+  $Label.Donation_Bell_Notification_Body, {!$Label.Donation_Bell_Notification_Fail_Body})</expression>
+    </formulas>
+    <formulas>
+        <name>NotificationTitle</name>
+        <dataType>String</dataType>
+        <expression>IF(Text({!$Record.Status__c})=&apos;Succeeded&apos;,  $Record.Donation__r.Request_Id__c  +&apos; &apos;+  $Label.Donation_Bell_Notification_Title, $Record.Donation__r.Request_Id__c  +&apos; &apos;+ {!$Label.Donation_Bell_Notification_Fail_Title} )</expression>
     </formulas>
     <interviewLabel>Power Automate Run History on Update After Handler {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Power Automate Run History on Update After Handler</label>
@@ -111,7 +118,7 @@
         <connector>
             <targetReference>Set_OwnerId_to_RecipientsId</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
+        <filterLogic>or</filterLogic>
         <filters>
             <field>Status__c</field>
             <operator>EqualTo</operator>
@@ -119,21 +126,18 @@
                 <stringValue>Succeeded</stringValue>
             </value>
         </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Failed</stringValue>
+            </value>
+        </filters>
         <object>Power_Automate_Run_History__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
-    <variables>
-        <name>NotificationTitle</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <stringValue>Donation document generation request is completed.</stringValue>
-        </value>
-    </variables>
     <variables>
         <name>RecipientsId</name>
         <dataType>String</dataType>
