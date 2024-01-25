@@ -8,26 +8,26 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>BU Head</masterLabel>
-        <translation></translation>
+        <translation>Bereichsleiter</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>CSE Country Lead</masterLabel>
-        <translation></translation>
+        <translation>CSE Country Lead</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Compliance Business Partner</masterLabel>
-        <translation>Compliance-Geschäftspartnera</translation>
+        <translation>Compliance Business Partner</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Manager</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Medical Head Bayer Vital</masterLabel>
-        <translation>Medizinischer Leiter Bayer Vital</translation>
+        <masterLabel>Medical Head</masterLabel>
+        <translation>Medical Head</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>SBR Bayer Vital</masterLabel>
-        <translation></translation>
+        <translation>SBR Bayer Vital</translation>
     </picklistValues>
 </CustomFieldTranslation>
