@@ -3,7 +3,7 @@
     <fullName>Head_PH_Med__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Medical Head Bayer Vital</label>
+    <label>Medical Head</label>
     <referenceTo>User</referenceTo>
     <relationshipName>Donations9</relationshipName>
     <required>false</required>
