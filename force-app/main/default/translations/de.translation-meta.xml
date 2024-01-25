@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <customLabels>
+        <customLabels>
         <label><!-- AESKey_ConsentForm --></label>
         <name>AESKey_ConsentForm</name>
     </customLabels>
@@ -211,7 +211,7 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
         <name>Send_ConsentForm</name>
     </customLabels>
     <customLabels>
-        <label>Möchten Sie diese Spendenanfrage zur Genehmigung einreichen?</label>
+        <label>Wurden dem Antrag alle erforderlichen Dokumente wie Spendenanfrage und DHG beigefügt?</label>
         <name>Submit_for_Approval</name>
     </customLabels>
     <customLabels>
@@ -1107,7 +1107,7 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
                 <fields>
                     <name>Confirm_Approval</name>
                 </fields>
-                <name>Display_Approval_Confirmation_Message</name>
+                                <name>Display_Approval_Confirmation_Message</name>
             </screens>
         </flows>
         <fullName>Submit_Donation_for_Approval</fullName>
