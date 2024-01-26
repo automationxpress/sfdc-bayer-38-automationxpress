@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Provide  Access to Read, Create, Edit</description>
+    <description>Provide read and edit access to all Donation records.</description>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12,7 +12,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Address__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -27,7 +27,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.BU_Head__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -42,7 +42,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Business_Affiliations_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -52,12 +52,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Business_Partner_Compliance__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.CSE_Country_Lead__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -77,7 +77,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Contract_and_Payment_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -117,12 +117,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Head_PH_Med__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Healthcare_Relation_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -157,7 +157,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Manager__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -167,7 +167,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Political_Affiliations_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -182,7 +182,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Recipient_Acknowledgment_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -192,7 +192,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Recipient_Recommendation_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -202,7 +202,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Recipient_Reputation_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -212,7 +212,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Recipient_Selection_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -222,7 +222,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Recipient_Stakeholders_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -242,7 +242,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.SBR_Bayer_Vital__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -252,7 +252,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Donation__c.Tax_ID_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -267,19 +267,14 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Manage Donations</label>
-    <license>Salesforce Platform</license>
+    <label>View and Modify All Donations</label>
     <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
+        <allowCreate>false</allowCreate>
+        <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Donation__c</object>
-        <viewAllRecords>false</viewAllRecords>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <tabSettings>
-        <tab>Donation__c</tab>
-        <visibility>Available</visibility>
-    </tabSettings>
 </PermissionSet>

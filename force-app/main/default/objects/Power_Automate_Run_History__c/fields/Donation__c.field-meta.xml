@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Head_PH_Med__c</fullName>
+    <fullName>Donation__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Medical Head</label>
-    <referenceTo>User</referenceTo>
-    <relationshipName>Approval_Configurations3</relationshipName>
+    <label>Donation</label>
+    <referenceTo>Donation__c</referenceTo>
+    <relationshipLabel>Power Automate Run Histories</relationshipLabel>
+    <relationshipName>Power_Automate_Run_Histories</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>

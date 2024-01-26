@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Compliance-Geschäftspartnera</label>
+    <label>Compliance Business Partner</label>
     <name>Business_Partner_Compliance__c</name>
     <relationshipLabel></relationshipLabel>
 </CustomFieldTranslation>

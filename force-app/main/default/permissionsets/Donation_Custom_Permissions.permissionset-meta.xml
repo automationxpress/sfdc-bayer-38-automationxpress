@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>ViewDonationActionButtons</name>
+    </customPermissions>
+    <description>Provides access to few custom permissions like View Donation Action Buttons to show some action buttons like Cancel and Create Agreement Document to Donation Application Admin user.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Donation Custom Permissions</label>
+</PermissionSet>

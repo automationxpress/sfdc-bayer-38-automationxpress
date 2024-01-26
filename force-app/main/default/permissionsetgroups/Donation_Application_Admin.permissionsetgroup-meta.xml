@@ -5,6 +5,7 @@
     <label>Donation Application Admin</label>
     <mutingPermissionSets>Donation_Application_Admin_Muted</mutingPermissionSets>
     <permissionSets>Access_to_Donation_Application</permissionSets>
+    <permissionSets>Donation_Custom_Permissions</permissionSets>
     <permissionSets>Manage_Accounts</permissionSets>
     <permissionSets>Manage_Approval_Configuration</permissionSets>
     <permissionSets>Manage_Donations</permissionSets>

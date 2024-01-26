@@ -196,6 +196,38 @@ properly maintained. Please contact with the Application Admin.</value>
         <value>Details</value>
     </labels>
     <labels>
+        <fullName>Donation_Bell_Notification_Body</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Bell Notification Body</shortDescription>
+        <value>document is generated. Please find the document in Files section.</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Bell_Notification_Fail_Body</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Bell Notification Fail Body</shortDescription>
+        <value>Please contact your system administrator</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Bell_Notification_Fail_Title</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Bell Notification Fail Title</shortDescription>
+        <value>document generation failed</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Bell_Notification_Title</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Bell Notification Title</shortDescription>
+        <value>document generation request is completed.</value>
+    </labels>
+    <labels>
         <fullName>Donation_Cancel</fullName>
         <categories>Donation</categories>
         <language>en_US</language>
@@ -210,6 +242,22 @@ properly maintained. Please contact with the Application Admin.</value>
         <protected>false</protected>
         <shortDescription>Donation Details</shortDescription>
         <value>Donation Details</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Document_Generation_Fail_Message</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Document Generation Fail Message</shortDescription>
+        <value>Document generation is failed. Please contact Salesforce Administrator for further help.</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Document_Generation_Flow_Message</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation document generation flow message</shortDescription>
+        <value>Document generation will take some time.  At the top right side, you will receive a Bell icon notification on successful document generation,</value>
     </labels>
     <labels>
         <fullName>EmailBody_ConsentForm</fullName>
