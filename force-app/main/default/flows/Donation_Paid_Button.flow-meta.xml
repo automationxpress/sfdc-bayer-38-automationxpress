@@ -14,8 +14,6 @@
                 <elementReference>Get_Donation.Id</elementReference>
             </value>
         </inputParameters>
-        <nameSegment>Donation__c.Donation_Paid_Notify_to_Creator_and_Requestor</nameSegment>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
     <decisions>
