@@ -28,6 +28,34 @@
         <senderType>CurrentUser</senderType>
         <template>Donation_Email_Template/Donation_Approval_Reject_Notification_Email</template>
     </alerts>
+    <alerts>
+        <fullName>Donation_Paid_Notify_to_Creator_and_Requestor</fullName>
+        <description>Donation: Paid Notify to Creator and Requestor</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Requestor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Donation_Email_Template/Donation_Paid_Notification_Email_to_Creator_and_Requestor</template>
+    </alerts>
+    <alerts>
+        <fullName>Donation_Submit_for_Approval_Notify_to_Requestor_and_Creator</fullName>
+        <description>Donation:Submit for Approval Notify to Requestor and Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Requestor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Donation_Email_Template/Donation_Submit_for_Approval_Notification_Email_to_Requestor_and_Creator</template>
+    </alerts>
     <fieldUpdates>
         <fullName>Update_Approval_Status_to_Approved</fullName>
         <description>Updates Approval Status to Approved</description>

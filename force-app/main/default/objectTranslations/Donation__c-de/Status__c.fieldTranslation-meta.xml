@@ -15,6 +15,10 @@
         <translation>Entwurf</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Paid</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Reject</masterLabel>
         <translation>Absage</translation>
     </picklistValues>

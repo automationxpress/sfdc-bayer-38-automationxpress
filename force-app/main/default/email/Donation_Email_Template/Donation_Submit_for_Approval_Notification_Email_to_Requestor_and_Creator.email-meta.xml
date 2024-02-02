@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Donation Submit for Approval Notification Email to Requestor and Creator</name>
+    <style>none</style>
+    <subject>{!Donation__c.Name} – Eine Spende wurde in Ihrem Namen erstellt</subject>
+    <textOnly>Guten Tag
+
+In Ihrem Namen wurde ein Spendenantrag zur Genehmigung eingereicht. Die Details finden Sie unter folgendem Link .
+{!Donation__c.Name}
+MfG
+AutomationXpress Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

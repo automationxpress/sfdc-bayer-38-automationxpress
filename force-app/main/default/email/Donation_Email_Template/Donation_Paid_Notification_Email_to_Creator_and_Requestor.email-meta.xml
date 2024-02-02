@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Donation Paid Notification Email to Creator and Requestor</name>
+    <style>none</style>
+    <subject>{!Donation__c.Name} – Status Bezahlt</subject>
+    <textOnly>Guten Tag
+
+Bitte beachten Sie, dass die Anfrage {!Donation__c.Name} bereits am {!TODAY()}.
+MfG
+AutomationXpress Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

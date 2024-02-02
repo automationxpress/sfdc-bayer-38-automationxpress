@@ -76,6 +76,16 @@
     </quickActions>
     <quickActions>
         <aspect>Master</aspect>
+        <label>Erstellung Spendenvereinbarung Dokument</label>
+        <name>Create_Agreement_Document</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Bezahlt</label>
+        <name>Paid</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
         <label>Zur Genehmigung einreichen</label>
         <name>Submit_for_Approval</name>
     </quickActions>
