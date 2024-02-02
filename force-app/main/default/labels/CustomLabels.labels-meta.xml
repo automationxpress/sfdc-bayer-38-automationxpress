@@ -260,6 +260,14 @@ properly maintained. Please contact with the Application Admin.</value>
         <value>Document generation will take some time.  At the top right side, you will receive a Bell icon notification on successful document generation,</value>
     </labels>
     <labels>
+        <fullName>Donation_Paid_Success_Message</fullName>
+        <categories>Donation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation Paid Success Message</shortDescription>
+        <value>Are you sure for this action?</value>
+    </labels>
+    <labels>
         <fullName>EmailBody_ConsentForm</fullName>
         <categories>ConsentForm</categories>
         <language>en_US</language>
