@@ -27,6 +27,10 @@
         <translation>Medical Head</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Paid</masterLabel>
+        <translation>Bezahlt</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>SBR Bayer Vital</masterLabel>
         <translation>SBR Bayer Vital</translation>
     </picklistValues>

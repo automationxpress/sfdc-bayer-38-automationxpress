@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>On click of Paid button, change the Status and Approval Status as Paid and send an email to Requestor and Owner.</description>
+    <flowDefinition>Donation_Paid_Button</flowDefinition>
+    <label>Paid</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

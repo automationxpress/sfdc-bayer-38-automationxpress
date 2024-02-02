@@ -429,11 +429,14 @@
 		<members>Delete</members>
 		<members>Details</members>
 		<members>Donation_Bell_Notification_Body</members>
+		<members>Donation_Bell_Notification_Fail_Body</members>
+		<members>Donation_Bell_Notification_Fail_Title</members>
 		<members>Donation_Bell_Notification_Title</members>
 		<members>Donation_Cancel</members>
 		<members>Donation_Details</members>
 		<members>Donation_Document_Generation_Fail_Message</members>
 		<members>Donation_Document_Generation_Flow_Message</members>
+		<members>Donation_Paid_Success_Message</members>
 		<members>EmailBody_ConsentForm</members>
 		<members>EmailRrequired_ConsentForm</members>
 		<members>EmailSubject_ConsentForm</members>
@@ -657,7 +660,9 @@
 		<members>Ca_Entre_Nos_Email_Template/Ca_Entre_Nos_Lead_Notification_After_6Months_of_Contact</members>
 		<members>Donation_Email_Template/Donation_Approval_Approved_Notification_Email</members>
 		<members>Donation_Email_Template/Donation_Approval_Reject_Notification_Email</members>
+		<members>Donation_Email_Template/Donation_Paid_Notification_Email_to_Creator_and_Requestor</members>
 		<members>Donation_Email_Template/Donation_Request_for_Approval_Notification_Email</members>
+		<members>Donation_Email_Template/Donation_Submit_for_Approval_Notification_Email_to_Requestor_and_Creator</members>
 		<name>EmailTemplate</name>
 	</types>
 	<types>
@@ -672,6 +677,7 @@
 		<members>Case_on_Create_Before_Handler</members>
 		<members>Case_on_Update_After_Handler</members>
 		<members>Create_or_Update_UMA_User</members>
+		<members>Donation_Paid_Button</members>
 		<members>Donation_on_Create_Update_After_Handler</members>
 		<members>Donation_on_Create_Update_Before_Handler</members>
 		<members>Donations_Agreement_Document_Generation</members>
@@ -801,6 +807,7 @@
 	<types>
 		<members>Donation__c.Cancel</members>
 		<members>Donation__c.Create_Agreement_Document</members>
+		<members>Donation__c.Paid</members>
 		<members>Donation__c.Submit_for_Approval</members>
 		<members>GsGoalPeriod__c.GsLockYear</members>
 		<members>GsGoalPeriod__c.GsNewGoalAdmin</members>
@@ -916,6 +923,8 @@
 		<members>Case.Bayer_Cerca_Notify_Users_when_Approval_is_Rejected</members>
 		<members>Donation__c.Donation_Notify_User_when_Approval_is_Approved</members>
 		<members>Donation__c.Donation_Notify_User_when_Approval_is_Rejected</members>
+		<members>Donation__c.Donation_Paid_Notify_to_Creator_and_Requestor</members>
+		<members>Donation__c.Donation_Submit_for_Approval_Notify_to_Requestor_and_Creator</members>
 		<name>WorkflowAlert</name>
 	</types>
 	<types>

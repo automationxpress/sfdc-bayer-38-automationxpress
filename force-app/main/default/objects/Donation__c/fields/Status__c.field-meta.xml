@@ -35,6 +35,11 @@
                 <default>false</default>
                 <label>Cancelled</label>
             </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

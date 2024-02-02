@@ -1,0 +1,10 @@
+Guten Tag 
+<br> </br>
+
+<br>In Ihrem Namen wurde ein Spendenantrag zur Genehmigung eingereicht. Die Details finden Sie unter folgendem Link .</br>
+
+<br><a href={!Donation__c.Link}>{!Donation__c.Name}</a></br>
+
+<br>MfG</br>
+
+<br>AutomationXpress Team</br>

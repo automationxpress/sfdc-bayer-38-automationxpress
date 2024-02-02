@@ -47,6 +47,11 @@
                 <label>Approved</label>
             </value>
             <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
                 <fullName>Final Approval</fullName>
                 <default>false</default>
                 <isActive>false</isActive>

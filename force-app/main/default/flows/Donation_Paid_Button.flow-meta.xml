@@ -1,32 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>59.0</apiVersion>
+    <actionCalls>
+        <name>Notify_to_Creator_and_Requestor</name>
+        <label>Notify to Creator and Requestor</label>
+        <locationX>50</locationX>
+        <locationY>566</locationY>
+        <actionName>Donation__c.Donation_Paid_Notify_to_Creator_and_Requestor</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>Get_Donation.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Donation__c.Donation_Paid_Notify_to_Creator_and_Requestor</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
     <decisions>
-        <name>Is_Status_Draft</name>
-        <label>Is Status Draft?</label>
+        <name>Is_Requestor_or_Owner_are_Active</name>
+        <label>Is Requestor or Owner are Active?</label>
         <locationX>182</locationX>
-        <locationY>242</locationY>
+        <locationY>458</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Yes</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Donations.Status__c</leftValueReference>
+                <leftValueReference>Get_Donation.Requestor__r.IsActive</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Draft</stringValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Donation.Owner:User.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Confirm_Message_Screen</targetReference>
+                <targetReference>Notify_to_Creator_and_Requestor</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Update Status of the Donation Record from Draft to Cancelled</description>
+    <description>Updates Approval Status, Status as Paid and Send Notification Email to Creator and Requestor.</description>
     <environments>Default</environments>
-    <interviewLabel>Donation: Cancel Button {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Donation: Cancel Button</label>
+    <interviewLabel>P {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Donation: Paid Button</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -47,13 +71,13 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordLookups>
-        <name>Get_Donations</name>
-        <label>Get Donations</label>
+        <name>Get_Donation</name>
+        <label>Get Donation</label>
         <locationX>182</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Is_Status_Draft</targetReference>
+            <targetReference>Confirm_Screen</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -68,10 +92,13 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Update_Donations</name>
-        <label>Update Donations</label>
-        <locationX>50</locationX>
-        <locationY>458</locationY>
+        <name>Update_Donation</name>
+        <label>Update Donation</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <connector>
+            <targetReference>Is_Requestor_or_Owner_are_Active</targetReference>
+        </connector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -81,29 +108,34 @@
             </value>
         </filters>
         <inputAssignments>
+            <field>Approval_Status__c</field>
+            <value>
+                <stringValue>Paid</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Status__c</field>
             <value>
-                <stringValue>Cancelled</stringValue>
+                <stringValue>Paid</stringValue>
             </value>
         </inputAssignments>
         <object>Donation__c</object>
     </recordUpdates>
     <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
-        <name>Confirm_Message_Screen</name>
-        <label>Confirm Message Screen</label>
-        <locationX>50</locationX>
-        <locationY>350</locationY>
-        <allowBack>true</allowBack>
+        <name>Confirm_Screen</name>
+        <label>Confirm Screen</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
-        <backButtonLabel>No</backButtonLabel>
         <connector>
-            <targetReference>Update_Donations</targetReference>
+            <targetReference>Update_Donation</targetReference>
         </connector>
         <fields>
-            <name>Confirm_Message</name>
-            <fieldText>&lt;p&gt;{!$Label.Donation_Cancel}&lt;/p&gt;</fieldText>
+            <name>ConfirmationMessage</name>
+            <fieldText>&lt;p&gt;{!$Label.Donation_Paid_Success_Message}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <nextOrFinishButtonLabel>Yes</nextOrFinishButtonLabel>
@@ -114,7 +146,7 @@
         <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Get_Donations</targetReference>
+            <targetReference>Get_Donation</targetReference>
         </connector>
     </start>
     <status>Active</status>

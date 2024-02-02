@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <customLabels>
+    <customLabels>
         <label><!-- AESKey_ConsentForm --></label>
         <name>AESKey_ConsentForm</name>
     </customLabels>
@@ -107,6 +107,14 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
         <name>Donation_Bell_Notification_Body</name>
     </customLabels>
     <customLabels>
+        <label>Bitte wenden Sie sich an Ihren Systemadministrator</label>
+        <name>Donation_Bell_Notification_Fail_Body</name>
+    </customLabels>
+    <customLabels>
+        <label>Dokumentgenerierung fehlgeschlagen</label>
+        <name>Donation_Bell_Notification_Fail_Title</name>
+    </customLabels>
+    <customLabels>
         <label>Die Anforderung zur Dokumentengenerierung ist abgeschlossen</label>
         <name>Donation_Bell_Notification_Title</name>
     </customLabels>
@@ -125,6 +133,10 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
     <customLabels>
         <label>Die Erstellung von Dokumenten wird einige Zeit in Anspruch nehmen. Oben rechts erhalten Sie eine Glockensymbol-Benachrichtigung, sobald das Dokument erfolgreich generiert wurde</label>
         <name>Donation_Document_Generation_Flow_Message</name>
+    </customLabels>
+    <customLabels>
+        <label>Sind Sie sich für diese Aktion sicher?</label>
+        <name>Donation_Paid_Success_Message</name>
     </customLabels>
     <customLabels>
         <label><!-- EmailBody_ConsentForm --></label>
@@ -281,6 +293,17 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
     <flowDefinitions>
         <flows/>
         <fullName>Create_or_Update_UMA_User</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ConfirmationMessage</name>
+                </fields>
+                <name>Confirm_Screen</name>
+            </screens>
+        </flows>
+        <fullName>Donation_Paid_Button</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -1107,7 +1130,7 @@ ist. Bitte wenden Sie sich an den Anwendungsadministrator.</label>
                 <fields>
                     <name>Confirm_Approval</name>
                 </fields>
-                                <name>Display_Approval_Confirmation_Message</name>
+                <name>Display_Approval_Confirmation_Message</name>
             </screens>
         </flows>
         <fullName>Submit_Donation_for_Approval</fullName>
