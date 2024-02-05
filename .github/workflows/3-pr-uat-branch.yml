@@ -92,7 +92,7 @@ jobs:
             - name: 'Populate auth file with SFDX_URL secret of uat org'
               shell: bash
               run: |
-                  echo ${{ secrets.SFDX_UAT_URL}} > ./SFDX_UAT_URL.txt
+                  echo ${{ secrets.SFDX_DEV6_URL}} > ./SFDX_UAT_URL.txt
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to UAT Org'
