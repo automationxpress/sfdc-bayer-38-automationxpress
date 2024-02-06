@@ -110,6 +110,6 @@ jobs:
             - name: 'Check-only deploy delta changes - run all tests'
               run: |
                   sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --dry-run --json
-
+            
             - name: 'Deploy destructive changes (if any)'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
+              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
