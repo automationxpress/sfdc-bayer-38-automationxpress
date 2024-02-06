@@ -52,7 +52,7 @@ jobs:
                   mkdir changed-sources
                   sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
 
-            # Authenticate to org
+            # Authenticate to Integration org
             - name: 'Authenticate to Integration Org'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 

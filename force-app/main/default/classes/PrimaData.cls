@@ -1,5 +1,5 @@
 global class PrimaData {
-
+     //Prima data class
     public static final Set<String> NEW_STATUSES = new Set<String>{
         UserEntryData.STATUS_ASSIGN, 
         UserEntryData.STATUS_REMOVE
