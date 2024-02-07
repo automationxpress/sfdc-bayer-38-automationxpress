@@ -7,6 +7,7 @@ on:
       branches: [ integration ]
       paths:
         - 'force-app/**'
+        - 'destructive/**'
 
 
 # Jobs to be execute
@@ -57,6 +58,7 @@ jobs:
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
             - name: 'Deploy Delta Changes to Integration org'
+              if: ${{contains(github.event.head_commit.modified, 'force-app/')}}
               run: sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests  --json
 
             - name: 'Deploy destructive changes (if any)'
