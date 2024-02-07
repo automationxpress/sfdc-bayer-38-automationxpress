@@ -2,9 +2,10 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 
 <types>
-		<members>UMA_MyLearning_Admin</members>
+		<members>GsGoalSetterUser</members>
 		<name>PermissionSet</name>
 	</types>
+
 
 <version>58.0</version>
 </Package>
