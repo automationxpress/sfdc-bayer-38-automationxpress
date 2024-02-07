@@ -1,5 +1,6 @@
 global class PrimaData {
      //Prima data class
+     //comments added to test githuh-enhancement-destructive-v2
     public static final Set<String> NEW_STATUSES = new Set<String>{
         UserEntryData.STATUS_ASSIGN, 
         UserEntryData.STATUS_REMOVE
