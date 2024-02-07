@@ -112,8 +112,6 @@ jobs:
               if: ${{contains(needs.repository_dispatch.paths, 'force-app/') }}
               run: |
                   sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --dry-run --json
-              else:
-                echo: not evaluated
             
             - name: 'Deploy destructive changes (if any)'
               if: ${{contains(needs.repository_dispatch.paths, 'destructive/') }}
