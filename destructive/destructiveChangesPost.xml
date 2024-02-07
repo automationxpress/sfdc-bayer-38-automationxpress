@@ -5,6 +5,10 @@
 		<members>GsGoalSetterUser</members>
 		<name>PermissionSet</name>
 	</types>
+	<types>
+		<members>User_Entry__c.Test_GitHub__c</members>
+		<name>CustomField</name>
+	</types>
 
 
 <version>58.0</version>
