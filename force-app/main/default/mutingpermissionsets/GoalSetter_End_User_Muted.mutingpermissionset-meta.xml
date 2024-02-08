@@ -149,10 +149,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>CdcReportingViewReports</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>ChangeDashboardColors</name>
     </userPermissions>
     <userPermissions>
