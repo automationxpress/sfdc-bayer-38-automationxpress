@@ -149,10 +149,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>CdcReportingManageFolders</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>CdcReportingViewReports</name>
     </userPermissions>
     <userPermissions>

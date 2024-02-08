@@ -8,15 +8,7 @@
             </componentInstance>
         </itemInstances>
         <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>flavor</name>
-                    <value>list</value>
-                </componentInstanceProperties>
-                <componentName>wits:newsPanel</componentName>
-                <identifier>wits_newsPanel</identifier>
-            </componentInstance>
-        </itemInstances>
+            </itemInstances>
         <mode>Replace</mode>
         <name>newsTabContent</name>
         <type>Facet</type>

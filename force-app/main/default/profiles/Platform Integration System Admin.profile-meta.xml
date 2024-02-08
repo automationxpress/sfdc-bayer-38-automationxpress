@@ -3265,11 +3265,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>User_Entry__c.Company__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>User_Entry__c.Cost_Center__c</field>
         <readable>false</readable>
     </fieldPermissions>

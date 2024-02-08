@@ -178,12 +178,6 @@
                 <identifier>runtime_sales_social_socialPanel</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>wits:newsPanel</componentName>
-                <identifier>wits_newsPanel</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>facet-4bb8d101-320f-4c10-9eb7-17568862c8b8</name>
         <type>Facet</type>
     </flexiPageRegions>
