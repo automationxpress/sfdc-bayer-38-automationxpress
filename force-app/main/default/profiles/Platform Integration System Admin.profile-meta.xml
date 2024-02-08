@@ -2705,11 +2705,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Role_Matrix__c.Company__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Role_Matrix__c.MAPV_Department__c</field>
         <readable>true</readable>
     </fieldPermissions>
