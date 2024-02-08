@@ -38,11 +38,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Hirep__c.Company__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Hirep__c.Consumer_Health_Related_Position__c</field>
         <readable>true</readable>
     </fieldPermissions>
