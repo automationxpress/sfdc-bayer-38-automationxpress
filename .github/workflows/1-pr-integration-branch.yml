@@ -109,10 +109,10 @@ jobs:
 
             # If the env variable equals all, we run all tests
             - name: 'Check-only deploy delta changes - run all tests'
-              if: git dif --name-only ${{github.event.before}} ${{github.event.sha}} | grep -q '^force-app/'
+              if: git dif --name-only ${{github.event.before}} ${{github.event.SHA}} | grep -qE '^force-app/'
               run: |
                   sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --dry-run --json
             
             - name: 'Deploy destructive changes (if any)'
-              if: ${{contains(needs.repository_dispatch.paths, 'destructive/') }}
+              if: github.event.paths == 'destructive/**'
               run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
