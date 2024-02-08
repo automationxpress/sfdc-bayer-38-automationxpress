@@ -14,7 +14,7 @@ public class DonationService {
         
         for (Donation__c newDonation :newDonations.values()) {
             Map<String, Schema.SObjectField> donationSchema = Schema.Donation__c.SObjectType.getDescribe().fields.getMap();
-            system.debug('this is tested for github');
+            system.debug('this is tested for github v1');
             //Track Status__c field
             if (newDonation.Status__c != oldDonationMap.get(newDonation.Id).Status__c){
                 Schema.DescribeFieldResult statusDescription = donationSchema.get('Status__c').getDescribe();
