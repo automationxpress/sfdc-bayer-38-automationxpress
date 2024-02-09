@@ -47,7 +47,7 @@ jobs:
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
             - name: 'Deploy All Changes to Integration org'
-              run: sf project deploy start --source-dir "force-app/**" --test-level RunLocalTests  --json
+              run: sf project deploy start --source-dir force-app/** --test-level RunLocalTests  --json
               
             - name: 'Deploy destructive changes (if any)'
               run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json

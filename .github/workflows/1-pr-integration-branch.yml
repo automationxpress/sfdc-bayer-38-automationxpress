@@ -93,7 +93,7 @@ jobs:
             # If the env variable equals all, we run all tests
             - name: 'Deploy all changes - run all tests'
               run: |
-                  sf project deploy start --source-dir "force-app/" --test-level RunLocalTests --dry-run --json
+                  sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
 
             - name: 'Deploy destructive changes (if any)'
               run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
