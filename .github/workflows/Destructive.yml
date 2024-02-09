@@ -93,6 +93,8 @@ jobs:
                   echo ${{ secrets.SFDX_UAT_URL}} > ./SFDX_UAT_URL.txt
                 elif [${{ github.event.pull_request.base.ref }} == 'integration' || ${{ github.event.push.base.ref }} == 'integration']; then
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
+                else
+                  echo 'we don;t have any authentication'
                 fi
               shell: bash
 
