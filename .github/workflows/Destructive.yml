@@ -86,13 +86,13 @@ jobs:
             # so here we store the URL into a text file
             - name: 'Populate auth file with SF_URL secret of integration org'
               shell: bash
-              if: github.events.environment == 'integration'
+              if: github.event.deployment.environment == 'integration'
               run: |
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
-              if: github.events.environment == 'integration'
+              if: github.event.deployment.environment == 'integration'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
           
