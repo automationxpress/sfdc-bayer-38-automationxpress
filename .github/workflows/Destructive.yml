@@ -86,11 +86,12 @@ jobs:
             # so here we store the URL into a text file
             - name: 'Populate auth file with SF_URL secret of integration org'
               shell: bash
+              if: ${{github.event.pull_request.base.ref}} == 'integration' || ${{github.event.push.base.ref}} == 'integration'
               run: |
-                if: ${{ github.event.pull_request.base.ref }} == 'integration' || ${{ github.event.push.base.ref }} == 'integration'
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
                   sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
               
+            
 
           
             - name: 'Deploy destructive changes (if any)'
