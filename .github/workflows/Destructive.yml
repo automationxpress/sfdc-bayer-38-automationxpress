@@ -89,17 +89,16 @@ jobs:
               run: |
                 if [${{github.event.pull_request.base.ref}} == 'main' || ${{github.event.push.base.ref}} == 'main']; then
                   echo ${{ secrets.SFDX_PRODUCTION_URL}} > ./SFDX_PRODUCTION_URL.txt
-                  sf org login sfdx-url -f ./SFDX_PRODUCTION_URL.txt -s -a integration
-
+                  sf org login sfdx-url -f ./SFDX_PRODUCTION_URL.txt -s -a production
                 elif [${{github.event.pull_request.base.ref}} == 'uat' || ${{github.event.push.base.ref}} == 'uat']; then
                   echo ${{ secrets.SFDX_UAT_URL.txt}} > ./SFDX_UAT_URL.txt
-                  sf org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a integration
-
+                  sf org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a uat
                 elif [${{github.event.pull_request.base.ref}} == 'integration' || ${{github.event.push.base.ref}} == 'integration']; then
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
                   sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-            # Authenticate to org using the URL stored in the text file
-            
+                else
+                  exit 0
+                fi
 
           
             - name: 'Deploy destructive changes (if any)'
