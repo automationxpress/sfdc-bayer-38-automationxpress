@@ -86,9 +86,8 @@ jobs:
             # so here we store the URL into a text file
             - name: 'Populate auth file with SF_URL secret of integration org'
               shell: bash
-              if: ["$GITHUB_REF" == "refs/heads/integration"]
               run: |
-                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
+                  echo ${{ secrets.SFDX_INTEGRATION_URL}} + ${{github.ref}} > ./SFDX_INTEGRATION_URL.txt
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
