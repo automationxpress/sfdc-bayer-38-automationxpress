@@ -87,10 +87,9 @@ jobs:
             - name: 'Populate auth file with SF_URL secret of integration org'
               
               run: |
-                if [${{ github.event.pull_request.base.ref }} == 'integration' || ${{ github.event.push.base.ref }} == 'integration']; then
+                if: ${{ github.event.pull_request.base.ref }} == 'integration' || ${{ github.event.push.base.ref }} == 'integration'
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
                   sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-                fi
               shell: bash
 
           
