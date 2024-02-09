@@ -17,7 +17,6 @@ on:
       # when changing non-salesforce files (like this yml file).
       paths:
         - 'force-app/**'
-        - 'destructive/**'
 
 # Jobs to be executed when the above conditions are met
 jobs:
