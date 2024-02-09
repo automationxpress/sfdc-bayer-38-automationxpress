@@ -86,7 +86,7 @@ jobs:
             # so here we store the URL into a text file
             - name: 'Populate auth file with SF_URL secret of integration org'
               shell: bash
-              if: github.event.deployment.environment == 'integration'
+              if: ["$GITHUB_REF" == "refs/heads/integration"]
               run: |
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
 
