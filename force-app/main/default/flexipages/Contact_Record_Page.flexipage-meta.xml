@@ -4,21 +4,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>collapsed</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>force:highlightsPanel</componentName>
-                <identifier>force_highlightsPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>header</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>displayOption</name>
                     <value>CARD</value>
                 </componentInstanceProperties>
@@ -176,12 +161,6 @@
             <componentInstance>
                 <componentName>runtime_sales_social:socialPanel</componentName>
                 <identifier>runtime_sales_social_socialPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>wits:newsPanel</componentName>
-                <identifier>wits_newsPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>facet-4a718b64-c93a-412d-99fb-a8fcd7ca1c57</name>

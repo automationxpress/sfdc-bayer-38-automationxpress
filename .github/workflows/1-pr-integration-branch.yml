@@ -57,16 +57,6 @@ jobs:
                   echo "$HOME/sf/bin" >> $GITHUB_PATH
                   ~/sf/bin/sf version
 
-            # Then we install the SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
-            # This is an awesome plugin that allows us to extract a package.xml with the metadata
-            # that has changed between commits. I highly recommend going over the github readme
-            # for more information on how this works.
-
-            - name: 'Installing sf git delta'
-              run: |
-                  echo y | sf plugins:install sfdx-git-delta
-                  sf plugins
-
             # Install java as it is required for the next step
             - name: 'Installing java'
               run: |
@@ -99,20 +89,11 @@ jobs:
             - name: 'Authenticate to Integration Org'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
-            # We use SFDX Git Delta to create a directory with only the metadata that has changed.
-            # this allows us to deploy only those changes, as opposed to deploying the entire branch.
-            # This helps reducing deployment times
-            - name: 'Create delta packages for new, modified or deleted metadata'
-              run: |
-                  mkdir changed-sources
-                  sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
-
-            # If the env variable equals all, we run all tests
-            - name: 'Check-only deploy delta changes - run all tests'
-              if: git dif --name-only ${{github.event.before}} ${{github.event.SHA}} | grep -qE '^force-app/'
-              run: |
-                  sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --dry-run --json
             
+            # If the env variable equals all, we run all tests
+            - name: 'Deploy all changes - run all tests'
+              run: |
+                  sf project deploy start --source-dir "force-app/" --test-level RunLocalTests --dry-run --json
+
             - name: 'Deploy destructive changes (if any)'
-              if: github.event.paths == 'destructive/**'
               run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json

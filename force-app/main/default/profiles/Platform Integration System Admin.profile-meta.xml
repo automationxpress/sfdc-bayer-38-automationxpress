@@ -1854,11 +1854,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Hirep__c.Company__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Hirep__c.Consumer_Health_Related_Position__c</field>
         <readable>false</readable>
@@ -2710,11 +2705,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Role_Matrix__c.Company__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Role_Matrix__c.MAPV_Department__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3271,11 +3261,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>User_Entry__c.Comments__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>User_Entry__c.Company__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
