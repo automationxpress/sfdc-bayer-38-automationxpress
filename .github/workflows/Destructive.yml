@@ -87,14 +87,9 @@ jobs:
             - name: 'Populate auth file with SF_URL secret of integration org'
               
               run: |
-                if [${{ github.event.pull_request.base.ref }} == 'main' ]; then
-                  echo ${{ secrets.SFDX_PRODUCTION_URL}} > ./SFDX_PRODUCTION_URL.txt
-                elif [${{ github.event.pull_request.base.ref}} == 'uat' ]; then
-                  echo ${{ secrets.SFDX_UAT_URL}} > ./SFDX_UAT_URL.txt
-                elif [${{ github.event.pull_request.base.ref }} == 'integration' ]; then
+                if [${{ github.event.pull_request.base.ref }} == 'integration' || ${{ github.event.push.base.ref }} == 'integration']; then
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
-                else
-                  echo 'we don;t have any authentication'
+                  sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
                 fi
               shell: bash
 
