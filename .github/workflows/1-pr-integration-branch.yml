@@ -97,7 +97,6 @@ jobs:
               run: |
                   mkdir changed-sources
                   sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
-
             # If the env variable equals all, we run all tests
             - name: 'Check-only deploy delta changes - run all tests'
               run: |
