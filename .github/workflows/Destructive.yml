@@ -84,7 +84,7 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
-            - name: 'Populate auth file with SF_URL secret of Production org'
+            - name: 'Populate auth file with SF_URL secret of org'
               shell: bash
               run: |
                 if [[ ("${{github.event.pull_request.base.ref}}" = "main") || ("${{github.event.push.base.ref}}" = 'main')]];
@@ -101,14 +101,13 @@ jobs:
                   sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
                 fi
 
-
-
-
-            
-            
-
-          
             - name: 'Validate or Deploy Destructive changes'
               run: 
-                echo ${{github.event_name}}
-                sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
+                if [[ ("${{github.event_name}}" = "pull_request")]];
+                then
+                  sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
+                elif [[ ("${{github.event_name}}" = "pull_request")]];
+                then
+                  sf org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a uat
+                sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json
+                fi
