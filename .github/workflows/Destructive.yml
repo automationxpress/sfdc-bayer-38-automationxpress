@@ -84,27 +84,24 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
-            - name: 'Populate auth file with SF_URL secret of integration org'
+            - name: 'Populate auth file with SF_URL secret of Production org'
               shell: bash
-              if: ${{github.event.pull_request.base.ref}} == 'main' || ${{github.event.push.base.ref}} == 'main'
               run: |
-                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
-                  sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-              
-            - name: 'Populate auth file with SF_URL secret of integration org'
-              shell: bash
-              if: ${{github.event.pull_request.base.ref}} == 'uat' || ${{github.event.push.base.ref}} == 'uat'
-              run: |
-                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
-                  sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-              
-            - name: 'Populate auth file with SF_URL secret of integration org'
-              shell: bash
-              if: ${{github.event.pull_request.base.ref}} == 'integration' || ${{github.event.push.base.ref}} == 'integration'
-              run: |
-                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
-                  sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-                      
+                if [[ ("${name}" = "main") || ("${name}" = 'main')]];
+                then
+                  echo 'this is production'
+                elif [[ ("${name}" = "uat") || ("${name}" = 'uat')]];
+                then
+                  echo 'this is uat'
+                elif [[ ("${name}" = "integration") || ("${name}" = 'integration')]];
+                then
+                  echo 'this is integration'
+                fi
+
+
+
+
+            
             
 
           
