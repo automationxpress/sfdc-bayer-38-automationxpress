@@ -1,5 +1,5 @@
 # Unique name for this workflow
-name: (1) Integration - Validate PR
+name: (1) Destructive Changes - Validation or Deployment PR
 
 # Definition when the workflow should run
 on:
@@ -84,20 +84,23 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
-            - name: 'Populate auth file with SF_URL secret of org'
+            - name: 'Populate auth file and Authenticate with SF_URL secret of org'
               shell: bash
               run: |
                 echo ${{ github.ref }}
                 if [[ ("${{github.event.pull_request.base.ref}}" = "main") || ("${{github.ref}}" = "refs/heads/main")]];
                 then
+                  - name: 'Populate auth file and Authenticate with SF_URL secret of Production org'
                   echo ${{ secrets.SFDX_PRODUCTION_URL}} > ./SFDX_PRODUCTION_URL.txt
                   sf org login sfdx-url -f ./SFDX_PRODUCTION_URL.txt -s -a production
                 elif [[ ("${{github.event.pull_request.base.ref}}" = "uat") || ("${{github.ref}}" = "refs/heads/uat")]];
                 then
+                  - name: 'Populate auth file and Authenticate with SF_URL secret of UAT org'
                   echo ${{ secrets.SFDX_UAT_URL}} > ./SFDX_UAT_URL.txt
                   sf org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a uat
                 elif [[ ("${{github.event.pull_request.base.ref}}" = "integration") || ("${{github.ref}}" = "refs/heads/integration")]];
                 then
+                  - name: 'Populate auth file and Authenticate with SF_URL secret of Integration org'
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
                   sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
                 fi
@@ -107,8 +110,10 @@ jobs:
               run: |
                 if [[ ("${{github.event_name}}" = "pull_request")]];
                 then
+                  - name: 'Validate Destructive Changes'
                   sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
                 elif [[ ("${{github.event_name}}" = "push")]];
                 then
+                  - name: 'Validate Destructive Changes'
                   sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json
                 fi
