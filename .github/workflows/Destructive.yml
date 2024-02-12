@@ -87,15 +87,18 @@ jobs:
             - name: 'Populate auth file with SF_URL secret of Production org'
               shell: bash
               run: |
-                if [[ ("${name}" = "main") || ("${name}" = 'main')]];
+                if [[ ("${github.event.pull_request.base.ref}" = "main") || ("${github.event.push.base.ref}" = 'main')]];
                 then
-                  echo 'this is production'
-                elif [[ ("${name}" = "uat") || ("${name}" = 'uat')]];
+                  echo ${{ secrets.SFDX_PRODUCTION_URL}} > ./SFDX_PRODUCTION_URL.txt
+                  sf org login sfdx-url -f ./SFDX_PRODUCTION_URL.txt -s -a production
+                elif [[ ("${github.event.pull_request.base.ref}" = "uat") || ("${github.event.push.base.ref}" = 'uat')]];
                 then
-                  echo 'this is uat'
-                elif [[ ("${name}" = "integration") || ("${name}" = 'integration')]];
+                  echo ${{ secrets.SFDX_UAT_URL}} > ./SFDX_UAT_URL.txt
+                  sf org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a uat
+                elif [[ ("${github.event.pull_request.base.ref}" = "integration") || ("${github.event.push.base.ref}" = 'integration')]];
                 then
-                  echo 'this is integration'
+                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
+                  sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
                 fi
 
 
