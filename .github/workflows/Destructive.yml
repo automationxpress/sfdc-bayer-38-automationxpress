@@ -1,5 +1,5 @@
 # Unique name for this workflow
-name: (1) Integration - Validate PR
+name: (1) Destructive Changes - Validation or Deployment PR
 
 # Definition when the workflow should run
 on:
@@ -84,7 +84,7 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
-            - name: 'Populate auth file with SF_URL secret of org'
+            - name: 'Populate auth file and Authenticate with SF_URL secret of org'
               shell: bash
               run: |
                 echo ${{ github.ref }}
