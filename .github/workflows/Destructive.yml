@@ -102,12 +102,12 @@ jobs:
                 fi
 
             - name: 'Validate or Deploy Destructive changes'
-              run: 
+              shell: bash
+              run: |
                 if [[ ("${{github.event_name}}" = "pull_request")]];
                 then
                   sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
-                elif [[ ("${{github.event_name}}" = "pull_request")]];
+                elif [[ ("${{github.event_name}}" = "push")]];
                 then
-                  sf org login sfdx-url -f ./SFDX_UAT_URL.txt -s -a uat
-                sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json
+                  sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json
                 fi
