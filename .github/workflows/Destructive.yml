@@ -108,5 +108,7 @@ jobs:
             
 
           
-            - name: 'Deploy destructive changes (if any)'
-              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
+            - name: 'Validate or Deploy Destructive changes'
+              run: 
+                echo ${{github.event_name}}
+                sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json
