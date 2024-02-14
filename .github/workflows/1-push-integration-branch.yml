@@ -29,6 +29,12 @@ jobs:
                   echo "$HOME/sf/bin" >> $GITHUB_PATH
                   ~/sf/bin/sf version
 
+            # install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
+            - name: 'Installing sf git delta'
+              run: |
+                  echo y | sf plugins:install sfdx-git-delta
+                  sf plugins
+
             # Checkout the source code
             - name: 'Checkout source code'
               uses: actions/checkout@v3
@@ -41,10 +47,14 @@ jobs:
               run: |
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
 
-            # Authenticate to Integration org
+            - name: 'Create delta packages for new, modified or deleted metadata'
+              run: |
+                  mkdir changed-sources
+                  sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+
+            # Authenticate to org
             - name: 'Authenticate to Integration Org'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
-            - name: 'Check-only deploy delta changes - run all tests'
-              run: |
-                  sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --json
+            - name: 'Deploy Delta Changes to Integration org'
+              run: sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests  --json
