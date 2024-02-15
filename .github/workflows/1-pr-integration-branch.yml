@@ -98,10 +98,13 @@ jobs:
             #  run: |
             #      mkdir changed-sources
             #      sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+            #- name: 'Deploy pre-destructive changes (if any)'
+            #  run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+            
             # If the env variable equals all, we run all tests
             - name: 'Deploy all changes - run all tests'
               run: |
                   sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
 
-            - name: 'Deploy destructive changes (if any)'
+            - name: 'Deploy post-destructive changes (if any)'
               run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
