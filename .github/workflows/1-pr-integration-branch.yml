@@ -17,6 +17,7 @@ on:
       # when changing non-salesforce files (like this yml file).
       paths:
         - 'force-app/**'
+        - 'destructive/**'
 
 # Jobs to be executed when the above conditions are met
 jobs:
@@ -65,11 +66,11 @@ jobs:
             # Install SFDX scanner
             - name: 'Installing SF scanner'
               run: sf plugins install @salesforce/sfdx-scanner
-            
-            - name: 'Installing sf git delta'
-              run: |
-                  echo y | sf plugins:install sfdx-git-delta
-                  sf plugins
+
+            #- name: 'Installing sf git delta'
+            #  run: |
+            #      echo y | sf plugins:install sfdx-git-delta
+            #      sf plugins
 
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the integration org.
@@ -93,11 +94,14 @@ jobs:
             - name: 'Authenticate to Integration Org'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
-            - name: 'Create delta packages for new, modified or deleted metadata'
-              run: |
-                  mkdir changed-sources
-                  sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+            #- name: 'Create delta packages for new, modified or deleted metadata'
+            #  run: |
+            #      mkdir changed-sources
+            #      sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
             # If the env variable equals all, we run all tests
-            - name: 'Check-only deploy delta changes - run all tests'
+            - name: 'Deploy all changes - run all tests'
               run: |
-                  sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --dry-run --json
+                  sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
+
+            - name: 'Deploy destructive changes (if any)'
+              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
