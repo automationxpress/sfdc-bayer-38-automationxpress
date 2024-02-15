@@ -15,8 +15,7 @@ on:
       # We only care about changes to the force-app directory, which is the
       # root directory of the sfdx project. This prevents the job from running
       # when changing non-salesforce files (like this yml file).
-      paths:
-        - 'destructive/**'
+      
     push:
       branches: [ integration, uat, main ]
       
