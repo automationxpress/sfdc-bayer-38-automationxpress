@@ -19,8 +19,8 @@ on:
         - 'destructive/**'
     push:
       branches: [ integration, uat, main ]
-      paths:
-        - 'destructive/**'
+      
+        
 
 
 # Jobs to be executed when the above conditions are met
