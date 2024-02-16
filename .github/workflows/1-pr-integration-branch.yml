@@ -105,6 +105,7 @@ jobs:
             # If the env variable equals all, we run all tests
             - name: 'Deploy all changes - run all tests'
               run: |
+                  echo ${{contains(github.event.head_commit.modified, 'force-app/')}}
                   sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
 
             - name: 'Deploy post-destructive changes (if any)'
