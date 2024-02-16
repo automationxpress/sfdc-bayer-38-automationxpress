@@ -14,7 +14,7 @@ public class DonationTriggerHandler extends TriggerHandler {
         Map<Id, Donation__c> newDonations = (Map<Id, Donation__c>) newRecords;
         Map<Id, Donation__c> oldDonationMap = (Map<Id, Donation__c>) oldRecords;
         DonationService.createRecordHistoryOnDonationUpdate(newDonations,oldDonationMap );
-system.debug('This is for testing github action files');
+system.debug('This is for testing github action files v1');
     }
     
 
