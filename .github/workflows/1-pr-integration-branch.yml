@@ -111,9 +111,6 @@ jobs:
                   if [[ -f destructive/destructiveChangesPre.xml ]]; 
                   then
                     echo 'this is line 1'
-                    grep -q '<members>' destructive/destructiveChangesPre.xml
-                    greprc=$?
-                    echo grep -q '<members>' destructive/destructiveChangesPre.xml greprc=$?
                     if [ $(grep -q '<members>' destructive/destructiveChangesPre.xml) -eq 0 ]]; 
                     then
                       echo 'this is line 2'
