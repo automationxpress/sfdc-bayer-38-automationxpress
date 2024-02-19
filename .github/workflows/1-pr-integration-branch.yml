@@ -105,6 +105,7 @@ jobs:
                   #sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
             
             - name: Check if there is some destructive changes
+              shell: bash
               run: |
                   if [ -f destructive/destructiveChangesPre.xml ]; then
                     grep -q '<members>' destructive/destructiveChangesPre.xml; greprc=$?
