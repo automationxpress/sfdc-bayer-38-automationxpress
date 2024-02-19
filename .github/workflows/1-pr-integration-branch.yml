@@ -113,9 +113,8 @@ jobs:
                     echo 'this is line 1'
                     grep -q '<members>' destructive/destructiveChangesPre.xml
                     greprc=$?
-                    echo greprc=$?
-                    echo $greprc -eq 0
-                    if [ $greprc -eq 0 ]; 
+                    echo grep -q '<members>' destructive/destructiveChangesPre.xml greprc=$?
+                    if [ $(grep -q '<members>' destructive/destructiveChangesPre.xml) -eq 0 ]]; 
                     then
                       echo 'this is line 2'
                       sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
