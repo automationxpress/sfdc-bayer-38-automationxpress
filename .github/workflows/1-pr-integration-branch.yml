@@ -48,6 +48,20 @@ jobs:
               with:
                 fetch-depth: 0
 
+            - name: 'get changed files'
+              uses: jitterbit/get-changed-files@v1
+              id: abc
+              continue-on-error: true
+              with:
+                format: space-delimited
+                
+
+
+            - name: Printing
+              run: |
+                echo "Added+Modified:"
+                echo "${{ steps.abc.outputs.added_modified }}"
+
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
               run: |
@@ -102,8 +116,17 @@ jobs:
               #run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
               run: 
                   echo ${{github.event.before}} + ${{github.event.SHA}}  + ${{github.event.paths}} + ${{contains(needs.repository_dispatch.paths, 'force-app/') }} + ${{steps.changes.outputs.src}} + ${{contains(github.event.head_commit.modified, 'force-app/')}} + ${{contains(github.event.head_commit.added, 'force-app/')}}
-                  sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+                  #sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
             
+            - name: Check if there is some destructive changes
+              run: |
+                  echo 'entering if '
+                  if [[ ${{ contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}} ]]; then
+                    echo '${{contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}}'
+                    
+                  fi
+
+
             # If the env variable equals all, we run all tests
             - name: 'Deploy all changes - run all tests'
               run: |

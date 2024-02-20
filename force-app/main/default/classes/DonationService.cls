@@ -14,7 +14,7 @@ public class DonationService {
         
         for (Donation__c newDonation :newDonations.values()) {
             Map<String, Schema.SObjectField> donationSchema = Schema.Donation__c.SObjectType.getDescribe().fields.getMap();
-            system.debug('this is tested for github v6 ');
+            system.debug('this is tested for github v8 ');
             //Track Status__c field
             if (newDonation.Status__c != oldDonationMap.get(newDonation.Id).Status__c){
                 Schema.DescribeFieldResult statusDescription = donationSchema.get('Status__c').getDescribe();
@@ -103,6 +103,9 @@ public class DonationService {
             if (newDonation.Account_Name__c != oldDonationMap.get(newDonation.Id).Account_Name__c){
                 Schema.DescribeFieldResult accountNameDescription = donationSchema.get('Account_Name__c').getDescribe();
                 addRecordHstoryList(recordHistoryList, accountNameDescription.getLabel(), oldDonationMap.get(newDonation.Id).Account_Name__c, newDonation.Account_Name__c, newDonation.Id);
+            }
+            if (newDonation.Status__c == 'Approved'){
+                System.enqueueJob(new DonationQueuebleCallout());
             }
            
         }
