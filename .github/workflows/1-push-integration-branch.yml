@@ -69,8 +69,8 @@ jobs:
             # Authenticate to org
             - name: 'Authenticate to Integration Org'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-            - name: 'Deploy pre-destructive changes (if any)'
-              run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --ignore-warnings
+            #- name: 'Deploy pre-destructive changes (if any)'
+              #run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --ignore-warnings
 
             #- name: 'Deploy pre-destructive changes (if any)'
             #  run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --json --ignore-warnings
