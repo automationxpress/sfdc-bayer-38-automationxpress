@@ -124,7 +124,7 @@ jobs:
                 echo 'entering if '
                 if [[ -f destructive/destructiveChangesPre.xml ]]; then
                   echo 'this is line 1'
-                  if [[ $(contains(grep '<members>' destructive/destructiveChangesPre.xml, '<members>') = 'true' ]]; then
+                  if [[ $contains(grep '<members>' destructive/destructiveChangesPre.xml, '<members>') = 'true' ]]; then
                     echo 'this is line 2'
                     sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
                   fi
