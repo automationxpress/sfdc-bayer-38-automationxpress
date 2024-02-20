@@ -121,6 +121,7 @@ jobs:
             - name: Check if there is some destructive changes
               run: |
                 echo 'entering if '
+                echo $SHELL
                 if [[ -f destructive/destructiveChangesPre.xml ]]; then
                   echo 'this is line 1'
                   if [[ $(grep -q '<members>' destructive/destructiveChangesPre.xml) -eq 0]]; then
