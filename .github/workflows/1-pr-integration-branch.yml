@@ -121,8 +121,8 @@ jobs:
             - name: Check if there is some destructive changes
               run: |
                   echo 'entering if '
-                  if [[ ${{ contains(steps.verify-changed-files.outputs.changed_files, 'destructive/destructiveChangesPre.xml')}} ]]; then
-                    echo '${{contains(steps.verify-changed-files.outputs.changed_files, 'destructive/destructiveChangesPre.xml')}}'
+                  if [[ ${{ contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}} ]]; then
+                    echo '${{contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}}'
                     
                   fi
 
