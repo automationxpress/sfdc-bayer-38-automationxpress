@@ -48,6 +48,18 @@ jobs:
               with:
                 fetch-depth: 0
 
+            - name: 'get changed files'
+              uses: jitterbit/get-changed-files@v1
+              id: abc
+              with:
+                format: space-delimited
+
+                
+            - name: Printing
+              run: |
+                echo "Added+Modified:"
+                echo "${{ steps.abc.outputs.added_modified }}"
+
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
               run: |
