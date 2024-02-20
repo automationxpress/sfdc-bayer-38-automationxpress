@@ -47,15 +47,6 @@ jobs:
               uses: actions/checkout@v3
               with:
                 fetch-depth: 0
-            
-            - name: 'changed files'
-              uses: tj-actions/verify-changed-files@v18
-              id: verify-changed-files
-              with:
-                files: |
-                  destructiveChangesPre.xml
-                  *.xml
-
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
@@ -114,15 +105,8 @@ jobs:
                   #sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
             
             - name: Check if there is some destructive changes
-              env:
-                CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
               run: |
-                  echo "Changed files: $CHANGED_FILES"
                   echo 'entering if '
-                  echo "changed_files=$(git diff --name-only -r HEAD^1 HEAD | xargs)" >> $GITHUB_OUTPUT
-                  for file in ${{ steps.changed-files.outputs.changed_files }}; do
-                    echo "$file was changed"
-                  done
                   if [[ -f destructive/destructiveChangesPre.xml ]]; then
                     echo 'this is line 1'
                     if [[ $(grep -q "<members>" destructive/destructiveChangesPre.xml) -eq 0 ]]; then
