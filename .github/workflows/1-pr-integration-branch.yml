@@ -119,12 +119,14 @@ jobs:
                   #sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
             
             - name: Check if there is some destructive changes
-              shell: bash
               run: |
                   echo 'entering if '
-                  if [[ ${{ contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}} = 'true' ]]; then
-                    echo '${{contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}}'
-                    sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
+                  if [[ -f destructive/destructiveChangesPre.xml ]]; then
+                    echo 'this is line 1'
+                    if [[ $(grep -q "<members>" destructive/destructiveChangesPre.xml) -eq 0 ]]; then
+                      echo 'this is line 2'
+                      sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
+                    fi
                   fi
 
 
