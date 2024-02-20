@@ -120,6 +120,7 @@ jobs:
             
             - name: Check if there is some destructive changes
               run: |
+                set -x
                 echo 'entering if '
                 echo $SHELL
                 if [[ -f destructive/destructiveChangesPre.xml ]]; then
