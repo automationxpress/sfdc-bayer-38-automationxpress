@@ -47,6 +47,14 @@ jobs:
               uses: actions/checkout@v3
               with:
                 fetch-depth: 0
+            
+            - name: 'changed files'
+              uses: tj-actions/verify-changed-files@v18
+              id: verify-changed-files
+              with:
+                files: |
+                  destructiveChangesPre.xml
+
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
