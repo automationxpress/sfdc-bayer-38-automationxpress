@@ -107,6 +107,10 @@ jobs:
             - name: Check if there is some destructive changes
               run: |
                   echo 'entering if '
+                  echo "changed_files=$(git diff --name-only -r HEAD^1 HEAD | xargs)" >> $GITHUB_OUTPUT
+                  for file in ${{ steps.changed-files.outputs.changed_files }}; do
+                    echo "$file was changed"
+                  done
                   if [[ -f destructive/destructiveChangesPre.xml ]]; then
                     echo 'this is line 1'
                     if [[ $(grep -q "<members>" destructive/destructiveChangesPre.xml) -eq 0 ]]; then
