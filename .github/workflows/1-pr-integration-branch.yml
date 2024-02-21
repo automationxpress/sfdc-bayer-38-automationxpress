@@ -51,7 +51,7 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo "pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)", "pre_destructive=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)" >> $GITHUB_OUTPUT
+              run: echo "pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)", "post_destructive=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)" >> $GITHUB_OUTPUT
               id: destructive
               shell: bash
               
@@ -60,8 +60,8 @@ jobs:
 
             - name: Printing
               run: |
-                echo "${{ steps.destructive.outputs.post }}"
-                echo "${{ steps.destructive.outputs.things }}"
+                echo "${{ steps.destructive.outputs.pre_destructive }}"
+                echo "${{ steps.destructive.outputs.post_destructive }}"
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
