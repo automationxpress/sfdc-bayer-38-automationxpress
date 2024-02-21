@@ -51,7 +51,7 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo '$things=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)' >> $GITHUB_OUTPUT
+              run: echo "$things=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)" >> $GITHUB_OUTPUT
               id: abc
               shell: bash
               
