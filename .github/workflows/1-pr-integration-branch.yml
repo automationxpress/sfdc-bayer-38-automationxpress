@@ -31,7 +31,7 @@ jobs:
               with:
                 node-version: 'latest'
 
-            - run: echo ::set-output name=things::$(grep  '<members>' destructive/destructiveChangesPre.xml)
+            - run: echo ::set-output name=things::$(grep "thing" code.h | wc -l)
               id:  counter
               shell: bash
 
@@ -53,14 +53,17 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo ::set-output name=things::$(grep  '<members>' destructive/destructiveChangesPre.xml)
+              run: echo ::set-output name=things::$(grep  '<members>' destructive/destructiveChangesPre.xml | wc -l)
               id: abc
               shell: bash
               
                 
 
 
-            
+            - name: Printing
+              run: |
+                echo "Added+Modified:"
+                echo "${{ steps.abc.outputs.things }}"
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
