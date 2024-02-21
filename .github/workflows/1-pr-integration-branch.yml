@@ -32,6 +32,7 @@ jobs:
                 node-version: 'latest'
 
 
+
             # The idea is that the VM can access your remote repository
             # because your repository is an sfdx project.
             # This is a default action that allows us to enter the root
@@ -50,8 +51,8 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo 'pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)'>> $GITHUB_OUTPUT
-              id: destructive
+              run: echo ::set-output name=things::$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)
+              id: abc
               shell: bash
               
                 
@@ -59,7 +60,8 @@ jobs:
 
             - name: Printing
               run: |
-                echo "${{ steps.destructive.outputs.pre_destructive }}"
+                echo "Added+Modified:"
+                echo "${{ steps.abc.outputs.things }}"
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
@@ -118,7 +120,7 @@ jobs:
                 echo 'entering if '
                 if [[ -f destructive/destructiveChangesPre.xml ]]; then
                   echo 'this is line 1'
-                  if [[ ${{ steps.destructive.outputs.pre_destructive }} != 0 ]]; then
+                  if [[ ${{ steps.abc.outputs.things }} != 0 ]]; then
                     echo 'this is line 2'
                     sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
                   fi
@@ -131,7 +133,4 @@ jobs:
                   sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
 
             - name: 'Deploy post-destructive changes (if any)'
-              run: 
-                if [[ ${{ steps.destructive.outputs.post_destructive }} != 0 ]]; then
-                sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
-                fi
+              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
