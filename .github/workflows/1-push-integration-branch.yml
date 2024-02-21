@@ -99,6 +99,7 @@ jobs:
               run: sf project deploy start --source-dir force-app/** --test-level RunLocalTests  --json
               
             - name: 'Deploy destructive changes (if any)'
+              shell: bash
               run: 
                 if [[ ${{ steps.postdestructive.outputs.post_destructive }} != 0 ]]; then
                   echo 'this is line 2'
