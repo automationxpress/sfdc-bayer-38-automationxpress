@@ -31,6 +31,10 @@ jobs:
               with:
                 node-version: 'latest'
 
+            - run: echo ::set-output name=things::$(grep  '<members>' destructive/destructiveChangesPre.xml)
+              id:  counter
+              shell: bash
+
             # The idea is that the VM can access your remote repository
             # because your repository is an sfdx project.
             # This is a default action that allows us to enter the root
@@ -49,18 +53,14 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              uses: jitterbit/get-changed-files@v1
+              run: echo ::set-output name=things::$(grep  '<members>' destructive/destructiveChangesPre.xml)
               id: abc
-              continue-on-error: true
-              with:
-                format: space-delimited
+              shell: bash
+              
                 
 
 
-            - name: Printing
-              run: |
-                echo "Added+Modified:"
-                echo "${{ steps.abc.outputs.added_modified }}"
+            
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
@@ -120,8 +120,6 @@ jobs:
             
             - name: Check if there is some destructive changes
               shell: bash
-              env: 
-                changed_files:  $(grep '<members>' destructive/destructiveChangesPre.xml)
               run: |
                 set -x
                 echo 'entering if '
