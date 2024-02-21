@@ -31,6 +31,8 @@ jobs:
               with:
                 node-version: 'latest'
 
+
+
             # The idea is that the VM can access your remote repository
             # because your repository is an sfdx project.
             # This is a default action that allows us to enter the root
@@ -49,18 +51,22 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              uses: jitterbit/get-changed-files@v1
-              id: abc
-              continue-on-error: true
-              with:
-                format: space-delimited
+              run: echo "pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)">> $GITHUB_OUTPUT
+              id: predestructive
+              shell: bash
+
+            - name: 'get changed files'
+              run: echo "post_destructive=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)" >> $GITHUB_OUTPUT
+              id: postdestructive
+              shell: bash
+              
                 
 
 
             - name: Printing
               run: |
-                echo "Added+Modified:"
-                echo "${{ steps.abc.outputs.added_modified }}"
+                echo "${{ steps.predestructive.outputs.pre_destructive }}"
+                echo "${{ steps.postdestructive.outputs.post_destructive }}"
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
@@ -112,20 +118,14 @@ jobs:
             #  run: |
             #      mkdir changed-sources
             #      sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+    
             - name: 'Deploy pre-destructive changes (if any)'
-              #run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
-              run: 
-                  echo ${{github.event.before}} + ${{github.event.SHA}}  + ${{github.event.paths}} + ${{contains(needs.repository_dispatch.paths, 'force-app/') }} + ${{steps.changes.outputs.src}} + ${{contains(github.event.head_commit.modified, 'force-app/')}} + ${{contains(github.event.head_commit.added, 'force-app/')}}
-                  #sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
-            
-            - name: Check if there is some destructive changes
               shell: bash
               run: |
-                  echo 'entering if '
-                  if [[ ${{ contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}} = 'true' ]]; then
-                    echo '${{contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}}'
-                    sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
-                  fi
+                if [[ ${{ steps.predestructive.outputs.pre_destructive }} != 0 ]]; then
+                  echo 'this is line 2'
+                  sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+                fi
 
 
             # If the env variable equals all, we run all tests
@@ -134,4 +134,9 @@ jobs:
                   sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
 
             - name: 'Deploy post-destructive changes (if any)'
-              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+              shell: bash
+              run: | 
+                if [[ ${{ steps.postdestructive.outputs.post_destructive }} != 0 ]]; then
+                  echo 'this is line 2'
+                  sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+                fi
