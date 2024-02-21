@@ -43,18 +43,18 @@ jobs:
                 fetch-depth: 0
             
             - name: 'get changed files'
-              uses: jitterbit/get-changed-files@v1
-              id: abc
-              continue-on-error: true
-              with:
-                format: space-delimited
+              run: echo "pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)", "pre_destructive=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)" >> $GITHUB_OUTPUT
+              id: destructive
+              shell: bash
+                
                   
   
   
             - name: Printing
               run: |
-                echo "Added+Modified:"
-                echo "${{ steps.abc.outputs.added_modified }}"    
+                echo "${{ steps.destructive.outputs.post }}"
+                echo "${{ steps.destructive.outputs.things }}"
+      
             # Store secret for both otgs
             - name: 'Populate auth file with SFDX_URL secret of the integration and staging orgs'
               shell: bash
@@ -78,8 +78,8 @@ jobs:
               shell: bash
               run: |
                 echo 'entering if '
-                if [[ ${{ contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}} = 'true' ]]; then
-                  echo '${{contains(steps.abc.outputs.added_modified, 'destructive/destructiveChangesPre.xml')}}'
+                if [[ ${{ steps.destructive.outputs.pre_destructive }} != 0 ]]; then
+                  echo 'this is line 2'
                   sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --ignore-warnings
                 fi
 
@@ -87,4 +87,8 @@ jobs:
               run: sf project deploy start --source-dir force-app/** --test-level RunLocalTests  --json
               
             - name: 'Deploy destructive changes (if any)'
-              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json --ignore-warnings
+              run: 
+                if [[ ${{ steps.destructive.outputs.post_destructive }} != 0 ]]; then
+                  echo 'this is line 2'
+                  sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json --ignore-warnings
+                fi
