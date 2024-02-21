@@ -124,7 +124,7 @@ jobs:
               run: |
                 if [[ ${{ steps.predestructive.outputs.pre_destructive }} != 0 ]]; then
                   echo 'this is line 2'
-                  sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json--ignore-warnings
+                  sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
                 fi
 
 
