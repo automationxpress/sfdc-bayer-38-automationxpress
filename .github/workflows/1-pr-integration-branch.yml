@@ -53,7 +53,7 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo ::set-output name=things::$(grep -q '<members>' destructive/destructiveChangesPre.xml | wc -l)
+              run: echo ::set-output name=things::$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)
               id: abc
               shell: bash
               
@@ -127,7 +127,7 @@ jobs:
                 echo 'entering if '
                 if [[ -f destructive/destructiveChangesPre.xml ]]; then
                   echo 'this is line 1'
-                  if [[ ${{ steps.abc.outputs.things }} = 1 ]]; then
+                  if [[ ${{ steps.abc.outputs.things }} >= 1 ]]; then
                     echo 'this is line 2'
                     sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
                   fi
