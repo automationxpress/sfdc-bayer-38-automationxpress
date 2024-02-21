@@ -31,9 +31,6 @@ jobs:
               with:
                 node-version: 'latest'
 
-            - run: echo ::set-output name=things::$(grep "thing" code.h | wc -l)
-              id:  counter
-              shell: bash
 
             # The idea is that the VM can access your remote repository
             # because your repository is an sfdx project.
@@ -53,8 +50,8 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo ::set-output name=things::$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)
-              id: abc
+              run: echo 'pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)', 'post_destructive=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)'>> $GITHUB_OUTPUT
+              id: destructive
               shell: bash
               
                 
@@ -62,8 +59,8 @@ jobs:
 
             - name: Printing
               run: |
-                echo "Added+Modified:"
-                echo "${{ steps.abc.outputs.things }}"
+                echo "${{ steps.destructive.outputs.post_destructive }}"
+                echo "${{ steps.destructive.outputs.pre_destructive }}"
 
             # Now Install Salesforce CLI
             - name: 'Install Salesforce CLI'
@@ -115,19 +112,14 @@ jobs:
             #  run: |
             #      mkdir changed-sources
             #      sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+    
             - name: 'Deploy pre-destructive changes (if any)'
-              #run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
-              run: 
-                  echo ${{github.event.before}} + ${{github.event.SHA}}  + ${{github.event.paths}} + ${{contains(needs.repository_dispatch.paths, 'force-app/') }} + ${{steps.changes.outputs.src}} + ${{contains(github.event.head_commit.modified, 'force-app/')}} + ${{contains(github.event.head_commit.added, 'force-app/')}}
-                  #sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
-            
-            - name: Check if there is some destructive changes
               shell: bash
               run: |
                 echo 'entering if '
                 if [[ -f destructive/destructiveChangesPre.xml ]]; then
                   echo 'this is line 1'
-                  if [[ ${{ steps.abc.outputs.things }} != 0 ]]; then
+                  if [[ ${{ steps.destructive.outputs.pre_destructive }} != 0 ]]; then
                     echo 'this is line 2'
                     sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --dry-run --ignore-warnings
                   fi
@@ -140,4 +132,7 @@ jobs:
                   sf project deploy start --source-dir force-app/** --test-level RunLocalTests --dry-run --json
 
             - name: 'Deploy post-destructive changes (if any)'
-              run: sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+              run: 
+                if [[ ${{ steps.destructive.outputs.post_destructive }} != 0 ]]; then
+                sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --dry-run --json --ignore-warnings
+                fi
