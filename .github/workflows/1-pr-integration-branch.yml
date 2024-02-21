@@ -51,7 +51,7 @@ jobs:
                 fetch-depth: 0
 
             - name: 'get changed files'
-              run: echo "things=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)" >> $GITHUB_OUTPUT
+              run: echo "things=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)", "post=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)" >> $GITHUB_OUTPUT
               id: abc
               shell: bash
               
@@ -60,7 +60,7 @@ jobs:
 
             - name: Printing
               run: |
-                echo "Added+Modified:"
+                echo "${{ steps.abc.outputs.post }}"
                 echo "${{ steps.abc.outputs.things }}"
 
             # Now Install Salesforce CLI
