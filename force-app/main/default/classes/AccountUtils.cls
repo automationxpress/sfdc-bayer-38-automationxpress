@@ -5,7 +5,7 @@
 * 
 *  Description: Util class for Account
 *  comment added to test github action
-* comments added after GPG key 
+* comments added after GPG key v2
 * *********************************************************/
 public class AccountUtils {
     //Return Account record based on AccountId
