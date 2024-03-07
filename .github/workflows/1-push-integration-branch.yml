@@ -7,7 +7,6 @@ on:
       branches: [ integration ]
       paths:
         - 'force-app/**'
-        - 'destructive/**'
 
 
 # Jobs to be execute
@@ -30,78 +29,32 @@ jobs:
                   echo "$HOME/sf/bin" >> $GITHUB_PATH
                   ~/sf/bin/sf version
 
-# install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
-#            - name: 'Installing sf git delta'
-#              run: |
-#                  echo y | sf plugins:install sfdx-git-delta
-#                  sf plugins
+            # install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
+            - name: 'Installing sf git delta'
+              run: |
+                  echo y | sf plugins:install sfdx-git-delta
+                  sf plugins
 
             # Checkout the source code
             - name: 'Checkout source code'
               uses: actions/checkout@v3
               with:
                 fetch-depth: 0
-            
-            - name: 'get changed files'
-              run: echo "pre_destructive=$(grep '<members>' destructive/destructiveChangesPre.xml | wc -l)">> $GITHUB_OUTPUT
-              id: predestructive
-              shell: bash
-  
-            - name: 'get changed files'
-              run: echo "post_destructive=$(grep '<members>' destructive/destructiveChangesPost.xml | wc -l)" >> $GITHUB_OUTPUT
-              id: postdestructive
-              shell: bash
-                
-                  
-  
-  
-            - name: Printing
-              run: |
-                echo "${{ steps.predestructive.outputs.pre_destructive }}"
-                echo "${{ steps.postdestructive.outputs.post_destructive }}"
-       
-  
-  
-            - name: Printing
-              run: |
-                echo "${{ steps.destructive.outputs.post_destructive }}"
-                echo "${{ steps.destructive.outputs.pre_destructive }}"
-      
+
             # Store secret for both otgs
             - name: 'Populate auth file with SFDX_URL secret of the integration and staging orgs'
               shell: bash
               run: |
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
 
-            #- name: 'Create delta packages for new, modified or deleted metadata'
-            #  run: |
-            #      mkdir changed-sources
-            #      sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+            - name: 'Create delta packages for new, modified or deleted metadata'
+              run: |
+                  mkdir changed-sources
+                  sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
 
             # Authenticate to org
             - name: 'Authenticate to Integration Org'
               run: sf org login sfdx-url -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-            #- name: 'Deploy pre-destructive changes (if any)'
-              #run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --ignore-warnings
 
-            #- name: 'Deploy pre-destructive changes (if any)'
-            #  run: sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --json --ignore-warnings
-            - name: Check if there is some destructive changes
-              shell: bash
-              run: |
-                echo 'entering if '
-                if [[ ${{ steps.predestructive.outputs.pre_destructive }} != 0 ]]; then
-                  echo 'this is line 2'
-                  sf project deploy start --manifest destructive/package.xml --pre-destructive-changes destructive/destructiveChangesPre.xml --test-level RunLocalTests --ignore-warnings
-                fi
-
-            - name: 'Deploy All Changes to Integration org'
-              run: sf project deploy start --source-dir force-app/** --test-level RunLocalTests  --json
-              
-            - name: 'Deploy destructive changes (if any)'
-              shell: bash
-              run: |
-                if [[ ${{ steps.postdestructive.outputs.post_destructive }} != 0 ]]; then
-                  echo 'this is line 2'
-                  sf project deploy start --manifest destructive/package.xml --post-destructive-changes destructive/destructiveChangesPost.xml --test-level RunLocalTests --json --ignore-warnings
-                fi
+            - name: 'Deploy Delta Changes to Integration org'
+              run: sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests  --json
