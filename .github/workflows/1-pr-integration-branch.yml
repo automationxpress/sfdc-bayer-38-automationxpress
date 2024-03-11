@@ -99,5 +99,6 @@ jobs:
                   sf sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
             # If the env variable equals all, we run all tests
             - name: 'Check-only deploy delta changes - run all tests'
+            - name: 'Check-only deploy delta changes - run all tests'
               run: |
                   sf project deploy start --source-dir "changed-sources/force-app" --test-level RunLocalTests --dry-run --json
